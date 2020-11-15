@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>A Periodic Table of Beer</title>
+ <link type="text/css" rel="stylesheet" href="beer.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+ <script src="jquery.js" type="text/javascript"></script>
+ <script type="text/javascript" src="jquery.zoomooz.min.js"></script>
+ <script type="text/javascript" src="beer.js"></script>
+</head>
+
+<body>
+<div id="main">
+<h1>A Periodic Table of Beer Styles</h1>
+<div class="labelbox" id="ales"><p><span>ALES</span></p></div>
+<div class="labelbox" id="lagers"><p><span>LAGERS</span></p></div>
+<div class="labelbox" id="mixed"><p><span>MIXED STYLES</span></p></div>
+
+<div id="stylekey">
+ <ol>
+ <div id="stylekeyflex">
+  <li id="li1">Wheat Beer</li>
+  <li id="li2">Lambic & Sour Ale</li>
+  <li id="li3">Belgian Ale</li>
+  <li id="li4">Pale Ale</li>
+  <li id="li5">English Bitter</li>
+  <li id="li6">Scottish Ale</li>
+  <li id="li7">Brown Ale</li>
+  <li id="li8">Porter</li>
+  <li id="li9">Stout</li>
+  <li id="li10">Pilsner</li>
+  <li id="li11">American Lager</li>
+  <li id="li12">European Lager</li>
+  <li id="li13">Bock</li>
+  <li id="li14">Alt</li>
+  <li id="li15">French Ale</li>
+  <li id="li16">German Amber Ale</li>
+  <li id="li17">American Special</li>
+  <li id="li18">Smoked Beer</li>
+  <li id="li19">Barley Wine</li>
+  <li id="li20">Strong Ale</li>
+ </div>
+ </ol>
+</div>
+<div id="bigTable">
+ <div class="element placeholder family" id="I"><p>I</p></div>
+ <div class="element placeholder family" id="II"><p>II</p></div>
+ <div class="element placeholder family" id="III"><p>III</p></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div id="one" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">1</div>
+  <div class="gravity">
+   <p class="original">1.026-1.036</p>
+   <p class="final">1.006-1.009</p>
+  </div>
+  <h3>Berliner weisse</h3>
+  <div class="info">
+   <p class="description">Light body. Refreshing. Slightly fruity. Sour. Low influence of hop.</p>
+   <p class="example">Schultheiss Berliner Weisse, Berliner Kindl Weisse</p>
+  </div>
+  <div class="units">
+   <p class="abv">2.5-3.6</p>
+   <p class="ibu">3-12</p>
+  </div>
+  <div class="srm">2-4
+  </div>
+ </div>
+
+ <div id="two" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">2</div>
+  <div class="gravity">
+   <p class="original">1.044-1.056</p>
+   <p class="final">1.006-1.012</p>
+  </div>
+  <h3>Lambic</h3>
+  <div class="info">
+   <p class="description">The most unusual sour-tasting beer with very little hop aroma.</p>
+   <p class="example">Grand Cru Cantillon Bruocsella 1900, Boon, De Neve</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.7-6.4</p>
+   <p class="ibu">5-15</p>
+  </div>
+  <div class="srm">4-15
+  </div>
+ </div>
+
+ <div id="three" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">3</div>
+  <div class="gravity">
+   <p class="original">1.065-1.085</p>
+   <p class="final">1.014-1.020</p>
+  </div>
+  <h3>Belgian gold ale</h3>
+  <div class="info">
+   <p class="description">Fruity. Soft malt aroma. Spice aroma. Low bitterness.</p>
+   <p class="example">Duvel, Lucifer, La Chouffe, Moinette, Celis Grand Cru</p>
+  </div>
+  <div class="units">
+   <p class="abv">7.0-9.0</p>
+   <p class="ibu">25-35</p>
+  </div>
+  <div class="srm">4-6
+  </div>
+ </div>
+
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+
+ <div id="four" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">4</div>
+  <div class="gravity">
+   <p class="original">1.042-1.055</p>
+   <p class="final">1.008-1.012</p>
+  </div>
+  <h3>Belgian white</h3>
+  <div class="info">
+   <p class="description">Refreshing. Cloudy. Spiced with coriander and orange peel. Low bitterness.</p>
+   <p class="example">Celis White, Hoegaarden White, Blanche de Bruges</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.5-5.5</p>
+   <p class="ibu">15-28</p>
+  </div>
+  <div class="srm">2-4
+  </div>
+ </div>
+
+ <div id="five" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">5</div>
+  <div class="gravity">
+   <p class="original">1.044-1.056</p>
+   <p class="final">1.006-1.012</p>
+  </div>
+  <h3>Geuze</h3>
+  <div class="info">
+   <p class="description">Blend of young and old lambic beers.</p>
+   <p class="example">Lindeman's Geuze Lambic, Belle-Vue Gueuze, Boon, Canillon, Hanssens</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.7-6.4</p>
+   <p class="ibu">5-15</p>
+  </div>
+  <div class="srm">4-15
+  </div>
+ </div>
+
+ <div id="six" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">6</div>
+  <div class="gravity">
+   <p class="original">1.070-1.100</p>
+   <p class="final">1.016-1.024</p>
+  </div>
+  <h3>Tripel</h3>
+  <div class="info">
+   <p class="description">Light/pale color, balanced malt and hop aroma. Sweetish. High alcohol content.</p>
+   <p class="example">Westmalle Tripel, Affligem Tripel, Grimbergen Tripel</p>
+  </div>
+  <div class="units">
+   <p class="abv">7.0-10.0</p>
+   <p class="ibu">20-30</p>
+  </div>
+  <div class="srm">4-7
+  </div>
+ </div>
+
+ <div class="element placeholder family" id="IV"><p>IV</p></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder family" id="XI"><p>XI</p></div>
+ <div class="element placeholder family" id="XII"><p>XII</p></div>
+ <div class="element placeholder family" id="XIII"><p>XIII</p></div>
+
+ <div id="seven" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">7</div>
+  <div class="gravity">
+   <p class="original">1.035-1.055</p>
+   <p class="final">1.008-1.018</p>
+  </div>
+  <h3>American wheat</h3>
+  <div class="info">
+   <p class="description">Usually clear in contrast to most other wheat beers. Slightly tart. Very refreshing.</p>
+   <p class="example">Samuel Adams Summer Ale, Catamount American Wheat</p>
+  </div>
+  <div class="units">
+   <p class="abv">3.5-5.0</p>
+   <p class="ibu">5-20</p>
+  </div>
+  <div class="srm">2-8
+  </div>
+ </div>
+ <div id="eight" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">8</div>
+  <div class="gravity">
+   <p class="original">1.040-1.056</p>
+   <p class="final">1.006-1.012</p>
+  </div>
+  <h3>Faro</h3>
+  <div class="info">
+   <p class="description">Sweetened version of lambic.</p>
+   <p class="example">Lindeman's</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.5-5.5</p>
+   <p class="ibu">5-15</p>
+  </div>
+  <div class="srm">4-15
+  </div>
+ </div>
+ <div id="nine" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">9</div>
+  <div class="gravity">
+   <p class="original">1.052-1.080</p>
+   <p class="final">1.010-1.015</p>
+  </div>
+  <h3>Saison</h3>
+  <div class="info">
+   <p class="description">Fruity. Complex aroma and flavor of high alcohol, herbs, and spices. Moderate hop aroma and flavor.</p>
+   <p class="example">Saison Dupont, Moinette, Laforet</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.5-8.1</p>
+   <p class="ibu">25-40</p>
+  </div>
+  <div class="srm">4-10
+  </div>
+ </div>
+ <div id="ten" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">10</div>
+  <div class="gravity">
+   <p class="original">1.043-1.056</p>
+   <p class="final">1.008-1.016</p>
+  </div>
+  <h3>Pale ale</h3>
+  <div class="info">
+   <p class="description">Low to medium maltiness. High hop bitterness. Medium hop profile.</p>
+   <p class="example">Draught Bass, Samuel Smith Old Brewery Pale Ale</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.5-5.5</p>
+   <p class="ibu">20-40</p>
+  </div>
+  <div class="srm">4-11
+  </div>
+ </div>
+ <div class="element placeholder family" id="V"><p>V</p></div>
+ <div class="element placeholder family" id="VI"><p>VI</p></div>
+ <div class="element placeholder family" id="VII"><p>VII</p></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder family" id="IX"><p>&mdash;&mdash; IX &mdash;&mdash;</p></div>
+ <div class="element placeholder family" id="X"><p>X</p></div>
+
+ <div id="eleven" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">11</div>
+  <div class="gravity">
+   <p class="original">1.024-1.040</p>
+   <p class="final">1.002-1.008</p>
+  </div>
+  <h3>American lite</h3>
+  <div class="info">
+   <p class="description">Little to no malt aroma. Very low in hops. Crisp and dry. Refreshing.</p>
+   <p class="example">Bud Light, Miller Light</p>
+  </div>
+  <div class="units">
+   <p class="abv">2.9-4.5</p>
+   <p class="ibu">8-15</p>
+  </div>
+  <div class="srm">2-4
+  </div>
+ </div>
+
+ <div id="twelve" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">12</div>
+  <div class="gravity">
+   <p class="original">1.044-1.50</p>
+   <p class="final">1.008-1.012</p>
+  </div>
+  <h3>Munich helles</h3>
+  <div class="info">
+   <p class="description">Mildly hopped and mildly malty. Fuller body than most lagers.</p>
+   <p class="example">Black Forest Lager, Spaten Premium Lager</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.5-5.6</p>
+   <p class="ibu">18-25</p>
+  </div>
+  <div class="srm">3-5</div>
+ </div>
+
+ <div id="thirteen" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">13</div>
+  <div class="gravity">
+   <p class="original">1.066-1.074</p>
+   <p class="final">1.011-1.020</p>
+  </div>
+  <h3>Helles bock</h3>
+  <div class="info">
+   <p class="description">Malty. Mildly hopped. Relatively high alcohol level.</p>
+   <p class="example">Wuerzburger Maibock, Spaten Premium Bock, Pschorr M&auml;rzenbock</p>
+  </div>
+  <div class="units">
+   <p class="abv">6.0-7.5</p>
+   <p class="ibu">20-35</p>
+  </div>
+  <div class="srm">4-10</div>
+ </div>
+
+ <div id="fourteen" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">14</div>
+  <div class="gravity">
+   <p class="original">1.040-1.056</p>
+   <p class="final">1.008-1.016</p>
+  </div>
+  <h3>Weizenbier</h3>
+  <div class="info">
+   <p class="description">Notable clove and banana aroma from German wheat yeast. Fruity. Cloudy. Low hop profile.</p>
+   <p class="example">Herdinger Weissbier, Pyramid wheaten ale, Julius Echter Weizenbier</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.3-5.6</p>
+   <p class="ibu">8-15</p>
+  </div>
+  <div class="srm">3-9</div>
+ </div>
+
+ <div id="fifteen" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">15</div>
+  <div class="gravity">
+   <p class="original">1.040-1.072</p>
+   <p class="final">1.008-1.016</p>
+  </div>
+  <h3>Fruit beer</h3>
+  <div class="info">
+   <p class="description">Taste and aroma depend on fruit(s) used. Usually dry and winey. Not all fruit beers are lambic based.</p>
+   <p class="example">Belle-Vue Kriek, Lindeman's Framboise Lambic</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.7-7.0</p>
+   <p class="ibu">15-21</p>
+  </div>
+  <div class="srm">N/A</div>
+ </div>
+
+ <div id="sixteen" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">16</div>
+  <div class="gravity">
+   <p class="original">1.040-1.055</p>
+   <p class="final">1.008-1.013</p>
+  </div>
+  <h3>Belgian pale ale</h3>
+  <div class="info">
+   <p class="description">Low bitterness. Low malt aroma. Slightly fruity and sour.</p>
+   <p class="example">Celis Pale Bock, DeKoninck Special Palm Ale, Ginder Ale</p>
+  </div>
+  <div class="units">
+   <p class="abv">3.9-5.6</p>
+   <p class="ibu">20-35</p>
+  </div>
+  <div class="srm">4-14</div>
+ </div>
+
+ <div id="seventeen" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">17</div>
+  <div class="gravity">
+   <p class="original">1.045-1.056</p>
+   <p class="final">1.010-1.015</p>
+  </div>
+  <h3>American pale ale</h3>
+  <div class="info">
+   <p class="description">Medium maltiness. High hop bitterness. Medium flavor and aroma from American hop varieties.</p>
+   <p class="example">Sierra Nevada Pale Ale, Summit Pale Ale, Geary's Pale Ale</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.5-5.7</p>
+   <p class="ibu">20-40</p>
+  </div>
+  <div class="srm">4-11</div>
+ </div>
+
+ <div id="eighteen" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">18</div>
+  <div class="gravity">
+   <p class="original">1.030-1.038</p>
+   <p class="final">1.006-1.012</p>
+  </div>
+  <h3>Ordinary bitter</h3>
+  <div class="info">
+   <p class="description">Low carbonation. Low to medium maltiness. Mild hop flavor and aroma.</p>
+   <p class="example">Young's Bitter, HBS Premium Bitter</p>
+  </div>
+  <div class="units">
+   <p class="abv">3.0-3.8</p>
+   <p class="ibu">20-35</p>
+  </div>
+  <div class="srm">6-12</div>
+ </div>
+
+ <div id="nineteen" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">19</div>
+  <div class="gravity">
+   <p class="original">1.030-1.035</p>
+   <p class="final">1.006-1.012</p>
+  </div>
+  <h3>Scottish light 60/-</h3>
+  <div class="info">
+   <p class="description">Low carbonation. Medium maltiness. Low bitterness. Medium to no hop flavor and aroma. Light smoky/toasty character.</p>
+   <p class="example">Belhaven 60/-, Caledonian 60/-, Maclay 60/- Light, Highland Dark Light</p>
+  </div>
+  <div class="units">
+   <p class="abv">2.8-4.0</p>
+   <p class="ibu">9-20</p>
+  </div>
+  <div class="srm">8-17</div>
+ </div>
+
+ <div id="twenty" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">20</div>
+  <div class="gravity">
+   <p class="original">1.030-1.038</p>
+   <p class="final">1.004-1.012</p>
+  </div>
+  <h3>English mild</h3>
+  <div class="info">
+   <p class="description">Light brown. Mild maltiness. Low alcohol. Low hop bitterness, flavor, and aroma. Light body.</p>
+   <p class="example">Bank's Mild, Fuller's Summer Ale</p>
+  </div>
+  <div class="units">
+   <p class="abv">2.5-4.1</p>
+   <p class="ibu">10-24</p>
+  </div>
+  <div class="srm">10-25</div>
+ </div>
+
+ <div class="element placeholder family" id="VIII"><p>VIII</p></div>
+
+ <div id="twentyone" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">21</div>
+  <div class="gravity">
+   <p class="original">1.035-1.050</p>
+   <p class="final">1.008-1.014</p>
+  </div>
+  <h3>Dry stout</h3>
+  <div class="info">
+   <p class="description">Roasted barley and malt aromas are prominents. Some sourness. Hop aroma medium to none.</p>
+   <p class="example">Guiness Draught Stout, Murphy's Stout, Beamish Stout</p>
+  </div>
+  <div class="units">
+   <p class="abv">3.2-5.5</p>
+   <p class="ibu">30-50</p>
+  </div>
+  <div class="srm">40+</div>
+ </div>
+ <div id="twentytwo" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">22</div>
+  <div class="gravity">
+   <p class="original">1.050-1.075</p>
+   <p class="final">1.010-1.017</p>
+  </div>
+  <h3>Foreign extra stout</h3>
+  <div class="info">
+   <p class="description">Roasted grain aroma and flavor are prominent. Flavor range from sweet to dry. Hop aroma and flavor very low. Fruity.</p>
+   <p class="example">ABC Stout, Guiness Foreign Extra Stout</p>
+  </div>
+  <div class="units">
+   <p class="abv">5.0-7.5</p>
+   <p class="ibu">35-70</p>
+  </div>
+  <div class="srm">40+</div>
+ </div>
+
+ <div id="twentythree" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">23</div>
+  <div class="gravity">
+   <p class="original">1.044-1.050</p>
+   <p class="final">1.006-1.012</p>
+  </div>
+  <h3>German pilsner</h3>
+  <div class="info">
+   <p class="description">Medium to high hop flavor and aroma. Low maltiness. Crisp, dry, and bitter. Refreshing.</p>
+   <p class="example">Kulmbacher Moenchshof Pils, Jever Pils, Wickuler Pilsner</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.6-5.4</p>
+   <p class="ibu">25-45</p>
+  </div>
+  <div class="srm">2-4</div>
+ </div>
+ <div id="twentyfour" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">24</div>
+  <div class="gravity">
+   <p class="original">1.040-1.046</p>
+   <p class="final">1.006-1.010</p>
+  </div>
+  <h3>American standard</h3>
+  <div class="info">
+   <p class="description">Similar to American light but darker.</p>
+   <p class="example">Budweiser, Molson Golden, Kirin</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.1-4.8</p>
+   <p class="ibu">5-17</p>
+  </div>
+  <div class="srm">2-6</div>
+ </div>
+ <div id="twentyfive" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">25</div>
+  <div class="gravity">
+   <p class="original">1.048-1.056</p>
+   <p class="final">1.010-1.014</p>
+  </div>
+  <h3>Dortmunder</h3>
+  <div class="info">
+   <p class="description">Smooth. Medium malty sweetness. Medium hop aroma and flavor.</p>
+   <p class="example">Dortmunder Gold, DAB Original, Berghoff Original Lager</p>
+  </div>
+  <div class="units">
+   <p class="abv">5.1-6.1</p>
+   <p class="ibu">23-29</p>
+  </div>
+  <div class="srm">4-6</div>
+ </div>
+ <div id="twentysix" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">26</div>
+  <div class="gravity">
+   <p class="original">1.074-1.080</p>
+   <p class="final">1.020-1.028</p>
+  </div>
+  <h3>Doppelbock</h3>
+  <div class="info">
+   <p class="description">Intense maltiness. Little hop aroma and flavor. Touch of roastiness. A very strong, rich lager.</p>
+   <p class="example">Paulaner Salvator, Spaten Optimator</p>
+  </div>
+  <div class="units">
+   <p class="abv">6.6-7.9</p>
+   <p class="ibu">20-30</p>
+  </div>
+  <div class="srm">12-30</div>
+ </div>
+ <div id="twentyseven" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">27</div>
+  <div class="gravity">
+   <p class="original">1.048-1.056</p>
+   <p class="final">1.008-1.016</p>
+  </div>
+  <h3>Dunkel-weizen</h3>
+  <div class="info">
+   <p class="description">Low clove and banana aroma. Malty. Low bitterness. Low hop aroma.</p>
+   <p class="example">Franziskaner Dunkelweizen, Schenider Dunkel Weiss</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.5-6.0</p>
+   <p class="ibu">10-15</p>
+  </div>
+  <div class="srm">17-23</div>
+ </div>
+ <div id="twentyeight" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">28</div>
+  <div class="gravity">
+   <p class="original">1.042-1.060</p>
+   <p class="final">1.008-1.016</p>
+  </div>
+  <h3>Flanders red ale</h3>
+  <div class="info">
+   <p class="description">Fruity. Malty. Slightly sour. Low hop profile.</p>
+   <p class="example">Rodenbach, Petrus, Bourgone des Flanders, Vlaamse Bourgogne</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.0-5.8</p>
+   <p class="ibu">14-25</p>
+  </div>
+  <div class="srm">10-16</div>
+ </div>
+ <div id="twentynine" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">29</div>
+  <div class="gravity">
+   <p class="original">1.065-1.098</p>
+   <p class="final">1.014-1.024</p>
+  </div>
+  <h3>Belgian dark ale</h3>
+  <div class="info">
+   <p class="description">Fruity. Malty. Bitter. High alcohol content.</p>
+   <p class="example">Pawel Kwak, Gourden Carolus, Scaldis, Rocherfort 10, Chimay Grande R&eacute;serve</p>
+  </div>
+  <div class="units">
+   <p class="abv">7.0-12.0</p>
+   <p class="ibu">25-40</p>
+  </div>
+  <div class="srm">7-20</div>
+ </div>
+ <div id="thirty" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">30</div>
+  <div class="gravity">
+   <p class="original">1.050-1.075</p>
+   <p class="final">1.012-1.018</p>
+  </div>
+  <h3>India pale ale</h3>
+  <div class="info">
+   <p class="description">Medium maltiness. High hop bitterness. High hop flavor and aroma.</p>
+   <p class="example">Anchor Liberty Ale, Samuel Smith's India Ale, Fuller IPA</p>
+  </div>
+  <div class="units">
+   <p class="abv">5.1-7.6</p>
+   <p class="ibu">40-60</p>
+  </div>
+  <div class="srm">8-14</div>
+ </div>
+ <div id="thirtyone" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">31</div>
+  <div class="gravity">
+   <p class="original">1.039-1.045</p>
+   <p class="final">1.006-1.014</p>
+  </div>
+  <h3>Special bitter</h3>
+  <div class="info">
+   <p class="description">Low carbonation. More malty and higher alcohol than ordinaty bitter. Nice bitterness.</p>
+   <p class="example">Young's Ramrod, Fuller's London Pride</p>
+  </div>
+  <div class="units">
+   <p class="abv">3.7-4.8</p>
+   <p class="ibu">25-40</p>
+  </div>
+  <div class="srm">12-14</div>
+ </div>
+ <div id="thirtytwo" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">32</div>
+  <div class="gravity">
+   <p class="original">1.035-1.040</p>
+   <p class="final">1.010-1.014</p>
+  </div>
+  <h3>Scottish heavy 70/-</h3>
+  <div class="info">
+   <p class="description">Low carbonation. Moderate hop profile. Mild smoky character.</p>
+   <p class="example">Greenmantle Ale, Highland Heavy, Young's Scotch Ale</p>
+  </div>
+  <div class="units">
+   <p class="abv">3.5-4.1</p>
+   <p class="ibu">12-25</p>
+  </div>
+  <div class="srm">10-19</div>
+ </div>
+ <div id="thirtythree" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">33</div>
+  <div class="gravity">
+   <p class="original">1.040-1.055</p>
+   <p class="final">1.010-1.018</p>
+  </div>
+  <h3>American brown</h3>
+  <div class="info">
+   <p class="description">Medium maltiness. High hop bitterness, flavor and aroma.</p>
+   <p class="example">Pete's Wicked Ale, Brooklyn Brown Ale, Shipyard Moos Brown</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.2-6.0</p>
+   <p class="ibu">25-60</p>
+  </div>
+  <div class="srm">15-22</div>
+ </div>
+ <div id="thirtyfour" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">34</div>
+  <div class="gravity">
+   <p class="original">1.040-1.050</p>
+   <p class="final">1.008-1.014</p>
+  </div>
+  <h3>Brown porter</h3>
+  <div class="info">
+   <p class="description">Moderate roastiness. Moderate bitterness. Hop flavor and aroma low to none.</p>
+   <p class="example">Samuel Smith Taddy Porter, Fuller's London Porter</p>
+  </div>
+  <div class="units">
+   <p class="abv">3.8-5.2</p>
+   <p class="ibu">20-30</p>
+  </div>
+  <div class="srm">20-35</div>
+ </div>
+ <div id="thirtyfive" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">35</div>
+  <div class="gravity">
+   <p class="original">1.035-1.066</p>
+   <p class="final">1.010-1.022</p>
+  </div>
+  <h3>Sweet stout</h3>
+  <div class="info">
+   <p class="description">Overall sweet character. Roasted grains dominate the flavor. Some fruitiness.</p>
+   <p class="example">Mackeson's XXX Stout, Samuel Adams Cream Stout</p>
+  </div>
+  <div class="units">
+   <p class="abv">3.2-6.4</p>
+   <p class="ibu">20-40</p>
+  </div>
+  <div class="srm">40+</div>
+ </div>
+ <div id="thirtysix" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">36</div>
+  <div class="gravity">
+   <p class="original">1.075-1.090</p>
+   <p class="final">1.020-1.030</p>
+  </div>
+  <h3>Imperial stout</h3>
+  <div class="info">
+   <p class="description">Fruity with intense roastiness and maltiness. Evident hop aroma and flavor. High alcohol level.</p>
+   <p class="example">Samuel Smith Imperial Stout, Courage Imperial Stout</p>
+  </div>
+  <div class="units">
+   <p class="abv">7.8-9.0</p>
+   <p class="ibu">50-80</p>
+  </div>
+  <div class="srm">40+</div>
+ </div>
+ <div id="thirtyseven" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">37</div>
+  <div class="gravity">
+   <p class="original">1.044-1.056</p>
+   <p class="final">1.014-1.020</p>
+  </div>
+  <h3>Bohemian pilsner</h3>
+  <div class="info">
+   <p class="description">Malty, with a distinctive floral and spicy Saaz hop bouquet. Crisp and refreshing.</p>
+   <p class="example">Pilsner Urquell, Gambrinus Pilsner, Budweiser Budvar</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.1-5.1</p>
+   <p class="ibu">35-45</p>
+  </div>
+  <div class="srm">3-5</div>
+ </div>
+ <div id="thirtyeight" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">38</div>
+  <div class="gravity">
+   <p class="original">1.046-1.050</p>
+   <p class="final">1.010-1.014</p>
+  </div>
+  <h3>American premium</h3>
+  <div class="info">
+   <p class="description">Darker version of American standard</p>
+   <p class="example">Michelob</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.6-5.1</p>
+   <p class="ibu">13-23</p>
+  </div>
+  <div class="srm">2-8</div>
+ </div>
+ <div id="thirtynine" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">39</div>
+  <div class="gravity">
+   <p class="original">1.052-1.056</p>
+   <p class="final">1.010-1.014</p>
+  </div>
+  <h3>Munich dunkel</h3>
+  <div class="info">
+   <p class="description">Munich malt aroma and flavor. Mild hop flavor.</p>
+   <p class="example">Ayinger Altbairisch Dunkel, Hacker Pschorr Alt Munich Dark</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.8-5.4</p>
+   <p class="ibu">16-25</p>
+  </div>
+  <div class="srm">17-23</div>
+ </div>
+ <div id="forty" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">40</div>
+  <div class="gravity">
+   <p class="original">1.066-1.074</p>
+   <p class="final">1.018-1.024</p>
+  </div>
+  <h3>Traditional bock</h3>
+  <div class="info">
+   <p class="description">Rich and complex maltiness. No hop aroma and flavor.</p>
+   <p class="example">Aass Bock, Hacker-Pschorr Dunkel Bock, Dunkel Ritter Bock, Boiler Room Red</p>
+  </div>
+  <div class="units">
+   <p class="abv">6.4-7.6</p>
+   <p class="ibu">20-30</p>
+  </div>
+  <div class="srm">15-30</div>
+ </div>
+ <div id="fortyone" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">41</div>
+  <div class="gravity">
+   <p class="original">1.066-1.080</p>
+   <p class="final">1.016-1.028</p>
+  </div>
+  <h3>Weizenbock</h3>
+  <div class="info">
+   <p class="description">Malty. Low bitterness. Clove and banana aroma from German wheat yeast.</p>
+   <p class="example">Schneider Aventinus, Pyramid Weizenbock</p>
+  </div>
+  <div class="units">
+   <p class="abv">6.5-9.6</p>
+   <p class="ibu">12-25</p>
+  </div>
+  <div class="srm">10-30</div>
+ </div>
+ <div id="fortytwo" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">42</div>
+  <div class="gravity">
+   <p class="original">1.042-1.060</p>
+   <p class="final">1.008-1.016</p>
+  </div>
+  <h3>Oud bruin</h3>
+  <div class="info">
+   <p class="description">Fruity. Malty. Sherry wine-like. Slightly sour. Very little hop aroma and flavor.</p>
+   <p class="example">Liefman's Goudenband, Felix, Roman</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.0-6.5</p>
+   <p class="ibu">14-30</p>
+  </div>
+  <div class="srm">12-20</div>
+ </div>
+ <div id="fortythree" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">43</div>
+  <div class="gravity">
+   <p class="original">1.065-1.085</p>
+   <p class="final">1.012-1.018</p>
+  </div>
+  <h3>Dubbel</h3>
+  <div class="info">
+   <p class="description">Rich malt aroma. Light to none hop aroma. Full body. Low bitterness.</p>
+   <p class="example">Westmalle Dubbel, LaTrappe Dubbel, Affligem Dubbel</p>
+  </div>
+  <div class="units">
+   <p class="abv">3.2-8.0</p>
+   <p class="ibu">20-25</p>
+  </div>
+  <div class="srm">10-20</div>
+ </div>
+ <div id="fortyfour" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">44</div>
+  <div class="gravity">
+   <p class="original">1.043-1.056</p>
+   <p class="final">1.008-1.016</p>
+  </div>
+  <h3>American amber ale</h3>
+  <div class="info">
+   <p class="description">Medium maltiness. Mild to strong flavor and aroma from American hop varieties. Notable caramel flavor.</p>
+   <p class="example">Big Time Atlas Amber, Bell's Amber, North Coast Red Seal Ale</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.5-5.7</p>
+   <p class="ibu">20-40</p>
+  </div>
+  <div class="srm">11-18</div>
+ </div>
+ <div id="fortyfive" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">45</div>
+  <div class="gravity">
+   <p class="original">1.046-1.065</p>
+   <p class="final">1.010-1.018</p>
+  </div>
+  <h3>Extra special bitter</h3>
+  <div class="info">
+   <p class="description">Low carbonation. Very strong bitterness. Malty. High hop aroma and flavor.</p>
+   <p class="example">Fuller's ESB, Young's Special London Ale</p>
+  </div>
+  <div class="units">
+   <p class="abv">3.7-4.8</p>
+   <p class="ibu">30-45</p>
+  </div>
+  <div class="srm">12-14</div>
+ </div>
+ <div id="fortysix" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">46</div>
+  <div class="gravity">
+   <p class="original">1.040-1.050</p>
+   <p class="final">1.010-1.018</p>
+  </div>
+  <h3>Scottish export 80/-</h3>
+  <div class="info">
+   <p class="description">Low carbonation. Very malty. Medium bitterness. Medium to no hop flavor and aroma. Mild smoky/toasty character.</p>
+   <p class="example">Highland Severe, Orkney Dark Island, Sherlock's Home Piper's Bride</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.0-4.9</p>
+   <p class="ibu">15-36</p>
+  </div>
+  <div class="srm">10-19</div>
+ </div>
+ <div id="fortyseven" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">47</div>
+  <div class="gravity">
+   <p class="original">1.040-1.050</p>
+   <p class="final">1.008-1.014</p>
+  </div>
+  <h3>English brown</h3>
+  <div class="info">
+   <p class="description">Sweet and malty. Light caramel flavor. Low hop profile. Some fruitiness.</p>
+   <p class="example">Newcastle Brown Ale, Samuel Smith Nut Brown</p>
+  </div>
+  <div class="units">
+   <p class="abv">3.5-6.0</p>
+   <p class="ibu">15-25</p>
+  </div>
+  <div class="srm">15-30</div>
+ </div>
+ <div id="fortyeight" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">48</div>
+  <div class="gravity">
+   <p class="original">1.050-1.065</p>
+   <p class="final">1.012-1.016</p>
+  </div>
+  <h3>Robust porter</h3>
+  <div class="info">
+   <p class="description">Roasted malt (coffee-like) aroma and flavor. Hop flavor and aroma moderate to low.</p>
+   <p class="example">Sierra Nevada Porter, Anchor Porter</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.8-6.0</p>
+   <p class="ibu">25-45</p>
+  </div>
+  <div class="srm">30-40</div>
+ </div>
+ <div id="fortynine" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">49</div>
+  <div class="gravity">
+   <p class="original">1.035-1.060</p>
+   <p class="final">1.008-1.021</p>
+  </div>
+  <h3>Oatmeal stout</h3>
+  <div class="info">
+   <p class="description">Mild roasted grain aromas. Low hop aroma. Flavor medium sweet with the complexity of roasted grains. Some fruitiness.</p>
+   <p class="example">Samuel Smith Oatmeal Stout, Young's Oatmeal Stout, Brew Moon Eclipse</p>
+  </div>
+  <div class="units">
+   <p class="abv">3.3-6.1</p>
+   <p class="ibu">20-50</p>
+  </div>
+  <div class="srm">40+</div>
+ </div>
+ <div id="fifty" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">50</div>
+  <div class="gravity">
+   <p class="original">1.075-1.100</p>
+   <p class="final">1.018-1.030</p>
+  </div>
+  <h3>Imperial Russian stout</h3>
+  <div class="info">
+   <p class="description">Similar to imperial stout but has higher alcohol level and bitterness.</p>
+   <p class="example">Harvey & Son's Imperial Extra Double Stout</p>
+  </div>
+  <div class="units">
+   <p class="abv">8.0-12.0</p>
+   <p class="ibu">50-90</p>
+  </div>
+  <div class="srm">40+</div>
+ </div>
+ <div id="fiftyone" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">51</div>
+  <div class="gravity">
+   <p class="original">1.045-1.060</p>
+   <p class="final">1.012-1.018</p>
+  </div>
+  <h3>American pilsner</h3>
+  <div class="info">
+   <p class="description">Medium to high maltiness. Slight sweetness. Medium to high hop aroma and flavor. Refreshing.</p>
+   <p class="example">Pete's Signature Pilsner, Milwaukee Pilsner</p>
+  </div>
+  <div class="units">
+   <p class="abv">5.0-6.0</p>
+   <p class="ibu">20-40</p>
+  </div>
+  <div class="srm">3-6</div>
+ </div>
+ <div id="fiftytwo" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">52</div>
+  <div class="gravity">
+   <p class="original">1.040-1.050</p>
+   <p class="final">1.008-1.012</p>
+  </div>
+  <h3>American dark</h3>
+  <div class="info">
+   <p class="description">Malty. Some roasted malt flavor. Low hops.</p>
+   <p class="example">Michelob Dark, Lowenbrau Dark, Beck's Dark, Saint Pauli Girl Dark</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.1-5.6</p>
+   <p class="ibu">14-20</p>
+  </div>
+  <div class="srm">10-20</div>
+ </div>
+ <div id="fiftythree" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">53</div>
+  <div class="gravity">
+   <p class="original">1.044-1.052</p>
+   <p class="final">1.012-1.016</p>
+  </div>
+  <h3>Schwarzbier</h3>
+  <div class="info">
+   <p class="description">Malt and roasted malt aroma and flavor. Low hop aroma. Bitterness from roasted malt.</p>
+   <p class="example">Kulmbacher M&ouml;nchschof Kloster Schwarzbier</p>
+  </div>
+  <div class="units">
+   <p class="abv">3.8-5.0</p>
+   <p class="ibu">22-30</p>
+  </div>
+  <div class="srm">25-40+</div>
+ </div>
+ <div id="fiftyfour" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">54</div>
+  <div class="gravity">
+   <p class="original">1.090-1.116</p>
+   <p class="final">1.023-1.035</p>
+  </div>
+  <h3>Eisbock</h3>
+  <div class="info">
+   <p class="description">Aroma and flavor dominated by rich malt and concentrated alcohol. No hop aroma ald flavor. An extremely strong lager.</p>
+   <p class="example">Niagara Eisbock</p>
+  </div>
+  <div class="units">
+   <p class="abv">8.7-14.4</p>
+   <p class="ibu">25-50</p>
+  </div>
+  <div class="srm">18-40+</div>
+ </div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder family" id="XIV"><p>XIV</p></div>
+ <div class="element placeholder family" id="XV"><p>XV</p></div>
+ <div class="element placeholder family" id="XVI"><p>XVI</p></div>
+ <div class="element placeholder family" id="XVII"><p>XVII</p></div>
+ <div class="element placeholder family" id="XVIII"><p>XVIII</p></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder family" id="XX"><p>XX</p></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+
+ <div id="fiftyfive" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">55</div>
+  <div class="gravity">
+   <p class="original">1.042-1.046</p>
+   <p class="final">1.006-1.010</p>
+  </div>
+  <h3>K&ouml;lsch</h3>
+  <div class="info">
+   <p class="description">Low maltiness. Light hop aroma and flavor from German noble or Saaz hops.</p>
+   <p class="example">Malzmuehle, Hellers, Hollywood Blonde</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.8-5.2</p>
+   <p class="ibu">20-30</p>
+  </div>
+  <div class="srm">4-5</div>
+ </div>
+
+ <div id="fiftysix" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">56</div>
+  <div class="gravity">
+   <p class="original">1.060-1.080</p>
+   <p class="final">1.012-1.016</p>
+  </div>
+  <h3>Bi&egrave;re de garde</h3>
+  <div class="info">
+   <p class="description">Malty and slightly fruity. Low hoppiness. Medium to strong alcohol level.</p>
+   <p class="example">Jenlain, Castelain, Septante Cinq, Brasseurs Bi&egrave;re de Garde</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.5-8.0</p>
+   <p class="ibu">20-30</p>
+  </div>
+  <div class="srm">5-12</div>
+ </div>
+
+ <div id="fiftyseven" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">57</div>
+  <div class="gravity">
+   <p class="original">1.050-1.056</p>
+   <p class="final">1.012-1.016</p>
+  </div>
+  <h3>Oktoberfest</h3>
+  <div class="info">
+   <p class="description">Very flavorful. Distinct German malt aroma and flavor. Moderate hop bitterness and flavor.</p>
+   <p class="example">Spaten Ur-M&auml;rzen, Ayinger Oktoberfest-M&auml;rzen, Paulaner Oktoberfest, Wuerzburger Oktoberfest</p>
+  </div>
+  <div class="units">
+   <p class="abv">5.1-6.5</p>
+   <p class="ibu">18-30</p>
+  </div>
+  <div class="srm">7-12</div>
+ </div>
+
+ <div id="fiftyeight" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">58</div>
+  <div class="gravity">
+   <p class="original">1.044-1.055</p>
+   <p class="final">1.007-1.010</p>
+  </div>
+  <h3>Cream ale</h3>
+  <div class="info">
+   <p class="description">Low hop aroma and bittering. Low maltiness. Light and refreshing.</p>
+   <p class="example">Genesee Cream Ale, Little Kings Cream Ale</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.5-6.0</p>
+   <p class="ibu">10-35</p>
+  </div>
+  <div class="srm">8-14</div>
+ </div>
+
+ <div id="fiftynine" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">59</div>
+  <div class="gravity">
+   <p class="original">1.050-1.055</p>
+   <p class="final">1.012-1.016</p>
+  </div>
+  <h3>Smoked beer</h3>
+  <div class="info">
+   <p class="description">Sweetish and malty. Similar to Oktoberfest style with evident smoked character. Low hop aroma and flavor.</p>
+   <p class="example">Schlenkerla Rauchbier</p>
+  </div>
+  <div class="units">
+   <p class="abv">5.0-5.5</p>
+   <p class="ibu">20-30</p>
+  </div>
+  <div class="srm">20-17</div>
+ </div>
+
+ <div class="element placeholder family" id="XIX"><p>XIX</p></div>
+
+ <div id="sixty" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">60</div>
+  <div class="gravity">
+   <p class="original">1.060-1.090</p>
+   <p class="final">1.015-1.022</p>
+  </div>
+  <h3>English old (strong) ale</h3>
+  <div class="info">
+   <p class="description">Well aged. Malty and fruity. High alcohol. Low hop.</p>
+   <p class="example">Theakston Old Peculier, Young's Winter Warmer, Marston Owd Roger</p>
+  </div>
+  <div class="units">
+   <p class="abv">6.1-8.5</p>
+   <p class="ibu">30-40</p>
+  </div>
+  <div class="srm">12-16</div>
+ </div>
+
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+ <div class="element placeholder"></div>
+
+
+ <div id="sixtyone" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">61</div>
+  <div class="gravity">
+   <p class="original">1.044-1.048</p>
+   <p class="final">1.008-1.014</p>
+  </div>
+  <h3>Altbier</h3>
+  <div class="info">
+   <p class="description">Malt dominates all aromas and flavors. High hop bitterness.</p>
+   <p class="example">DAB Dark, Diebels Alt, Alaskan Amber, Grolsch Autumn Amber</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.6-5.1</p>
+   <p class="ibu">25-48</p>
+  </div>
+  <div class="srm">11-19</div>
+ </div>
+
+ <div class="element placeholder"></div>
+
+ <div id="sixtytwo" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">62</div>
+  <div class="gravity">
+   <p class="original">1.048-1.056</p>
+   <p class="final">1.010-1.014</p>
+  </div>
+  <h3>Vienna</h3>
+  <div class="info">
+   <p class="description">Dark German malt aroma. Hop bitterness is moderate.</p>
+   <p class="example">Negra Modelo, Portland Lager, Leinenkugel Red</p>
+  </div>
+  <div class="units">
+   <p class="abv">4.6-5.5</p>
+   <p class="ibu">20-28</p>
+  </div>
+  <div class="srm">8-14</div>
+ </div>
+ <div id="sixtythree" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">63</div>
+  <div class="gravity">
+   <p class="original">1.040-1.055</p>
+   <p class="final">1.012-1.018</p>
+  </div>
+  <h3>Steam beer</h3>
+  <div class="info">
+   <p class="description">Malty, balanced with hop bitterness. Woody (Northern Brewer) hop flavor.</p>
+   <p class="example">Anchor Steam, Old Dominion Victor Amber</p>
+  </div>
+  <div class="units">
+   <p class="abv">3.6-5.0</p>
+   <p class="ibu">35-45</p>
+  </div>
+  <div class="srm">8-17</div>
+ </div>
+
+ <div class="element placeholder"></div>
+
+ <div id="sixtyfour" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">64</div>
+  <div class="gravity">
+   <p class="original">1.085-1.120</p>
+   <p class="final">1.024-1.032</p>
+  </div>
+  <h3>Barleywine</h3>
+  <div class="info">
+   <p class="description">Fruity and malty. High hop aroma and flavor. High alcohol content.</p>
+   <p class="example">Young's Old Nick, Fuller's Golden Pride, Sierra Nevada Bigfoot</p>
+  </div>
+  <div class="units">
+   <p class="abv">8.4-12.2</p>
+   <p class="ibu">50-100</p>
+  </div>
+  <div class="srm">14-22</div>
+ </div>
+ <div id="sixtyfive" class="element zoomTarget" data-targetsize="0.7" data-closeclick="true">
+  <div class="number">65</div>
+  <div class="gravity">
+   <p class="original">1.072-1.085</p>
+   <p class="final">1.016-1.028</p>
+  </div>
+  <h3>Strong &ldquo;scotch&rdquo; ale</h3>
+  <div class="info">
+   <p class="description">Malty with caramel apparent. Hint of roasted malt of smoky flavor. Low hop flavor.</p>
+   <p class="example">Traquair House, MacAndrew's Scotch Ale</p>
+  </div>
+  <div class="units">
+   <p class="abv">6.0-9.0</p>
+   <p class="ibu">20-40</p>
+  </div>
+  <div class="srm">10-40+</div>
+ </div>
+</div>
+
+</div>
+<footer>
+ <p id="mantis">Concept and data come from and belong to <a href="http://www.mantisdesign.com/">Mantis Design</a>. Zooming plugin <a href="http://jaukia.github.io/zoomooz/">zoomooz.js</a> by Janne Aukia.</p><br />
+ <p><img src="cc.small.invert.png" rel="Creative Commons" style="width:16px;height:16px;" id="cc" />Martin Galil&eacute;e - 2013</p>
+ <p id="email">martin.galilee@gmail.com</p>
+</footer>
+</body>
+</html>
