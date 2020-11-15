@@ -1,0 +1,441 @@
+
+
+body {
+background:#f3f0f0;
+font-family:"Times New Roman";
+margin:0;
+padding:0;
+}
+#main {
+position:relative;
+width:980px;
+height:740px;
+margin: -20px auto;
+}
+
+h1 {
+position:absolute;
+top:30px;
+right:84px;
+font-size:32px;
+font-weight:700;
+background:#222;
+color:white;
+padding:24px 40px;
+border:4px solid white;
+font-family: 'Montserrat', sans-serif;
+box-shadow:1px 1px 1px #888;
+}
+#bigTable {
+	display:flex;
+	flex-flow:row wrap;
+	align-items:flex-start;
+}
+.element {
+width:600px;
+height:600px;
+border:30px solid #FFE105;
+border-top-right-radius:50px;
+border-bottom-left-radius:50px;
+border-bottom-right-radius:50px;
+background:white;
+margin:0 -590px -590px 0;
+box-shadow:10px 10px 40px #888;
+-webkit-transform: scale(0.1);
+-moz-transform: scale(0.1);
+-o-transform: scale(0.1);
+}
+.element:hover, .element.selectedZoomTarget  {
+box-shadow:10px 10px 40px #333;
+}
+
+.element.placeholder {
+background:transparent;
+border:30px solid transparent;
+color:transparent;
+box-shadow:none;
+font-family: 'Montserrat', sans-serif;
+}
+.element.placeholder.family p {
+position:absolute;
+bottom:0;
+width:600px;
+margin:0;
+color:black;
+font-size:200px;
+text-align:center;
+}
+.element.placeholder.family.onfocus p {
+font-weight:bold;
+}
+
+#IX p {
+width:1200px;
+left:-670px;
+overflow:hide;
+}
+
+.labelbox {
+position:absolute;
+border:2px solid #ba9;
+border-top:none;
+color:#ba9;
+font-family:'Montserrat',sans-serif;
+font-size:14px;
+height:8px;
+}
+
+.labelbox p {
+position:relative;
+text-align:center;
+margin: 0;
+}
+.labelbox p span {
+background:#f3f0f0;
+padding:0 6px;
+}
+#ales {
+top:490px;
+left:4px;
+width:678px;
+}
+#lagers {
+top:490px;
+left:696px;
+width:262px;
+}
+#mixed {
+top:700px;
+left:488px;
+width:472px;
+}
+
+#stylekey {
+cursor:default;
+position:absolute;
+top:516px;
+left:6px;
+width:454px;
+height:170px;
+background:white;
+box-shadow:1px 1px 1px #888;
+border-radius:2px;
+z-index:10;
+font-family: 'Montserrat', sans-serif;
+font-size:14px;
+padding:10px 4px;
+font-weight:400;
+color:#666;
+}
+
+#stylekey ol {
+list-style-type:upper-roman;
+margin:0;
+}
+#stylekey ol #stylekeyflex {
+	display:flex;
+	flex-flow:column wrap;
+	align-items:flex-start;
+	height:170px;
+}
+#stylekey ol li {
+	height:17px;
+	margin:0 5px 0 40px;
+}
+#stylekey ol li:hover {
+color:black;
+}
+.number {
+position:absolute;
+top:-1px;
+left:-1px;
+width:150px;
+height:150px;
+background:#333;
+font-size:130px;
+text-align:center;
+color:white;
+}
+.gravity {
+position:absolute;
+top:20px;
+right:20px;
+font-size:46px;
+text-align:right;
+}
+.gravity p {
+margin:0;
+}
+.gravity .original {
+color:#333;
+}
+.gravity .original:hover {
+color:black;
+}
+.gravity .original:hover:before {
+content:"Original Gravity";
+font-size:22px;
+margin:14px;
+}
+.gravity .final {
+color:#888;
+}
+.gravity .final:hover {
+color:black;
+}
+.gravity .final:hover:before {
+content:"Final Gravity";
+font-size:22px;
+margin:14px;
+}
+
+h3 {
+position:absolute;
+top:180px;
+left:0;
+right:0;
+bottom:250px;
+font-weight:bold;
+font-size:100px;
+text-align:center;
+line-height:86px;
+margin:0 40px;
+}
+
+#fifty h3, #fortyfive h3, #fortyone h3 {
+margin:0;
+}
+
+.info {
+position:absolute;
+top:360px;
+width:600px;
+font-size:24px;
+font-weight:bold;
+text-align:center;
+}
+.info p {
+margin:0 40px;
+}
+.info .description {
+font-size:24px;
+color:green;
+}
+.info .example {
+font-size:22px;
+color:#7BA8B7;
+font-style:italic;
+}
+
+.units {
+position:absolute;
+bottom:20px;
+left:20px;
+font-size:46px;
+}
+.units p {
+margin:0;
+}
+.units .abv:hover {
+color:#720000;
+}
+.units .abv:hover:after{
+content:"Alcohol By Volume (ABV)";
+font-size:22px;
+margin:14px;
+}
+.units .ibu:hover {
+color:#B0BC00;
+}
+.units .ibu:hover:after{
+content:"International Bitterness Units (IBU)";
+font-size:22px;
+margin:6px;
+}
+
+.srm {
+position:absolute;
+bottom:20px;
+right:20px;
+font-size:46px;
+color:#333;
+}
+.srm:hover {
+color:black;
+}
+.srm:hover:before{
+content:"Color Standard (SRM)";
+font-size:22px;
+margin:14px;
+}
+
+footer {
+clear:both;
+margin:0;
+margin-top:80px;
+padding:0.6em 0;
+background:#222;
+color:white;
+display:block;
+min-height:3em;
+box-shadow:0 6px 6px -3px black inset;
+position:relative;
+width:100%;
+font-family:'Montserrat', sans-serif;
+font-size:0.8em;
+}
+
+footer p {
+padding:0 2%;
+display:inline-block;
+margin:0.5em;
+}
+footer p#mantis {
+font-variant:small-caps;
+font-weight:bold;
+text-align:center;
+}
+footer p a {
+margin:0;
+color:white;
+}
+#email {
+float:right;
+}
+
+footer p #cc {
+margin:4px;
+vertical-align:middle;
+}
+
+#one{border-color:#EAD77D;}
+#two{border-color:#d5a435;}
+#three{border-color:#dcb236;}
+#four{border-color:#e9d67d;}
+#five{border-color:#d5a435;}
+#six{border-color:#dcb236;}
+#seven{border-color:#d5a435;}
+#eight{border-color:#d5a435;}
+#nine{border-color:#dcb236;}
+#ten{border-color:#dcb236;}
+#eleven{border-color:#dcb236;}
+#twelve{border-color:#dcb236;}
+#thirteen{border-color:#dcb236;}
+#fourteen{border-color:#d5a435;}
+#fifteen{border-color:#bf0461;}
+#sixteen{border-color:#bb7531;}
+#seventeen{border-color:#dcb236;}
+#eighteen{border-color:#c88b2d;}
+#nineteen{border-color:#c88b2d;}
+#twenty{border-color:#a7582e;}
+#twentyone{border-color:#311214;}
+#twentytwo{border-color:#311214;}
+#twentythree{border-color:#e9d67d;}
+#twentyfour{border-color:#dcb236;}
+#twentyfive{border-color:#dcb236;}
+#twentysix{border-color:#813124;}
+#twentyseven{border-color:#bb7531;}
+#twentyeight{border-color:#a7582e;}
+#twentynine{border-color:#a7582e;}
+#thirty{border-color:#c88b2d;}
+#thirtyone{border-color:#a7582e;}
+#thirtytwo{border-color:#a7582e;}
+#thirtythree{border-color:#984626;}
+#thirtyfour{border-color:#501113;}
+#thirtyfive{border-color:#311214;}
+#thirtysix{border-color:#311214;}
+#thirtyseven{border-color:#e9d67d;}
+#thirtyeight{border-color:#c88b2d;}
+#thirtynine{border-color:#813124;}
+#forty{border-color:#682519;}
+#fortyone{border-color:#682519;}
+#fortytwo{border-color:#984626;}
+#fortythree{border-color:#984626;}
+#fortyfour{border-color:#a7582e;}
+#fortyfive{border-color:#984626;}
+#fortysix{border-color:#984626;}
+#fortyseven{border-color:#682519;}
+#fortyeight{border-color:#311214;}
+#fortynine{border-color:#311214;}
+#fifty{border-color:#311214;}
+#fiftyone{border-color:#dcb236;}
+#fiftytwo{border-color:#813124;}
+#fiftythree{border-color:#501113;}
+#fiftyfour{border-color:#682519;}
+#fiftyfive{border-color:#dcb236;}
+#fiftysix{border-color:#d5a435;}
+#fiftyseven{border-color:#d5a435;}
+#fiftyeight{border-color:#bb7531;}
+#fiftynine{border-color:#a7582e;}
+#sixty{border-color:#a7582e;}
+#sixtyone{border-color:#bb7531;}
+#sixtytwo{border-color:#bb7531;}
+#sixtythree{border-color:#a7582e;}
+#sixtyfour{border-color:#813124;}
+#sixtyfive{border-color:#501113;}
+
+#one.onfocus{background-color:#EAD77D;color:white;}
+#two.onfocus{background-color:#d5a435;color:white;}
+#three.onfocus{background-color:#dcb236;color:white;}
+#four.onfocus{background-color:#e9d67d;color:white;}
+#five.onfocus{background-color:#d5a435;color:white;}
+#six.onfocus{background-color:#dcb236;color:white;}
+#seven.onfocus{background-color:#d5a435;color:white;}
+#eight.onfocus{background-color:#d5a435;color:white;}
+#nine.onfocus{background-color:#dcb236;color:white;}
+#ten.onfocus{background-color:#dcb236;color:white;}
+#eleven.onfocus{background-color:#dcb236;color:white;}
+#twelve.onfocus{background-color:#dcb236;color:white;}
+#thirteen.onfocus{background-color:#dcb236;color:white;}
+#fourteen.onfocus{background-color:#d5a435;color:white;}
+#fifteen.onfocus{background-color:#bf0461;color:white;}
+#sixteen.onfocus{background-color:#bb7531;color:white;}
+#seventeen.onfocus{background-color:#dcb236;color:white;}
+#eighteen.onfocus{background-color:#c88b2d;color:white;}
+#nineteen.onfocus{background-color:#c88b2d;color:white;}
+#twenty.onfocus{background-color:#a7582e;color:white;}
+#twentyone.onfocus{background-color:#311214;color:white;}
+#twentytwo.onfocus{background-color:#311214;color:white;}
+#twentythree.onfocus{background-color:#e9d67d;color:white;}
+#twentyfour.onfocus{background-color:#dcb236;color:white;}
+#twentyfive.onfocus{background-color:#dcb236;color:white;}
+#twentysix.onfocus{background-color:#813124;color:white;}
+#twentyseven.onfocus{background-color:#bb7531;color:white;}
+#twentyeight.onfocus{background-color:#a7582e;color:white;}
+#twentynine.onfocus{background-color:#a7582e;color:white;}
+#thirty.onfocus{background-color:#c88b2d;color:white;}
+#thirtyone.onfocus{background-color:#a7582e;color:white;}
+#thirtytwo.onfocus{background-color:#a7582e;color:white;}
+#thirtythree.onfocus{background-color:#984626;color:white;}
+#thirtyfour.onfocus{background-color:#501113;color:white;}
+#thirtyfive.onfocus{background-color:#311214;color:white;}
+#thirtysix.onfocus{background-color:#311214;color:white;}
+#thirtyseven.onfocus{background-color:#e9d67d;color:white;}
+#thirtyeight.onfocus{background-color:#c88b2d;color:white;}
+#thirtynine.onfocus{background-color:#813124;color:white;}
+#forty.onfocus{background-color:#682519;color:white;}
+#fortyone.onfocus{background-color:#682519;color:white;}
+#fortytwo.onfocus{background-color:#984626;color:white;}
+#fortythree.onfocus{background-color:#984626;color:white;}
+#fortyfour.onfocus{background-color:#a7582e;color:white;}
+#fortyfive.onfocus{background-color:#984626;color:white;}
+#fortysix.onfocus{background-color:#984626;color:white;}
+#fortyseven.onfocus{background-color:#682519;color:white;}
+#fortyeight.onfocus{background-color:#311214;color:white;}
+#fortynine.onfocus{background-color:#311214;color:white;}
+#fifty.onfocus{background-color:#311214;color:white;}
+#fiftyone.onfocus{background-color:#dcb236;color:white;}
+#fiftytwo.onfocus{background-color:#813124;color:white;}
+#fiftythree.onfocus{background-color:#501113;color:white;}
+#fiftyfour.onfocus{background-color:#682519;color:white;}
+#fiftyfive.onfocus{background-color:#dcb236;color:white;}
+#fiftysix.onfocus{background-color:#d5a435;color:white;}
+#fiftyseven.onfocus{background-color:#d5a435;color:white;}
+#fiftyeight.onfocus{background-color:#bb7531;color:white;}
+#fiftynine.onfocus{background-color:#a7582e;color:white;}
+#sixty.onfocus{background-color:#a7582e;color:white;}
+#sixtyone.onfocus{background-color:#bb7531;color:white;}
+#sixtytwo.onfocus{background-color:#bb7531;color:white;}
+#sixtythree.onfocus{background-color:#a7582e;color:white;}
+#sixtyfour.onfocus{background-color:#813124;color:white;}
+#sixtyfive.onfocus{background-color:#501113;color:white;}
