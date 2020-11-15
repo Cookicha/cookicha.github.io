@@ -1,0 +1,290 @@
+* {
+margin:0;
+padding:0;
+font-family: 'Lato', sans-serif;
+color:black;font-size:18px;line-height:1.6;
+}
+body { background:white;}
+span {
+position:absolute;
+display:inline-block;
+}
+p {font-family:'Lato light';color:black;font-size:18px;line-height:1.6;}
+
+
+#naute {
+left:0;
+top:0;
+width:100%;
+object-fit: cover;
+object-position: left 10%;
+height:63vw;
+}
+.section {
+position:relative;
+}
+#blocktitre {position:absolute;top:23vw;width:80%;
+left:14.3vw;
+min-top:
+}
+#section1 .titre {
+    clear: left;
+    float: left;
+background-color:#367D9C;
+color:white;
+font-weight:bold;
+padding:3px 40px 0 10px;
+line-height:1;
+font-family:'Ubuntu';
+}
+
+#section1 .titre {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  #section1 .titre {
+    font-size: calc(14px + 14 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  #section1 .titre {
+    font-size: 28px;
+  }
+}
+
+#section1 .gros.titre {
+  font-size: 24px;
+}
+@media screen and (min-width: 320px) {
+  #section1 .gros.titre {
+    font-size: calc(24px + 24 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  #section1 .gros.titre {
+    font-size: 48px;
+  }
+}
+
+#ingenieur {margin-top:30px;}
+#soutenabilite {margin-top:6px;}
+
+#section2 {
+position:relative;
+width:100%;
+font-family: 'Ubuntu', sans-serif;
+z-index:-10;
+}
+#section2 div {
+background:#eee;
+font-style:italic;
+font-size:28px;
+font-weight:200;
+line-height:1.6;
+margin:-10px 0 0 0;
+padding:100px 25%;
+text-align:left;
+width:50%;
+z-index:100;
+}
+#section2 span {
+z-index:1;
+font-size:160px;
+font-family:serif;
+color:#ccc;
+position: absolute;
+}
+#quote1 {right:76vw;top:20px;}
+#quote2 {right:20vw;bottom:20px;}
+
+#section3 {padding:100px 0;}
+#section3 p {margin:10px 23vw 0 33vw;}
+#section3 img {position:absolute;left:16vw;width:14vw;height:14vw;top:110px;max-width:250px;max-height:250px;}
+#section3 a {
+margin:10px 23vw 0 33vw;
+display:inline-block;
+background-color:#367D9C;
+font-size:16px;
+color:white;
+text-align:center;
+border:none;
+padding:10px 16px;
+text-decoration:none;
+}
+#section3 a:hover {
+background-color:#468DaC;
+}
+
+.interlude {
+width:100%;
+font-family: 'Ubuntu', sans-serif;
+}
+.interlude div {
+font-size:28px;
+font-weight:200;
+text-align:center;
+padding:60px 0;
+line-height:1.6;
+}
+#section4{
+background:#eee;
+}
+#praise {background:#eee;display:flex;justify-content:center;padding:0 10%;}
+
+.column {
+flex:1 0 10%;
+text-align:center;
+padding:30px 0;
+display:flex;
+align-items:center;
+justify-content:flex-end;
+flex-direction:column;
+}
+.column div {width:80%;margin:10px 0;}
+.praise {font-weight:bold;color:#367D9C;}
+
+
+#section7 {text-align:center;}
+#section7 * {display:inline-block;}
+#section7 img {height:100px;margin:40px;}
+
+.gris {background:#eee;}
+.bleu {background:#367D9C;}
+.blanc {background:white;}
+
+#galerieTitre {margin-bottom:0;padding-bottom:0;}
+#galerieTitre * {margin-bottom:0;padding-bottom:0;}
+#galerie {display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-evenly;background:white;width:100%;align-items:baseline;}
+#galerie > * {flex:0 1 20%;margin:40px 20px;}
+
+.scroll {
+height: 360px;
+overflow:auto;
+line-height:1;
+	position: relative;
+	padding: 20px;
+	background: #eee;
+	margin: 10px;
+	width: 600px;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	border-radius: 3px;
+}
+.scroll  img {
+height:300px;
+width:auto;
+margin: 10px 0;
+}
+#fillTheBottle {
+	width:300px;
+	height:500px;
+	position:relative;
+}
+#placeholderBouteille {
+	width:300px;
+	height:500px;
+}
+#bouteille {
+	z-index:10;
+}
+#fondBouteille {
+	z-index:1;
+}
+#fillTheBottle > img {
+	width:200px;
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0;
+}
+#resizerBouteille {
+	position:absolute;
+	height:100px;
+	width:250px;
+	bottom:56px;
+	left:42px;
+}
+#testBar {
+	width:118px;
+	height:100%;
+	background:#367D9C;
+
+}
+#dessusBouteille {
+	position:absolute;	
+	width:118px;
+  height:16px;
+  left:0px;
+  top:-8px;
+}
+#handleBouteille {
+	position:absolute;
+	top:0px;
+	right:0;
+	width:118px;
+	height:3px;
+	background:#333;
+}
+#volume {
+	position:absolute;
+	right:0;
+	top:-30px;
+	color:#333;
+	font-size:24px;
+}
+#beerItem {
+	width:520px;
+	height:360px;
+	overflow:hidden;
+	position:relative;
+}
+#beerFrame {
+	position:absolute;
+	top:0;
+	left:0;
+	width:1080px;
+	height:720px;
+	overflow:hidden;
+	border:none;
+	box-shadow:none;
+  -moz-transform: scale(0.5, 0.5); 
+  -webkit-transform: scale(0.25, 0.25); 
+  -o-transform: scale(0.25, 0.25);
+  -ms-transform: scale(0.25, 0.25);
+  transform: scale(0.5, 0.5); 
+  -moz-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+}
+#footer {
+background:black;
+color:white;
+position:relative;
+height:380px;
+margin-top:100px;
+}
+#footer #footerGauche {
+width:50%;
+height:200px;
+position:relative;
+padding:80px 0;
+display:inline-block;
+}
+#footer #footerGauche p {
+color:white;
+font-weight:bold;
+padding:20px;
+text-align:center;
+}
+#footer > img {
+display:inline-block;
+width:50%;
+float:right;
+top:0;
+object-fit: cover;
+object-position: left 42%;
+height:inherit;
+}
+#champibox {
+}
