@@ -5,183 +5,219 @@
 	<title>Martin Galilée</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height" />
-
-	
+	<meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height" />
 	<link rel="stylesheet" href="scrollBar/jquery.mCustomScrollbar.css" />
-	<link rel="stylesheet" href="cookicha.css" />
-	<link rel="stylesheet" href="jquery-ui.css" />
+	<link rel="stylesheet" href="css/cookicha.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/jquery.beforeafter.min.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
  
 </head>
 <body>
-<div id="section1" class="section">
-	<img  src="naute.jpg" id="naute" />
+<section id="section1">
+	<img src="img/naute.jpg" id="naute" />
 	<div id="blocktitre">
 		<div class="gros titre" id="MartinGalilee">Martin Galilée</div>
 		<div class="titre" id="ingenieur">Ingénieur recherche interdisciplinaire</div>
 		<div class="titre" id="soutenabilite">Sciences de la soutenabilité et au-delà</div>
 	</div>
-</div>
-<div id="section2" class="section">
-<span id="quote1">&ldquo;</span><span id="quote2">&bdquo;</span>
-<div>L'interdisciplinarité, ce n'est pas simplement juxtaposer des expertises. C'est une rencontre qui se construit.</div>
-</div>
-<div id="section3" class="section">
-<p>Mon parcours m'a apporté beaucoup d'expériences différentes, dans différents domaines. Doctorant chargé de cours, programmeur d'expériences de psychologie aux USA, médiateur scientifique auprès de jeunes curieux, journaliste du monde académique, spécialiste de la cognition de la communication visuelle...</p>
-<p>Je mets maintenant mes connaissances et expériences au profit des sciences en tant qu'ingénieur recherche, particulièrement en sciences de la soutenabilité et pour le soutien à l'interdisciplinarité.</p>
-<img  src="portrait.png"/> 
-<a href="CV.pdf">Télécharger mon CV</a>
-</div>
-
-<div id="galerieTitre" class="section interlude blanc"><div>
-Petite galerie de mes travaux</div>
-</div>
-<div id="galerie">
-<div><img  src="JFFort.jpg" style="width:600px;"/><p>Un exemple de mon travail de journaliste :  <a href="actu-126-p42-44.pdf">Pollutions Polaires</a> (pdf), paru dans <a href="https://actualite.nouvelle-aquitaine.science/author/martin/">L'Actualité Nouvelle-Aquitaine</a> en 2019. Photo David Grémillet.</p></div>
-<div><img  src="Nanoplastiques.png" style="width:600px;"/><p>Refonte de schéma scientifique en format vectoriel pour une présentation auprès d'un ministère. Schéma IPREM.</p></div>
-<div><img  src="burd.png" style="width:300px;"/><p><em>Parus Polygonae</em>, une mésange transformée en logo vectoriel. Une bonne base pour un logo de laboratoire&nbsp;?</p></div>
-<div><img  src="MAPS.png" style="width:300px;"/><p>Création d'icône vectorielle pour illustrer un site web ou une présentation.</p></div>
-<div id="fillTheBottle">
-	<div id="placeholderBouteille"></div>
-	<img src="bouteille/bouteille.png" id="bouteille"/>
-	<img src="bouteille/fondBouteille.png" id="fondBouteille" />
-	<div id="resizerBouteille">
-		<div id="testBar"></div>
-		<img src="bouteille/dessusBouteille.png" id="dessusBouteille" width="118"/>
-		<div id="handleBouteille" >
-			<div id="volume">430 ml</div>
+</section>
+<section id="quote" class="gris">
+	<span id="quote1">&ldquo;</span><span id="quote2">&bdquo;</span>
+	<div>L'interdisciplinarité, ce n'est pas simplement juxtaposer des expertises. C'est une rencontre qui se construit.</div>
+</section>
+<section id="resume">
+	<p>Mon parcours m'a apporté beaucoup d'expériences différentes, dans différents domaines. Doctorant chargé de cours, programmeur d'expériences de psychologie aux USA, médiateur scientifique auprès de jeunes curieux, journaliste du monde académique, spécialiste de la cognition de la communication visuelle...</p>
+	<p>Je mets maintenant mes connaissances et expériences au profit des sciences en tant qu'ingénieur recherche, particulièrement en sciences de la soutenabilité et pour le soutien à l'interdisciplinarité.</p>
+	<img src="img/portrait.png"/> 
+	<a href="pdf/CV.pdf"  target="_blank" class="bouton">Télécharger mon CV</a>
+</section>
+<section id="praise" class="bleu">
+	<h2>Témoignages</h2>
+	<div>
+		<div class="column">
+			<div class="praise">«&#8239;C'est rare qu'un journaliste perçoive aussi bien notre travail.&#8239;»</div>
+			<div class="qui">Nicolas Roumagne, directeur associé de ReSanté-Vous, 2020</div>
+		</div>
+		<div class="column">
+			<div class="praise">«&#8239;Très bien écrit.&#8239;»</div>
+			<div class="qui">Guillaume Daver, laboratoire Palevoprim, univ. Poitiers, 2019</div>
+		</div>
+		<div class="column">
+			<div class="praise">«&#8239;Vous avez réussi à rendre tout ça concis, rythmé et agréable à lire&#8239;!&#8239;»</div>
+			<div class="qui">Florent Margnat, institut Pprime, univ. Poitiers, 2019</div>
 		</div>
 	</div>
-	<p><br />Représentation métaphorique interactive utilisée dans une expérience de psychologie cognitive sur la consommation d'énergie.</p>
-</div>
-<div>
-	<iframe src="https://drive.google.com/file/d/1fi48DX6CswK8U--JjdE56mMhnWRhD0Zb/preview" width="500" height="280" ></iframe>
-	<p><em>L’imprimerie</em>, 2019, portrait réalisé avec l’association Dealers de Science sur le thème de la culture scientifique et technique.</p>
-</div>
-<div>
-	<div id="beerItem">
-	<iframe id="beerFrame" src="beer/beer.html" scrolling="no"></iframe>
+</section>
+<section id="confiance" >
+	<h2>Ils me font confiance</h2>
+	<div id="logos" >
+		<img src="img/cnrs.png" />
+		<img src="img/larochelle.png" />
+		<img src="img/lactu.webp" />
 	</div>
-	<!-- <a href="beer/beer.html" target="_blank"><img  src="beer/beerTable.png" style="width:500px;" /></a> -->
-	<p>Un outil pédagogique à ambiance scientifique : le <a href="beer/beer.html" target="_blank">tableau périodique des styles de bière</a>. Tout en technologie web, codé à la main. Incompatible mobile.</p>
-</div>
-<div>
-	<div id="ministereScroll" class="scroll" >
-		<img  src="ministere/1.png" />
-		<img  src="ministere/2.png" />
-		<img  src="ministere/3.png" />
-		<img  src="ministere/4.png" />
-		<img  src="ministere/5.png" />
-		<img  src="ministere/6.png" />
-		<img  src="ministere/7.png" />
-		<img  src="ministere/8.png" />
-		<img  src="ministere/9.png" />
-		<img  src="ministere/10.png" />
-		<img  src="ministere/11.png" />
-		<img  src="ministere/12.png" />
+</section>
+<section id="portfolio" class="gris">
+	<h2>Sélection de mes travaux</h2>
+	<div id="galerie">
+		<div>
+			<div class="bordel">
+				<a href="pdf/actu-126.pdf" target="_blank"><img src="img/actu-126.png" height=500/></a>
+			</div>
+			<p>Exemple de mon travail de journaliste&#8239;: article (<a href="pdf/actu-126.pdf" target="_blank">pdf</a>) paru dans <a href="https://actualite.nouvelle-aquitaine.science/author/martin/" target="_blank"><em>L'Actualité Nouvelle-Aquitaine</em></a> en 2019.</p>
+		</div>
+		<div>
+			<div>
+				<a href="pdf/actu-127.pdf" target="_blank"><img src="img/actu-127.png" height=500/></a>
+			</div>
+			<p>Exemple de mon travail de journaliste&#8239;: article (<a href="pdf/actu-127.pdf" target="_blank">pdf</a>) paru dans <a href="https://actualite.nouvelle-aquitaine.science/author/martin/" target="_blank"><em>L'Actualité Nouvelle-Aquitaine</em></a> en 2020.</p>
+		</div>
+		<div>
+			<div>
+				<a href="pdf/actu-128.pdf" target="_blank"><img src="img/actu-128.png" height=500/></a>
+			</div>
+			<p>Exemple de mon travail de journaliste&#8239;: article (<a href="pdf/actu-128.pdf" target="_blank">pdf</a>) paru dans <a href="https://actualite.nouvelle-aquitaine.science/author/martin/" target="_blank"><em>L'Actualité Nouvelle-Aquitaine</em></a> en 2020.</p>
+		</div>
+		<div>
+			<div id="beforeAfter" class="g-before-after corrected">
+				<img src="img/nano1.png" data-aftersrc="img/nano2.png" height="500" />
+				<span style="position:absolute;">aad</span>
+			</div>
+			<p>Refonte de schéma scientifique en format vectoriel pour une présentation auprès d'un ministère. Schéma IPREM.</p>
+		</div>
+		<div>
+			<div id="icones" >
+				<img src="img/icons/burd.png" height="150" />
+				<img src="img/icons/MAPS.png" height="150" />
+				<img src="img/icons/CubeEau.png" height="150" />
+			</div>
+			<p><em>Parus Polygonae</em> et autres travaux graphiques vectoriels réalisés sous Inkscape.</p>
+		</div>
+		<div id="fillTheBottle">
+			<div id="boxBouteille" class="corrected">
+				<img src="img/bouteille/bouteille.png" id="bouteille"/>
+				<img src="img/bouteille/fondBouteille.png" id="fondBouteille" />
+				<div id="resizerBouteille">
+					<div id="testBar"></div>
+					<img src="img/bouteille/dessusBouteille.png" id="dessusBouteille" width="118"/>
+					<div id="handleBouteille" >
+						<div id="volume">déplacer &udarr;</div>
+					</div>
+				</div>	
+			</div>
+			<p>Représentation interactive utilisée dans une expérience de psychologie sur la cognition incarnée.</p>
+		</div>
+		<div>
+			<iframe src="https://drive.google.com/file/d/1fi48DX6CswK8U--JjdE56mMhnWRhD0Zb/preview" width="500" height="280" ></iframe>
+			<p><em>L’imprimerie</em>, 2019, portrait réalisé avec l’association Dealers de Science sur le thème de la culture scientifique et technique.</p>
+		</div>
+		<div>
+			<div id="beerItem" class="corrected">
+				<iframe id="beerFrame" src="beer/beer-thumb.html" scrolling="no"></iframe>
+			</div>
+			<p>Un outil pédagogique à ambiance scientifique&#8239;: le <a href="beer/beer.html" target="_blank">tableau périodique des styles de bière</a>. Tout en technologie web, codé à la main. Incompatible mobile.</p>
+		</div>
+		<div>
+			<div id="ministereScroll" class="scroll" >
+				<img src="img/ministere/1.png" />
+				<img src="img/ministere/2.png" />
+				<img src="img/ministere/3.png" />
+				<img src="img/ministere/4.png" />
+				<img src="img/ministere/5.png" />
+				<img src="img/ministere/6.png" />
+				<img src="img/ministere/7.png" />
+				<img src="img/ministere/8.png" />
+				<img src="img/ministere/9.png" />
+				<img src="img/ministere/10.png" />
+				<img src="img/ministere/11.png" />
+				<img src="img/ministere/12.png" />
+			</div>
+			<p>Diapositives sur la pollution plastique dans les océans présentées au ministère de la Transition écologique.</p>
+		</div>
+		<div>
+			<div id="theseScroll" class="scroll" >
+				<img src="img/these/1.png"/>
+				<img src="img/these/2.png"/>
+				<img src="img/these/3.png"/>
+				<img src="img/these/4.png"/>
+				<img src="img/these/5.png"/>
+				<img src="img/these/6.png"/>
+				<img src="img/these/7.png"/>
+				<img src="img/these/8.png"/>
+				<img src="img/these/9.png"/>
+				<img src="img/these/10.png"/>
+				<img src="img/these/11.png"/>
+				<img src="img/these/12.png"/>
+				<img src="img/these/13.png"/>
+				<img src="img/these/14.png"/>
+				<img src="img/these/15.png"/>
+				<img src="img/these/16.png"/>
+				<img src="img/these/17.png"/>
+				<img src="img/these/18.png"/>
+				<img src="img/these/19.png"/>
+				<img src="img/these/20.png"/>
+				<img src="img/these/21.png"/>
+				<img src="img/these/22.png"/>
+				<img src="img/these/23.png"/>
+				<img src="img/these/24.png"/>
+				<img src="img/these/25.png"/>
+				<img src="img/these/26.png"/>
+				<img src="img/these/27.png"/>
+				<img src="img/these/28.png"/>
+				<img src="img/these/29.png"/>
+				<img src="img/these/30.png"/>
+				<img src="img/these/31.png"/>
+				<img src="img/these/32.png"/>
+				<img src="img/these/33.png"/>
+				<img src="img/these/34.png"/>
+				<img src="img/these/35.png"/>
+				<img src="img/these/36.png"/>
+				<img src="img/these/37.png"/>
+				<img src="img/these/38.png"/>
+				<img src="img/these/39.png"/>
+				<img src="img/these/40.png"/>
+				<img src="img/these/41.png"/>
+				<img src="img/these/42.png"/>
+				<img src="img/these/43.png"/>
+				<img src="img/these/44.png"/>
+				<img src="img/these/45.png"/>
+				<img src="img/these/46.png"/>
+				<img src="img/these/47.png"/>
+				<img src="img/these/48.png"/>
+				<img src="img/these/49.png"/>
+				<img src="img/these/50.png"/>
+				<img src="img/these/51.png"/>
+				<img src="img/these/52.png"/>
+				<img src="img/these/53.png"/>
+				<img src="img/these/54.png"/>
+				<img src="img/these/55.png"/>
+				<img src="img/these/56.png"/>
+				<img src="img/these/57.png"/>
+				<img src="img/these/58.png"/>
+				<img src="img/these/59.png"/>
+				<img src="img/these/60.png"/>
+				<img src="img/these/61.png"/>
+				<img src="img/these/62.png"/>
+			</div>
+			<p>Diapositives de ma soutenance de thèse en sciences de l'éducation appliquées à la soutenabilité, sur le sujet de la maîtrise de la consommation d'énergie.</p>
+		</div>
 	</div>
-	<p>Diapositives sur la pollution plastique dans les océans présentées au ministère de la Transition écologique.</p>
-</div>
-<div>
-	<div id="theseScroll" class="scroll" >
-		<img src="these/1.png"/>
-		<img src="these/2.png"/>
-		<img src="these/3.png"/>
-		<img src="these/4.png"/>
-		<img src="these/5.png"/>
-		<img src="these/6.png"/>
-		<img src="these/7.png"/>
-		<img src="these/8.png"/>
-		<img src="these/9.png"/>
-		<img src="these/10.png"/>
-		<img src="these/11.png"/>
-		<img src="these/12.png"/>
-		<img src="these/13.png"/>
-		<img src="these/14.png"/>
-		<img src="these/15.png"/>
-		<img src="these/16.png"/>
-		<img src="these/17.png"/>
-		<img src="these/18.png"/>
-		<img src="these/19.png"/>
-		<img src="these/20.png"/>
-		<img src="these/21.png"/>
-		<img src="these/22.png"/>
-		<img src="these/23.png"/>
-		<img src="these/24.png"/>
-		<img src="these/25.png"/>
-		<img src="these/26.png"/>
-		<img src="these/27.png"/>
-		<img src="these/28.png"/>
-		<img src="these/29.png"/>
-		<img src="these/30.png"/>
-		<img src="these/31.png"/>
-		<img src="these/32.png"/>
-		<img src="these/33.png"/>
-		<img src="these/34.png"/>
-		<img src="these/35.png"/>
-		<img src="these/36.png"/>
-		<img src="these/37.png"/>
-		<img src="these/38.png"/>
-		<img src="these/39.png"/>
-		<img src="these/40.png"/>
-		<img src="these/41.png"/>
-		<img src="these/42.png"/>
-		<img src="these/43.png"/>
-		<img src="these/44.png"/>
-		<img src="these/45.png"/>
-		<img src="these/46.png"/>
-		<img src="these/47.png"/>
-		<img src="these/48.png"/>
-		<img src="these/49.png"/>
-		<img src="these/50.png"/>
-		<img src="these/51.png"/>
-		<img src="these/52.png"/>
-		<img src="these/53.png"/>
-		<img src="these/54.png"/>
-		<img src="these/55.png"/>
-		<img src="these/56.png"/>
-		<img src="these/57.png"/>
-		<img src="these/58.png"/>
-		<img src="these/59.png"/>
-		<img src="these/60.png"/>
-		<img src="these/61.png"/>
-		<img src="these/62.png"/>
+</section>
+<footer>
+	<div id="footerGauche">
+		<p>Martin Galilée</p>
+		<p>martin.galilee<wbr>@gmail.com</p>
+		<p>06 25 52 03 03</p>
 	</div>
-	<p>Diapositives de ma soutenance de thèse en sciences de l'éducation appliquées à la soutenabilité, sur le sujet de la maîtrise de la consommation d'énergie.</p>
-</div>
-</div>
+	<img src="img/champi.jpg" />
+</footer>
 
-
-<div id="section4" class="section interlude">
-<div>Témoignages</div>
-</div>
-<div id="praise" class="section">
-<div class="column"><div class="praise">«&nbsp;C'est rare qu'un journaliste perçoive aussi bien notre travail.&nbsp;»</div><div class="qui">Nicolas Roumagne, directeur associé de ReSanté-Vous, 2020</div></div>
-<div class="column"><div class="praise">«&nbsp;Très bien écrit.&nbsp;»</div><div class="qui">Guillaume Daver, laboratoire Palevoprim, univ. Poitiers, 2019</div></div>
-<div class="column"><div class="praise">«&nbsp;Vous avez réussi à rendre tout ça concis, rythmé et agréable à lire&nbsp;!&nbsp;»</div><div class="qui">Florent Margnat, institut Pprime, univ. Poitiers, 2019</div></div>
-</div>
-<div id="section6" class="section interlude">
-<div>Ils me font confiance</div>
-</div>
-<div id="section7" class="section">
-<img  src="cnrs.png" />
-<img  src="larochelle.png" />
-<img  src="lactu.webp" />
-
-</div>
-<div id="footer" class="section">
-<div id="footerGauche"><p>Martin Galilée</p><p>martin.galilee<wbr>@gmail.com</p><p>06 25 52 03 03</p></div>
-<img  src="champi.jpg" />
-</div>
-
-
-<script src="jquery.js"></script>
+<script src="js/jquery.js"></script>
 <script src="scrollBar/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="jquery-ui.js"></script>
-	
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.beforeafter.min.js"></script>
 <script>
 (function($){
 	$(window).load(function(){
@@ -199,17 +235,21 @@ var volume;
 $(function() {
 	$( "#resizerBouteille" ).resizable({
 		handles:'n',
-		maxHeight: 256,
+		maxHeight: 240,
 		minHeight: 18,
 		resize: function( event, ui ) {
-			volume = Math.round(70+ ui.size.height* 3.6) ;
+			volume = Math.round(40+ ui.size.height* 3.6) ;
 			$("#volume").html(volume+" ml");
 		}
 	});
 });
-
+$(function(){
+	$('#beforeAfter').beforeafter({
+		message:"&larr; glisser &rarr;",
+		reset_delay:1000
+		});
+});
 </script>
-	
-	
+
 </body>
 </html>
