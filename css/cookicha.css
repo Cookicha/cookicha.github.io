@@ -4,6 +4,7 @@
 --grey:#eee;
 --dark-grey:#ccc;
 --marge:100px;
+--dark:black;
 }
 
 .gris {
@@ -18,6 +19,9 @@ background-color:var(--teal);
 }
 .bleu * {
 color:white;
+}
+.dark {
+	color:#333;
 }
 
 @media (max-width: 640px) {
@@ -120,6 +124,7 @@ padding:0;
 overflow:hide;
 }
 html{
+cursor:wait;
 	padding:0;margin:0;
 }
 body {
@@ -162,10 +167,33 @@ border:none;
 padding:10px 16px;
 text-decoration:none;
 }
-
 .bouton:hover {
 background-color:var(--light-teal);
 }
+
+
+menu {
+	position:fixed;
+	top:0;
+	width:100%;
+	background:var(--dark);	
+	z-index:200;
+	text-align:right;
+	font-size:0.8em;
+}
+menuitem {
+	padding:0 40px;
+	line-height:2em;
+}
+menu a {
+	color:#bbb;
+	text-decoration:none;
+}
+menu a:hover {
+	color:white;
+	text-decoration:none;
+}
+
 #naute {
 left:0;
 top:0;
@@ -561,7 +589,7 @@ align-items:center;
 }
 
 footer {
-background:black;
+background:var(--dark);
 color:white;
 position:relative;
 height:380px;

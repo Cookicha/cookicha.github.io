@@ -15,6 +15,13 @@
  
 </head>
 <body>
+<menu class="hide-mobile">
+<menuitem style="position:absolute; left: 0px; top:0;"><a href="#naute">Martin Galilée</a></menuitem>
+<menuitem><a href="#resume">CV</a></menuitem>
+<menuitem><a href="#praise">Témoignages</a></menuitem>
+<menuitem><a href="#portfolio">Portfolio</a></menuitem>
+<menuitem><a href="#footer">Contact</a></menuitem>
+</menu>
 <section id="section1">
 	<img src="img/naute.jpg" id="naute" />
 	<div id="blocktitre">
@@ -51,7 +58,7 @@
 	</div>
 </section>
 <section id="confiance" >
-	<h2>Ils me font confiance</h2>
+	<h2 class="dark">Ils me font confiance</h2>
 	<div id="logos" >
 		<img src="img/cnrs.png" />
 		<img src="img/larochelle.png" />
@@ -59,7 +66,7 @@
 	</div>
 </section>
 <section id="portfolio" class="gris hide-mobile">
-	<h2>Sélection de mes travaux</h2>
+	<h2 class="dark">Sélection de mes travaux</h2>
 	<div id="galerie">
 		<div>
 			<div>
@@ -231,7 +238,7 @@
 		</div>
 	</div>
 </section>
-<footer>
+<footer id="footer">
 	<div id="footerGauche">
 		<p>Martin Galilée</p>
 		<p>martin.galilee<wbr>@gmail.com</p>
@@ -347,7 +354,9 @@ function initComparisons() {
   }
 } 
 initComparisons();
- $(document).ready(function(){ $('').css({cursor: 'auto'}); });
+ $(document).ready(function(){
+	$('html').css({cursor: 'auto'});
+ });
 </script>
 </body>
 </html>
