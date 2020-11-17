@@ -374,7 +374,18 @@ padding:0 4px;
 	font-weight:700;
 	-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);
 }
-
+#nano {
+	position:relative;
+}
+#beforeAfter {
+	position:absolute;
+	top:0;
+	left:0;
+}
+#fallback {
+	height:500px;
+	width:auto;
+}
 /*diapos*/
 .scroll {
 height: 360px;
