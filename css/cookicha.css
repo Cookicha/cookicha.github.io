@@ -187,7 +187,7 @@ text-align:center;
 
 #logos img {
 display:inline-block;
-height:100px;
+height:120px;
 margin:0 40px var(--marge) 40px;
 }
 
@@ -254,28 +254,32 @@ margin: 10px 0;
 }
 /*Dessins vectoriels*/
 #icones {
-background:white;
+background:transparent;
 height:500px;
-width:auto;
+width:334px;
 display:flex;
-flex-flow:column-reverse nowrap;
+flex-flow:column-reverse wrap;
 justify-content:center;
 align-items:center;
 }
 #icones img {
-	padding:20px;
+	height:33.33%;
+	padding:0;
+	margin:0;
 }
 
 /*Bouteille bleue*/
 #fillTheBottle {
 	width:300px;
-	height:500px;
 	position:relative;
 }
 #boxBouteille {
 	background:white;
+	position:relative;
 	width:360px;
 	height:500px;
+	top:0;
+	left:0;
 }
 #bouteille, #fondBouteille {
 	height:440px;
@@ -309,7 +313,6 @@ align-items:center;
 	height:100%;
 	background:#367D9C;
 	z-index:100;
-
 }
 #dessusBouteille {
 	position:absolute;	
@@ -339,6 +342,8 @@ align-items:center;
 	color:#333;
 	font-size:24px;
 }
+
+
 #beerItem {
 	width:520px;
 	height:360px;
@@ -365,7 +370,23 @@ align-items:center;
   -ms-transform-origin: top left;
   transform-origin: top left;
 }
-
+/*Film*/
+#film {
+	height:360px;
+	background:black;
+	position:relative;
+	width:500px;
+	overflow:hide;
+	margin:0;
+	padding:0;
+}
+#film iframe {
+	max-width:500px;
+	position:absolute;
+	top:40px;
+	margin:0 !important;
+	padding:0;
+}
 
 footer {
 background:black;
