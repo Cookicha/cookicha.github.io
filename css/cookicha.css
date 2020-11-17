@@ -355,37 +355,50 @@ padding:0 4px;
 	margin:10px;
 }
 
-/*Nanoplastiques*/
-.g-img-divider > span {
-	position:absolute;
-	top:50%;
-	height:90px;
-	width:80px;
-	display:block;
-	background-color:var(--teal) !important;
-	color:white;
-	line-height:30px !important;
-	text-align:center;
-	font-family:inherit;
-	font-size:24px;
-	border-radius:100px;
-	border:2px solid white;
-	font-family:'Ubuntu';
-	font-weight:700;
-	-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);
+/*Nanoplastiques}*/
+#beforeAfter{
+	width:500px;
 }
-#nano {
-	position:relative;
+.img-comp-container {
+  position: relative;
+  height: 500px; /*should be the same height as the images*/
 }
-#beforeAfter {
-	position:absolute;
-	top:0;
-	left:0;
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
 }
-#fallback {
-	height:500px;
-	width:auto;
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
 }
+
+.img-comp-slider {
+ position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 80px;
+  height: 80px;
+  background-color: var(--teal);
+  border-radius: 50%;
+  border:3px solid white;
+  line-height:76px;
+  vertical-align:center;
+  text-align:center;
+  color:white;
+  font-size:60px;
+  font-weight:bold;
+  
+}
+
+.img-comp-slider:after {
+	content:"\2B04";
+}	
+
 /*diapos*/
 .scroll {
 height: 360px;
