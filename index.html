@@ -29,9 +29,9 @@
 	<div>L'interdisciplinarité, ce n'est pas simplement juxtaposer des expertises. C'est une rencontre qui se construit.</div>
 </section>
 <section id="resume">
+	<img src="img/portrait.png"/> 
 	<p>Mon parcours m'a apporté beaucoup d'expériences différentes, dans différents domaines. Doctorant chargé de cours, programmeur d'expériences de psychologie aux USA, médiateur scientifique auprès de jeunes curieux, journaliste du monde académique, spécialiste de la cognition de la communication visuelle...</p>
 	<p>Je mets maintenant mes connaissances et expériences au profit des sciences en tant qu'ingénieur recherche, particulièrement en sciences de la soutenabilité et pour le soutien à l'interdisciplinarité.</p>
-	<img src="img/portrait.png"/> 
 	<a href="pdf/CV.pdf"  target="_blank" class="bouton">Télécharger mon CV</a>
 </section>
 <section id="praise" class="bleu">
@@ -56,10 +56,10 @@
 	<div id="logos" >
 		<img src="img/cnrs.png" />
 		<img src="img/larochelle.png" />
-		<img src="img/lactu.webp" />
+		<img src="img/lactu.webp" id="lactu" />
 	</div>
 </section>
-<section id="portfolio" class="gris">
+<section id="portfolio" class="gris hide-mobile">
 	<h2>Sélection de mes travaux</h2>
 	<div id="galerie">
 		<div>
@@ -112,8 +112,8 @@
 			</div>
 			<p>Représentation interactive utilisée dans une expérience de psychologie sur la cognition incarnée.</p>
 		</div>
-		<div>
-			<div id="film" class="corrected">
+		<div id="film">
+			<div id="filmBox" class="corrected">
 				<iframe src="https://drive.google.com/file/d/1fi48DX6CswK8U--JjdE56mMhnWRhD0Zb/preview" width="496" height="278" ></iframe>
 			</div>
 			<p><em>L’imprimerie</em>, 2019, portrait réalisé avec l’association Dealers de Science sur le thème de la culture scientifique et technique.</p>
@@ -122,11 +122,11 @@
 			<div id="beerItem" class="corrected">
 				<iframe id="beerFrame" src="beer/beer-thumb.html" scrolling="no"></iframe>
 			</div>
-			<p>Un outil pédagogique à ambiance scientifique&#8239;: le <a href="beer/beer.html" target="_blank">tableau périodique des styles de bière</a>. Tout en technologie web, codé à la main. Incompatible mobile.</p>
+			<p>Un outil pédagogique à ambiance scientifique&#8239;: le <a href="beer/beer.html" target="_blank">tableau périodique des styles de bière</a>. Tout en technologie web, codé à la main.</p>
 		</div>
 		<div>
 			<div id="ministereScroll" class="scroll" >
-				<img src="img/ministere/1.png" />
+				<img src="img/ministere/1.png" id="ref"/>
 				<img src="img/ministere/2.png" />
 				<img src="img/ministere/3.png" />
 				<img src="img/ministere/4.png" />
@@ -236,7 +236,6 @@
 	</div>
 	<img src="img/champi.jpg" />
 </footer>
-
 <script src="js/jquery.js"></script>
 <script src="scrollBar/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/jquery-ui.js"></script>
@@ -244,13 +243,14 @@
 <script>
 (function($){
 	$(window).load(function(){
+		var scrollamount = $("#theseScroll")[0].scrollHeight/62;
 		$("#ministereScroll,#theseScroll").mCustomScrollbar({
 			scrollButtons:{enable:true,scrollType:"stepped"},
 			keyboard:{scrollType:"stepped"},
-			mouseWheel:{scrollAmount:328.6,normalizeDelta:true},
+			mouseWheel:{scrollAmount:scrollamount,normalizeDelta:true},
 			theme:"rounded-dark",
 			autoExpandScrollbar:true,
-			snapAmount:328.6
+			snapAmount:scrollamount
 		});			
 	});
 })(jQuery);
@@ -273,6 +273,5 @@ $(function(){
 		});
 });
 </script>
-
 </body>
 </html>
