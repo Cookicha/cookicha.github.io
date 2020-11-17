@@ -263,6 +263,17 @@ font-family:'Ubuntu';
 #section1 #ingenieur {margin-top:30px;}
 #section1 #soutenabilite {margin-top:6px;}
 
+#section1 #credit {
+	position:absolute;
+	right:1vw;
+	bottom:-1em;
+	text-align:right;
+	color:#555;
+	font-size:0.6em;
+}
+#section1 #credit a {
+color:inherit;
+}
 #quote {
 width:100%;
 font-family: 'Ubuntu', sans-serif;
