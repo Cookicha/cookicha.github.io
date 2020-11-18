@@ -47,15 +47,13 @@ color:inherit !important;
 }
 
 .element.placeholder {
-background:transparent;
+background:transparent !important;
 border:30px solid transparent;
 color:transparent;
 box-shadow:none;
 font-family: 'Montserrat', sans-serif;
 }
-.element.placeholder:hover {
-background-color:transparent !important;
-}
+
 .element.placeholder.family p {
 position:absolute;
 bottom:0;
