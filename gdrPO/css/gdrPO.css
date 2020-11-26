@@ -287,7 +287,7 @@ h1:target:before {
 .header#headerTitle {
   min-height: calc(100vh - var(--taille-logo) - 14px);
   height: calc(234px + 30vh);
-  background-image: url("../gdrPO/img/bg/joel-filipe-pfX-GsJMtDY-unsplash.jpg");
+  background-image: url("../img/bg/joel-filipe-pfX-GsJMtDY-unsplash.jpg");
 }
 
 .header#headerTitle h1 {
@@ -300,10 +300,10 @@ h1:target:before {
 }
 
 .header#headerGdr {
-  background-image: url("../gdrPO/img/bg/adrien-converse-WYmPNSUyfNg-unsplash.jpg");
+  background-image: url("../img/bg/adrien-converse-WYmPNSUyfNg-unsplash.jpg");
 }
 .header#headerMembres {
-  background-image: url("../gdrPO/img/bg/aaron-burden-Bycd2wF5vQU-unsplash.jpg");
+  background-image: url("../img/bg/aaron-burden-Bycd2wF5vQU-unsplash.jpg");
 }
 
 
