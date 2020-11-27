@@ -378,5 +378,67 @@
         "nom": "Dris"
       }
     ]
-  }
+  },
+  "cearc": {
+    "sigle": "Cearc",
+    "nom": "Cultures Environnements Arctique Représentations Climat",
+    "site": "Guyancourt",
+    "matricule": "XXXXXXXXXX",
+    "tutelles": [
+      "XXXXXXXXXX"
+    ],
+    "latitude": "48.777982",
+    "longitude": "2.048735",
+    "domaines": [
+      "Sciences et société", "Modélisation du cycle du plastique"
+    ],
+    "axes": [
+      "XXXXXXXXXX"
+    ],
+    "web": "XXXXXXXXXX",
+    "contact": {
+      "prenom": "Mateo",
+      "nom": "Cordier",
+      "email": "mateo.cordier@uvsq.fr"
+    },
+    "membres": [
+      {
+        "prenom": "Mateo",
+        "nom": "Cordier"
+      },{
+        "prenom": "Jean-Michel",
+        "nom": "Huctin"
+      },{
+        "prenom": "Jean-Paul",
+        "nom": "Vanderlinden"
+      },{
+        "prenom": "Juan",
+        "nom": "Baztan"
+      }
+    ]
+  },
+"XXXXXX": {
+  "sigle": "XXXXXXXXXX",
+  "nom": "XXXXXXXXXX",
+  "site": "XXXXXXXXXX",
+  "matricule": "XXXXXXXXXX",
+  "tutelles": ["XXXXXXXXXX"],
+  "latitude": "XXXXXXXXXX",
+  "longitude": "XXXXXXXXXX",
+  "domaines": ["XXXXXXXXXX"],
+  "axes": ["XXXXXXXXXX"],
+  "web": "XXXXXXXXXX",
+  "contact": {
+    "prenom": "XXXXXXXXXX",
+    "nom": "XXXXXXXXXX",
+    "email": "XXXXXXXXXX"
+  },
+  "membres": [{
+    "prenom": "XXXXXXXXXX",
+    "nom": "XXXXXXXXXX"
+  }, {
+    "prenom": "XXXXXXXXXX",
+    "nom": "XXXXXXXXXX"
+  }]
+},
 }

@@ -1,29 +1,4 @@
-// (function () {
-// var textFile = null,
-//   makeTextFile = function (text) {
-//     var data = new Blob([text], {type: 'text/js'});
-//
-//     // If we are replacing a previously generated file we need to
-//     // manually revoke the object URL to avoid memory leaks.
-//     if (textFile !== null) {
-//       window.URL.revokeObjectURL(textFile);
-//     }
-//
-//     textFile = window.URL.createObjectURL(data);
-//
-//     return textFile;
-//   };
-//
-//
-//   var create = document.getElementById('create'),
-//     textbox = document.getElementById('textbox');
-//
-//   create.addEventListener('click', function () {
-//     var link = document.getElementById('downloadlink');
-//     link.href = makeTextFile(textbox.value);
-//     link.style.display = 'block';
-//   }, false);
-// })();
+var navigate = function(data) {
 var folderName = "data";
 var folder = data;
 var depth = 0;
@@ -126,3 +101,4 @@ $(document).ready(function(){
   });
   openFolder();
 });
+}

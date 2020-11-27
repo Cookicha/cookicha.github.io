@@ -10,12 +10,12 @@ table {
     border:none;
     box-shadow: 0 0 4px #338;
 }
-#thead {
+#tablehead {
   background: #338;
   color:white;
   font-weight:bold;
 }
-#thead td {
+#tablehead td {
 padding: 10px 5px;
 }
 tr:nth-child(even) {

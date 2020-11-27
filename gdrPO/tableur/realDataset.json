@@ -1,0 +1,2122 @@
+{
+  "amure": {
+    "sigle": "Amure",
+    "nom": "Aménagement des Usages des Ressources et des Espaces marins et littoraux",
+    "site": "Plouzané",
+    "matricule": "UMR 6308",
+    "tutelles": [
+      "?",
+      "?"
+    ],
+    "latitude": "48.3589",
+    "longitude": "-4.562625",
+    "domaines": [
+      "?"
+    ],
+    "axes": [
+      "?"
+    ],
+    "web": "?",
+    "contact": {
+      "prenom": "Bertrand",
+      "nom": "Le Gallic",
+      "email": "bertrand.legallic@univ-brest.fr"
+    },
+    "membres": [{
+      "prenom": "Bertrand",
+      "nom": "Le Gallic"
+    }]
+  },
+  "anses": {
+    "sigle": "Anses",
+    "nom": "Agence nationale de sécurité sanitaire de l’alimentation, de l’environnement et du travail",
+    "site": "Boulogne-sur-Mer",
+    "matricule": "",
+    "tutelles": [
+      "?"
+    ],
+    "latitude": "50.72432",
+    "longitude": "1.594467",
+    "domaines": [
+      "?"
+    ],
+    "axes": [
+      "?"
+    ],
+    "web": "?",
+    "contact": {
+      "prenom": "Guillaume",
+      "nom": "Duflos",
+      "email": "guillaume.duflos@anses.fr"
+    },
+    "membres": [{
+      "prenom": "Guillaume",
+      "nom": "Duflos"
+    }]
+  },
+  "arn": {
+    "sigle": "ARN",
+    "nom": "Adaptation, Reproduction et Nutrition de Poissons",
+    "site": "Plouzané",
+    "matricule": "",
+    "tutelles": [
+      "?"
+    ],
+    "latitude": "48.359163",
+    "longitude": "-4.558795",
+    "domaines": [
+      "?"
+    ],
+    "axes": [
+      "?"
+    ],
+    "web": "?",
+    "contact": {
+      "prenom": "Dominique",
+      "nom": "Hervio Heath",
+      "email": "dominique.hervio.heath@ifremer.fr"
+    },
+    "membres": [{
+      "prenom": "Dominique",
+      "nom": "Hervio Heath"
+    }]
+  },
+  "be": {
+    "sigle": "BE",
+    "nom": "Biogéochimie et Écotoxicologie",
+    "site": "Nantes",
+    "matricule": "",
+    "tutelles": [
+      "?"
+    ],
+    "latitude": "47.247119",
+    "longitude": "-1.547266",
+    "domaines": [
+      "Contaminants chimiques associés aux micro et nanoplastiques"
+    ],
+    "axes": [
+      "?"
+    ],
+    "web": "?",
+    "contact": {
+      "prenom": "Javier",
+      "nom": "Castro Jiménez",
+      "email": "javier.castro.jimenez@ifremer.fr"
+    },
+    "membres": [{
+        "prenom": "Javier",
+        "nom": "Castro Jiménez"
+      },
+      {
+        "prenom": "Yann",
+        "nom": "Aminot"
+      },
+      {
+        "prenom": "Farida",
+        "nom": "Akcha"
+      },
+      {
+        "prenom": "Isabelle",
+        "nom": "Amouroux"
+      },
+      {
+        "prenom": "Nadège",
+        "nom": "Bely"
+      },
+      {
+        "prenom": "Nicolas",
+        "nom": "Briant"
+      },
+      {
+        "prenom": "Yoann",
+        "nom": "Godfrin"
+      },
+      {
+        "prenom": "Catherine",
+        "nom": "Munschy"
+      },
+      {
+        "prenom": "Teddy",
+        "nom": "Sireau"
+      }
+    ]
+  },
+  "biom": {
+    "sigle": "Biom",
+    "nom": "Biologie Intégrative des Organismes Marins",
+    "site": "Banyuls-sur-Mer",
+    "matricule": "UMR 7232",
+    "tutelles": [
+      "?"
+    ],
+    "latitude": "42.480101",
+    "longitude": "3.136312",
+    "domaines": [
+      "?"
+    ],
+    "axes": [
+      "?"
+    ],
+    "web": "?",
+    "contact": {
+      "prenom": "Hector",
+      "nom": "Escriva",
+      "email": "hector.escriva@obs-banyuls.fr"
+    },
+    "membres": [{
+        "prenom": "Hector",
+        "nom": "Escriva"
+      },
+      {
+        "prenom": "Stéphanie",
+        "nom": "Bertrand"
+      },
+      {
+        "prenom": "Laurence",
+        "nom": "Besseau"
+      },
+      {
+        "prenom": "Anne-Marie",
+        "nom": "Geneviere"
+      },
+      {
+        "prenom": "Vincent",
+        "nom": "Laudet"
+      },
+      {
+        "prenom": "Agnès",
+        "nom": "Roure"
+      },
+      {
+        "prenom": "Lucie",
+        "nom": "Subirana"
+      }
+    ]
+  },
+  "c2ma": {
+    "sigle": "C2MA",
+    "nom": "Centre des Matériaux des Mines d'Alès",
+    "site": "Alès",
+    "matricule": "XXXXXX",
+    "tutelles": [
+      "XXXX"
+    ],
+    "latitude": "44.136812",
+    "longitude": "4.098704",
+    "domaines": [
+      "Contaminants chimiques associés aux micro et nanoplastiques", "Polymères du futur, ingénierie des polymères", "Cycle de vie des matériaux polymères", "Modélisation du cycle du plastique", "Identification des sources, niveaux de contamination", "Dégradation/biodégradation des polymères dans l’eau"
+    ],
+    "axes": [
+      "XXX"
+    ],
+    "web": "XXX",
+    "contact": {
+      "prenom": "José-Marie",
+      "nom": "Lopez-Cuesta",
+      "email": "jose-marie.lopez-cuesta@mines-ales.fr"
+    },
+    "membres": [{
+        "prenom": "José-Marie",
+        "nom": "Lopez-Cuesta"
+      },
+      {
+        "prenom": "Joana",
+        "nom": "Beigbeder"
+      },
+      {
+        "prenom": "Anne",
+        "nom": "Bergeret"
+      },
+      {
+        "prenom": "Laurent",
+        "nom": "Ferry"
+      },
+      {
+        "prenom": "Nicolas",
+        "nom": "Le Moigne"
+      },
+      {
+        "prenom": "Didier",
+        "nom": "Perrin"
+      }
+    ]
+  },
+  "c2p2": {
+    "sigle": "C2P2",
+    "nom": "Chimie, Catalyse, Polymères et Procédés",
+    "site": "Lyon",
+    "matricule": "UMR 5265",
+    "tutelles": [
+      "XXXX"
+    ],
+    "latitude": "45.784513",
+    "longitude": "4.868383",
+    "domaines": [
+      "Dégradation/biodégradation des polymères dans l’eau", "Polymères du futur, ingénierie des polymères"
+    ],
+    "axes": [
+      "XXX"
+    ],
+    "web": "XXX",
+    "contact": {
+      "prenom": "Vincent",
+      "nom": "Monteil",
+      "email": "monteil@lcpp.cpe.fr"
+    },
+    "membres": [{
+        "prenom": "Vincent",
+        "nom": "Monteil"
+      },
+      {
+        "prenom": "Élodie",
+        "nom": "Bourgeat-Lami"
+      },
+      {
+        "prenom": "Olivier",
+        "nom": "Boyron"
+      },
+      {
+        "prenom": "Fabrice",
+        "nom": "Brunel"
+      },
+      {
+        "prenom": "Muriel",
+        "nom": "Lansalot"
+      },
+      {
+        "prenom": "Timothy",
+        "nom": "McKenna"
+      },
+      {
+        "prenom": "Sébastien",
+        "nom": "Norsic"
+      },
+      {
+        "prenom": "Jean",
+        "nom": "Raynaud"
+      }
+    ]
+  },
+  "l2c": {
+    "sigle": "L2C",
+    "nom": "Laboratoire Charles Coulomb",
+    "site": "Montpellier",
+    "matricule": "UMR 5221",
+    "tutelles": [
+      "CNRS",
+      "Université de Montpellier"
+    ],
+    "latitude": "43.63305",
+    "longitude": "3.867045",
+    "domaines": [
+      "Colonisation des déchets plastiques, transport d'espèces",
+      "Dégradation/biodégradation des polymères dans l’eau",
+      "Polymères du futur, ingénierie des polymères"
+    ],
+    "axes": [
+      "1",
+      "2",
+      "3"
+    ],
+    "web": "coulomb.umontpellier.fr",
+    "contact": {
+      "prenom": "Matthieu",
+      "nom": "George",
+      "email": "matthieu.george@umontpellier.fr"
+    },
+    "membres": [{
+      "prenom": "Pascale",
+      "nom": "Fabre"
+    }, {
+      "prenom": "Matthieu",
+      "nom": "George"
+    }]
+  },
+  "leesu": {
+    "sigle": "Leesu",
+    "nom": "Laboratoire Eau Environnement et Systèmes Urbains",
+    "site": "Créteil",
+    "matricule": "UMR MA102",
+    "tutelles": [
+      "Université Paris-Est Créteil",
+      "École des Ponts ParisTech",
+      "AgroParisTech"
+    ],
+    "latitude": "48.788563",
+    "longitude": "2.44272",
+    "domaines": [
+      "Identification des sources, niveaux de contamination",
+      "Modélisation du cycle du plastique"
+    ],
+    "axes": [
+      "1"
+    ],
+    "web": "leesu.fr",
+    "contact": {
+      "prenom": "Bruno",
+      "nom": "Tassin",
+      "email": "bruno.tassin@enpc.fr"
+    },
+    "membres": [{
+      "prenom": "Bruno",
+      "nom": "Tassin"
+    }, {
+      "prenom": "Rachid",
+      "nom": "Dris"
+    }]
+  },
+  "cearc": {
+    "sigle": "Cearc",
+    "nom": "Cultures Environnements Arctique Représentations Climat",
+    "site": "Guyancourt",
+    "matricule": "XXXXXXXXXX",
+    "tutelles": [
+      "XXXXXXXXXX"
+    ],
+    "latitude": "48.777982",
+    "longitude": "2.048735",
+    "domaines": [
+      "Sciences et société", "Modélisation du cycle du plastique"
+    ],
+    "axes": [
+      "XXXXXXXXXX"
+    ],
+    "web": "XXXXXXXXXX",
+    "contact": {
+      "prenom": "Mateo",
+      "nom": "Cordier",
+      "email": "mateo.cordier@uvsq.fr"
+    },
+    "membres": [{
+      "prenom": "Mateo",
+      "nom": "Cordier"
+    }, {
+      "prenom": "Jean-Michel",
+      "nom": "Huctin"
+    }, {
+      "prenom": "Jean-Paul",
+      "nom": "Vanderlinden"
+    }, {
+      "prenom": "Juan",
+      "nom": "Baztan"
+    }]
+  },
+  "Cedre": {
+    "sigle": "Cedre",
+    "nom": "Cedre",
+    "site": "Brest",
+    "matricule": "",
+    "tutelles": ["XXXXXX"],
+    "latitude": "48.389008",
+    "longitude": "-4.441772",
+    "domaines": "Identification des sources, niveaux de contamination, Contaminants chimiques associés aux micro et nanoplastiques, Toxicité et évaluation des risques, Dégradation/biodégradation des polymères dans l’eau, Sciences et société",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Camille",
+      "nom": "Lacroix",
+      "email": "camille.lacroix@cedre.fr"
+    },
+    "membres": [{
+      "prenom": "Camille",
+      "nom": "Lacroix"
+    }]
+  },
+  "CEFE": {
+    "sigle": "CEFE",
+    "nom": "Centre d'écologie fonctionnelle et évolutive",
+    "site": "Montpellier",
+    "matricule": "5175",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.639351",
+    "longitude": "3.864224",
+    "domaines": "ingestion des déchets par les tortues marines",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Claude",
+      "nom": "Miaud",
+      "email": "claude.miaud@cefe.cnrs.fr"
+    },
+    "membres": [{
+      "prenom": "Claude",
+      "nom": "Miaud"
+    }]
+  },
+  "Cefrem": {
+    "sigle": "Cefrem",
+    "nom": "Centre de formation et de recherche sur les environnements méditérannéens",
+    "site": "Perpigan",
+    "matricule": "5110",
+    "tutelles": ["XXXXXX"],
+    "latitude": "42.684099",
+    "longitude": "2.898381",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Philippe",
+      "nom": "Kerherve",
+      "email": "kerherve@univ-perp.fr"
+    },
+    "membres": [{
+        "prenom": "Philippe",
+        "nom": "Kerherve"
+      },
+      {
+        "prenom": "Serge",
+        "nom": "Heussner"
+      },
+      {
+        "prenom": "Wolfgang",
+        "nom": "Ludwig"
+      }
+    ]
+  },
+  "Ecolab": {
+    "sigle": "Ecolab",
+    "nom": "Laboratoire d'Écologie Fonctionnelle et Environnement",
+    "site": "Toulouse",
+    "matricule": "5245",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.558292",
+    "longitude": "1.469232",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Loïc",
+      "nom": "Ten-Hage",
+      "email": "loic.tenhage@univ-tlse3.fr"
+    },
+    "membres": [{
+        "prenom": "Loïc",
+        "nom": "Ten-Hage"
+      },
+      {
+        "prenom": "Jessica",
+        "nom": "Ferriol"
+      },
+      {
+        "prenom": "Laury",
+        "nom": "Gauthier"
+      },
+      {
+        "prenom": "Joséphine",
+        "nom": "Leflaive"
+      },
+      {
+        "prenom": "Florence",
+        "nom": "Mouchet"
+      },
+      {
+        "prenom": "Éric",
+        "nom": "Pinelli"
+      }
+    ]
+  },
+  "Epoc": {
+    "sigle": "Epoc",
+    "nom": "Laboratoire Environnement Paléoenvironnement Continentaux et Océaniques",
+    "site": "Bordeaux",
+    "matricule": "5805",
+    "tutelles": ["XXXXXX"],
+    "latitude": "44.801903",
+    "longitude": "-0.609323",
+    "domaines": "Identification des sources, niveaux de contamination, Contaminants chimiques associés aux micro et nanoplastiques, Toxicité et évaluation des risques, Dégradation/biodégradation des polymères dans l’eau",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Jérôme",
+      "nom": "Cachot",
+      "email": "jerome.cachot@u-bordeaux.fr"
+    },
+    "membres": [{
+        "prenom": "Jérôme",
+        "nom": "Cachot"
+      },
+      {
+        "prenom": "Magalie",
+        "nom": "Baudrimont"
+      },
+      {
+        "prenom": "Christelle",
+        "nom": "Clérandeau"
+      },
+      {
+        "prenom": "Blandine",
+        "nom": "Davail"
+      },
+      {
+        "prenom": "Agnès",
+        "nom": "Feurtet-Mazel"
+      },
+      {
+        "prenom": "Isabel",
+        "nom": "Jalon Rojas"
+      },
+      {
+        "prenom": "Bénedicte",
+        "nom": "Morin"
+      }
+    ]
+  },
+  "Génoscope": {
+    "sigle": "Génoscope",
+    "nom": "Centre National de Séquençage",
+    "site": "Évry",
+    "matricule": "",
+    "tutelles": ["XXXXXX"],
+    "latitude": "48.623679",
+    "longitude": "2.439328",
+    "domaines": "Dégradation/biodégradation des polymères dans l’eau, Génomique",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Valérie",
+      "nom": "Barbe",
+      "email": "valerie.barbe@genoscope.cns.fr"
+    },
+    "membres": [{
+      "prenom": "Valérie",
+      "nom": "Barbe"
+    }]
+  },
+  "GEOsciences": {
+    "sigle": "GEOsciences",
+    "nom": "Géosciences Rennes",
+    "site": "Rennes",
+    "matricule": "6118",
+    "tutelles": ["XXXXXX"],
+    "latitude": "48.118286",
+    "longitude": "-1.638276",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Mélanie",
+      "nom": "Davranche",
+      "email": "melanie.davranche@univ-rennes1.fr"
+    },
+    "membres": [{
+        "prenom": "Mélanie",
+        "nom": "Davranche"
+      },
+      {
+        "prenom": "Aline",
+        "nom": "Dia"
+      },
+      {
+        "prenom": "Rémi",
+        "nom": "Marsac"
+      },
+      {
+        "prenom": "Mathieu",
+        "nom": "Pédrot"
+      },
+      {
+        "prenom": "Anne-Catherine",
+        "nom": "Pierson-Wickmann"
+      }
+    ]
+  },
+  "GPM": {
+    "sigle": "GPM",
+    "nom": "Groupe de physique des matériaux",
+    "site": "Rouen",
+    "matricule": "6634",
+    "tutelles": ["XXXXXX"],
+    "latitude": "49.387027",
+    "longitude": "1.067993",
+    "domaines": "Polymères du futur, ingénierie des polymères",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Éric",
+      "nom": "Dargent",
+      "email": "eric.dargent@univ-rouen.fr"
+    },
+    "membres": [{
+        "prenom": "Éric",
+        "nom": "Dargent"
+      },
+      {
+        "prenom": "Laurent",
+        "nom": "Delbreilh"
+      },
+      {
+        "prenom": "Nicolas",
+        "nom": "Delpouve"
+      },
+      {
+        "prenom": "Antonella",
+        "nom": "Esposito"
+      },
+      {
+        "prenom": "Allison",
+        "nom": "Saiter"
+      }
+    ]
+  },
+  "IATE": {
+    "sigle": "IATE",
+    "nom": "Ingénierie des Agropolymères et Technologies Émergentes",
+    "site": "Montpellier",
+    "matricule": "1208",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.619594",
+    "longitude": "3.856755",
+    "domaines": "Dégradation/biodégradation des polymères dans l’eau",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Emmanuelle",
+      "nom": "Gastaldi",
+      "email": "emmanuelle.gastaldi@umontpellier.fr"
+    },
+    "membres": [{
+      "prenom": "Emmanuelle",
+      "nom": "Gastaldi"
+    }]
+  },
+  "ICCF": {
+    "sigle": "ICCF",
+    "nom": "Institut de Chimie de Clermont-Ferrand",
+    "site": "Clermont-Ferrand",
+    "matricule": "6296",
+    "tutelles": ["XXXXXX"],
+    "latitude": "45.761557",
+    "longitude": "3.117399",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Anne-Marie",
+      "nom": "Delort",
+      "email": "a-marie.delort@uca.fr"
+    },
+    "membres": [{
+        "prenom": "Anne-Marie",
+        "nom": "Delort"
+      },
+      {
+        "prenom": "Pierre",
+        "nom": "Amato"
+      },
+      {
+        "prenom": "Jean-Michel",
+        "nom": "Andanson"
+      },
+      {
+        "prenom": "Harout",
+        "nom": "Askanian"
+      },
+      {
+        "prenom": "Isabelle",
+        "nom": "Canet"
+      },
+      {
+        "prenom": "Florence",
+        "nom": "Jestin"
+      },
+      {
+        "prenom": "Cyril",
+        "nom": "Jousse"
+      },
+      {
+        "prenom": "Céline",
+        "nom": "Judon"
+      },
+      {
+        "prenom": "Martin",
+        "nom": "Leremboure"
+      },
+      {
+        "prenom": "Agnès",
+        "nom": "Rivaton"
+      },
+      {
+        "prenom": "Martine",
+        "nom": "Sancelme"
+      },
+      {
+        "prenom": "Mohamad",
+        "nom": "Sleiman"
+      },
+      {
+        "prenom": "Mounir",
+        "nom": "Traïka"
+      },
+      {
+        "prenom": "Vincent",
+        "nom": "Verney"
+      }
+    ]
+  },
+  "ICMPE": {
+    "sigle": "ICMPE",
+    "nom": "Institut de Chimie et des Matériaux Paris-Est",
+    "site": "Thiais",
+    "matricule": "7182",
+    "tutelles": ["XXXXXX"],
+    "latitude": "48.770104",
+    "longitude": "2.370832",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Valérie",
+      "nom": "Langlois",
+      "email": "langlois@icmpe.cnrs.fr"
+    },
+    "membres": [{
+        "prenom": "Valérie",
+        "nom": "Langlois"
+      },
+      {
+        "prenom": "Estelle",
+        "nom": "Renard"
+      },
+      {
+        "prenom": "Agustin",
+        "nom": "Rios de Anda"
+      }
+    ]
+  },
+  "IMFT": {
+    "sigle": "IMFT",
+    "nom": "Institut de mécanique des fluides de Toulouse",
+    "site": "Toulouse",
+    "matricule": "5502",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.588157",
+    "longitude": "1.437147",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Matthieu",
+      "nom": "Mercier",
+      "email": "Matthieu.mercier@imft.fr "
+    },
+    "membres": [{
+        "prenom": "Matthieu",
+        "nom": "Mercier"
+      },
+      {
+        "prenom": "Éric",
+        "nom": "Climent"
+      },
+      {
+        "prenom": "Jacques",
+        "nom": "Magnaudet"
+      },
+      {
+        "prenom": "Olivier",
+        "nom": "Praud"
+      }
+    ]
+  },
+  "IMMM": {
+    "sigle": "IMMM",
+    "nom": "Institut des Molécules et de Matériaux du Mans",
+    "site": "Le Mans",
+    "matricule": "6283",
+    "tutelles": ["XXXXXX"],
+    "latitude": "48.015905",
+    "longitude": "0.162051",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Fabienne",
+      "nom": "Lagarde",
+      "email": "fabienne.lagarde@univ-lemans.fr"
+    },
+    "membres": [{
+        "prenom": "Fabienne",
+        "nom": "Lagarde"
+      },
+      {
+        "prenom": "Frédéric",
+        "nom": "Amiard"
+      },
+      {
+        "prenom": "Jean-François",
+        "nom": "Bardeau"
+      },
+      {
+        "prenom": "Guillaume",
+        "nom": "Brotons"
+      },
+      {
+        "prenom": "Christophe",
+        "nom": "Chassenieux"
+      },
+      {
+        "prenom": "Philippe",
+        "nom": "Daniel"
+      },
+      {
+        "prenom": "Nicolas",
+        "nom": "Delorme"
+      },
+      {
+        "prenom": "Mathieu",
+        "nom": "Edely"
+      },
+      {
+        "prenom": "Nicolas",
+        "nom": "Errien"
+      },
+      {
+        "prenom": "Marc",
+        "nom": "Lamy de la Chapelle"
+      },
+      {
+        "prenom": "Véronique",
+        "nom": "Montembault"
+      },
+      {
+        "prenom": "Taco",
+        "nom": "Nicolai"
+      },
+      {
+        "prenom": "Jean-François",
+        "nom": "Pilard"
+      },
+      {
+        "prenom": "Agnès",
+        "nom": "Ranger"
+      }
+    ]
+  },
+  "IMP": {
+    "sigle": "IMP",
+    "nom": "Ingénierie des Matériaux Polymères",
+    "site": "Villeurbanne",
+    "matricule": "5223",
+    "tutelles": ["XXXXXX"],
+    "latitude": "45.782718",
+    "longitude": "4.873505",
+    "domaines": "Identification des sources, niveaux de contamination, Contaminants chimiques associés aux micro et nanoplastiques, Dégradation/biodégradation des polymères dans l’eau, Polymères du futur, ingénierie des polymères, Plateformes de caractérisations (Chromato, Spectro, thermiq., Rheo)",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Valérie",
+      "nom": "Massardier",
+      "email": "valerie.massardier@insa-lyon.fr"
+    },
+    "membres": [{
+      "prenom": "Valérie",
+      "nom": "Massardier"
+    }]
+  },
+  "IMRCP": {
+    "sigle": "IMRCP",
+    "nom": "Laboratoire des interactions moléculaires et réactivités chimiques et photochimiques",
+    "site": "Toulouse",
+    "matricule": "5623",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.564305",
+    "longitude": "1.46579",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Alexandra",
+      "nom": "Ter Halle",
+      "email": "ter-halle@chimie.ups-tlse.fr"
+    },
+    "membres": [{
+        "prenom": "Alexandra",
+        "nom": "Ter Halle"
+      },
+      {
+        "prenom": "Guillaume",
+        "nom": "Bordeau"
+      },
+      {
+        "prenom": "Anne-Françoise",
+        "nom": "Mingotaud"
+      },
+      {
+        "prenom": "Émile",
+        "nom": "Perez"
+      },
+      {
+        "prenom": "Clément",
+        "nom": "Roux"
+      }
+    ]
+  },
+  "Inphyni": {
+    "sigle": "Inphyni",
+    "nom": "Institut de Physique de Nice",
+    "site": "Nice",
+    "matricule": "7010",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.61728",
+    "longitude": "7.060054",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Agnese",
+      "nom": "Seminara",
+      "email": "agnese.seminara@inphyni.cnrs.fr"
+    },
+    "membres": [{
+      "prenom": "Agnese",
+      "nom": "Seminara"
+    }]
+  },
+  "Iprem": {
+    "sigle": "Iprem",
+    "nom": "Institut des Sciences Analytiques et de Physico-Chimie pour l'environnement et les Matériaux",
+    "site": "Pau",
+    "matricule": "5254",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.321065",
+    "longitude": "-0.366305",
+    "domaines": "Contaminants chimiques associés aux micro et nanoplastiques, Dégradation/biodégradation des polymères dans l’eau, synthèse, physico-chimie et analyse des nanoplastiques",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Bruno",
+      "nom": "Grassl",
+      "email": "bruno.grassl@univ-pau.fr"
+    },
+    "membres": [{
+        "prenom": "Bruno",
+        "nom": "Grassl"
+      },
+      {
+        "prenom": "Élise",
+        "nom": "Deniau"
+      },
+      {
+        "prenom": "Régis",
+        "nom": "Grimaud"
+      },
+      {
+        "prenom": "Jérome",
+        "nom": "Gury"
+      },
+      {
+        "prenom": "Florence",
+        "nom": "Hakil"
+      },
+      {
+        "prenom": "Stéphanie",
+        "nom": "Reynaud"
+      },
+      {
+        "prenom": "Pierre",
+        "nom": "Sivadon"
+      },
+      {
+        "prenom": "Joanna",
+        "nom": "Szpunar"
+      },
+      {
+        "prenom": "Laurent",
+        "nom": "Urios"
+      }
+    ]
+  },
+  "IRDL": {
+    "sigle": "IRDL",
+    "nom": "Institut de Recherche Dupuy de Lôme",
+    "site": "Lorient",
+    "matricule": "6027",
+    "tutelles": ["XXXXXX"],
+    "latitude": "47.747723",
+    "longitude": "-3.395006",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Stéphane",
+      "nom": "Bruzaud",
+      "email": "stephane.bruzaud@univ-ubs.fr"
+    },
+    "membres": [{
+        "prenom": "Stéphane",
+        "nom": "Bruzaud"
+      },
+      {
+        "prenom": "Mikaël",
+        "nom": "Kedzierski"
+      }
+    ]
+  },
+  "L2C": {
+    "sigle": "L2C",
+    "nom": "Laboratoire Charles Coulomb",
+    "site": "Montpellier",
+    "matricule": "5221",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.63305",
+    "longitude": "3.867045",
+    "domaines": "Colonisation des déchets plastiques, transport d'espèces, Dégradation/biodégradation des polymères dans l’eau, Polymères du futur, ingénierie des polymères",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Pascale",
+      "nom": "Fabre",
+      "email": "pascale.fabre@umontpellier.fr"
+    },
+    "membres": [{
+        "prenom": "Pascale",
+        "nom": "Fabre"
+      },
+      {
+        "prenom": "Matthieu",
+        "nom": "George"
+      }
+    ]
+  },
+  "Labocea": {
+    "sigle": "Labocea",
+    "nom": "Conseil, Expertise et Analyse en Bretagne GIP",
+    "site": "Plouzané",
+    "matricule": "",
+    "tutelles": ["XXXXXX"],
+    "latitude": "48.361391",
+    "longitude": "-4.564168",
+    "domaines": "Identification des sources, niveaux de contamination, Contaminants chimiques associés aux micro et nanoplastiques, Colonisation des déchets plastiques, transport d'espèces",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Valérie",
+      "nom": "Yeuc'h",
+      "email": "valerie.yeuch@labocea.fr"
+    },
+    "membres": [{
+        "prenom": "Valérie",
+        "nom": "Yeuc'h"
+      },
+      {
+        "prenom": "Gaël",
+        "nom": "Durant"
+      },
+      {
+        "prenom": "Sophie",
+        "nom": "Goutliquer"
+      },
+      {
+        "prenom": "Florent",
+        "nom": "Le Gleau"
+      }
+    ]
+  },
+  "LBCM": {
+    "sigle": "LBCM",
+    "nom": "Laboratoire Biotechnologie et Chimie Marine",
+    "site": "Lorient",
+    "matricule": "",
+    "tutelles": ["XXXXXX"],
+    "latitude": "47.747574",
+    "longitude": "-3.393784",
+    "domaines": "Colonisation des déchets plastiques, transport d'espèces, Dégradation/biodégradation des polymères dans l’eau, Polymères du futur, ingénierie des polymères",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Fabienne",
+      "nom": "Faÿ",
+      "email": "fabienne.fay@univ-ubs.fr"
+    },
+    "membres": [{
+        "prenom": "Fabienne",
+        "nom": "Faÿ"
+      },
+      {
+        "prenom": "Isabelle",
+        "nom": "Linossier"
+      },
+      {
+        "prenom": "Karine",
+        "nom": "Rehel"
+      }
+    ]
+  },
+  "LCE": {
+    "sigle": "LCE",
+    "nom": "Laboratoire de Chimie de l'Environnement",
+    "site": "Marseille",
+    "matricule": "7376",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.306003",
+    "longitude": "5.379647",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Pascal",
+      "nom": "Wong-Wah-Chung",
+      "email": "pascal.wong-wah-chung@univ-amu.fr"
+    },
+    "membres": [{
+        "prenom": "Pascal",
+        "nom": "Wong-Wah-Chung"
+      },
+      {
+        "prenom": "Laurence",
+        "nom": "Asia"
+      },
+      {
+        "prenom": "Pierre",
+        "nom": "Doumenq"
+      },
+      {
+        "prenom": "Stéphanie",
+        "nom": "Lebarillier"
+      },
+      {
+        "prenom": "Stéphanie",
+        "nom": "Rossignol"
+      }
+    ]
+  },
+  "Lecob": {
+    "sigle": "Lecob",
+    "nom": "Laboratoire d'écogéochimie des environnements benthiques",
+    "site": "Banyuls",
+    "matricule": "8222",
+    "tutelles": ["XXXXXX"],
+    "latitude": "42.479982",
+    "longitude": "3.136365",
+    "domaines": "Toxicité et évaluation des risques",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Franck",
+      "nom": "Lartaud",
+      "email": "franck.lartaud@obs-banyuls.fr"
+    },
+    "membres": [{
+        "prenom": "Franck",
+        "nom": "Lartaud"
+      },
+      {
+        "prenom": "Erwan",
+        "nom": "Peru"
+      },
+      {
+        "prenom": "Audrey",
+        "nom": "Pruski"
+      },
+      {
+        "prenom": "Gilles",
+        "nom": "Vetion"
+      }
+    ]
+  },
+  "LEE": {
+    "sigle": "LEE",
+    "nom": "Laboratoire Eau et Environnement",
+    "site": "Bouguenais",
+    "matricule": "",
+    "tutelles": ["XXXXXX"],
+    "latitude": "47.154889",
+    "longitude": "-1.6388",
+    "domaines": "Identification des sources, niveaux de contamination, Contaminants chimiques associés aux micro et nanoplastiques, Sciences et société",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Johnny",
+      "nom": "Gasperi",
+      "email": "johnny.gasperi@univ-eiffel.fr"
+    },
+    "membres": [{
+      "prenom": "Johnny",
+      "nom": "Gasperi"
+    }]
+  },
+  "Leesu": {
+    "sigle": "Leesu",
+    "nom": "Laboratoire Eau Environnement et Systèmes Urbains",
+    "site": "Créteil",
+    "matricule": "MA 102",
+    "tutelles": ["XXXXXX"],
+    "latitude": "48.788563",
+    "longitude": "2.44272",
+    "domaines": "Identification des sources, niveaux de contamination, Modélisation du cycle du plastique",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Bruno",
+      "nom": "Tassin",
+      "email": "bruno.tassin@enpc.fr"
+    },
+    "membres": [{
+        "prenom": "Bruno",
+        "nom": "Tassin"
+      },
+      {
+        "prenom": "Rachid",
+        "nom": "Dris"
+      }
+    ]
+  },
+  "Legos": {
+    "sigle": "Legos",
+    "nom": "Laboratoire d’Études en Géophysique et Océanographie Spatiales",
+    "site": "Toulouse",
+    "matricule": "5566",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.561798",
+    "longitude": "1.479163",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Boris",
+      "nom": "Dewitte",
+      "email": "boris.dewitte@legos.obs-mip.fr"
+    },
+    "membres": [{
+        "prenom": "Boris",
+        "nom": "Dewitte"
+      },
+      {
+        "prenom": "Alexandre",
+        "nom": "Ganachaud"
+      },
+      {
+        "prenom": "Véronique",
+        "nom": "Garçon"
+      },
+      {
+        "prenom": "Ariane",
+        "nom": "Koch-Larrouy"
+      },
+      {
+        "prenom": "Joël",
+        "nom": "Sudre"
+      }
+    ]
+  },
+  "Lemar": {
+    "sigle": "Lemar",
+    "nom": "Laboratoire des Sciences de l'Environnement Marin",
+    "site": "Plouzané",
+    "matricule": "6539",
+    "tutelles": ["XXXXXX"],
+    "latitude": "48.358688",
+    "longitude": "-4.562719",
+    "domaines": "Identification des sources, niveaux de contamination, Toxicité et évaluation des risques, Colonisation des déchets plastiques, transport d'espèces, Sciences et société",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Arnaud",
+      "nom": "Huvet",
+      "email": "arnaud.huvet@ifremer.fr"
+    },
+    "membres": [{
+        "prenom": "Arnaud",
+        "nom": "Huvet"
+      },
+      {
+        "prenom": "Ika",
+        "nom": "Paul-Pont"
+      },
+      {
+        "prenom": "Adeline",
+        "nom": "Bidault"
+      },
+      {
+        "prenom": "Patrice",
+        "nom": "Brehmer"
+      },
+      {
+        "prenom": "Aurélie",
+        "nom": "Chambouvet"
+      },
+      {
+        "prenom": "Charlotte",
+        "nom": "Corporeau"
+      },
+      {
+        "prenom": "Éric",
+        "nom": "Deslandes"
+      },
+      {
+        "prenom": "Christine",
+        "nom": "Dubreuil"
+      },
+      {
+        "prenom": "Caroline",
+        "nom": "Fabioux"
+      },
+      {
+        "prenom": "Christophe",
+        "nom": "Lambert"
+      },
+      {
+        "prenom": "Nelly",
+        "nom": "Le Goïc"
+      },
+      {
+        "prenom": "Brivaëla",
+        "nom": "Moriceau"
+      },
+      {
+        "prenom": "Philippe",
+        "nom": "Soudant"
+      },
+      {
+        "prenom": "Yoann",
+        "nom": "Thomas"
+      }
+    ]
+  },
+  "LER/PAC": {
+    "sigle": "LER/PAC",
+    "nom": "Laboratoire Environnement Ressources Provence Azur Corse",
+    "site": "Bastia",
+    "matricule": "",
+    "tutelles": ["XXXXXX"],
+    "latitude": "42.662498",
+    "longitude": "9.439562",
+    "domaines": "Identification des sources, niveaux de contamination, Colonisation des déchets plastiques, transport d'espèces, Sciences et société, Modélisation du cycle du plastique, surveillance régulière,  Appui aux politiques publiques",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "François",
+      "nom": "Galgani",
+      "email": "francois.galgani@ifremer.fr"
+    },
+    "membres": [{
+      "prenom": "François",
+      "nom": "Galgani"
+    }]
+  },
+  "LGPMM": {
+    "sigle": "LGPMM",
+    "nom": "Génétique et Pathologie des Mollusques Marins",
+    "site": "La Tremblade",
+    "matricule": "",
+    "tutelles": ["XXXXXX"],
+    "latitude": "45.798345",
+    "longitude": "-1.149809",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Benjamin",
+      "nom": "Morga",
+      "email": "benjamin.morga@ifremer.fr"
+    },
+    "membres": [{
+      "prenom": "Benjamin",
+      "nom": "Morga"
+    }]
+  },
+  "LJP": {
+    "sigle": "LJP",
+    "nom": "Laboratoire Jean Perrin",
+    "site": "Sorbonne Université",
+    "matricule": "8237",
+    "tutelles": ["XXXXXX"],
+    "latitude": "48.847697",
+    "longitude": "2.356808",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Nelly",
+      "nom": "Henry",
+      "email": "nelly.henry@upmc.fr"
+    },
+    "membres": [{
+        "prenom": "Nelly",
+        "nom": "Henry"
+      },
+      {
+        "prenom": "Maxime",
+        "nom": "Deforet"
+      },
+      {
+        "prenom": "Franck",
+        "nom": "Sureau"
+      }
+    ]
+  },
+  "LMGE": {
+    "sigle": "LMGE",
+    "nom": "Laboratoire Microorganismes : Génome et Environnement",
+    "site": "Aubière",
+    "matricule": "6023",
+    "tutelles": ["XXXXXX"],
+    "latitude": "45.760544",
+    "longitude": "3.116208",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Didier",
+      "nom": "Debroas",
+      "email": "didier.debroas@uca.fr"
+    },
+    "membres": [{
+      "prenom": "Didier",
+      "nom": "Debroas"
+    }]
+  },
+  "Lomic": {
+    "sigle": "Lomic",
+    "nom": "Laboratoire d'Océanographie microbienne",
+    "site": "Banyuls",
+    "matricule": "7621",
+    "tutelles": ["XXXXXX"],
+    "latitude": "42.479982",
+    "longitude": "3.136365",
+    "domaines": "Toxicité et évaluation des risques, Colonisation des déchets plastiques, transport d'espèces, Dégradation/biodégradation des polymères dans l’eau, Polymères du futur, ingénierie des polymères",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Jean-François",
+      "nom": "Ghiglione",
+      "email": "ghiglione@obs-banyuls.fr"
+    },
+    "membres": [{
+        "prenom": "Jean-François",
+        "nom": "Ghiglione"
+      },
+      {
+        "prenom": "Pascal",
+        "nom": "Conan"
+      },
+      {
+        "prenom": "Mireille",
+        "nom": "Pujo-Pay"
+      }
+    ]
+  },
+  "Lops": {
+    "sigle": "Lops",
+    "nom": "Laboratoire d'Océanographie Physique et Spatiale",
+    "site": "Plouzané",
+    "matricule": "6523",
+    "tutelles": ["XXXXXX"],
+    "latitude": "48.358688",
+    "longitude": "-4.562719",
+    "domaines": "dynamique de la dispersion océanique",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Christophe",
+      "nom": "Maes",
+      "email": "christophe.maes@ird.fr"
+    },
+    "membres": [{
+        "prenom": "Christophe",
+        "nom": "Maes"
+      },
+      {
+        "prenom": "Bruno",
+        "nom": "Blanke"
+      },
+      {
+        "prenom": "Xavier",
+        "nom": "Carton"
+      },
+      {
+        "prenom": "Guillaume",
+        "nom": "Charria"
+      },
+      {
+        "prenom": "Nicolas",
+        "nom": "Grima"
+      },
+      {
+        "prenom": "Thierry",
+        "nom": "Huck"
+      },
+      {
+        "prenom": "Gwenaëlle",
+        "nom": "Jan"
+      },
+      {
+        "prenom": "Élodie",
+        "nom": "Martinez"
+      },
+      {
+        "prenom": "Florian",
+        "nom": "Sevellec"
+      }
+    ]
+  },
+  "LOV": {
+    "sigle": "LOV",
+    "nom": "Laboratoire d'Océanographie de Villefranche",
+    "site": "Villefranche sur mer",
+    "matricule": "7093",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.696307",
+    "longitude": "7.306754",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Maria Luiza",
+      "nom": "Pedrotti",
+      "email": "pedrotti@obs-vlfr.fr"
+    },
+    "membres": [{
+        "prenom": "Maria Luiza",
+        "nom": "Pedrotti"
+      },
+      {
+        "prenom": "Gabriel",
+        "nom": "Gorsky"
+      },
+      {
+        "prenom": "Marie-Emmanuelle",
+        "nom": "Kerros"
+      },
+      {
+        "prenom": "Fabien",
+        "nom": "Lombard"
+      }
+    ]
+  },
+  "Lubem": {
+    "sigle": "Lubem",
+    "nom": "Laboratoire Universitaire de Biodiversité et d'Écologie Microbienne",
+    "site": "Brest",
+    "matricule": "EA 3882",
+    "tutelles": ["XXXXXX"],
+    "latitude": "47.981089",
+    "longitude": "-4.099517",
+    "domaines": "Colonisation des déchets plastiques, transport d'espèces, Dégradation/biodégradation des polymères dans l’eau",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Gaëtan",
+      "nom": "Burgaud",
+      "email": "gaetan.burgaud@univ-brest.fr"
+    },
+    "membres": [{
+        "prenom": "Gaëtan",
+        "nom": "Burgaud"
+      },
+      {
+        "prenom": "Emmanuel",
+        "nom": "Coton"
+      }
+    ]
+  },
+  "Mapiem": {
+    "sigle": "Mapiem",
+    "nom": "Laboratoire MAtériaux Polymères Interfaces Environnement Marin",
+    "site": "Toulon",
+    "matricule": "EA 4323",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.136432",
+    "longitude": "6.012538",
+    "domaines": "Contaminants chimiques associés aux micro et nanoplastiques, Colonisation des déchets plastiques, transport d'espèces, Dégradation/biodégradation des polymères dans l’eau",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Jean-François",
+      "nom": "Briand",
+      "email": "briand@univ-tln.fr"
+    },
+    "membres": [{
+        "prenom": "Jean-François",
+        "nom": "Briand"
+      },
+      {
+        "prenom": "Lenaik",
+        "nom": "Belec"
+      },
+      {
+        "prenom": "Christine",
+        "nom": "Bressy"
+      },
+      {
+        "prenom": "Pascal",
+        "nom": "Carrière"
+      },
+      {
+        "prenom": "Jean-François",
+        "nom": "Chailan"
+      },
+      {
+        "prenom": "François-Xavier",
+        "nom": "Perrin"
+      }
+    ]
+  },
+  "Marbec": {
+    "sigle": "Marbec",
+    "nom": "MARine Biodiversity Exploitation and Conservation",
+    "site": "Montpellier",
+    "matricule": "9190",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.631613",
+    "longitude": "3.863438",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Delphine",
+      "nom": "Bonnet",
+      "email": "delphine.bonnet@umontpellier.fr"
+    },
+    "membres": [{
+        "prenom": "Delphine",
+        "nom": "Bonnet"
+      },
+      {
+        "prenom": "Thierry",
+        "nom": "Bouvier"
+      },
+      {
+        "prenom": "Philippe",
+        "nom": "Cecchi"
+      },
+      {
+        "prenom": "Estelle",
+        "nom": "Masseret"
+      },
+      {
+        "prenom": "Behzad",
+        "nom": "Mostajir"
+      },
+      {
+        "prenom": "Francesca",
+        "nom": "Vidussi"
+      }
+    ]
+  },
+  "Marbec": {
+    "sigle": "Marbec",
+    "nom": "MARine Biodiversity Exploitation and Conservation",
+    "site": "Palavas",
+    "matricule": "",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.519985",
+    "longitude": "3.910249",
+    "domaines": "Toxicité et évaluation des risques",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Xavier",
+      "nom": "Cousin",
+      "email": "xavier.cousin@ifremer.fr"
+    },
+    "membres": [{
+        "prenom": "Xavier",
+        "nom": "Cousin"
+      },
+      {
+        "prenom": "Marie-Laure",
+        "nom": "Begout"
+      }
+    ]
+  },
+  "MIO": {
+    "sigle": "MIO",
+    "nom": "Institut Méditerranéen d’Océanologie",
+    "site": "Marseille",
+    "matricule": "7294",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.235053",
+    "longitude": "5.440751",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Richard",
+      "nom": "Sempéré",
+      "email": "richard.sempere@mio.osupytheas.fr"
+    },
+    "membres": [{
+      "prenom": "Richard",
+      "nom": "Sempéré"
+    }]
+  },
+  "MMS-Nantes": {
+    "sigle": "MMS-Nantes",
+    "nom": "Mer, Molécules, Santé",
+    "site": "Nantes",
+    "matricule": "",
+    "tutelles": ["XXXXXX"],
+    "latitude": "47.239499",
+    "longitude": "-1.553298",
+    "domaines": "Identification des sources, niveaux de contamination, Toxicité et évaluation des risques",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Aurore",
+      "nom": "Zalouk-Vergnoux",
+      "email": "aurore.zalouk-vergnoux@univ-nantes.fr"
+    },
+    "membres": [{
+        "prenom": "Aurore",
+        "nom": "Zalouk-Vergnoux"
+      },
+      {
+        "prenom": "Abderrahmane",
+        "nom": "Kamari"
+      },
+      {
+        "prenom": "Laurence",
+        "nom": "Poirier"
+      }
+    ]
+  },
+  "MMS-UCO": {
+    "sigle": "MMS-UCO",
+    "nom": "Mer, Molécules, Santé",
+    "site": "Angers",
+    "matricule": "",
+    "tutelles": ["XXXXXX"],
+    "latitude": "",
+    "longitude": "",
+    "domaines": "Toxicité et évaluation des risques",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Amélie",
+      "nom": "Châtel",
+      "email": "amelie.chatel@uco.fr "
+    },
+    "membres": [{
+        "prenom": "Amélie",
+        "nom": "Châtel"
+      },
+      {
+        "prenom": "Catherine",
+        "nom": "Mouneyrac"
+      },
+      {
+        "prenom": "Mélanie",
+        "nom": "Bruneau"
+      },
+      {
+        "prenom": "Aurore",
+        "nom": "Caruso"
+      },
+      {
+        "prenom": "Isabelle",
+        "nom": "Métais"
+      },
+      {
+        "prenom": "Mohammed",
+        "nom": "Mouloud"
+      },
+      {
+        "prenom": "Hanane",
+        "nom": "Perrein-Ettajani"
+      }
+    ]
+  },
+  "MSC": {
+    "sigle": "MSC",
+    "nom": "Laboratoire Matière et Système Complexe",
+    "site": "Paris",
+    "matricule": "7057",
+    "tutelles": ["XXXXXX"],
+    "latitude": "48.828527",
+    "longitude": "2.382547",
+    "domaines": "Colonisation des déchets plastiques, transport d'espèces",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Florence",
+      "nom": "Elias",
+      "email": "florence.elias@univ-paris-diderot.fr"
+    },
+    "membres": [{
+        "prenom": "Florence",
+        "nom": "Elias"
+      },
+      {
+        "prenom": "Philippe",
+        "nom": "Brunet"
+      },
+      {
+        "prenom": "Éric",
+        "nom": "Buhler"
+      },
+      {
+        "prenom": "Gaëlle",
+        "nom": "Charron"
+      },
+      {
+        "prenom": "Adrian",
+        "nom": "Daerr"
+      },
+      {
+        "prenom": "Jean-Marc",
+        "nom": "Di Meglio"
+      },
+      {
+        "prenom": "Nathalie",
+        "nom": "Luciani"
+      }
+    ]
+  },
+  "OSU OREME": {
+    "sigle": "OSU OREME",
+    "nom": "Observatoire de REcherche Méditerranéen de l’Environnement ",
+    "site": "Sète",
+    "matricule": "UMS 3282",
+    "tutelles": ["XXXXXX"],
+    "latitude": "43.414116",
+    "longitude": "3.688975",
+    "domaines": "Ecologie marine expérimentale, Ecologie microbienne, Ecophysiologie planctonique",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Sebastien",
+      "nom": "Mas",
+      "email": "sebastien.mas1@umontpellier.fr"
+    },
+    "membres": [{
+      "prenom": "Sebastien",
+      "nom": "Mas"
+    }]
+  },
+  "PROMES": {
+    "sigle": "PROMES",
+    "nom": "Procédés, Matériaux et Energie Solaire",
+    "site": "Perpignan",
+    "matricule": "UPR 8521",
+    "tutelles": ["XXXXXX"],
+    "latitude": "42.664846",
+    "longitude": "2.910082",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Marie-Agnès",
+      "nom": "Courty",
+      "email": "marie-agnes.courty@promes.cnrs.fr"
+    },
+    "membres": [{
+        "prenom": "Marie-Agnès",
+        "nom": "Courty"
+      },
+      {
+        "prenom": "Jean-Michel",
+        "nom": "Martinez"
+      },
+      {
+        "prenom": "Françoise",
+        "nom": "Massines"
+      }
+    ]
+  },
+  "RDT": {
+    "sigle": "RDT",
+    "nom": "Recherche et Développement technique",
+    "site": "Plouzané",
+    "matricule": "",
+    "tutelles": ["XXXXXX"],
+    "latitude": "48.358688",
+    "longitude": "-4.562719",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Chantal",
+      "nom": "Compère",
+      "email": "chantal.compere@ifremer.fr"
+    },
+    "membres": [{
+        "prenom": "Chantal",
+        "nom": "Compère"
+      },
+      {
+        "prenom": "Maël",
+        "nom": "Arhant"
+      },
+      {
+        "prenom": "Kada",
+        "nom": "Boukerma"
+      },
+      {
+        "prenom": "Lylian",
+        "nom": "Challier"
+      },
+      {
+        "prenom": "Florent",
+        "nom": "Colas"
+      },
+      {
+        "prenom": "Peter",
+        "nom": "Davies"
+      },
+      {
+        "prenom": "Catherine",
+        "nom": "Dreanno"
+      },
+      {
+        "prenom": "Maria",
+        "nom": "El Rakwe"
+      },
+      {
+        "prenom": "Pierre-Yves",
+        "nom": "Le Gac"
+      },
+      {
+        "prenom": "Maëlenn",
+        "nom": "Le Gall"
+      }
+    ]
+  },
+  "RMPF": {
+    "sigle": "RMPF",
+    "nom": "Ressources Marines en Polynésie Française",
+    "site": "Pacifique",
+    "matricule": "",
+    "tutelles": ["XXXXXX"],
+    "latitude": "-17.805917",
+    "longitude": "-149.292913",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Gilles",
+      "nom": "Le Moullac",
+      "email": "gilles.le.moullac@ifremer.fr"
+    },
+    "membres": [{
+        "prenom": "Gilles",
+        "nom": "Le Moullac"
+      },
+      {
+        "prenom": "Jérémy",
+        "nom": "Le Luyer"
+      },
+      {
+        "prenom": "Alain",
+        "nom": "Lo Yat"
+      },
+      {
+        "prenom": "Denis",
+        "nom": "Saulnier"
+      }
+    ]
+  },
+  "SayFood-AgroParisTech": {
+    "sigle": "SayFood-AgroParisTech",
+    "nom": "SayFood AgroParisTech",
+    "site": "Paris Saclay",
+    "matricule": "0782",
+    "tutelles": ["XXXXXX"],
+    "latitude": "48.839772",
+    "longitude": "2.347657",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Sandra",
+      "nom": "Domenek",
+      "email": "sandra.domenek@agroparistech.fr"
+    },
+    "membres": [{
+      "prenom": "Sandra",
+      "nom": "Domenek"
+    }]
+  },
+  "SMPC": {
+    "sigle": "SMPC",
+    "nom": "Service des Matériaux Polymères et Composites",
+    "site": "Mons, Belgique",
+    "matricule": "",
+    "tutelles": ["XXXXXX"],
+    "latitude": "50.451686",
+    "longitude": "3.958992",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Samira",
+      "nom": "Benali",
+      "email": "samira.benali@umons.ac.be"
+    },
+    "membres": [{
+        "prenom": "Samira",
+        "nom": "Benali"
+      },
+      {
+        "prenom": "Rosica",
+        "nom": "Mincheva"
+      },
+      {
+        "prenom": "Jean-Marie",
+        "nom": "Raquez"
+      }
+    ]
+  },
+  "Takuvik": {
+    "sigle": "Takuvik",
+    "nom": "Takuvik",
+    "site": "Québec, Canada",
+    "matricule": "UMI 3376",
+    "tutelles": ["XXXXXX"],
+    "latitude": "46.778422",
+    "longitude": "-71.277567",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Julien",
+      "nom": "Gigault",
+      "email": "julien.gigault@takuvik.ulaval.ca"
+    },
+    "membres": [{
+        "prenom": "Julien",
+        "nom": "Gigault"
+      },
+      {
+        "prenom": "Philippe",
+        "nom": "Archambault"
+      },
+      {
+        "prenom": "Marcel",
+        "nom": "Babin"
+      },
+      {
+        "prenom": "Raoul-Marie",
+        "nom": "Couture"
+      },
+      {
+        "prenom": "Caroline",
+        "nom": "Guillmette"
+      },
+      {
+        "prenom": "Jean-Éric",
+        "nom": "Tremblay"
+      }
+    ]
+  },
+  "UCCS": {
+    "sigle": "UCCS",
+    "nom": "Unité de Catalyse et de Chimie du Solide",
+    "site": "Lille",
+    "matricule": "8181",
+    "tutelles": ["XXXXXX"],
+    "latitude": "50.608156",
+    "longitude": "3.140678",
+    "domaines": "",
+    "axes": ["XXXXXXX"],
+    "web": "XXXXXXXX",
+    "contact": {
+      "prenom": "Philippe",
+      "nom": "Zinck",
+      "email": "philippe.zinck@univ-lille.fr "
+    },
+    "membres": [{
+      "prenom": "Philippe",
+      "nom": "Zinck"
+    }]
+  }
+}

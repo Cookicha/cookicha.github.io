@@ -12,7 +12,7 @@
     <h1>Navigateur</h1>
     <div id="back">&larrhk;</div>
     <div class="" id="ici"></div>
-<!--
+    <!--
 <button id="create">Create file</button>
 <a download="dataLabos.js" id="downloadlink" style="display: none">Download</a>
 -->
@@ -26,38 +26,68 @@
   </section>
 
   <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="data.json"></script>
-  <script type="text/javascript" src="navigateur.js"></script>
-  <script type="text/javascript" src="table-it.js"></script>
+  <!-- <script type="text/javascript" src="data.js"></script> -->
+  <!-- <script type="text/javascript" src="navigateur.js"></script> -->
+  <!-- <script type="text/javascript" src="table-it.js"></script> -->
   <script type="text/javascript" charset="utf-8">
-//   function findInObject(obj, comparedObj){
-//       return Object.keys(obj).some(function(key){
-//           var value = obj[key];
-//
-//           if (!value) {
-//             return false;
-//           }
-//
-//           if (typeof value === "string") {
-//              return value === comparedObj;
-//           }
-//
-//           if (value instanceof Array) {
-//              return value.some(function(e){
-//                  return (typeof value === "string" && e === comparedObj) ||
-//                         findInObject(e, comparedObj);
-//              });
-//           }
-//
-//           return findInObject(value, comparedObj);
-//      });
-//  }
-// console.log( findInObject(data, 'Fabre'));
-// console.log( findInObject(data, '1'));
-// console.log( findInObject(data, 'Matthieu'));
-// console.log( findInObject(data, 'Henriette'));
-// console.log( findInObject(data, 'coulomb.umontpellier.fr'));
-console.log(JSON.parse(data.json));
+
+
+
+    //charger la BDD data.json
+    var requestURL = 'https://cookicha.github.io/gdrPO/tableur/realDataset.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+      const data = request.response;
+      // navigate(data);
+      // tableIt(data);
+      var labos = Object.values(data);
+
+      console.log(data);
+    }
+
+
+    // for (var i = 0; i < labos.length; i++) {
+    //   console.log(Object.values(data)[i].membres.filter(x => x.prenom === 'Guillaume').map(x => x.nom));
+    // }
+    // console.log(data.l2c.membres[0].prenom);
+    // }
+
+    // var rendu = "{";
+    // for (var i = 0; i < source.length; i++) {
+    //   rendu += "\"" + source[i][4] + "\":{\"sigle\":\"" + source[i][4] + "\"," +
+    //     "\"nom\":\"" + source[i][5] + "\"," +
+    //     "\"site\":\"" + source[i][6] + "\"," +
+    //     "\"matricule\":\"" + source[i][9] + "\"," +
+    //     "\"tutelles\":[\"XXXXXX\"]," +
+    //     "\"latitude\":\"" + source[i][7] + "\"," +
+    //     "\"longitude\":\"" + source[i][8] + "\"," +
+    //     "\"domaines\":\"" + source[i][10] + "\"," +
+    //     "\"axes\":[\"XXXXXXX\"]," +
+    //     "\"web\":\"XXXXXXXX\"," +
+    //     "\"contact\":{\"prenom\":\"" + source[i][0] + "\"," +
+    //     "\"nom\":\"" + source[i][1] + "\"," +
+    //     "\"email\":\"" + source[i][3] + "\"},\"membres\":[{\"prenom\":\"XXXXXXXXXX\",\"nom\":\"XXXXXXXXXX\"},{\"prenom\":\"XXXXXXXXXX\",\"nom\":\"XXXXXXXXXX\"}]},\r"
+    // };
+    // rendu += "}";
+
+    // function download(filename, text) {
+    //   var element = document.createElement('a');
+    //   element.setAttribute('href', 'data:text/json;charset=utf-8,' + encodeURIComponent(text));
+    //   element.setAttribute('download', filename);
+    //
+    //   element.style.display = 'none';
+    //   document.body.appendChild(element);
+    //
+    //   element.click();
+    //
+    //   document.body.removeChild(element);
+    // }
+    //
+    // // Start file download.
+    // download("realDataset.json", rendu);
   </script>
 </body>
 

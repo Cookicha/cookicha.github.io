@@ -1,3 +1,5 @@
+var tableIt = function (data){
+var buffer = {};
 // console.log(property + ": " + data[property]);
 // console.log(`${property}: ${data[property]}`);
 $('#table-div').html("<table id='table'></table");
@@ -23,7 +25,7 @@ for (const property in data) {
   $('#' + property).append("<td>" + eval("data." + property + ".matricule") + "</td>")
   //tutelles Array
   var tutellesString = "<td>";
-  var buffer = eval("data." + property + ".tutelles");
+  buffer = eval("data." + property + ".tutelles");
   for (j = 0; j < buffer.length; j++) {
     if (j == 0) {
       tutellesString += eval("data." + property + ".tutelles[" + j + "]");
@@ -62,4 +64,5 @@ for (const property in data) {
   };
   membresString += "</td>";
   $('#' + property).append(membresString);
+};
 }
