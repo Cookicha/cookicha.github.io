@@ -36,7 +36,20 @@ for (const property in data) {
   //fin tutelles
   $('#' + property).append("<td>" + eval("data." + property + ".latitude") + "</td>");
   $('#' + property).append("<td>" + eval("data." + property + ".longitude") + "</td>");
-  $('#' + property).append("<td>" + eval("data." + property + ".domaines") + "</td>");
+  //domaines
+  // $('#' + property).append("<td>" + eval("data." + property + ".domaines") + "</td>");
+  var domainesString = "<td>";
+  buffer = eval("data." + property + ".domaines");
+  for (j = 0; j < buffer.length; j++) {
+    if (j == 0) {
+      domainesString += eval("data." + property + ".domaines[" + j + "]");
+    } else {
+      domainesString += "<br />" + eval("data." + property + ".domaines[" + j + "]");
+    }
+  };
+  domainesString += "</td>";
+  $('#' + property).append(domainesString);
+  //fin domaines
   $('#' + property).append("<td>" + eval("data." + property + ".axes") + "</td>");
   $('#' + property).append("<td>" + eval("data." + property + ".web") + "</td>");
   $('#' + property).append("<td>" + eval("data." + property + ".contact.prenom") + " " + eval("data." + property + ".contact.nom") + "<br />" + eval("data." + property + ".contact.email")+ "</td>");
