@@ -6,7 +6,9 @@
 --marge:100px;
 --dark:black;
 }
-
+* {
+	  scroll-behavior: smooth;
+}
 .gris {
 background-color:var(--grey);
 }
@@ -28,7 +30,7 @@ color:white;
 	* {
 		box-sizing: border-box;
 	}
-	
+
 	/* passer body (et tous les éléments de largeur fixe) en largeur automatique */
 
 	body {
@@ -36,7 +38,7 @@ color:white;
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	/* fixer une largeur maximale de 100% aux éléments potentiellement problématiques */
 
 	img,
@@ -53,13 +55,13 @@ color:white;
 	video {
 		overflow:hide;
 	}
-	
+
 	/* conserver le ratio des images */
 
 	img {
 		height: auto;
 	}
-	
+
 	/* gestion des mots longs */
 
 	textarea,
@@ -74,13 +76,13 @@ color:white;
 		hyphens: auto;
 		word-wrap: break-word; /* passage à la ligne forcé */
 	}
-	
+
 	code,
 	pre,
 	samp {
 		white-space: pre-wrap; /* passage à la ligne spécifique pour les éléments à châsse fixe */
 	}
-	
+
 	/* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
 
 	.element1,
@@ -88,13 +90,13 @@ color:white;
 		float: none;
 		width: auto;
 	}
-	
+
 	/* masquer les éléments superflus */
 
 	.hide-mobile {
 		display: none !important;
 	}
-	
+
 	/* Un message personnalisé */
 
 	body:before {
@@ -108,7 +110,7 @@ color:white;
 		max-width:50vw !important;
 		height:auto;
 	}
-	
+
 }
 
 @media (max-device-width:768px) and (orientation: landscape) {
@@ -176,7 +178,7 @@ menu {
 	position:fixed;
 	top:0;
 	width:100%;
-	background:var(--dark);	
+	background:var(--dark);
 	z-index:200;
 	text-align:right;
 	font-size:0.8em;
@@ -431,12 +433,12 @@ padding:0 4px;
   color:white;
   font-size:60px;
   font-weight:bold;
-  
+
 }
 
 .img-comp-slider:after {
 	content:"\2B04";
-}	
+}
 
 /*diapos*/
 .scroll {
@@ -493,7 +495,7 @@ align-items:center;
 	bottom:20px;
 	left:30px;
 	margin:0;
-	user-drag: none; 
+	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
@@ -521,12 +523,12 @@ align-items:center;
 	z-index:100;
 }
 #dessusBouteille {
-	position:absolute;	
+	position:absolute;
 	width:106px;
   height:16px;
   left:0px;
   top:-8px;
-  	user-drag: none; 
+  	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
@@ -565,11 +567,11 @@ align-items:center;
 	overflow:hidden;
 	border:none;
 	box-shadow:none;
-  -moz-transform: scale(0.5, 0.5); 
-  -webkit-transform: scale(0.25, 0.25); 
+  -moz-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.25, 0.25);
   -o-transform: scale(0.25, 0.25);
   -ms-transform: scale(0.25, 0.25);
-  transform: scale(0.5, 0.5); 
+  transform: scale(0.5, 0.5);
   -moz-transform-origin: top left;
   -webkit-transform-origin: top left;
   -o-transform-origin: top left;

@@ -8,6 +8,10 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height" />
   <link rel="stylesheet" href="css/gdrPO.css" />
+  <!-- CSS leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
@@ -37,12 +41,18 @@
       <li><a href="#">Ressources</a></li>
     </ul>
   </nav>
-  <div class="header" id="headerMembres" >
+  <!-- <div class="header" id="headerMembres" >
     <div class="container">
       <h1>Membres</h1>
     </div>
-  </div>
+  </div> -->
   <main>
+    <section>
+      <!-- <div class="container">
+        <h1 id="titreCarte">Carte interactive des laboratoires</h1>
+      </div> -->
+      <div id="carte"></div>
+      </section>
     <section>
       <div class="container">
         <h1 id="scientifiques">Conseil scientifique</h1>
@@ -164,17 +174,6 @@
     </section>
     <section>
       <div class="container">
-        <h1 id="carte">Carte interactive des laboratoires</h1>
-        <p>Les plastiques&nbsp;: de leur entrée dans l’environnement à leur devenir ultime</p>
-        <p>Quelles sont les quantités apportées par chacune des sources de contamination (rivières, fleuves, côtes, mer), quel est le véritable niveau de contamination des océans (surface, colonne d’eau, fonds marins, sédiments) et comment modéliser
-          le
-          cycle du plastique en tenant compte du continuum terre-mer jusqu’aux abysses ? De nouveaux protocoles scientifiques doivent être mis au point pour tenir compte de toutes les échelles allant des macro-, aux micro- et nano-plastiques. De
-          nombreuses connaissances fondamentales sur le comportement et le devenir ultime des plastiques dans l’environnement restent à acquérir. Afin d’évaluer les temps de dégradation des polymères dans un milieu aussi complexe que l’environnement,
-          il est plus que jamais nécessaire de comprendre les liens entre leurs propriétés structurales et/ou morphologiques et leurs processus de (bio) dégradation et de fragmentation.</p>
-      </div>
-    </section>
-    <section>
-      <div class="container">
         <h1 id="rejoindre">Nous rejoindre</h1>
         <h2>Chercheurs et laboratoires</h2>
         <p>Le Groupement de recherche Polymères & Océans est ouvert aux chercheurs et chercheuses de France et du monde travaillant sur les thématiques touchant au devenir ou aux impacts des plastiques dans l'environnement aquatique. Cela inclut les mers et océans, les eaux continentales, et le continuum terre-mer.</p>
@@ -203,6 +202,26 @@
       <span><a href="https://cookicha.github.io">Martin Galilée</a> 2020</span>
     </div>
   </footer>
+  <script type="text/javascript">
+
+  var requestURL = 'https://cookicha.github.io/gdrPO/tableur/realDataset.json';
+  var request = new XMLHttpRequest();
+  request.open('GET', requestURL);
+  request.responseType = 'json';
+  request.send();
+  request.onload = function() {
+    const data = request.response;
+    const labos = Object.values(data);
+    console.log(labos);
+  }
+  </script>
+
+  <!-- JavaScript Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <!-- Javascript Carte -->
+  <script type="text/javascript" src="js/gdr-po-carte.js"></script>
 </body>
 
 </html>

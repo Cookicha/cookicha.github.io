@@ -412,6 +412,17 @@ transform: translate(-50%, -50%);
   font-weight:bold;
 }
 
+#carte {
+  height:600px;
+}
+#carte a {
+  background-image:none;
+}
+#carte .my-div-icon {
+  background:var(--main3);
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px #888;
+}
 footer {
   width: 100%;
   margin: 0;
