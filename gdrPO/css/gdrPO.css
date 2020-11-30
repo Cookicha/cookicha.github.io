@@ -421,7 +421,7 @@ transform: translate(-50%, -50%);
 #carte .my-div-icon {
   background:var(--main3);
   border-radius: 50%;
-  box-shadow: 1px 1px 3px #888;
+  box-shadow: 1px 1px 3px #558;
 }
 footer {
   width: 100%;

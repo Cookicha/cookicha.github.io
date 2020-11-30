@@ -1,4 +1,14 @@
-var mymap = L.map('carte').setView([47.1, 3], 6);
+var requestURL = 'https://cookicha.github.io/gdrPO/tableur/realDataset2.json';
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+request.onload = function() {
+  const data = request.response;
+  const labos = Object.values(data);
+  console.log(labos);
+
+var mymap = L.map('carte').setView([47.1, 3], 5);
 // L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 //     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 //     maxZoom: 18,
@@ -15,7 +25,6 @@ var mymap = L.map('carte').setView([47.1, 3], 6);
 var CartoDB_VoyagerNoLabels = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
 	attribution: '',
 	subdomains: 'abcd',
-  minZoom: 9,
 	maxZoom: 19
 });
 var Esri_WorldTerrain = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}', {
@@ -44,6 +53,14 @@ CartoDB_VoyagerOnlyLabels.setOpacity(0.4).addTo(mymap);
 // var marker = L.marker([47.1,3]).addTo(mymap);
 var rond = L.divIcon({className: 'my-div-icon'});
 for (var i = 0; i < labos.length; i++) {
-  console.log(labos[i])
+  var labo = labos[i];
+  console.log(labo);
+  console.log(labo.latLng);
+
+  // L.marker([labos[i]["latlng"][0],labos[i]["latLng"][1]], {icon: rond}).addTo(mymap);
+// LUI LA
+  // markers[labo] = L.marker(labo.latLng,{icon: rond}).addTo(map);
 }
-L.marker([47.1,3], {icon: rond}).addTo(mymap);
+// console.log(labos[i]["Lat/Long"][0],labos[i]["Lat/Long"][1])
+
+}
