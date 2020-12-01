@@ -1,0 +1,99 @@
+#carte {
+  height:600px;
+}
+#carte a {
+  background-image:none;
+}
+
+#carte .element {
+position:absolute;
+width:16px;
+height:16px;
+background:var(--main3);
+border-radius:20px;
+/* box-shadow:1px 1px 3px #555; */
+margin: -2px 0 0 -2px;
+border:1px solid white;
+}
+#carte .element .label {
+display:none;
+position:absolute;
+text-align:center;
+padding:12px;
+background:var(--main3);
+color:white;
+font-family: 'Montserrat';
+font-weight:bold;
+font-size:0.9em;
+border-radius:0;
+/* box-shadow:1px 1px 3px #555; */
+white-space: nowrap;
+transform: translate(calc(-50% + 7px), -112%);
+}
+
+#carte .elementTest {
+  width:30px;
+  height:30px;
+  background-color: red;
+  /* position:absolute;
+  top:100px;
+  left:100px; */
+}
+
+#carte .element:hover .label {
+display:block;
+}
+#carte .element.clicked {
+background:var(--highlight);
+z-index:10;
+}
+#carte .element.clicked .label{
+background:var(--highlight);
+display:block;
+}
+#carte activemarker {
+  background: red;
+}
+
+#carte .leaflet-div-icon {
+  background: transparent;
+  border:none;
+}
+#carte .marker {
+  background:var(--main3);
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px #558;
+}
+#carte .marker:after {
+
+}
+#carte .leaflet-popup {
+  color:var(--main0);
+  margin-bottom:25px;
+  margin-left: 0px;
+}
+#carte .leaflet-popup * {
+  color:var(--main0);
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Montserrat';
+}
+
+#carte .leaflet-popup-content-wrapper {
+  background:var(--main3);
+  color:var(--main0);
+  border-radius: 0;
+}
+
+#carte .leaflet-popup-content-wrapper .leaflet-popup-content {
+}
+#carte .leaflet-popup-content {
+}
+#carte .leaflet-popup-tip-container {
+}
+
+#carte .leaflet-popup-tip {
+  background: var(--main3);
+}

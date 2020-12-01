@@ -8,6 +8,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height" />
   <link rel="stylesheet" href="css/gdrPO.css" />
+  <link rel="stylesheet" href="css/carte.css" />
   <!-- CSS leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -202,17 +203,17 @@
       <span><a href="https://cookicha.github.io">Martin Galilée</a> 2020</span>
     </div>
   </footer>
-  <script type="text/javascript">
-
-
-  </script>
-
+  <!-- Load d3.js and the geo projection plugin -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- JavaScript Leaflet -->
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
   crossorigin=""></script>
   <!-- Javascript Carte -->
-  <script type="text/javascript" src="js/gdr-po-carte.js"></script>
+  <script type="text/javascript" src="js/gdr-po-carte-d3.js"></script>
 </body>
 
 </html>
