@@ -4,8 +4,6 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function() {
-    const data = request.response;
-    const labos = Object.values(data);
 
     var map = L
       .map('carte', {
@@ -45,22 +43,30 @@ request.onload = function() {
     //     maxZoom: 6,
     //     }).addTo(map);
 
+    const data = request.response;
+    const labos = Object.values(data);
+    for (var i = 0; i < labos.length; i++) {
+     labos[i].xyCoords = map.latLngToLayerPoint(labos[i].latLng);
+     d3.select("#carte").append("div")
+      .html("FIRST LINE <br> SECOND LINE")
+      .attr("class","TEST")
+      .style("left", ("50px"))
+      .style("top", ("100px"));
+    }
+    console.log(data);
+    console.log(labos);
+
+    function updateCoord() {
+      coord = map.latLngToLayerPoint(data.l2c.latLng);
+      console.log(coord);
+    }
+
     // Add a svg layer to the map
     L.svg().addTo(map);
 
-    // Create data for circles:
-    var markers = [{
-        long: 9.083,
-        lat: 42.149
-      }, // corsica
-      {
-        long: 7.26,
-        lat: 43.71
-      } // nice
-    ];
 
     // Select the svg area and add circles:
-    d3.select("#carte")
+    var circulo = d3.select("#carte")
       .select("svg")
       .selectAll("myCircles")
       .data(labos)
@@ -78,20 +84,23 @@ request.onload = function() {
       .attr("stroke-width", 1)
       .attr("fill-opacity", 1)
 
-    // Function that update circle position if something change
+
+    // Function that updates circle position if something changes
     function update() {
       d3.selectAll("circle")
         .attr("cx", function(d) {
-          return map.latLngToLayerPoint([d.lat, d.long]).x
+          return map.latLngToLayerPoint([d.latLng[0], d.latLng[1]]).x
         })
         .attr("cy", function(d) {
-          return map.latLngToLayerPoint([d.lat, d.long]).y
+          return map.latLngToLayerPoint([d.latLng[0], d.latLng[1]]).y
         })
     }
 
     // If the user change the map (zoom or drag), I update circle position:
     map.on("moveend", update);
+    map.on("moveend", updateCoord);
 }
+
     //
     //   // var rond = L.divIcon({
     //   //   className: 'marker'

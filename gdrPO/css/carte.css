@@ -10,10 +10,10 @@ position:absolute;
 width:16px;
 height:16px;
 background:var(--main3);
-border-radius:20px;
+border-radius:50%;
 /* box-shadow:1px 1px 3px #555; */
 margin: -2px 0 0 -2px;
-border:1px solid white;
+border:2px solid white;
 }
 #carte .element .label {
 display:none;
@@ -31,10 +31,16 @@ white-space: nowrap;
 transform: translate(calc(-50% + 7px), -112%);
 }
 
-#carte .elementTest {
-  width:30px;
-  height:30px;
-  background-color: red;
+.TEST {
+  width:30px !important;
+  height:30px !important;
+  background:red !important;
+  z-index: 1000 !important;
+}
+#carte circle {
+  width:17px;
+  height:17px;
+  cursor: pointer !important;
   /* position:absolute;
   top:100px;
   left:100px; */
