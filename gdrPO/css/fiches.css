@@ -1,0 +1,71 @@
+body#test {
+  background: var(--main1);
+}
+
+#fiches-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width:1200px;
+  margin:100px auto;
+  border:none;
+}
+
+.fiche {
+  position:relative;
+  background: var(--main0);
+  font-family: 'Montserrat';
+  border: none;
+  box-shadow: 2px 2px 2px #888;
+  width: 360px;
+  padding: 50px 0;
+  margin:8px;
+}
+.fiche > * {
+  padding:0 20px ;
+  border:none;
+}
+.fiche img.pin-fiche {
+    padding:0;
+    display:none  ;
+    width:20px;
+    margin: 0 0 20px 20px ;
+    cursor:pointer;
+}
+.filtres-fiche {
+  font-size:0.9em;
+  font-weight:bold;
+  color:var(--main0);
+  background:var(--main4);
+  padding:16px 22px;
+}
+.filtres-fiche > * {
+  padding:4px 0;
+}
+.fiche img.logo-fiche {
+  display: block;
+  height:100px;
+  max-width:100%;
+  margin:20px auto;
+}
+.sigle-fiche, .nom-fiche, .identifiant-fiche  {
+  text-align:center;
+  font-size:0.9em;
+  font-weight:bold;
+}
+.contact-fiche {
+  margin:40px 0 0 0;
+  font-size:0.9em;
+}
+
+.titre-fiche {
+  font-size:1.2em;
+  color:var(--main4);
+  font-weight:bold;
+  margin:20px 0
+}
+.p-fiche {
+  /* display:none; */
+  margin:10px 0;
+}

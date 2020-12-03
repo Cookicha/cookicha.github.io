@@ -1152,7 +1152,7 @@
     "sigle": "L2C",
     "nom": "Laboratoire Charles Coulomb",
     "site": "Montpellier",
-    "identifiant": "5221",
+    "identifiant": "UMR 5221",
     "tutelles": ["CNRS", "Université de Montpellier"],
     "latLng": ["43.63305", "3.867045"],
     "domaines": ["phy","chi"],
