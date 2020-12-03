@@ -361,7 +361,7 @@
     "tutelles": [null],
     "latLng": ["48.389008", "-4.441772"],
     "domaines": ["eco"],
-    "techniques": ["A,"C"],
+    "techniques": ["A","C"],
     "axes": ["1"],
     "web": "wwz.cedre.fr",
     "fiche": {
