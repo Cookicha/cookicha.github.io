@@ -6,6 +6,8 @@ request.send();
 request.onload = function() {
   const data = request.response;
   const labos = Object.values(data);
+const ids = Object.keys(data);
+  console.log(ids);
   var mymap = L.map('carte', {
     scrollWheelZoom: false
   }).setView([47.1, 3], 5);
@@ -39,10 +41,14 @@ request.onload = function() {
   // var rond = L.divIcon({
   //   className: 'marker'
   // });
-  var markers = {};
-  var labelMarkerOptions = {
-    closeButton: false
+  var print = "";
+  for (var i = 0; i < ids.length; i++) {
+    print += ids[i] + ",";
+  // var markers = {};
+  // var labelMarkerOptions = {
+  //   closeButton: false
   };
+  console.log(print);
   for (var i = 0; i < labos.length; i++) {
     var id = labos.keys[i];
     var labo = labos[i];
@@ -128,5 +134,6 @@ $(document).ready(function() {
   //
   //   }
   // };
+
 
 });

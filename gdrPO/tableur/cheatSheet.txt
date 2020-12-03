@@ -4,11 +4,17 @@
 3. Innovation
 
 ---Domaines---
-Phy: Physique
-Chi: Chimie
-Eco: Écologie & environnement
-Ingé: Sciences de l'Ingénierie et des Systèmes
-Univ: Sciences de l'Univers
-SHS: SHS
+Phy. Physique
+Chi. Chimie
+Bio. Biologie
+Eco. Écologie & environnement
+Ing. Sciences de l'Ingénierie & des Systèmes
+Univ. Sciences de l'Univers
+SHS. Sciences Humaines & Sociales
 
 ---Techniques---
+A. Échantillonnage et caractérisation des polymères
+B. Caractérisation des microorganismes
+C. Outils écotoxicologiques
+D. Modélisation
+E. Outils SHS
