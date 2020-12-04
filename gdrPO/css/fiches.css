@@ -67,6 +67,15 @@ flex-direction: column;
   margin:40px 0 0 0;
   font-size:0.9em;
 }
+.contact-fiche div {
+  margin:4px auto;
+}
+.contact-fiche span {
+  font-weight: bold;
+}
+.contact-fiche .contact-nom {
+  font-variant: small-caps;
+}
 
 .titre-fiche {
   font-size:1.2em;

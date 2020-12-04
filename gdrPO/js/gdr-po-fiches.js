@@ -37,22 +37,36 @@ request.onload = function() {
     var nom = "<div class='nom-fiche'>" + data[id].nom + "</div>";
     var identifiant = "<div class='identifiant-fiche'>" + data[id].identifiant + "</div>";
     var logo = "<img src='../img/logos/labos/" + id + "-logo.png' class='logo-fiche'/>";
-    var domaines = decodeDomain(data[id].domaines[0]);
-    for (var j = 1; j < data[id].domaines.length; j++) {
-      domaines += " &ndash; " + decodeDomain(data[id].domaines[j]);
+    var domaines = "";
+    var axes = "";
+    var techniques = "";
+    if (data[id].domaines.length > 0) {
+      domaines = decodeDomain(data[id].domaines[0]);
+      for (var j = 1; j < data[id].domaines.length; j++) {
+        domaines += " &ndash; " + decodeDomain(data[id].domaines[j]);
+      }
     }
-    var axes = decodeAxes(data[id].axes[0]);
-    for (var j = 1; j < data[id].axes.length; j++) {
-      axes += " &ndash; " + decodeAxes(data[id].axes[j]);
+    if (data[id].axes.length > 0) {
+      axes = decodeAxes(data[id].axes[0]);
+      for (var j = 1; j < data[id].axes.length; j++) {
+        axes += " &ndash; " + decodeAxes(data[id].axes[j]);
+      }
     }
-    var techniques = decodeTechniques(data[id].techniques[0]);
-    for (var j = 1; j < data[id].techniques.length; j++) {
-      techniques += " &ndash; " + decodeTechniques(data[id].techniques[j]);
+    if (data[id].techniques.length > 0) {
+      techniques = decodeTechniques(data[id].techniques[0]);
+      for (var j = 1; j < data[id].techniques.length; j++) {
+        techniques += " &ndash; " + decodeTechniques(data[id].techniques[j]);
+      }
     }
     var filtres = "<div class='filtres-fiche'><div class='domaines-fiche'>" + domaines + "</div><div class='axes-fiches'>" + axes + "</div><div class='techniques-fiche'>" + techniques + "</div></div>";
     var titre = "<div class='titre-fiche'>" + data[id].fiche.titre + "</div>";
-    // <div class='p-fiche'>Nécessité de comprendre les mécanismes microscopiques qui pilotent la transformation d’un déchet plastique en micro- et nanoplastiques</div>
-    var contact = "<div class='contact-fiche'><div class='web-contact-fiche'><a href='" + data[id].web + "'>" + data[id].web + "</a></div><div class='nom-contact-fiche'>Contact GDR : <span>" + data[id].contact.prenom + " </span><span>" + data[id].contact.nom + "</span></div><div class='contact-contact-fiche'><a href='mailto:" + data[id].contact.email + "'>" + data[id].contact.email + "</a></div></div>";
-    $('#fiches-section').append("<div class='fiche'>" + pin + sigle + nom + identifiant + logo + filtres + titre + contact + "</div>");
+    var paragraphes = "";
+    if (data[id].fiche.bullets.length > 0) {
+      for (var j = 0; j < data[id].fiche.bullets.length; j++) {
+        paragraphes += "<div class='p-fiche'>" + data[id].fiche.bullets[j] + "</div>";
+      }
+    }
+    var contact = "<div class='contact-fiche'><div class='nom-contact-fiche'>Contact GDR : <span>" + data[id].contact.prenom + " </span><span class='contact-nom'>" + data[id].contact.nom + "</span></div><div class='contact-contact-fiche'><a href='mailto:" + data[id].contact.email + "'>" + data[id].contact.email + "</a></div><div class='web-contact-fiche'><a href='" + data[id].web + "'>" + data[id].web + "</a></div></div>";
+    $('#fiches-section').append("<div class='fiche'>" + pin + sigle + nom + identifiant + logo + filtres + titre + paragraphes + contact + "</div>");
   }
 };
