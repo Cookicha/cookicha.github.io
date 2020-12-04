@@ -1056,7 +1056,7 @@
     "sigle": "Iprem",
     "nom": "Institut des Sciences Analytiques et de Physico-Chimie pour l'environnement et les Matériaux",
     "site": "Pau",
-    "identifiant": "5254",
+    "identifiant": "UMR 5254",
     "tutelles": ["CNRS", "Université de Pau et des Pays de l'Adour", "IMT Mines Alès"],
     "latLng": ["43.321065", "-0.366305"],
     "domaines": ["chi"],
@@ -1351,7 +1351,7 @@
     ]
   },
   "lee": {
-    "sigle": "EE",
+    "sigle": "LEE",
     "nom": "Laboratoire Eau et Environnement",
     "site": "Bouguenais",
     "identifiant": "",

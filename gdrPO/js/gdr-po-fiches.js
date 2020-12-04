@@ -5,7 +5,6 @@ request.responseType = 'json';
 request.send();
 request.onload = function() {
   const data = request.response;
-  console.log(data);
   const labos = Object.values(data);
   const ids = Object.keys(data);
   var decodeDomain = function(input){
@@ -32,11 +31,11 @@ request.onload = function() {
   }
   for (var i = 0; i < ids.length; i++) {
     var id = ids[i];
-    var pin = "<img src='../img/pin-gris.png' class='pin-fiche' />";
+    // var pin = "<img src='../img/pin-gris.png' class='pin-fiche' />";
     var sigle = "<div class='sigle-fiche'>" + data[id].sigle + "</div>";
     var nom = "<div class='nom-fiche'>" + data[id].nom + "</div>";
     var identifiant = "<div class='identifiant-fiche'>" + data[id].identifiant + "</div>";
-    var logo = "<img src='../img/logos/labos/" + id + "-logo.png' class='logo-fiche'/>";
+    var logo = "<div class='logo-box-fiche'><img src='../img/logos/labos/" + id + "-logo.png' class='logo-fiche'/></div>";
     var domaines = "";
     var axes = "";
     var techniques = "";
@@ -59,7 +58,12 @@ request.onload = function() {
       }
     }
     var filtres = "<div class='filtres-fiche'><div class='domaines-fiche'>" + domaines + "</div><div class='axes-fiches'>" + axes + "</div><div class='techniques-fiche'>" + techniques + "</div></div>";
-    var titre = "<div class='titre-fiche'>" + data[id].fiche.titre + "</div>";
+    var grosPlus = "<div class='grosPlus clos'></div>";
+    if (data[id].fiche.titre != "") {
+      var titre = "<div class='titre-fiche'>" + data[id].fiche.titre + "</div>";
+    } else {
+      var titre = "";
+    }
     var paragraphes = "";
     if (data[id].fiche.bullets.length > 0) {
       for (var j = 0; j < data[id].fiche.bullets.length; j++) {
@@ -67,6 +71,13 @@ request.onload = function() {
       }
     }
     var contact = "<div class='contact-fiche'><div class='nom-contact-fiche'>Contact GDR : <span>" + data[id].contact.prenom + " </span><span class='contact-nom'>" + data[id].contact.nom + "</span></div><div class='contact-contact-fiche'><a href='mailto:" + data[id].contact.email + "'>" + data[id].contact.email + "</a></div><div class='web-contact-fiche'><a href='" + data[id].web + "'>" + data[id].web + "</a></div></div>";
-    $('#fiches-section').append("<div class='fiche'>" + pin + sigle + nom + identifiant + logo + filtres + titre + paragraphes + contact + "</div>");
+    $('#fiches-section').append("<div class='fiche'><div class='tete'>" + sigle + nom + identifiant + "</div>" + logo + filtres + grosPlus + titre + paragraphes + contact + "</div>");
   }
+  $(document).ready(function(){
+    $(".grosPlus.clos").click(function() {
+      $(this).toggleClass('clos');
+      $(this).toggleClass('ouvert');
+      $(this).siblings('.titre-fiche,.p-fiche,.contact-fiche').toggle(200);
+    });
+  });
 };
