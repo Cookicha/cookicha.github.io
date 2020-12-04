@@ -65,7 +65,7 @@
     ],
     "latLng": ["48.359163", "-4.558795"],
     "domaines": ["bio"],
-    "techniques": [],
+    "techniques": [""],
     "axes": ["2"],
     "web": null,
     "fiche": {
@@ -500,7 +500,7 @@
   },
   "epoc": {
     "sigle": "Epoc",
-    "nom": "Laboratoire Environnement Paléoenvironnement Continentaux et Océaniques",
+    "nom": "Environnement Paléoenvironnement Continentaux et Océaniques",
     "site": "Bordeaux",
     "identifiant": "UMR 5805",
     "tutelles": ["CNRS", "Université de Bordeaux", "École Pratique des Hautes Études"],

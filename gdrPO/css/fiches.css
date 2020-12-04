@@ -8,14 +8,14 @@ body#test {
   justify-content: center;
   align-items: flex-start;
   width:1200px;
-  margin:100px auto;
+  margin:40px auto;
   border:none;
 }
 
 .fiche {
   position:relative;
   background: var(--main0);
-  font-family: 'Montserrat';
+  font-family: 'Montserrat' sans-serif;
   border: none;
   box-shadow: 2px 2px 2px #888;
   width: 360px;
@@ -53,6 +53,15 @@ body#test {
   text-align:center;
   font-size:0.9em;
   font-weight:bold;
+  margin:4px auto;
+}
+.nom-fiche {
+  height:2em;
+  vertical-align: middle;
+  display: flex;
+justify-content: center;
+align-content: center;
+flex-direction: column;
 }
 .contact-fiche {
   margin:40px 0 0 0;
