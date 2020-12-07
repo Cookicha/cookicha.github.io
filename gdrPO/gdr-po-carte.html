@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>GDR Polymères & Océans - Carte interactive des laboratoires</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height" />
+  <link rel="stylesheet" href="css/gdrPO.css" />
+  <link rel="stylesheet" href="css/carte.css" />
+  <link rel="stylesheet" href="css/fiches.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="clair" id="mynav">
+    <ul class="nav">
+      <li><a href="gdr-po-index.html"><img src="img/logos/logo-gdr-po.png" /></a></li>
+      <li><a href="gdr-po-gdr.html">Le&nbsp;GDR</a>
+        <ul>
+          <li><a href="gdr-po-gdr.html#axes">Axes de recherche</a></li>
+          <li><a href="gdr-po-gdr.html#actions">Actions</a></li>
+          <li><a href="gdr-po-gdr.html#charte">Charte éthique</a></li>
+          <li><a href="gdr-po-gdr.html#contact">Contact</a></li>
+        </ul>
+      </li>
+      <li><a href="gdr-po-membres.html">Membres</a>
+        <ul>
+          <li><a href="gdr-po-membres.html#direction">Comité de direction</a></li>
+          <li><a href="gdr-po-membres.html#scientifiques">Conseil scientifique</a></li>
+          <li><a href="gdr-po-membres.html#rejoindre">Nous rejoindre</a></li>
+        </ul>
+      </li>
+      <li><a class="current" href="#">Carte interactive des laboratoires</a></li>
+    </ul>
+  </nav>
+  <div id="headerMap" class="header">
+    <div id="stylekey">
+      <div id="domaines">
+        <div class="titre">Domaines de recherche</div>
+        <div id="phy" class="bouton domaine"><div class="texte-bouton">Physique</div></div>
+        <div id="chi" class="bouton domaine"><div class="texte-bouton">Chimie</div></div>
+        <div id="bio" class="bouton domaine"><div class="texte-bouton">Biologie</div></div>
+        <div id="eco" class="bouton domaine"><div class="texte-bouton">Écologie &amp; environnement</div></div>
+        <div id="ing" class="bouton domaine"><div class="texte-bouton">Sciences de l'ingénierie &amp; des systèmes</div></div>
+        <div id="univ" class="bouton domaine"><div class="texte-bouton">Sciences de l'univers</div></div>
+        <div id="shs" class="bouton domaine"><div class="texte-bouton">Sciences humaines &amp; sociales</div></div>
+      </div>
+      <div id="axes">
+        <div class="titre">Axes de recherche</div>
+        <div id="axe1" class="bouton axe"><div class="texte-bouton">1. Niveaux de contamination et devenir ultime</div></div>
+        <div id="axe2" class="bouton axe"><div class="texte-bouton">2. Impacts sur le vivant et les écosystèmes</div></div>
+        <div id="axe3" class="bouton axe"><div class="texte-bouton">3. Nouveaux polymères &amp; modèles économiques</div></div>
+      </div>
+      <div id="techniques">
+        <div class="titre">Techniques mobilisées</div>
+        <div id="techA" class="bouton technique"><div class="texte-bouton">Échantillonnage et caractérisation des polymères</div></div>
+        <div id="techB" class="bouton technique"><div class="texte-bouton">Caractérisation des microorganismes</div></div>
+        <div id="techC" class="bouton technique"><div class="texte-bouton">Outils écotoxicologiques</div></div>
+        <div id="techD" class="bouton technique"><div class="texte-bouton">Modélisation</div></div>
+        <div id="techE" class="bouton technique"><div class="texte-bouton">Outils SHS</div></div>
+      </div>
+    </div>
+  </div>
+  <div id="fiches-container">
+    <section id="fiches-section">
+
+    </section>
+  </div>
+  <footer>
+    <div class="container">
+      <span><a href="https://cookicha.github.io">Martin Galilée</a> 2020</span>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/gdr-po-fiches.js"></script>
+  <script type="text/javascript" charset="utf-8">
+
+  </script>
+</body>
+
+</html>

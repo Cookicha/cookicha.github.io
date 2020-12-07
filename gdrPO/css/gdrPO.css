@@ -1,7 +1,7 @@
 :root {
   --main0: white;
   --main1: #e0f1ff;
-  --main2: #5280bc;
+  --main2: #5a89ac;
   --main3: #37557D;
   --main4: #11284b;
   --complement: #78AD50;
@@ -413,7 +413,7 @@ transform: translate(-50%, -50%);
 }
 
 #carte {
-  height:600px;
+  height:1200px;
 }
 #carte a {
   background-image:none;

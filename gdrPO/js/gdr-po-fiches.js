@@ -7,27 +7,50 @@ request.onload = function() {
   const data = request.response;
   const labos = Object.values(data);
   const ids = Object.keys(data);
-  var decodeDomain = function(input){
-    if (input == "phy") {return "Physique"}
-    else if (input == "phy") {return "Physique";}
-    else if (input == "chi") {return "Chimie";}
-    else if (input == "bio") {return "Biologie";}
-    else if (input == "eco") {return "Écologie & environnement";}
-    else if (input == "ing") {return "Sciences de l'ingénierie & des systèmes";}
-    else if (input == "univ") {return "Sciences de l'univers";}
-    else if (input == "shs") {return "Sciences humaines & sociales";}
+  var decodeDomain = function(input) {
+    if (input == "phy") {
+      return "Physique"
+    } else if (input == "phy") {
+      return "Physique";
+    } else if (input == "chi") {
+      return "Chimie";
+    } else if (input == "bio") {
+      return "Biologie";
+    } else if (input == "eco") {
+      return "Écologie & environnement";
+    } else if (input == "ing") {
+      return "Sciences de l'ingénierie & des systèmes";
+    } else if (input == "univ") {
+      return "Sciences de l'univers";
+    } else if (input == "shs") {
+      return "Sciences humaines & sociales";
+    }
   }
-  var decodeAxes = function(input){
-    if (input == "1") {return "État des lieux"}
-    else if (input == "2") {return "Effets sur la biosphère";}
-    else if (input == "3") {return "Innovation";}
+  var decodeAxes = function(input) {
+    if (input == "1") {
+      return "État des lieux"
+    } else if (input == "2") {
+      return "Effets sur la biosphère";
+    } else if (input == "3") {
+      return "Innovation";
+    }
   }
-  var decodeTechniques = function(input){
-    if (input == "A") {return "Échantillonnage et caractérisation des polymères"}
-    else if (input == "B") {return "Caractérisation des microorganismes";}
-    else if (input == "C") {return "Outils écotoxicologiques";}
-    else if (input == "D") {return "Modélisation";}
-    else if (input == "E") {return "Outils SHS";}
+  var decodeTechniques = function(input) {
+    if (input == "A") {
+      return "Échantillonnage et caractérisation des polymères"
+    } else if (input == "B") {
+      return "Caractérisation des microorganismes";
+    } else if (input == "C") {
+      return "Outils écotoxicologiques";
+    } else if (input == "D") {
+      return "Modélisation";
+    } else if (input == "E") {
+      return "Outils SHS";
+    }
+  }
+  var convertGPS = function(latLng) {
+    latLng[2] = (latLng[0] * (-51.8)) + 2730;
+    latLng[3] = (latLng[1] * (-35.3)) + 373;
   }
   for (var i = 0; i < ids.length; i++) {
     var id = ids[i];
@@ -35,7 +58,7 @@ request.onload = function() {
     var sigle = "<div class='sigle-fiche'>" + data[id].sigle + "</div>";
     var nom = "<div class='nom-fiche'>" + data[id].nom + "</div>";
     var identifiant = "<div class='identifiant-fiche'>" + data[id].identifiant + "</div>";
-    var logo = "<div class='logo-box-fiche'><img src='../img/logos/labos/" + id + "-logo.png' class='logo-fiche'/></div>";
+    var logo = "<div class='logo-box-fiche'><img src='img/logos/labos/" + id + "-logo.png' class='logo-fiche'/></div>";
     var domaines = "";
     var axes = "";
     var techniques = "";
@@ -71,13 +94,84 @@ request.onload = function() {
       }
     }
     var contact = "<div class='contact-fiche'><div class='nom-contact-fiche'>Contact GDR : <span>" + data[id].contact.prenom + " </span><span class='contact-nom'>" + data[id].contact.nom + "</span></div><div class='contact-contact-fiche'><a href='mailto:" + data[id].contact.email + "'>" + data[id].contact.email + "</a></div><div class='web-contact-fiche'><a href='" + data[id].web + "'>" + data[id].web + "</a></div></div>";
-    $('#fiches-section').append("<div class='fiche'><div class='tete'>" + sigle + nom + identifiant + "</div>" + logo + filtres + grosPlus + titre + paragraphes + contact + "</div>");
+    $('#fiches-section').append("<div class='fiche' id='fiche-" + id + "'><div class='tete'>" + sigle + nom + identifiant + "</div>" + logo + filtres + grosPlus + titre + paragraphes + contact + "</div>");
+    convertGPS(data[id].latLng);
+    var classes = "";
+    for (var j = 0; j < data[id].axes.length; j++) {
+     classes += "axe" + data[id].axes[j] + " ";
+    }
+    for (var j = 0; j < data[id].domaines.length; j++) {
+     classes += data[id].domaines[j] + " ";
+    }
+    for (var j = 0; j < data[id].techniques.length; j++) {
+     classes += "tech" + data[id].techniques[j] + " ";
+    }
+    console.log(classes);
+    $('#headerMap').append("<div class='dot " + classes + "' id='" + id + "' style='top: " + data[id].latLng[2] + "px; right: " + data[id].latLng[3] + "px;'><div class='label'>" + data[id].sigle + "</div></div>")
   }
-  $(document).ready(function(){
+  $(document).ready(function() {
     $(".grosPlus.clos").click(function() {
       $(this).toggleClass('clos');
       $(this).toggleClass('ouvert');
       $(this).siblings('.titre-fiche,.p-fiche,.contact-fiche').toggle(200);
     });
+    $('.dot').click(function() {
+      if ($(this).hasClass('clicked')) {
+        $(this).removeClass('clicked');
+        $('#fiche-' + this.id).removeClass('highlight');
+      } else {
+        $(this).addClass('clicked');
+        $('#fiche-' + this.id).addClass('highlight');
+      }
+    });
+
+
+    var filtre = [];
+    var code;
+    var filtrehover = [];
+    var codehover;
+    function displayIn() {
+
+      code = filtre.join('');
+      codehover = code + filtrehover.join('');
+      $('.dot').hide();
+      $('.dot' + codehover).show();
+      $('.fiche').hide();
+      $('.dot' + codehover + code).each(function() {
+        $('#fiche-' + this.id).show();
+      });
+    }
+    function displayOut() {
+      filtrehover = [];
+      codehover = '';
+      code = filtre.join('');
+      $('.dot').hide();
+      $('.dot' + code).show();
+      $('.fiche').hide();
+      $('.dot' + codehover + code).each(function() {
+        $('#fiche-' + this.id).show();
+      });
+    }
+
+    $('.bouton').click(function() {
+      if ($(this).hasClass('clicked')) {
+        $(this).removeClass('clicked');
+        $('.dot.' + this.id).removeClass('selected');
+        filtre = filtre.filter(e => e !== ('.' + this.id));
+        $('.fiche.' + this.id).removeClass('selected');
+        filtre = filtre.filter(e => e !== ('.' + this.id));
+      } else {
+        $(this).addClass('clicked');
+        $('.dot.' + this.id).addClass('selected');
+        filtre.push('.' + this.id);
+      }
+    });
+    $('.bouton').hover(function() {
+      filtrehover.push('.' + this.id);
+      displayIn();
+    }, function() {
+      displayOut();
+    });
+
   });
 };

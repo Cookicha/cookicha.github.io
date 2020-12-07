@@ -1,8 +1,9 @@
-body#test {
-  background: var(--main1);
+div#fiches-container {
+  background: #f0f6fa;
+  margin:0;
+  padding:20px 0;
 }
-
-#fiches-section {
+section#fiches-section {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -16,11 +17,12 @@ body#test {
   position:relative;
   background: var(--main0);
   font-family: 'Montserrat' sans-serif;
-  border: none;
+  border-top: 10px solid white;
   box-shadow: 2px 2px 2px #888;
   width: 360px;
-  padding: 50px 0 10px 0;
+  padding: 40px 0 10px 0;
   margin:8px;
+  font-size: 0.9em;
 }
 .fiche > * {
   padding:0 20px ;
@@ -56,12 +58,11 @@ body#test {
 .fiche img.logo-fiche {
   display: block;
   max-height:100px;
-  max-width:80%;
+  max-width:60%;
   margin:0 auto;
 }
 .fiche .tete {
   text-align:center;
-  font-size:0.9em;
   display:flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -96,7 +97,6 @@ body#test {
 .contact-fiche {
   display:none;
   margin:40px 0 0 0;
-  font-size:0.9em;
 }
 .contact-fiche div {
   margin:4px auto;
@@ -118,4 +118,9 @@ body#test {
 .p-fiche {
   display:none;
   margin:10px 0;
+}
+
+.fiche.highlight {
+  border-top: 10px solid var(--highlight);
+  order:-1;
 }
