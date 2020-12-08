@@ -20,10 +20,11 @@
 </head>
 
 <body>
+  <!-- <div id="toggle-menu">&#9776; &#10006;</div> -->
   <nav class="clair" id="mynav">
     <ul class="nav">
-      <li><a href="gdr-po-index.html"><img src="img/logos/logo-gdr-po.png" /></a></li>
-      <li><a href="gdr-po-gdr.html">Le&nbsp;GDR</a>
+      <li class="menuItem"><a href="gdr-po-index.html"><img src="img/logos/logo-gdr-po.png" /></a></li>
+      <li class="menuItem"><a href="gdr-po-gdr.html">Le&nbsp;GDR</a>
         <ul>
           <li><a href="gdr-po-gdr.html#axes">Axes de recherche</a></li>
           <li><a href="gdr-po-gdr.html#actions">Actions</a></li>
@@ -31,14 +32,15 @@
           <li><a href="gdr-po-gdr.html#contact">Contact</a></li>
         </ul>
       </li>
-      <li><a class="current" href="#">Membres</a>
+      <li class="menuItem"><a class="current" href="#">Membres</a>
         <ul>
           <li><a href="#scientifiques">Conseil scientifique</a></li>
           <li><a href="#direction">Comité de direction</a></li>
           <li><a href="#rejoindre">Nous rejoindre</a></li>
         </ul>
       </li>
-      <li><a href="gdr-po-carte.html">Carte interactive des laboratoires</a></li>
+      <li class="menuItem"><a href="gdr-po-carte.html">Carte interactive des laboratoires</a></li>
+      <li id="hamburger"><span id="hamburgerSign">&#9776;</span><span id="crossSign">&#10006;</span></li>
     </ul>
   </nav>
   <main>
@@ -182,13 +184,6 @@
         <h3 id="contact">Contact</h3>
         <a href="mailto:gdr-po-codir@umontpellier.fr?subject=contact">gdr-po-codir@<wbr>umontpellier.fr</a>
       </div>
-      <div class="" id="newsletter">
-        <h3>Newsletter</h3>
-        <form class="" action="index.html" method="post">
-          <input type="text" name="email" id="email" placeholder="E-mail *" required>
-          <input type="submit" value=">">
-        </form>
-      </div>
     </div>
   </section>
   <footer>
@@ -196,17 +191,8 @@
       <span><a href="https://cookicha.github.io">Martin Galilée</a> 2020</span>
     </div>
   </footer>
-  <!-- Load d3.js and the geo projection plugin -->
-  <script src="https://d3js.org/d3.v4.js"></script>
-  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-  <!-- jQuery -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- JavaScript Leaflet -->
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-  crossorigin=""></script>
-  <!-- Javascript Carte -->
-  <script type="text/javascript" src="js/gdr-po-carte.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/gdr-po.js"></script>
 </body>
 
 </html>

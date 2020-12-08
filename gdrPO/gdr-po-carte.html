@@ -19,8 +19,8 @@
 <body>
   <nav class="clair" id="mynav">
     <ul class="nav">
-      <li><a href="gdr-po-index.html"><img src="img/logos/logo-gdr-po.png" /></a></li>
-      <li><a href="gdr-po-gdr.html">Le&nbsp;GDR</a>
+      <li class="menuItem"><a href="gdr-po-index.html"><img src="img/logos/logo-gdr-po.png" /></a></li>
+      <li class="menuItem"><a href="gdr-po-gdr.html">Le&nbsp;GDR</a>
         <ul>
           <li><a href="gdr-po-gdr.html#axes">Axes de recherche</a></li>
           <li><a href="gdr-po-gdr.html#actions">Actions</a></li>
@@ -28,14 +28,15 @@
           <li><a href="gdr-po-gdr.html#contact">Contact</a></li>
         </ul>
       </li>
-      <li><a href="gdr-po-membres.html">Membres</a>
+      <li class="menuItem"><a href="gdr-po-membres.html">Membres</a>
         <ul>
           <li><a href="gdr-po-membres.html#direction">Comité de direction</a></li>
           <li><a href="gdr-po-membres.html#scientifiques">Conseil scientifique</a></li>
           <li><a href="gdr-po-membres.html#rejoindre">Nous rejoindre</a></li>
         </ul>
       </li>
-      <li><a class="current" href="#">Carte interactive des laboratoires</a></li>
+      <li class="menuItem"><a class="current" href="#">Carte interactive des laboratoires</a></li>
+      <li id="hamburger"><span id="hamburgerSign">&#9776;</span><span id="crossSign">&#10006;</span></li>
     </ul>
   </nav>
   <div id="headerMap" class="header">
@@ -59,7 +60,7 @@
       <div id="techniques">
         <div class="titre">Techniques mobilisées</div>
         <div id="techA" class="bouton technique"><div class="texte-bouton">Échantillonnage et caractérisation des polymères</div></div>
-        <div id="techB" class="bouton technique"><div class="texte-bouton">Caractérisation des microorganismes</div></div>
+        <div id="techB" class="bouton technique"><div class="texte-bouton">Caractérisation des micro-organismes</div></div>
         <div id="techC" class="bouton technique"><div class="texte-bouton">Outils écotoxicologiques</div></div>
         <div id="techD" class="bouton technique"><div class="texte-bouton">Modélisation</div></div>
         <div id="techE" class="bouton technique"><div class="texte-bouton">Outils SHS</div></div>
@@ -77,6 +78,7 @@
     </div>
   </footer>
   <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/gdr-po.js"></script>
   <script type="text/javascript" src="js/gdr-po-fiches.js"></script>
   <script type="text/javascript" charset="utf-8">
 

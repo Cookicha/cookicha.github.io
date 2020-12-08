@@ -82,7 +82,7 @@ section#fiches-section {
   padding:0;
   width: 60px;
   text-align: center;
-  color:var(--main1);
+  color:var(--main2);
 }
 .fiche .grosPlus:hover {
   cursor:pointer;

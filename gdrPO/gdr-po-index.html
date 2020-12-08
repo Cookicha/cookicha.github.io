@@ -17,8 +17,8 @@
 <body>
   <nav class="clair" id="mynav">
     <ul class="nav">
-      <li><a class="current" href="#"><img src="img/logos/logo-gdr-po.png" /></a></li>
-      <li><a  href="gdr-po-gdr.html">Le&nbsp;GDR</a>
+      <li class="menuItem"><a class="current" href="#"><img src="img/logos/logo-gdr-po.png" /></a></li>
+      <li class="menuItem"><a  href="gdr-po-gdr.html">Le&nbsp;GDR</a>
         <ul>
           <li><a href="gdr-po-gdr.html#axes">Axes de recherche</a></li>
           <li><a href="gdr-po-gdr.html#actions">Actions</a></li>
@@ -26,14 +26,15 @@
           <li><a href="gdr-po-gdr.html#contact">Contact</a></li>
         </ul>
       </li>
-      <li><a href="gdr-po-membres.html">Membres</a>
+      <li class="menuItem"><a href="gdr-po-membres.html">Membres</a>
         <ul>
           <li><a href="gdr-po-membres.html#direction">Comité de direction</a></li>
           <li><a href="gdr-po-membres.html#scientifiques">Conseil scientifique</a></li>
           <li><a href="gdr-po-membres.html#rejoindre">Nous rejoindre</a></li>
         </ul>
       </li>
-      <li><a href="gdr-po-carte.html">Carte interactive des laboratoires</a></li>
+      <li class="menuItem"><a href="gdr-po-carte.html">Carte interactive des laboratoires</a></li>
+      <li id="hamburger"><span id="hamburgerSign">&#9776;</span><span id="crossSign">&#10006;</span></li>
     </ul>
   </nav>
   <div id="headerTitle" class="header">
@@ -68,13 +69,6 @@
         <h3 id="contact">Contact</h3>
         <a href="mailto:gdr-po-codir@umontpellier.fr?subject=contact">gdr-po-codir@<wbr>umontpellier.fr</a>
       </div>
-      <div class="" id="newsletter">
-        <h3>Newsletter</h3>
-        <form class="" action="index.html" method="post">
-          <input type="text" name="email" id="email" placeholder="E-mail *" required>
-          <input type="submit" value=">">
-        </form>
-      </div>
     </div>
   </section>
   <footer>
@@ -82,5 +76,7 @@
       <span><a href="https://cookicha.github.io">Martin Galilée</a> 2020</span>
     </div>
   </footer>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/gdr-po.js"></script>
 </body>
 </html>
