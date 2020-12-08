@@ -124,6 +124,9 @@ li {
   list-style-type: none;
 }
 @media (max-width: 700px) {
+  body {
+    overflow: hidden;
+  }
   nav .nav li {
     display:none;
   }
@@ -138,8 +141,8 @@ li {
   /* top:0px; */
   /* background:white; */
   /* z-index:100; */
-  font-size: 30px;
-  padding:6px 12px 12px 12px;
+  font-size: 26px;
+  padding:12px;
   cursor: pointer;
   /* box-shadow: 0 0 6px var(--main4); */
   user-select: none;
@@ -160,7 +163,7 @@ li {
 }
 
 @media (min-width: 701px) {
-  #toggle-menu {
+  #hamburger {
     display: none;
   }
   .nav {
