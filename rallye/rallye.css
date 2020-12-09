@@ -1,0 +1,104 @@
+:root {
+  --player1: red;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin:0;
+  padding:0;
+  background:#eee;
+}
+#container {
+  position:relative;
+  margin: 10px auto;
+  display:block;
+  width:1200px;
+}
+#canvas {
+  background:white;
+  margin: 10px auto;
+  display:block;
+}
+#direction {
+  position: absolute;
+  top:200px;
+  left:590px;
+  font-size: 20px;
+
+}
+#player1options {
+  position:absolute;
+  width: 50px;
+  height:50px;
+  transform: translate(-50%, -50%);
+  left:100px;
+  top:100px;
+  z-index:10;
+}
+.joueur {
+  border-radius: 50%;
+  width:8px;
+  height:8px;
+  position: absolute;
+  border:1px solid var(--player1);
+  background: var(--player1);
+  transform: translate(-50%, -50%);
+  z-index:1;
+}
+/* .joueur {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width:20px;
+  height:20px;
+} */
+/* .horizontal {
+  position:absolute;
+  background: var(--player1);
+  height:4px;
+  width:100%;
+  top:calc(50% - 2px);
+}
+.vertical {
+  position:absolute;
+  background: var(--player1);
+  width:4px;
+  height:100%;
+  left:calc(50% - 2px);
+} */
+.option {
+  border-radius: 50%;
+  width:8px;
+  height:8px;
+  position: absolute;
+  border:1px solid var(--player1);
+}
+.option:hover {
+  cursor: pointer;
+  background: var(--player1);
+}
+.option.steady {
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+.option.nord {
+  top:0;
+}
+.option.long {
+  left:calc(50% - 5px);
+}
+.option.est {
+  right:0;
+}
+.option.lat {
+  top:calc(50% - 5px);
+}
+.option.sud {
+  bottom:0;
+}
+.option.ouest {
+  left:0;
+}
