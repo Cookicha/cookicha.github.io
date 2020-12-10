@@ -6,8 +6,7 @@ request.send();
 request.onload = function() {
   const data = request.response;
   const labos = Object.values(data);
-const ids = Object.keys(data);
-  console.log(ids);
+  const ids = Object.keys(data);
   var mymap = L.map('carte', {
     scrollWheelZoom: false
   }).setView([47.1, 3], 5);
