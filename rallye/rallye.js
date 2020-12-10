@@ -41,9 +41,9 @@ ctx.stroke();
 // Position et vitesse de départ des joueurs
 var players = [
   [600,5*unit,0,0,$('#player1').css("background-color")],
-  [600,7*unit,0,0,$('#player2').css("background-color")],
-  [600,8*unit,0,0,$('#player3').css("background-color")],
-  [600,9*unit,0,0,$('#player4').css("background-color")]
+  [600,6*unit,0,0,$('#player2').css("background-color")],
+  [600,7*unit,0,0,$('#player3').css("background-color")],
+  [600,8*unit,0,0,$('#player4').css("background-color")]
 ];
 
 // Changement de joueur
