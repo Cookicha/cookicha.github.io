@@ -8,7 +8,8 @@ section#fiches-section {
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
-  width:1200px;
+  width:100vw;
+  max-width:1200px;
   margin:40px auto;
   border:none;
 }
@@ -80,7 +81,7 @@ section#fiches-section {
   font-size: 60px;
   margin: 0 auto;
   padding:0;
-  width: 60px;
+  width: 100%;
   text-align: center;
   color:var(--main2);
 }
@@ -98,8 +99,8 @@ section#fiches-section {
   display:none;
   margin:40px 0 0 0;
 }
-.contact-fiche div {
-  margin:4px auto;
+.contact-fiche * {
+  line-height:1.6;
 }
 .contact-fiche span {
   font-weight: bold;
@@ -113,13 +114,12 @@ section#fiches-section {
   font-size:1.2em;
   color:var(--main4);
   font-weight:bold;
-  margin:20px 0
+  margin:20px 0;
 }
 .p-fiche {
   display:none;
   margin:10px 0;
 }
-
 .fiche.highlight {
   border-top: 10px solid var(--highlight);
   order:-1;
