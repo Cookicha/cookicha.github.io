@@ -1,3 +1,4 @@
+
 :root {
   --main0: white;
   --main1: #e0f1ff;
@@ -210,6 +211,26 @@ body {
 
   nav a.current:hover {
     color: inherit;
+  }
+  #logos {
+    flex-flow: column nowrap !important;
+  }
+  #logos div {
+    margin: 20px!important;
+  }
+
+  #logos div:first-child {
+    margin: 0 3% 0 0;
+  }
+
+  #logos div:last-child {
+    margin: 0 0 0 3%;
+  }
+
+  #logos img {
+    max-width: 100%;
+    max-height:60px!important;
+    width: auto;
   }
 }
 
@@ -529,30 +550,6 @@ p .emphase {
   width: auto;
 }
 
-#sectionContact {
-  background: linear-gradient(var(--main3), var(--main4)95%);
-}
-
-#sectionContact {
-  color: white;
-}
-
-#sectionContact>.container {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-#sectionContact>.container>div {
-  width: 50%;
-  display: inline-block;
-  margin: 0;
-  padding: 40px 0;
-}
-
-#contact {
-  position: relative;
-}
-
 #CS {
   display: flex;
   flex-flow: row wrap;
@@ -608,13 +605,23 @@ p .emphase {
 footer {
   width: 100%;
   margin: 0;
-  padding: 0;
-  background: var(--main4);
+  padding: var(--g-marge) 0;
   color: var(--main0);
-  font-size: 0.8em;
+  font-size: 1em;
+  background: linear-gradient(var(--main3), var(--main4)60%);
+}
+footer a {
+  color:var(--main1);
+}
+footer div {
+  margin-top: var(--g-marge);
 }
 
-#sectionContact a:not(:hover), footer a:not(:hover) {
-  color: var(--main1);
-  background-image: linear-gradient(var(--main1), var(--main1));
+@media (max-width: 600px) {
+  .header {
+    background-attachment:scroll !important;
+  }
+  .header h1 {
+    font-size:2em;
+  }
 }
