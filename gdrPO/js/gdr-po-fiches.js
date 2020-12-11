@@ -125,7 +125,7 @@ request.onload = function() {
       }
     });
 
-    var isTouchDevice = ('ontouchstart' in window || 'onmsgesturechange' in window),
+    // var isTouchDevice = ('ontouchstart' in window || 'onmsgesturechange' in window),
     var filtre = [];
     var code;
     var filtrehover = [];
@@ -167,14 +167,14 @@ request.onload = function() {
       }
     });
     $('.bouton').hover(
-      if(!isTouchDevice){
+      // if(!isTouchDevice){
         function() {
           filtrehover.push('.' + this.id);
           displayIn();
         }, function() {
           displayOut();
         }
-      }
+      // }
     );
   });
 };
