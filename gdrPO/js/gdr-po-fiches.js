@@ -160,6 +160,7 @@ request.onload = function() {
         filtre = filtre.filter(e => e !== ('.' + this.id));
         $('.fiche.' + this.id).removeClass('selected');
         filtre = filtre.filter(e => e !== ('.' + this.id));
+        displayOut();
       } else {
         $(this).addClass('clicked');
         $('.dot.' + this.id).addClass('selected');
