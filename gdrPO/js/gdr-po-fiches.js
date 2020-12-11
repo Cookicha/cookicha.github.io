@@ -125,7 +125,7 @@ request.onload = function() {
       }
     });
 
-
+    var isTouchDevice = ('ontouchstart' in window || 'onmsgesturechange' in window),
     var filtre = [];
     var code;
     var filtrehover = [];
@@ -166,12 +166,15 @@ request.onload = function() {
         filtre.push('.' + this.id);
       }
     });
-    $('.bouton').hover(function() {
-      filtrehover.push('.' + this.id);
-      displayIn();
-    }, function() {
-      displayOut();
-    });
-
+    $('.bouton').hover(
+      if(!isTouchDevice){
+        function() {
+          filtrehover.push('.' + this.id);
+          displayIn();
+        }, function() {
+          displayOut();
+        }
+      }
+    );
   });
 };

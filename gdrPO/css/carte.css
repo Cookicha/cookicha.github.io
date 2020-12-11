@@ -1,3 +1,6 @@
+html.touch *:hover {
+    all:unset!important;
+}
 .header#headerMap {
   position:relative;
   height: 850px;

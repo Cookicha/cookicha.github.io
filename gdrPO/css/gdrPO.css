@@ -22,7 +22,9 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+html.touch *:hover {
+    all:unset!important;
+}
 body {
   background: var(--main0);
 }
