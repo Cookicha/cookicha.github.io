@@ -75,7 +75,7 @@ display:block;
 position:absolute;
 right:600px;
 bottom:20px;
-top:40vh;
+top:calc(20vh + 150px);
 left:20px;
 display:flex;
 flex-flow: column wrap;
@@ -158,27 +158,61 @@ color:white;
     user-select: none;
     background-color: #79dbda;
     display:block;
-}
-#stylekey {
-position:absolute;
-right:20px;
-bottom:20px;
-top:800px;
-left:20px;
-display:flex;
-flex-flow: column wrap;
-justify-content: flex-start;
-align-content: center;
-}
-#stylekey > div {
-  margin:24px 0 0 0px;
-  display: flex;
-  flex-flow: column nowrap;
+  }
+  #stylekey {
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  top:800px;
+  left:20px;
+  display:flex;
+  flex-flow: column wrap;
   justify-content: flex-start;
-  align-items: stretch ;
+  align-content: center;
+  }
+  #stylekey > div {
+    margin:24px 0 0 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch ;
+  }
+  #stylekey .bouton .texte-bouton {
+    padding:6px;
+    max-width:180px;
+  }
 }
-#stylekey .bouton .texte-bouton {
-  padding:6px;
-  max-width:180px;
-}
+@media (max-width: 600px) {
+  .header#headerMap h1 {
+    font-size:2.2em;
+  }
+  .header#headerMap p {
+    font-size:1.2em;
+  }
+  .header#headerMap .container {
+    width:80%;
+    margin-top:20px;
+  }
+  .header#headerMap {
+    width:200vw;
+    height:1148px;
+    margin:-288px -50%;
+    transform: scale(0.5);
+  }
+  #fiche {
+    font-size: 0.8em;
+
+  }
+  #stylekey .titre {
+    margin:0 1px;
+    max-width:140px;
+    padding:10px 14px;
+  }
+  #stylekey .bouton {
+  margin:0 8px;
+  padding:1px;
+  background:transparent;
+  border:none;
+  max-width:140px;
+  }
 }
