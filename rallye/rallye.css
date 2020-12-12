@@ -3,6 +3,7 @@
   --player2: blue;
   --player3: green;
   --player4: hotpink;
+  --player5: orange;
 }
 html {
   -webkit-box-sizing: border-box;
@@ -13,6 +14,7 @@ body {
   margin:0;
   padding:0;
   background:#eee;
+  user-select: none;
 }
 #container {
   position:relative;
@@ -28,6 +30,55 @@ body {
   background:white;
   margin: 10px auto;
   display:block;
+}
+#nbreJoueurs {
+  position:absolute;
+  top:10px;
+  left:10px;
+  font-size: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: : center;
+}
+#nbreJoueurs > div {
+  margin: 4px 0;
+}
+#nbreJoueurs #nbre {
+  font-weight:bold;
+  display: inline-block;
+  text-align: center;
+  width:24px;
+  height:24px;
+  line-height: 24px;
+  background: white;
+}
+#nbreJoueurs #moins, #nbreJoueurs #plus {
+  background:#888;
+  color:white;
+  font-weight:bold;
+  display: inline-block;
+  text-align: center;
+  width:24px;
+  height:24px;
+  line-height: 24px;
+  /* height:20px; */
+  /* line-height: 20px; */
+}
+#nbreJoueurs #moins:hover, #nbreJoueurs #plus:hover {
+  background:#555;
+  cursor: pointer;
+}
+#nbreJoueurs #moins {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+#nbreJoueurs #plus {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+#joueurs {
+text-align: center;
 }
 #compteur {
   position:absolute;
@@ -75,6 +126,9 @@ body {
 #player4 {
   background-color: var(--player4);
 }
+#player5 {
+  background-color: var(--player5);
+}
 #player1options:hover .option {
   border:1px solid var(--player1);
 }
@@ -87,6 +141,9 @@ body {
 #player4options:hover .option {
   border:1px solid var(--player4);
 }
+#player5options:hover .option {
+  border:1px solid var(--player5);
+}
 #player1options .option.long.lat {
   border:1px solid var(--player1);
 }
@@ -98,6 +155,9 @@ body {
 }
 #player4options .option.long.lat {
   border:1px solid var(--player4);
+}
+#player5options .option.long.lat {
+  border:1px solid var(--player5);
 }
 .option {
   border-radius: 50%;
@@ -119,6 +179,9 @@ body {
 }
 #player4options .option:hover {
   background: var(--player4);
+}
+#player5options .option:hover {
+  background: var(--player5);
 }
 .option.steady {
   left:50%;

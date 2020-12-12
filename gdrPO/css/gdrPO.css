@@ -219,18 +219,8 @@ body {
     margin: 20px!important;
   }
 
-  #logos div:first-child {
-    margin: 0 3% 0 0;
-  }
-
-  #logos div:last-child {
-    margin: 0 0 0 3%;
-  }
-
   #logos img {
-    max-width: 100%;
     max-height:60px!important;
-    width: auto;
   }
 }
 

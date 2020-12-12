@@ -39,6 +39,13 @@ ctx.lineWidth = 1;
 ctx.stroke();
 
 // Position et vitesse de départ des joueurs
+const playersDefault = [
+  [600,5*unit,0,0,$('#player1').css("background-color")],
+  [600,6*unit,0,0,$('#player2').css("background-color")],
+  [600,7*unit,0,0,$('#player3').css("background-color")],
+  [600,8*unit,0,0,$('#player4').css("background-color")],
+  [600,9*unit,0,0,$('#player5').css("background-color")]
+];
 var players = [
   [600,5*unit,0,0,$('#player1').css("background-color")],
   [600,6*unit,0,0,$('#player2').css("background-color")],
@@ -64,25 +71,30 @@ var nextPlayer = function() {
   $("#player" + (currentPlayer+1) + "options").show();
   $('#compteur').css({background:players[currentPlayer][4]});
 }
-
-var currentPlayer = -1;
-var tour = 0;
 $('.options').hide();
+var currentPlayer = -1;
+var tour = 1;
 nextPlayer();
 
-$(document).ready(function (){
-  // Positionnement des joueurs
+
+// Positionnement des joueurs
+var setup = function() {
+  $('.joueur').hide();
   for (var i = 0; i < players.length; i++) {
-    $("#player" + (i+1)).css({left:players[i][0],top:players[i][1]});
+    $("#player" + (i+1)).css({left:players[i][0],top:players[i][1]}).show();
     $("#player" + (i+1) + "options").css({left:players[i][0],top:players[i][1]});
   }
-  // var save = ctx.getImageData(0,0,canvas.width,canvas.height);
+}
 
+$(document).ready(function (){
   // Mécanique de déplacement
   $('.option').click(function(){
     $('.options').hide();
-    // Effacement trajectoire neutre
-    // ctx.putImageData(save, 0, 0);
+    if (tour <= 1) {
+      $('#nbreJoueurs').animate({top:-200},400, function() {
+        $('#nbreJoueurs').hide();
+      });
+    }
 
     // Tracé et déplacement réel
     ctx.beginPath();
@@ -122,4 +134,21 @@ $(document).ready(function (){
 
     // Fin du tour
   })
+
+  $('#plus').click(function(){
+    if (playersDefault.length > players.length) {
+      players[players.length] = playersDefault[players.length];
+      $('#nbre').html(players.length);
+      setup();
+    }
+  });
+  $('#moins').click(function(){
+    if (players.length > 1) {
+      players.splice(players.length - 1);
+      $('#nbre').html(players.length);
+      setup();
+    }
+  });
+
+  setup();
 });
