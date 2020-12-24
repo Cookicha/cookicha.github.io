@@ -102,7 +102,7 @@ section#fiches-section {
 .contact-fiche * {
   line-height:1.6;
 }
-.contact-fiche span {
+.nom-contact-fiche span {
   font-weight: bold;
 }
 .contact-fiche .contact-nom {

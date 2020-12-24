@@ -28,18 +28,18 @@ request.onload = function() {
   }
   var decodeAxes = function(input) {
     if (input == "1") {
-      return "État des lieux"
+      return "Niveaux de contamination et devenir ultime"
     } else if (input == "2") {
-      return "Effets sur la biosphère";
+      return "Impacts sur le vivant et les écosystèmes";
     } else if (input == "3") {
-      return "Innovation";
+      return "Nouveaux polymères & modèles économiques";
     }
   }
   var decodeTechniques = function(input) {
     if (input == "A") {
       return "Échantillonnage et caractérisation des polymères"
     } else if (input == "B") {
-      return "Caractérisation des microorganismes";
+      return "Caractérisation des micro-organismes";
     } else if (input == "C") {
       return "Outils écotoxicologiques";
     } else if (input == "D") {
@@ -93,7 +93,8 @@ request.onload = function() {
         paragraphes += "<div class='p-fiche'>" + data[id].fiche.bullets[j] + "</div>";
       }
     }
-    var contact = "<div class='contact-fiche'><div class='nom-contact-fiche'>Contact GDR : <span>" + data[id].contact.prenom + " </span><span class='contact-nom'>" + data[id].contact.nom + "</span></div><div class='contact-contact-fiche'><a href='mailto:" + data[id].contact.email + "'>" + data[id].contact.email + "</a></div><div class='web-contact-fiche'><a href='" + data[id].web + "'>" + data[id].web + "</a></div></div>";
+    // var contact = "<div class='contact-fiche'><div class='nom-contact-fiche'>Contact GDR : <span>" + data[id].contact.prenom + " </span><span class='contact-nom'>" + data[id].contact.nom + "</span></div><div class='contact-contact-fiche'><a href='mailto:" + data[id].contact.email + "'>" + data[id].contact.email + "</a></div><div class='web-contact-fiche'><a href='" + data[id].web + "'>" + data[id].web + "</a></div></div>";
+    var contact = "<div class='contact-fiche'><div class='nom-contact-fiche'>Contact GDR : <span>" + data[id].contact.prenom + " </span><span class='contact-nom'>" + data[id].contact.nom + "</span></div><div class='contact-contact-fiche'><span class='force-select-all'>" + data[id].contact.email + "</span></div><div class='web-contact-fiche'><a href='" + data[id].web + "'>" + data[id].web + "</a></div></div>";
     $('#fiches-section').append("<div class='fiche' id='fiche-" + id + "'><div class='tete'>" + sigle + nom + identifiant + "</div>" + logo + filtres + grosPlus + titre + paragraphes + contact + "</div>");
     convertGPS(data[id].latLng);
     var classes = "";
@@ -109,6 +110,13 @@ request.onload = function() {
     console.log(classes);
     $('#headerMap').append("<div class='dot " + classes + "' id='" + id + "' style='top: " + data[id].latLng[2] + "px; right: " + data[id].latLng[3] + "px;'><div class='label'>" + data[id].sigle + "</div></div>")
   }
+  $.fn.scrollView = function () {
+    return this.each(function () {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top - 100
+        }, 600);
+    });
+  }
   $(document).ready(function() {
     $(".grosPlus.clos").click(function() {
       $(this).toggleClass('clos');
@@ -121,7 +129,8 @@ request.onload = function() {
         $('#fiche-' + this.id).removeClass('highlight');
       } else {
         $(this).addClass('clicked');
-        $('#fiche-' + this.id).addClass('highlight');
+        // $('#fiche-' + this.id).children(".grosPlus").click();
+        $('#fiche-' + this.id).addClass('highlight').scrollView();
       }
     });
 

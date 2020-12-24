@@ -9,7 +9,6 @@ html.touch *:hover {
   background-repeat: no-repeat;
   background-size: auto 850px;
   background-attachment: scroll;
-  user-select: none;
   background-color: #79dbda;
   display:block;
 }
@@ -31,6 +30,7 @@ text-shadow: 0 0 6px white;
 font-weight:500;
 }
 #headerMap .dot {
+  user-select: none;
   position:absolute;
   width:12px;
   height:12px;
@@ -158,7 +158,6 @@ color:white;
     background-repeat: no-repeat;
     background-size: auto 1147px;
     background-attachment: scroll;
-    user-select: none;
     background-color: #79dbda;
     display:block;
   }

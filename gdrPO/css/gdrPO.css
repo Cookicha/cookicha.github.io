@@ -28,6 +28,7 @@ html.touch *:hover {
 }
 body {
   background: var(--main0);
+  font-size: 16px;
 }
 
 body, div {
@@ -129,7 +130,19 @@ main section:nth-of-type(even), .sombre {
   color: var(--main4);
   border-color: var(--main1);
 }
-
+section#fiches-section {
+  background: transparent;
+}
+section#pre-fiches {
+  background: transparent;
+}
+section#pre-fiches p {
+    width: 72vw;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
 li {
   margin: 0;
   padding: 0;
@@ -392,11 +405,11 @@ nav .current {
 h1:target:before {
   border-left: 5px solid var(--highlight);
 }
-
+#contact {
+  position:relative;
+}
 #contact:target:before {
   border-left: 5px solid var(--main0);
-  bottom: 0.25em;
-  left: -0.6em;
 }
 
 .circled {
@@ -605,6 +618,12 @@ footer a {
 }
 footer div {
   margin-top: var(--g-marge);
+}
+.force-select-all {
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
 }
 
 @media (max-width: 600px) {
