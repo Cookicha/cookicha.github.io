@@ -266,7 +266,7 @@ body {
   .nav>li:first-child>a {}
 
   .nav>li:last-child {
-    margin-right: 0;
+    margin-right: 60px;
   }
 
   .nav>li:last-child>a {}
@@ -523,7 +523,9 @@ p .emphase {
   font-weight: 700;
   font-family: inherit;
 }
-
+#logosSection {
+  background:white;
+}
 #logos {
   width: 100%;
   display: flex;
@@ -533,6 +535,7 @@ p .emphase {
   justify-content: space-between;
   margin: 60px auto;
   position: relative;
+  background: white;
 }
 
 #logos div {
