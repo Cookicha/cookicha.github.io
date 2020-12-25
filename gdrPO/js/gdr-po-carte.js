@@ -1,4 +1,4 @@
-var requestURL = 'https://cookicha.github.io/gdrPO/tableur/realDataset.json';
+var requestURL = 'data/dataGdrPo.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
