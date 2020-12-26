@@ -54,7 +54,6 @@ request.onload = function() {
   }
   for (var i = 0; i < ids.length; i++) {
     var id = ids[i];
-    // var pin = "<img src='../img/pin-gris.png' class='pin-fiche' />";
     var sigle = "<div class='sigle-fiche'>" + data[id].sigle + "</div>";
     var nom = "<div class='nom-fiche'>" + data[id].nom + "</div>";
     var identifiant = "<div class='identifiant-fiche'>" + data[id].identifiant + "</div>";
@@ -93,7 +92,6 @@ request.onload = function() {
         paragraphes += "<div class='p-fiche'>" + data[id].fiche.bullets[j] + "</div>";
       }
     }
-    // var contact = "<div class='contact-fiche'><div class='nom-contact-fiche'>Contact GDR : <span>" + data[id].contact.prenom + " </span><span class='contact-nom'>" + data[id].contact.nom + "</span></div><div class='contact-contact-fiche'><a href='mailto:" + data[id].contact.email + "'>" + data[id].contact.email + "</a></div><div class='web-contact-fiche'><a href='" + data[id].web + "'>" + data[id].web + "</a></div></div>";
     var contact = "<div class='contact-fiche'><div class='nom-contact-fiche'>Contact GDR : <span>" + data[id].contact.prenom + " </span><span class='contact-nom'>" + data[id].contact.nom + "</span></div><div class='contact-contact-fiche'><span class='force-select-all'>" + data[id].contact.email + "</span></div><div class='web-contact-fiche'><a href='" + data[id].web + "'>" + data[id].web + "</a></div></div>";
     $('#fiches-section').append("<div class='fiche' id='fiche-" + id + "'><div class='tete'>" + sigle + nom + identifiant + "</div>" + logo + filtres + grosPlus + titre + paragraphes + contact + "</div>");
     convertGPS(data[id].latLng);
@@ -107,7 +105,6 @@ request.onload = function() {
     for (var j = 0; j < data[id].techniques.length; j++) {
      classes += "tech" + data[id].techniques[j] + " ";
     }
-    console.log(classes);
     $('#headerMap').append("<div class='dot " + classes + "' id='" + id + "' style='top: " + data[id].latLng[2] + "px; right: " + data[id].latLng[3] + "px;'><div class='label'>" + data[id].sigle + "</div></div>")
   }
   $.fn.scrollView = function () {
@@ -134,7 +131,6 @@ request.onload = function() {
       }
     });
 
-    // var isTouchDevice = ('ontouchstart' in window || 'onmsgesturechange' in window),
     var filtre = [];
     var code;
     var filtrehover = [];
@@ -177,14 +173,12 @@ request.onload = function() {
       }
     });
     $('.bouton').hover(
-      // if(!isTouchDevice){
-        function() {
-          filtrehover.push('.' + this.id);
-          displayIn();
-        }, function() {
-          displayOut();
-        }
-      // }
+      function() {
+        filtrehover.push('.' + this.id);
+        displayIn();
+      }, function() {
+        displayOut();
+      }
     );
   });
 };

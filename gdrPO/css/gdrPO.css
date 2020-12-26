@@ -515,6 +515,14 @@ h1:target:before {
   background-image: url("../img/bg/aaron-burden-Bycd2wF5vQU-unsplash.jpg");
 }
 
+.credit {
+  text-align:right;
+  padding:0.5em 1em;
+  margin:0;
+  font-size:0.6em;
+  color:var(--main3);
+}
+
 p .emphase {
   font-weight: 600;
 }

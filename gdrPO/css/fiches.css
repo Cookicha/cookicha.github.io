@@ -3,6 +3,10 @@ div#fiches-container {
   margin:0;
   padding:20px 0;
 }
+#carte-credit {
+  background: #f0f6fa;
+}
+
 section#fiches-section {
   display: flex;
   flex-flow: row wrap;
