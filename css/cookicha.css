@@ -106,7 +106,7 @@ color:white;
 		font-style: italic;
 		color: #777;
 	}
-	#logos #lactu {
+	#logos img {
 		max-width:50vw !important;
 		height:auto;
 	}
@@ -361,18 +361,23 @@ font-family:'Lato light';
 }
 
 #logos {
-text-align:center;
+display:flex;
+flex-flow:row wrap;
+justify-content:center;
+align-items:center;
+align-content: center;
 }
 
 #logos img {
-display:inline-block;
-height:120px;
+/* display:inline-block; */
+max-height:120px;
+max-width:300px;
 margin:0 40px var(--marge) 40px;
 }
 
 #galerie {
 	display:flex;
-	flex-wrap:wrap;
+	flex-flow:row wrap;
 	align-items:flex-start;
 	justify-content:space-evenly;
 	width:100%;
