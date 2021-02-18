@@ -30,6 +30,7 @@
 <body class="container">
 
   <script type="text/javascript">
+    var createXLSLFormatObj = [];
     var requestURL = 'dataGdrPo.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
@@ -40,7 +41,6 @@
       const labos = Object.values(data);
       const ids = Object.keys(data);
 
-    var createXLSLFormatObj = [];
         /* XLS Head Columns */
     var xlsHeader = ["sigle", "nom","site","contact","membres"];
         /* XLS Rows Data */
@@ -62,6 +62,7 @@
             innerRowData.push(tousLesMembres);
         createXLSLFormatObj.push(innerRowData);
     });
+  }
 
 
     function downloadXLS(){
@@ -80,7 +81,6 @@
       XLSX.writeFile(wb, filename);
       if (typeof console !== 'undefined') console.log(new Date());
     }
-  }
 
   </script>
   <span class="display-4 spacer">Convert JSON data into XLS EXCEL and Download</span>
