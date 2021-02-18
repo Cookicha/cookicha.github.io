@@ -52,12 +52,18 @@
 
           createXLSLFormatObj.push(xlsHeader);
           $.each(xlsRows, function(index, value) {
-              $("tbody").append('<tr><td>' + value.sigle + '</td><td>' + value.nom + '</td><td>' + value.site + '</td><td>' + value.contact.email + '</td></tr>');
+            var tousLesMembres = "";
+            for (var i = 0; i < value.membres.length; i++) {
+              tousLesMembres.push(value.membres[i].prenom + " " + value.membres[i].nom + ", ");
+            }
+            tousLesMembres = tousLesMembres.slice(0, -2);
+              $("tbody").append('<tr><td>' + value.sigle + '</td><td>' + value.nom + '</td><td>' + value.site + '</td><td>' + value.contact.email + '</td><td>' + tousLesMembres + '</td></tr>');
               var innerRowData = [];
                   innerRowData.push(value.sigle);
                   innerRowData.push(value.nom);
                   innerRowData.push(value.site);
                   innerRowData.push(value.contact.email);
+                  innerRowData.push(tousLesMembres);
               createXLSLFormatObj.push(innerRowData);
           });
 
@@ -82,7 +88,7 @@
 
         }
       }
-      
+
     </script>
     <span class="display-4 spacer">Convert JSON data into XLS EXCEL and Download</span>
     <div style="text-align:center;">
