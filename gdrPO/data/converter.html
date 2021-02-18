@@ -39,7 +39,6 @@
       const data = request.response;
       const labos = Object.values(data);
       const ids = Object.keys(data);
-    }
 
     var createXLSLFormatObj = [];
         /* XLS Head Columns */
@@ -81,6 +80,7 @@
       XLSX.writeFile(wb, filename);
       if (typeof console !== 'undefined') console.log(new Date());
     }
+  }
 
   </script>
   <span class="display-4 spacer">Convert JSON data into XLS EXCEL and Download</span>
