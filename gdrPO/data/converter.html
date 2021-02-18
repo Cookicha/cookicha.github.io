@@ -59,7 +59,7 @@
             var innerRowData = [];
             $("tbody").append('<tr><td>' + value.sigle + '</td><td>' + value.nom + '</td><td>' + value.site + '</td><td>' + value.contact.email + '</td></tr>');
             $.each(value, function(ind, val) {
-
+              console.log(val);
                 innerRowData.push(val);
             });
             createXLSLFormatObj.push(innerRowData);
