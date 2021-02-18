@@ -30,15 +30,16 @@
 <body class="container">
 
   <script type="text/javascript">
-  var requestURL = 'dataGdrPo.json';
-  var request = new XMLHttpRequest();
-  request.open('GET', requestURL);
-  request.responseType = 'json';
-  request.send();
-  request.onload = function() {
-    const data = request.response;
-    const labos = Object.values(data);
-    const ids = Object.keys(data);
+    var requestURL = 'dataGdrPo.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+      const data = request.response;
+      const labos = Object.values(data);
+      const ids = Object.keys(data);
+    }
 
     function downloadXLS(){
       var createXLSLFormatObj = [];
@@ -50,64 +51,63 @@
       var xlsRows = labos;
 
 
-          createXLSLFormatObj.push(xlsHeader);
-          $.each(xlsRows, function(index, value) {
-            var tousLesMembres = "";
-            for (var i = 0; i < value.membres.length; i++) {
-              tousLesMembres.push(value.membres[i].prenom + " " + value.membres[i].nom + ", ");
-            }
-            tousLesMembres = tousLesMembres.slice(0, -2);
-              $("tbody").append('<tr><td>' + value.sigle + '</td><td>' + value.nom + '</td><td>' + value.site + '</td><td>' + value.contact.email + '</td><td>' + tousLesMembres + '</td></tr>');
-              var innerRowData = [];
-                  innerRowData.push(value.sigle);
-                  innerRowData.push(value.nom);
-                  innerRowData.push(value.site);
-                  innerRowData.push(value.contact.email);
-                  innerRowData.push(tousLesMembres);
-              createXLSLFormatObj.push(innerRowData);
-          });
-
-
-          /* File Name */
-          var filename = "FreakyJSON_To_XLS.xlsx";
-
-          /* Sheet Name */
-          var ws_name = "FreakySheet";
-
-          if (typeof console !== 'undefined') console.log(new Date());
-          var wb = XLSX.utils.book_new(),
-              ws = XLSX.utils.aoa_to_sheet(createXLSLFormatObj);
-
-          /* Add worksheet to workbook */
-          XLSX.utils.book_append_sheet(wb, ws, ws_name);
-
-          /* Write workbook and Download */
-          if (typeof console !== 'undefined') console.log(new Date());
-          XLSX.writeFile(wb, filename);
-          if (typeof console !== 'undefined') console.log(new Date());
-
+      createXLSLFormatObj.push(xlsHeader);
+      $.each(xlsRows, function(index, value) {
+        var tousLesMembres = "";
+        for (var i = 0; i < value.membres.length; i++) {
+          tousLesMembres.push(value.membres[i].prenom + " " + value.membres[i].nom + ", ");
         }
-      }
+        tousLesMembres = tousLesMembres.slice(0, -2);
+          $("tbody").append('<tr><td>' + value.sigle + '</td><td>' + value.nom + '</td><td>' + value.site + '</td><td>' + value.contact.email + '</td><td>' + tousLesMembres + '</td></tr>');
+          var innerRowData = [];
+              innerRowData.push(value.sigle);
+              innerRowData.push(value.nom);
+              innerRowData.push(value.site);
+              innerRowData.push(value.contact.email);
+              innerRowData.push(tousLesMembres);
+          createXLSLFormatObj.push(innerRowData);
+      });
 
-    </script>
-    <span class="display-4 spacer">Convert JSON data into XLS EXCEL and Download</span>
-    <div style="text-align:center;">
-      <button type="button" class="btn btn-primary" style="font-size: 25px;" onclick="downloadXLS()">Download XLS File</button>
-    </div>
-    <h4 class="display-5 spacer">Table Format of DATA to Download</h4>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">sigle</th>
-                <th scope="col">nom</th>
-                <th scope="col">site</th>
-                <th scope="col">contact</th>
-                <th scope="col">membres</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+
+      /* File Name */
+      var filename = "FreakyJSON_To_XLS.xlsx";
+
+      /* Sheet Name */
+      var ws_name = "FreakySheet";
+
+      if (typeof console !== 'undefined') console.log(new Date());
+      var wb = XLSX.utils.book_new(),
+          ws = XLSX.utils.aoa_to_sheet(createXLSLFormatObj);
+
+      /* Add worksheet to workbook */
+      XLSX.utils.book_append_sheet(wb, ws, ws_name);
+
+      /* Write workbook and Download */
+      if (typeof console !== 'undefined') console.log(new Date());
+      XLSX.writeFile(wb, filename);
+      if (typeof console !== 'undefined') console.log(new Date());
+
+    }
+
+  </script>
+  <span class="display-4 spacer">Convert JSON data into XLS EXCEL and Download</span>
+  <div style="text-align:center;">
+    <button type="button" class="btn btn-primary" style="font-size: 25px;" onclick="downloadXLS()">Download XLS File</button>
+  </div>
+  <h4 class="display-5 spacer">Table Format of DATA to Download</h4>
+  <table class="table">
+      <thead>
+          <tr>
+              <th scope="col">sigle</th>
+              <th scope="col">nom</th>
+              <th scope="col">site</th>
+              <th scope="col">contact</th>
+              <th scope="col">membres</th>
+          </tr>
+      </thead>
+      <tbody>
+      </tbody>
+  </table>
 
 </body>
 
