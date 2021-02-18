@@ -53,8 +53,11 @@
 
         createXLSLFormatObj.push(xlsHeader);
         $.each(xlsRows, function(index, value) {
+          console.log(value);
+          console.log(value.sigle);
+          console.log(value.contact.email);
             var innerRowData = [];
-            $("tbody").append('<tr><td>' + value.sigle + '</td><td>' + value.nom + + '</td><td>' + value.site + '</td><td>' + value.contact + '</td></tr>');
+            $("tbody").append('<tr><td>' + value.sigle + '</td><td>' + value.nom + '</td><td>' + value.site + '</td><td>' + value.contact.email + '</td></tr>');
             $.each(value, function(ind, val) {
 
                 innerRowData.push(val);
