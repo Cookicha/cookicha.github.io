@@ -67,9 +67,9 @@
 
     function downloadXLS(){
       /* File Name */
-      var filename = "FreakyJSON_To_XLS.xlsx";
+      var filename = "MembresGDRPO.xlsx";
       /* Sheet Name */
-      var ws_name = "FreakySheet";
+      var ws_name = "Membres";
 
       if (typeof console !== 'undefined') console.log(new Date());
       var wb = XLSX.utils.book_new(),
@@ -85,9 +85,9 @@
   </script>
   <span class="display-4 spacer">Convertisseur .JSON => .XLS (Excel)</span>
   <div style="text-align:center;">
-    <button type="button" class="btn btn-primary" style="font-size: 25px;" onclick="downloadXLS()">Télécharger .XLS</button>
+    <button type="button" class="btn btn-primary" style="font-size: 25px;margin:60px;" onclick="downloadXLS()">Télécharger .XLS</button>
   </div>
-  <h4 class="display-5 spacer">Données à télécharger</h4>
+  <h4 class="display-5 spacer">Fichier des membres du GDR P&O</h4>
   <table class="table">
       <thead>
           <tr>
