@@ -1,0 +1,2459 @@
+{
+  "amure": {
+    "sigle": "Amure",
+    "nom": "Aménagement des Usages des Ressources et des Espaces marins et littoraux",
+    "site": "Plouzané",
+    "identifiant": "UMR 6308",
+    "tutelles": [
+      "UBO",
+      "Ifremer",
+      "CNRS"
+    ],
+    "latLng": ["48.3589", "-4.562625"],
+    "axes": ["3"],
+    "domaines": ["eco","shs"],
+    "techniques": ["D"],
+    "web": "http://www.umr-amure.fr",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Bertrand",
+      "nom": "Le Gallic",
+      "email": "bertrand.legallic@univ-brest.fr"
+    },
+    "membres": [{
+      "prenom": "Bertrand",
+      "nom": "Le Gallic"
+    }]
+  },
+  "anses": {
+    "sigle": "Anses",
+    "nom": "Agence nationale de sécurité sanitaire de l’alimentation, de l’environnement et du travail",
+    "site": "Boulogne-sur-Mer",
+    "identifiant": "",
+    "tutelles": [
+      ""
+    ],
+    "latLng": ["50.72432", "1.594467"],
+    "domaines": ["bio","eco"],
+    "techniques": ["A"],
+    "axes": ["2"],
+    "web": "",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Guillaume",
+      "nom": "Duflos",
+      "email": "guillaume.duflos@anses.fr"
+    },
+    "membres": [{
+      "prenom": "Guillaume",
+      "nom": "Duflos"
+    }]
+  },
+  "arn": {
+    "sigle": "ARN",
+    "nom": "Adaptation, Reproduction et Nutrition de Poissons",
+    "site": "Plouzané",
+    "identifiant": "",
+    "tutelles": [
+      "Ifremer"
+    ],
+    "latLng": ["48.359163", "-4.558795"],
+    "domaines": ["bio"],
+    "techniques": [],
+    "axes": ["2"],
+    "web": "",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Dominique",
+      "nom": "Hervio Heath",
+      "email": "dominique.hervio.heath@ifremer.fr"
+    },
+    "membres": [{
+      "prenom": "Dominique",
+      "nom": "Hervio Heath"
+    }]
+  },
+  "be": {
+    "sigle": "BE",
+    "nom": "Biogéochimie et Écotoxicologie",
+    "site": "Nantes",
+    "identifiant": "",
+    "tutelles": [
+      "Ifremer"
+    ],
+    "latLng": ["47.247119", "-1.547266"],
+    "domaines": ["chi","bio","eco"],
+    "techniques": [
+      "A","B","C"
+    ],
+    "axes": ["1","2"],
+    "web": "http://wwz.ifremer.fr/pollution",
+    "fiche": {
+      "titre": "Occurrence environnementale des additifs et des déchets plastiques, interactions plastiques-additifs et bioaccumulation dans les organismes marins",
+      "bullets": [
+        "Environ 223 000 macro-plastiques, soit environ 0,7 t de plastique, peuvent être transportés annuellement par les eaux de surface du Rhône vers le Golfe du Lion.",
+        "Certains additifs ester organophosphorés (OPE) et phtalates (PAE) sont susceptibles de se bioaccumuler dans le zooplancton du nord-ouest de la mer Méditerranée, comme le prouvent leurs concentrations mesurées et leurs facteurs de bioconcentration (BCF) dérivés sur le terrain, mais avec une intensité différente selon la classe de taille du zooplancton.",
+        "L’additif retardateur de flamme HBCDD, interdit depuis 2013, est retrouvé en fortes concentrations dans les déchets côtiers en polystyrène, avec un relargage sur le temps long. Il est bioaccumulé par les organismes marins comme les coraux, qui sont impactés par les composés présents dans le leachate."
+      ]
+    },
+    "contact": {
+      "prenom": "Javier",
+      "nom": "Castro Jiménez",
+      "email": "javier.castro.jimenez@ifremer.fr"
+    },
+    "membres": [{
+        "prenom": "Javier",
+        "nom": "Castro Jiménez"
+      },
+      {
+        "prenom": "Yann",
+        "nom": "Aminot"
+      },
+      {
+        "prenom": "Farida",
+        "nom": "Akcha"
+      },
+      {
+        "prenom": "Isabelle",
+        "nom": "Amouroux"
+      },
+      {
+        "prenom": "Nadège",
+        "nom": "Bely"
+      },
+      {
+        "prenom": "Nicolas",
+        "nom": "Briant"
+      },
+      {
+        "prenom": "Yoann",
+        "nom": "Godfrin"
+      },
+      {
+        "prenom": "Catherine",
+        "nom": "Munschy"
+      },
+      {
+        "prenom": "Teddy",
+        "nom": "Sireau"
+      }
+    ]
+  },
+  "biom": {
+    "sigle": "Biom",
+    "nom": "Biologie Intégrative des Organismes Marins",
+    "site": "Banyuls-sur-Mer",
+    "identifiant": "UMR 7232",
+    "tutelles": [
+      "Sorbonne Université",
+      "CNRS"
+    ],
+    "latLng": ["42.480101", "3.136312"],
+    "domaines": ["bio"],
+    "techniques": ["B","C"],
+    "axes": ["2"],
+    "web": "http://biom.obs-banyuls.fr/",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Hector",
+      "nom": "Escriva",
+      "email": "hector.escriva@obs-banyuls.fr"
+    },
+    "membres": [
+      {
+        "prenom": "Hector",
+        "nom": "Escriva"
+      },
+      {
+        "prenom": "Stéphanie",
+        "nom": "Bertrand"
+      },
+      {
+        "prenom": "Laurence",
+        "nom": "Besseau"
+      },
+      {
+        "prenom": "Anne-Marie",
+        "nom": "Geneviere"
+      },
+      {
+        "prenom": "Vincent",
+        "nom": "Laudet"
+      },
+      {
+        "prenom": "Agnès",
+        "nom": "Roure"
+      },
+      {
+        "prenom": "Lucie",
+        "nom": "Subirana"
+      }
+    ]
+  },
+  "c2ma": {
+    "sigle": "C2MA",
+    "nom": "Centre des Matériaux des Mines d'Alès",
+    "site": "Alès",
+    "identifiant": "",
+    "tutelles": [
+      "IMT Mines Alès",
+      "Armines"
+    ],
+    "latLng": ["44.136812", "4.098704"],
+    "domaines": ["chi"],
+    "techniques": ["A"],
+    "axes": ["3"],
+    "web": "http://www.armines.net/fr/centres-de-recherche-departements-thematiques/sciences-et-g%C3%A9nie-des-mat%C3%A9riaux/centre-des-mat%C3%A9riaux",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "José-Marie",
+      "nom": "Lopez-Cuesta",
+      "email": "jose-marie.lopez-cuesta@mines-ales.fr"
+    },
+    "membres": [{
+        "prenom": "José-Marie",
+        "nom": "Lopez-Cuesta"
+      },
+      {
+        "prenom": "Joana",
+        "nom": "Beigbeder"
+      },
+      {
+        "prenom": "Anne",
+        "nom": "Bergeret"
+      },
+      {
+        "prenom": "Laurent",
+        "nom": "Ferry"
+      },
+      {
+        "prenom": "Nicolas",
+        "nom": "Le Moigne"
+      },
+      {
+        "prenom": "Didier",
+        "nom": "Perrin"
+      }
+    ]
+  },
+  "c2p2": {
+    "sigle": "C2P2",
+    "nom": "Chimie, Catalyse, Polymères et Procédés",
+    "site": "Lyon",
+    "identifiant": "UMR 5265",
+    "tutelles": [
+      "CNRS",
+      "CPE",
+      "UCLB"
+    ],
+    "latLng": ["45.784513", "4.868383"],
+    "domaines": ["chi"],
+    "techniques": ["A"],
+    "axes": ["1"],
+    "web": "http://www.c2p2-cpe.com",
+    "fiche": {
+      "titre": "Synthèse de nanoparticule de polyéthylène (PE) « modèles » par polymérisation de l’éthylène en émulsion / Caractérisation de débris marins de polyoléfines",
+      "bullets": [
+        "Synthèse de nanoparticules de PE ayant une large gamme de tailles (10 < D < 1000 nm) et de charges de surface (-50 < ζ < 50 mV). Mesure de leur stabilité colloïdale en milieu marin et de leur interaction avec les diatomées (collaboration avec F. Lagarde).",
+        "Caractérisation de débris de polyoléfines prélevés dans l’océan (collaboration avec A. ter Halle) : IRTF, DSC, SEC.",
+        "Perspectives : Synthèse de nanoparticules de PE marqué (13C ou fluorophore) pour l’étude des processus naturels rencontrés dans l'océan : fragmentation/agrégation, solubilisation et bioaccumulation."
+      ]
+    },
+    "contact": {
+      "prenom": "Vincent",
+      "nom": "Monteil",
+      "email": "monteil@lcpp.cpe.fr"
+    },
+    "membres": [
+      {
+        "prenom": "Vincent",
+        "nom": "Monteil"
+      },
+      {
+        "prenom": "Élodie",
+        "nom": "Bourgeat-Lami"
+      },
+      {
+        "prenom": "Olivier",
+        "nom": "Boyron"
+      },
+      {
+        "prenom": "Fabrice",
+        "nom": "Brunel"
+      },
+      {
+        "prenom": "Muriel",
+        "nom": "Lansalot"
+      },
+      {
+        "prenom": "Timothy",
+        "nom": "McKenna"
+      },
+      {
+        "prenom": "Sébastien",
+        "nom": "Norsic"
+      },
+      {
+        "prenom": "Jean",
+        "nom": "Raynaud"
+      }
+    ]
+  },
+  "cearc": {
+    "sigle": "Cearc",
+    "nom": "Cultures Environnements Arctique Représentations Climat",
+    "site": "Guyancourt",
+    "identifiant": "EA 4455",
+    "tutelles": [
+      "Université Versailles Saint-Quentin-en-Yvelines"
+    ],
+    "latLng": ["48.777982", "2.048735"],
+    "domaines": ["shs","eco"],
+    "techniques": ["D","E"],
+    "axes": ["3"],
+    "web": "http://www.cearc.fr",
+    "fiche": {
+      "titre": "Comment le socio-écosystème conduit à produire, consommer et rejeter des produits plastiques dans les écosystèmes",
+      "bullets": [
+        "Résultats : Les solutions technologiques à la contamination plastique des océans ne seront pas suffisantes. Un panel diversifié de solutions est nécessaire, tant en amont du socio-écosystème (solutions préventives visant à éviter ou à réduire la production de déchets plastiques) qu’en aval (système de gestion des déchets, nettoyage des océans, etc.)",
+        "Implications: la lutte contre les lobbies industriels et la corruption ainsi que l’éducation à l’environnement constituent des solution non-technologiques essentiels qui doivent venir en complément des solutions technologiques"
+      ]
+    },
+    "contact": {
+      "prenom": "Mateo",
+      "nom": "Cordier",
+      "email": "mateo.cordier@uvsq.fr"
+    },
+    "membres": [{
+      "prenom": "Mateo",
+      "nom": "Cordier"
+    }, {
+      "prenom": "Jean-Michel",
+      "nom": "Huctin"
+    }, {
+      "prenom": "Jean-Paul",
+      "nom": "Vanderlinden"
+    }, {
+      "prenom": "Juan",
+      "nom": "Baztan"
+    }]
+  },
+  "cedre": {
+    "sigle": "Cedre",
+    "nom": "Cedre",
+    "site": "Brest",
+    "identifiant": "",
+    "tutelles": [],
+    "latLng": ["48.389008", "-4.441772"],
+    "domaines": ["eco"],
+    "techniques": ["A","C"],
+    "axes": ["1"],
+    "web": "http://wwz.cedre.fr",
+    "fiche": {
+      "titre": "Surveillance et étude des déchets aquatiques : distribution, comportement, vieillissement et impacts",
+      "bullets": [
+        "Nous sommes responsables , pour le compte des autorités, de la surveillance des déchets sur le littoral et issus des bassins hydrographiques à l’échelle métropolitaine. Nous assurons une veille dans le domaine et participons à des projets de recherche afin de développer nos connaissances et renforcer notre capacité d’information et de conseil scientifique et technique",
+        "Nos projets portent actuellement sur : l’étude des devenirs et impacts dans le milieu marin des mégots, coton-tiges et polystyrènes moussés ; le développement de méthodes pour évaluer les risques pour le milieu marin associés aux biopolymères (notamment des alternatives aux polystyrènes moussés) ; le développement de méthodes d’analyse des polymères et additifs par micro-FTIR et Pyrolyse-GC/MS",
+        "Principaux résultats : Les études sur les déchets sont complexes car incluent une multitudes de matériaux ayant des devenirs et impacts dans l’environnement qui leurs sont propres.",
+        "Verrous : Nous faisons face à une manque d’information sur la composition des plastiques et une absence de standards permettant de quantifier certaines molécules (ex: les additifs), compliquant l’évaluation des risques associés."
+      ]
+    },
+    "contact": {
+      "prenom": "Camille",
+      "nom": "Lacroix",
+      "email": "camille.lacroix@cedre.fr"
+    },
+    "membres": [{
+      "prenom": "Camille",
+      "nom": "Lacroix"
+    }]
+  },
+  "cefe": {
+    "sigle": "CEFE",
+    "nom": "Centre d'écologie fonctionnelle et évolutive",
+    "site": "Montpellier",
+    "identifiant": "UMR 5175",
+    "tutelles": [
+      "CNRS",
+      "Université de Montpellier",
+      "Université Paul Valéry",
+      "EPHE",
+      "IRD"
+    ],
+    "latLng": ["43.639351", "3.864224"],
+    "domaines": ["eco"],
+    "techniques": ["A","C"],
+    "axes": ["1","2"],
+    "web": "http://www.cefe.cnrs.fr",
+    "fiche": {
+      "titre": "(1) Inventaire des macro-plastiques flottants, (2) détection des micro-plastiques ingérés chez les poissons, (3) analyse des déchets ingérés par les tortues marines",
+      "bullets": [
+        "Tests des méthodes à partir d’avois, de ferrys et de petites embarcations, proposition de protocoles harmonisés à l’échelle des pays méditerranéens, mise en œuvre dans les aires marines protégées de Méditerranée.",
+        "Tests de méthodes de collecte, de détection et d’identification, applications sur 3 espèces de poissons dans 6 pays du pourtour méditerranéen, faisabilité de l’utilisation des micro-plastiques ingérés par les poissons comme indicateur de l’état écologique des eaux marines.",
+        "Implémentation de l'indicateur D10C3 DCSMM au Portugal, Espagne, France, Italie, Grèce, Turquie et Tunisie. Analyse de plus de 1400 tortues mortes dans ces différentes pays. L’occurrence de déchets ingérés (principalement plastiques) atteint 68 % en Atlantique et 60 % en Méditerranée (avec une moyenne de 7 déchets plastiques). La reconnaissance des types de déchets ingérés permet maintenant d’évaluer les mesures (interdiction des sacs plastiques, des plastiques à usage unique, etc.) dans les différents pays."
+      ]
+    },
+    "contact": {
+      "prenom": "Claude",
+      "nom": "Miaud",
+      "email": "claude.miaud@cefe.cnrs.fr"
+    },
+    "membres": [{
+      "prenom": "Claude",
+      "nom": "Miaud"
+    }]
+  },
+  "cefrem": {
+    "sigle": "Cefrem",
+    "nom": "Centre de formation et de recherche sur les environnements méditerrannéens",
+    "site": "Perpigan",
+    "identifiant": "UMR 5110",
+    "tutelles": ["CNRS", "UPVD"],
+    "latLng": ["42.684099", "2.898381"],
+    "domaines": ["univ","eco"],
+    "techniques": [],
+    "axes": [],
+    "web": "http://cefrem.univ-perp.fr",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Philippe",
+      "nom": "Kerherve",
+      "email": "kerherve@univ-perp.fr"
+    },
+    "membres": [{
+        "prenom": "Philippe",
+        "nom": "Kerherve"
+      },
+      {
+        "prenom": "Serge",
+        "nom": "Heussner"
+      },
+      {
+        "prenom": "Wolfgang",
+        "nom": "Ludwig"
+      }
+    ]
+  },
+  "ecolab": {
+    "sigle": "Ecolab",
+    "nom": "Laboratoire d'Écologie Fonctionnelle et Environnement",
+    "site": "Toulouse",
+    "identifiant": "UMR 5245",
+    "tutelles": ["CNRS", "Université Toulouse III Paul Sabatier", "ENSAT"],
+    "latLng": ["43.558292", "1.469232"],
+    "domaines": ["eco"],
+    "techniques": ["B","C"],
+    "axes": ["2"],
+    "web": "http://www.eco.omp.eu/",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Loïc",
+      "nom": "Ten-Hage",
+      "email": "loic.tenhage@univ-tlse3.fr"
+    },
+    "membres": [{
+        "prenom": "Loïc",
+        "nom": "Ten-Hage"
+      },
+      {
+        "prenom": "Jessica",
+        "nom": "Ferriol"
+      },
+      {
+        "prenom": "Laury",
+        "nom": "Gauthier"
+      },
+      {
+        "prenom": "Joséphine",
+        "nom": "Leflaive"
+      },
+      {
+        "prenom": "Florence",
+        "nom": "Mouchet"
+      },
+      {
+        "prenom": "Éric",
+        "nom": "Pinelli"
+      }
+    ]
+  },
+  "epoc": {
+    "sigle": "Epoc",
+    "nom": "Environnement Paléoenvironnement Continentaux et Océaniques",
+    "site": "Bordeaux",
+    "identifiant": "UMR 5805",
+    "tutelles": ["CNRS", "Université de Bordeaux", "École Pratique des Hautes Études"],
+    "latLng": ["44.801903", "-0.609323"],
+    "domaines": ["univ"],
+    "techniques": ["A","B","C"],
+    "axes": ["2"],
+    "web": "http://www.epoc.u-bordeaux.fr",
+    "fiche": {
+      "titre": "Contamination et effets des micro- et nanoplastiques sur les espèces aquatiques. Conséquences liées au vieillissement du plastique",
+      "bullets": [
+        "Nous avons démontré l’ingestion des MP par de nombreuses espèces marines : crustacés, mollusques et poissons",
+        "Nous avons démontré expérimentalement l’ingestion et les effets écotoxiques des MP et NP modèle poisson, bivalve et microalgue",
+        "Nous avons mis en évidence la présence et la toxicité des polluants adsorbés sur les MP environnementaux",
+        "Il reste à caractériser le risque pour les espèces aquatiques dans les conditions d’exposition du milieu (faible dose et exposition chronique)",
+        "Il reste à identifier la source majeure de cette toxicité : polluants, additifs, produits de dégradation, nanoparticules ?"
+      ]
+    },
+    "contact": {
+      "prenom": "Jérôme",
+      "nom": "Cachot",
+      "email": "jerome.cachot@u-bordeaux.fr"
+    },
+    "membres": [{
+        "prenom": "Jérôme",
+        "nom": "Cachot"
+      },
+      {
+        "prenom": "Magalie",
+        "nom": "Baudrimont"
+      },
+      {
+        "prenom": "Christelle",
+        "nom": "Clérandeau"
+      },
+      {
+        "prenom": "Blandine",
+        "nom": "Davail"
+      },
+      {
+        "prenom": "Agnès",
+        "nom": "Feurtet-Mazel"
+      },
+      {
+        "prenom": "Isabel",
+        "nom": "Jalon Rojas"
+      },
+      {
+        "prenom": "Bénedicte",
+        "nom": "Morin"
+      }
+    ]
+  },
+  "genoscope": {
+    "sigle": "Génoscope",
+    "nom": "Centre National de Séquençage",
+    "site": "Évry",
+    "identifiant": "",
+    "tutelles": ["CEA"],
+    "latLng": ["48.623679", "2.439328"],
+    "domaines": ["eco"],
+    "techniques": ["B","C"],
+    "axes": ["1","3"],
+    "web": "http://jacob.cea.fr/drf/ifrancoisjacob/Pages/Departements/Genoscope.aspx",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Valérie",
+      "nom": "Barbe",
+      "email": "valerie.barbe@genoscope.cns.fr"
+    },
+    "membres": [{
+      "prenom": "Valérie",
+      "nom": "Barbe"
+    }]
+  },
+  "geosciences": {
+    "sigle": "Géosciences",
+    "nom": "Géosciences Rennes",
+    "site": "Rennes",
+    "identifiant": "UMR 6118",
+    "tutelles": ["CNRS", "Université Rennes 1"],
+    "latLng": ["48.118286", "-1.638276"],
+    "domaines": ["univ","chi","eco"],
+    "techniques": [],
+    "axes": ["2"],
+    "web": "http://geosciences.univ-rennes1.fr",
+    "fiche": {
+      "titre": "Nanoplastiques en matrices complexes et interactions avec les métaux (mécanismes et traçage)",
+      "bullets": [
+        "Via des études de terrain et des expériences, nous avons montré que les nanoplastiques secondaires sont présents dans les sols et que les nanoplastiques contiennent des concentrations importantes de métaux",
+        "Les nanoplastiques adsorbent les métaux par complexation de surface et diffusion intraparticulaire.",
+        "Les nanoplastiques sont des vecteurs de métaux et peuvent agir comme cheval de Troie en écotoxicologie",
+        "Verrous et futurs développements: Etudes des interactions nanoplastiques-métaux dans des milieux complexes tels que les sols (extractions et éliminations de la matrice organique via des couplages analytiques). Utilisation des isotopes de métaux stables et du carbone pour le traçage des nanoplastiques."
+      ]
+    },
+    "contact": {
+      "prenom": "Mélanie",
+      "nom": "Davranche",
+      "email": "melanie.davranche@univ-rennes1.fr"
+    },
+    "membres": [{
+        "prenom": "Mélanie",
+        "nom": "Davranche"
+      },
+      {
+        "prenom": "Aline",
+        "nom": "Dia"
+      },
+      {
+        "prenom": "Rémi",
+        "nom": "Marsac"
+      },
+      {
+        "prenom": "Mathieu",
+        "nom": "Pédrot"
+      },
+      {
+        "prenom": "Anne-Catherine",
+        "nom": "Pierson-Wickmann"
+      }
+    ]
+  },
+  "gpm": {
+    "sigle": "GPM",
+    "nom": "Groupe de physique des matériaux",
+    "site": "Rouen",
+    "identifiant": "UMR 6634",
+    "tutelles": ["Université de Rouen Normandie", "INSA de Rouen Normandie", "CNRS"],
+    "latLng": ["49.387027", "1.067993"],
+    "domaines": ["phy"],
+    "techniques": ["A"],
+    "axes": ["1"],
+    "web": "http://gpm.univ-rouen.fr",
+    "fiche": {
+      "titre": "Caractérisation des phases amorphes des biopolymères & détection de nanoparticules dans les tissus vivants",
+      "bullets": [
+        "Nous avons créé un groupe pluridisciplinaire et international pour l’étude des nouvelles générations de polymères biosourcés et/ou biodégradables",
+        "Nous avons établi un protocole expérimental par Fast Scanning Calorimetry pour l’étude du vieillissement physique des phases amorphes polymères",
+        "Nous avons mis en évidence le rôle essentiel de la microstructure sur l’évolution des propriétés mécaniques de biopolymères immergés jusqu’à deux ans dans l’eau",
+        "Notre parc instrumental de microscopes électroniques Haute Résolution analytiques, nous permet de détecter des particules nanométriques et de les caractériser chimiquement, dans les tissus biologiques de modèles sentinelles tels que Mytilus edulis."
+      ]
+    },
+    "contact": {
+      "prenom": "Éric",
+      "nom": "Dargent",
+      "email": "eric.dargent@univ-rouen.fr"
+    },
+    "membres": [{
+        "prenom": "Éric",
+        "nom": "Dargent"
+      },
+      {
+        "prenom": "Laurent",
+        "nom": "Delbreilh"
+      },
+      {
+        "prenom": "Nicolas",
+        "nom": "Delpouve"
+      },
+      {
+        "prenom": "Antonella",
+        "nom": "Esposito"
+      },
+      {
+        "prenom": "Allison",
+        "nom": "Saiter"
+      }
+    ]
+  },
+  "iate": {
+    "sigle": "IATE",
+    "nom": "Ingénierie des Agropolymères et Technologies Émergentes",
+    "site": "Montpellier",
+    "identifiant": "UMR 1208",
+    "tutelles": ["Inrae", "Université de Montpellier", "Cirad", "Montpellier SupAgro"],
+    "latLng": ["43.619594", "3.856755"],
+    "domaines": ["eco","chi","bio"],
+    "techniques": ["A","B"],
+    "axes": ["1","3"],
+    "web": "http://umr-iate.cirad.fr",
+    "fiche": {
+      "titre": "Biodégradabilité des polymères dans l’environnement",
+      "bullets": [
+        "Développement de méthodes d’évaluation de la biodégradation des polymères en milieu marin pour la mise en place d’une norme de spécification",
+        "Membre du groupe de travail initié par PolybioAid pour la rédaction d’une norme française de spécification dédiée à la biodégradabilité et écotoxicité des plastiques en milieu marin",
+        "Revue sur les normes de biodégradation des plastiques",
+        "Étude des mécanismes de biodégradation pour comprendre l’influence de la structure et de la formulation (renforts/composites) sur la cinétique de biodégradation",
+        "Étude critique comparative des différentes approches d’évaluation de la biodégradation d’un polymère à l’échelle laboratoire (perte de masse, érosion de surface, propriétés thermiques, cristallinité, hydrolyse, changement de la masse molaire, FTIR)",
+        "Mise en évidence de l’influence de la structure cristalline du PHBV et du PBSA sur la cinétique de biodégradation en milieu compost et sol",
+        "Mise en évidence du rôle joué par l’addition de i) nanoparticules d’argile et ii) de renforts lignocellulosiques (sarments de vigne, grignons d’olive) sur l’aptitude à la biodégradation du PHBV, du PBSA et du PLA",
+        "Mesurer la biodégradation des polymères dans l’environnement pour être capable de la moduler"
+      ]
+    },
+    "contact": {
+      "prenom": "Emmanuelle",
+      "nom": "Gastaldi",
+      "email": "emmanuelle.gastaldi@umontpellier.fr"
+    },
+    "membres": [{
+      "prenom": "Emmanuelle",
+      "nom": "Gastaldi"
+    }]
+  },
+  "iccf": {
+    "sigle": "ICCF",
+    "nom": "Institut de Chimie de Clermont-Ferrand",
+    "site": "Clermont-Ferrand",
+    "identifiant": "UMR 6296",
+    "tutelles": ["CNRS", "Université Clermont Auvergne", "Sigma Clermont"],
+    "latLng": ["45.761557", "3.117399"],
+    "domaines": ["chi","univ","eco"],
+    "techniques": ["A","B","C"],
+    "axes": ["1"],
+    "web": "http://iccf.uca.fr",
+    "fiche": {
+      "titre": "Devenir des plastiques dans l’environnement: Collecte, caractérisation et (bio)dégradation",
+      "bullets": [
+        "Nous étudions la pollution plastique dans des compartiments environnementaux peu explorés (atmosphère, sédiment, lac, fleuve) ainsi que la présence de microplastiques peu décrits comme les particules d’usure de pneu. Nous avons développé des méthodes de collecte (échantillonneurs d’aérosols embarqués sur expédition 7e Continent), de préparation (sédiment, particules d’usure de pneu) et d’analyses (imagerie par FTIR, spectrométrie de masse, rhéologie, RMN) afin de caractériser la nature des microplastiques, leurs mécanismes de vieillissement (fragmentation) et leurs produits de dégradation.",
+        "Nous étudions également les mécanismes de biodégradation des plastiques. Nous avons mis en place des tests de criblage de souches microbiennes afin d’identifier et d’isoler des organismes capables dégrader différents polymères (polyoléfines et polyesters). Nous travaillons à présent au niveau enzymatique et métabolique pour décrire les mécanismes mis en jeu au niveau moléculaire.",
+        "L’impact relatif des processus de dégradation (photovieillissement, fragmentation) et de biodégradation (biodétérioration, assimilation) sur les plastiques est un élément crucial pour comprendre le devenir et la dynamique des plastiques dans l’environnement."
+      ]
+    },
+    "contact": {
+      "prenom": "Anne-Marie",
+      "nom": "Delort",
+      "email": "a-marie.delort@uca.fr"
+    },
+    "membres": [{
+        "prenom": "Anne-Marie",
+        "nom": "Delort"
+      },
+      {
+        "prenom": "Pierre",
+        "nom": "Amato"
+      },
+      {
+        "prenom": "Jean-Michel",
+        "nom": "Andanson"
+      },
+      {
+        "prenom": "Harout",
+        "nom": "Askanian"
+      },
+      {
+        "prenom": "Isabelle",
+        "nom": "Canet"
+      },
+      {
+        "prenom": "Florence",
+        "nom": "Jestin"
+      },
+      {
+        "prenom": "Cyril",
+        "nom": "Jousse"
+      },
+      {
+        "prenom": "Céline",
+        "nom": "Judon"
+      },
+      {
+        "prenom": "Martin",
+        "nom": "Leremboure"
+      },
+      {
+        "prenom": "Agnès",
+        "nom": "Rivaton"
+      },
+      {
+        "prenom": "Martine",
+        "nom": "Sancelme"
+      },
+      {
+        "prenom": "Mohamad",
+        "nom": "Sleiman"
+      },
+      {
+        "prenom": "Mounir",
+        "nom": "Traïka"
+      },
+      {
+        "prenom": "Vincent",
+        "nom": "Verney"
+      }
+    ]
+  },
+  "icmpe": {
+    "sigle": "ICMPE",
+    "nom": "Institut de Chimie et des Matériaux Paris-Est",
+    "site": "Thiais",
+    "identifiant": "UMR 7182",
+    "tutelles": ["CNRS","Université Paris-Est Créteil"],
+    "latLng": ["48.770104", "2.370832"],
+    "domaines": ["chi"],
+    "techniques": [],
+    "axes": [],
+    "web": "http://icmpe.cnrs.fr",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Valérie",
+      "nom": "Langlois",
+      "email": "langlois@icmpe.cnrs.fr"
+    },
+    "membres": [{
+        "prenom": "Valérie",
+        "nom": "Langlois"
+      },
+      {
+        "prenom": "Estelle",
+        "nom": "Renard"
+      },
+      {
+        "prenom": "Agustin",
+        "nom": "Rios de Anda"
+      }
+    ]
+  },
+  "imft": {
+    "sigle": "IMFT",
+    "nom": "Institut de mécanique des fluides de Toulouse",
+    "site": "Toulouse",
+    "identifiant": "UMR 5502",
+    "tutelles": ["CNRS", "INPT", "Université Paul Sabatier"],
+    "latLng": ["43.588157", "1.437147"],
+    "domaines": ["phy","bio"],
+    "techniques": ["A","C"],
+    "axes": ["1","2"],
+    "web": "http://www.imft.fr",
+    "fiche": {
+      "titre": "(1)Effet des microplastiques sur la motilité des copépodes et (2)Distribution verticale des plastiques dans la turbulence de surface",
+      "bullets": [
+        "Exposition de copépodes à des micro-plastiques broyés, mesure des trajectoires 3D de copépodes dans eau au repos ou turbulence (PIV tomographique), mise en évidence de la toxicité (observation microscopie à fluorescence), mesure d’une hyperactivité (fréquence des sauts plus grande).",
+        "Mesures terrain (Atlantique Nord): mise en évidence que les petits microplastiques (taille <1mm) sont en masse comparable au plus gros (1mm<taille <5mm), mesure de trajectoires 3D de plastique dans turbulence de grille (expériences de laboratoire), modèle de transport vertical générique."
+      ]
+    },
+    "contact": {
+      "prenom": "Matthieu",
+      "nom": "Mercier",
+      "email": "Matthieu.mercier@imft.fr "
+    },
+    "membres": [{
+        "prenom": "Matthieu",
+        "nom": "Mercier"
+      },
+      {
+        "prenom": "Éric",
+        "nom": "Climent"
+      },
+      {
+        "prenom": "Jacques",
+        "nom": "Magnaudet"
+      },
+      {
+        "prenom": "Olivier",
+        "nom": "Praud"
+      }
+    ]
+  },
+  "immm": {
+    "sigle": "IMMM",
+    "nom": "Institut des Molécules et Matériaux du Mans",
+    "site": "Le Mans",
+    "identifiant": "UMR 6283",
+    "tutelles": ["CNRS", "Le Mans Université"],
+    "latLng": ["48.015905", "0.162051"],
+    "domaines": ["phy","chi"],
+    "techniques": ["A"],
+    "axes": ["1"],
+    "web": "http://immm.univ-lemans.fr",
+    "fiche": {
+      "titre": "Fragmentation des polymères dans l’environnement, préparation de microplastiques “modèles” et caractérisation spectroscopique",
+      "bullets": [
+        "Nous avons montré des liens entre la structure physico-chimique d’un polymère et son processus de fragmentation (impacts sur la cinétique et la taille des fragments générés",
+        "La présence d’eau modifie fortement les processus de fragmentation d’un polymère soumis aux UV",
+        "La préparation de microplastiques modèles représentatifs de l’environnement (en polyethylène notamment) nécessite de nouvelles voies de synthèse de particules de polymères aux échelles micro et nano, une attention particulière portée aux surfactants et une caractérisation poussée"
+      ]
+    },
+    "contact": {
+      "prenom": "Fabienne",
+      "nom": "Lagarde",
+      "email": "fabienne.lagarde@univ-lemans.fr"
+    },
+    "membres": [{
+        "prenom": "Fabienne",
+        "nom": "Lagarde"
+      },
+      {
+        "prenom": "Frédéric",
+        "nom": "Amiard"
+      },
+      {
+        "prenom": "Jean-François",
+        "nom": "Bardeau"
+      },
+      {
+        "prenom": "Guillaume",
+        "nom": "Brotons"
+      },
+      {
+        "prenom": "Christophe",
+        "nom": "Chassenieux"
+      },
+      {
+        "prenom": "Philippe",
+        "nom": "Daniel"
+      },
+      {
+        "prenom": "Nicolas",
+        "nom": "Delorme"
+      },
+      {
+        "prenom": "Mathieu",
+        "nom": "Edely"
+      },
+      {
+        "prenom": "Nicolas",
+        "nom": "Errien"
+      },
+      {
+        "prenom": "Marc",
+        "nom": "Lamy de la Chapelle"
+      },
+      {
+        "prenom": "Véronique",
+        "nom": "Montembault"
+      },
+      {
+        "prenom": "Taco",
+        "nom": "Nicolai"
+      },
+      {
+        "prenom": "Jean-François",
+        "nom": "Pilard"
+      },
+      {
+        "prenom": "Agnès",
+        "nom": "Ranger"
+      }
+    ]
+  },
+  "imp": {
+    "sigle": "IMP",
+    "nom": "Ingénierie des Matériaux Polymères",
+    "site": "Villeurbanne",
+    "identifiant": "UMR 5223",
+    "tutelles": ["CNRS", "Université de Lyon", "Université Lyon 1", "Université Jean Monnet Saint Étienne", "INSA"],
+    "latLng": ["45.782718", "4.873505"],
+    "domaines": ["chi"],
+    "techniques": ["A"],
+    "axes": ["3"],
+    "web": "http://imp.cnrs.fr",
+    "fiche": {
+      "titre": "Relations entre structure, composition des matériaux et aptitude à la biodégradation dans des conditions données",
+      "bullets": [
+        "Éco conception de formulations visant à faciliter la fin de vie.",
+        "Méthodologie d’étude de la biodégradation dans compost, sol… adaptable aux milieux marins.",
+        "Verrous identifiés: Identification des paramètres clefs (des matériaux et des milieux naturels) gouvernant la biodégradation. Compréhension des mécanismes de dégradation (rôle des interfaces matériau/micro organismes…)."
+      ]
+    },
+    "contact": {
+      "prenom": "Valérie",
+      "nom": "Massardier",
+      "email": "valerie.massardier@insa-lyon.fr"
+    },
+    "membres": [{
+      "prenom": "Valérie",
+      "nom": "Massardier"
+    }]
+  },
+  "imrcp": {
+    "sigle": "IMRCP",
+    "nom": "Laboratoire des interactions moléculaires et réactivités chimiques et photochimiques",
+    "site": "Toulouse",
+    "identifiant": "UMR 5623",
+    "tutelles": ["CNRS", "Université Paul Sabatier"],
+    "latLng": ["43.564305", "1.46579"],
+    "domaines": ["chi"],
+    "techniques": [],
+    "axes": ["1"],
+    "web": "http://imrcp.ups-tlse.fr/",
+    "fiche": {
+      "titre": "Caractérisation physico-chimique des micro- et nanoplastiques, une caractérisation multi-échelle afin de comprendre leur réactivité et devenir dans l’environnement",
+      "bullets": [
+        "Nous avons identifié sur des échantillons naturels que les microplastiques subissent une altération très importante de leurs structures chimiques qui conduit à des modifications morphologiques du polymère",
+        "Ce vieillissement avancé implique des pertes des propriétés mécaniques du matériau et conduit à la formation de nanoplastiques par érosion",
+        "En mimant ces phénomènes d’érosion nous obtenons à partir de microplastiques prélevés dans l’environnement des nanoplastiques modèles de structure proches de ceux qui se forment dans le milieu naturel",
+        "Nous mettons au point une méthode de dosage des micro- et nano-plastiques par pyrolyse couplée à la chromatographie gazeuse et la spectrométrie de masse en tandem"
+      ]
+    },
+    "contact": {
+      "prenom": "Alexandra",
+      "nom": "Ter Halle",
+      "email": "ter-halle@chimie.ups-tlse.fr"
+    },
+    "membres": [{
+        "prenom": "Alexandra",
+        "nom": "Ter Halle"
+      },
+      {
+        "prenom": "Guillaume",
+        "nom": "Bordeau"
+      },
+      {
+        "prenom": "Anne-Françoise",
+        "nom": "Mingotaud"
+      },
+      {
+        "prenom": "Émile",
+        "nom": "Perez"
+      },
+      {
+        "prenom": "Clément",
+        "nom": "Roux"
+      }
+    ]
+  },
+  "inphyni": {
+    "sigle": "Inphyni",
+    "nom": "Institut de Physique de Nice",
+    "site": "Nice",
+    "identifiant": "UMR 7010",
+    "tutelles": ["CNRS", "Université Nice Sophia Antipolis"],
+    "latLng": ["43.61728", "7.060054"],
+    "domaines": ["phy"],
+    "techniques": [],
+    "axes": ["1"],
+    "web": "http://inphyni.cnrs.fr",
+    "fiche": {
+      "titre": "Rôle de la physique des polymères extracellulaires dans la croissance et l’étalement des biofilms bactériens",
+      "bullets": [
+        "Imagerie optique et de fluorescence de colonies bactériens sur des hydrogels avec des gradients de pression osmotique contrôlés",
+        "Les biofilms poussent de façon non circulaire; le centre de masse bouge d’abord vers la pression osmotique plus large et puis vers la pression osmotique plus faible",
+        "Les effets purement physiques sont importants au début de l’évolution du biofilm; finalement la réponse biologique modifie la géométrie",
+        "On est en train de tester la croissance de biofilms qui ne sont pas capable de produire les polymères extracellulaires, qui sont à la base du phénomène d’étalement osmotique"
+      ]
+    },
+    "contact": {
+      "prenom": "Agnese",
+      "nom": "Seminara",
+      "email": "agnese.seminara@inphyni.cnrs.fr"
+    },
+    "membres": [{
+      "prenom": "Agnese",
+      "nom": "Seminara"
+    }]
+  },
+  "iprem": {
+    "sigle": "Iprem",
+    "nom": "Institut des Sciences Analytiques et de Physico-Chimie pour l'environnement et les Matériaux",
+    "site": "Pau",
+    "identifiant": "UMR 5254",
+    "tutelles": ["CNRS", "Université de Pau et des Pays de l'Adour", "IMT Mines Alès"],
+    "latLng": ["43.321065", "-0.366305"],
+    "domaines": ["chi"],
+    "techniques": ["A","C"],
+    "axes": ["1"],
+    "web": "http://iprem.univ-pau.fr",
+    "fiche": {
+      "titre": "Nanoplastiques/Microplastiques : préparation de modèles, stratégies analytiques pour la quantification de leurs comportements physico-chimiques et études environnementales",
+      "bullets": [
+        "Modèle: contrôle des propriétés physico-chimiques: anisotropie en taille, taille, polydispersité, fonctionnalité de surface (COOH, charges, tension de surface, porosité…). Méthode top-down (broyage, ablation laser) et bottom-up (émulsion)",
+        "Analytique: développement de méthodes de caractérisation en taille (DLS, AF4, SP-ICP/MS) et en composition chimique (IR, Py-GC/MS/IRMS; LA-ICM/MS); analyse de l’effet cheval de Troie (métaux et contaminant organique)",
+        "Physico-chimie: comportement colloïdal dans différents compartiments de l’environnement",
+        "Environnement: eaux de mer, de rivière, sol, sable (comportement/transfert)"
+      ]
+    },
+    "contact": {
+      "prenom": "Bruno",
+      "nom": "Grassl",
+      "email": "bruno.grassl@univ-pau.fr"
+    },
+    "membres": [{
+        "prenom": "Bruno",
+        "nom": "Grassl"
+      },
+      {
+        "prenom": "Élise",
+        "nom": "Deniau"
+      },
+      {
+        "prenom": "Régis",
+        "nom": "Grimaud"
+      },
+      {
+        "prenom": "Jérome",
+        "nom": "Gury"
+      },
+      {
+        "prenom": "Florence",
+        "nom": "Hakil"
+      },
+      {
+        "prenom": "Stéphanie",
+        "nom": "Reynaud"
+      },
+      {
+        "prenom": "Pierre",
+        "nom": "Sivadon"
+      },
+      {
+        "prenom": "Joanna",
+        "nom": "Szpunar"
+      },
+      {
+        "prenom": "Laurent",
+        "nom": "Urios"
+      }
+    ]
+  },
+  "irdl": {
+    "sigle": "IRDL",
+    "nom": "Institut de Recherche Dupuy de Lôme",
+    "site": "Lorient",
+    "identifiant": "UMR 6027",
+    "tutelles": ["CNRS", "Université de Bretagne Sud"],
+    "latLng": ["47.747723", "-3.395006"],
+    "domaines": ["ing"],
+    "techniques": ["A"],
+    "axes": ["1","3"],
+    "web": "http://www.irdl.fr",
+    "fiche": {
+      "titre": "(1) Ingénierie des biopolymères & (2) Pollution environnementale par les plastiques",
+      "bullets": [
+        "Concevoir des biopolymères « à façon ». Production de polyhydroxyalcanoates. Formulation et relations structure /propriétés. Fin de vie (recyclage et (bio)dégradation en mer et en sol)",
+        "Développer des outils et des méthodologies pour extraire et caractériser les (micro)plastiques. Établir des cartographies pour identifier des zones de pollution, Disposer d’informations à destination des décideurs."
+      ]
+    },
+    "contact": {
+      "prenom": "Stéphane",
+      "nom": "Bruzaud",
+      "email": "stephane.bruzaud@univ-ubs.fr"
+    },
+    "membres": [{
+        "prenom": "Stéphane",
+        "nom": "Bruzaud"
+      },
+      {
+        "prenom": "Mikaël",
+        "nom": "Kedzierski"
+      }
+    ]
+  },
+  "l2c": {
+    "sigle": "L2C",
+    "nom": "Laboratoire Charles Coulomb",
+    "site": "Montpellier",
+    "identifiant": "UMR 5221",
+    "tutelles": ["CNRS", "Université de Montpellier"],
+    "latLng": ["43.63305", "3.867045"],
+    "domaines": ["phy","chi"],
+    "techniques": ["A"],
+    "axes": ["1"],
+    "web": "http://coulomb.umontpellier.fr",
+    "fiche": {
+      "titre": "Physique de la bio-dégradation des polymères semi-cristallins en milieu marin",
+      "bullets": [
+        "Étude et modélisation de la cinétique d’évolution de la forme et de la rugosité de surface d’un polymère semi-cristallin sous l’effet d’une attaque enzymatique, en suivant les motifs d’érosion par microscopies MEB et AFM",
+        "Influence majeure de la microstructure cristalline sur la cinétique de dégradation (e.g. pour certaines structures, la vitesse de dégradation du semi-cristal est aussi élevée que celle de l’amorphe)",
+        "Mise en évidence d’un mécanisme de production de fragments micrométriques sans fracture et prédiction d’une taille critique de relargage de particules micrométriques dans le milieu aquatique",
+        "Nécessité de comprendre les mécanismes microscopiques qui pilotent la transformation d’un déchet plastique en micro- et nanoplastiques"
+      ]
+    },
+    "contact": {
+      "prenom": "Matthieu",
+      "nom": "George",
+      "email": "matthieu.george@umontpellier.fr"
+    },
+    "membres": [{
+        "prenom": "Pascale",
+        "nom": "Fabre"
+      },
+      {
+        "prenom": "Matthieu",
+        "nom": "George"
+      }
+    ]
+  },
+  "labocea": {
+    "sigle": "Labocea",
+    "nom": "Laboratoire Public — Conseil, Expertise et Analyse en Bretagne GIP",
+    "site": "Plouzané",
+    "identifiant": "",
+    "tutelles": [],
+    "latLng": ["48.361391", "-4.564168"],
+    "domaines": ["eco","univ"],
+    "techniques": ["A","B","C"],
+    "axes": ["1"],
+    "web": "http://www.labocea.fr",
+    "fiche": {
+      "titre": "Prélèvements sur les bassins versant (rivières, sédiments) + plages, analyses des MP par IRTF, interprétation, modélisation des MP et macroplastiques sur les bassins versants, couplage avec les modèles milieu marin développés par Actimar",
+      "bullets": [
+        "Adaptation d’un filet pour les prélèvements en rivières, optimisation du protocole de digestion des matières organiques, diminution du nombre de particules non identifiées par la création de base de données avec des plastiques vieillis dans l’environnement",
+        "Analyse des MP par IRTF et analyses des additifs et des micropolluants organiques adsorbés",
+        "Résultats : protocole de prélèvement en rivière validé. Données sur les concentrations en MP sur les bassins versants de la rade de Brest, de la rade de Marseille, de la baie de Douarnenez, de la baie des Veys (cf graphiques). Modélisation des apports sur les bassins versants de Brest et Marseille (cf carte)",
+        "Optimisation en cours : diminution des temps de collecte, de tri et d’identification",
+        "Travaux en cours sur différentes matrices"
+      ]
+    },
+    "contact": {
+      "prenom": "Valérie",
+      "nom": "Yeuc'h",
+      "email": "valerie.yeuch@labocea.fr"
+    },
+    "membres": [{
+        "prenom": "Valérie",
+        "nom": "Yeuc'h"
+      },
+      {
+        "prenom": "Gaël",
+        "nom": "Durant"
+      },
+      {
+        "prenom": "Sophie",
+        "nom": "Goutliquer"
+      },
+      {
+        "prenom": "Florent",
+        "nom": "Le Gleau"
+      }
+    ]
+  },
+  "lbcm": {
+    "sigle": "LBCM",
+    "nom": "Laboratoire Biotechnologie et Chimie Marine",
+    "site": "Lorient",
+    "identifiant": "",
+    "tutelles": ["Université Bretagne Sud"],
+    "latLng": ["47.747574", "-3.393784"],
+    "domaines": ["chi","bio","ing"],
+    "techniques": ["A","B","C"],
+    "axes": [],
+    "web": "http://www-lbcm.univ-ubs.fr",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Fabienne",
+      "nom": "Faÿ",
+      "email": "fabienne.fay@univ-ubs.fr"
+    },
+    "membres": [{
+        "prenom": "Fabienne",
+        "nom": "Faÿ"
+      },
+      {
+        "prenom": "Isabelle",
+        "nom": "Linossier"
+      },
+      {
+        "prenom": "Karine",
+        "nom": "Rehel"
+      }
+    ]
+  },
+  "lce": {
+    "sigle": "LCE",
+    "nom": "Laboratoire de Chimie de l'Environnement",
+    "site": "Marseille",
+    "identifiant": "UMR 7376",
+    "tutelles": ["CNRS", "Université Aix-Marseille"],
+    "latLng": ["43.306003", "5.379647"],
+    "domaines": ["chi","eco"],
+    "techniques": ["A","C"],
+    "axes": ["1"],
+    "web": "http://lce.univ-amu.fr",
+    "fiche": {
+      "titre": "Sur la compréhension du devenir des débris plastiques marins",
+      "bullets": [
+        "Notre travail concerne l’étude des interactions des débris plastiques avec les polluants organiques, l’impact de la lumière solaire et leur transfert vers l’atmosphère",
+        "La présence de polluants organiques persistants (POP) dans les débris plastiques a été démontré dans des échantillons côtiers et hauturiers à des concentrations très variables",
+        "Le transfert de particules de plastiques (de taille nanométrique) de la phase aqueuse vers la phase gaz par bubble bursting a été vérifié",
+        "Les études sur l’impact de la lumière sur les processus de sorption des POP et l’effet des POP sur les organismes marins sont en cours"
+      ]
+    },
+    "contact": {
+      "prenom": "Pascal",
+      "nom": "Wong-Wah-Chung",
+      "email": "pascal.wong-wah-chung@univ-amu.fr"
+    },
+    "membres": [{
+        "prenom": "Pascal",
+        "nom": "Wong-Wah-Chung"
+      },
+      {
+        "prenom": "Laurence",
+        "nom": "Asia"
+      },
+      {
+        "prenom": "Pierre",
+        "nom": "Doumenq"
+      },
+      {
+        "prenom": "Stéphanie",
+        "nom": "Lebarillier"
+      },
+      {
+        "prenom": "Stéphanie",
+        "nom": "Rossignol"
+      }
+    ]
+  },
+  "lecob": {
+    "sigle": "Lecob",
+    "nom": "Laboratoire d'écogéochimie des environnements benthiques",
+    "site": "Banyuls",
+    "identifiant": "UMR 8222",
+    "tutelles": ["Sorbonne Université", "CNRS"],
+    "latLng": ["42.479982", "3.136365"],
+    "domaines": ["eco"],
+    "techniques": ["A","C"],
+    "axes": ["2"],
+    "web": "http://lecob1.obs-banyuls.fr",
+    "fiche": {
+      "titre": "Réponse des organismes marins à la pollution plastique – une vision intégrée à l’échelle de l’holobionte",
+      "bullets": [
+        "Nous réalisons des expérimentations court et long terme sur la réponse de coraux et bivalves à des expositions aux macro- ou microplastiques. L’analyse se fait à différents niveaux biologiques, allant du microbiote à la croissance de l’organisme.",
+        "Sensibilité différente suivant les espèces. A long terme, les coraux s’acclimatent à l’effet barrière produit par les macroplastiques en ‘contournant’ l’obstacle au cours de leur croissance. L’impact des microplastiques est en revanche plus drastique sur leur état de santé.",
+        "L’accumulation de microplastiques dans les récifs coralliens pourrait conduire, comme le réchauffement climatique, à un changement rapide des communautés dominantes et donc de la fonctionnalité de l’habitat récifal."
+      ]
+    },
+    "contact": {
+      "prenom": "Franck",
+      "nom": "Lartaud",
+      "email": "franck.lartaud@obs-banyuls.fr"
+    },
+    "membres": [{
+        "prenom": "Franck",
+        "nom": "Lartaud"
+      },
+      {
+        "prenom": "Erwan",
+        "nom": "Peru"
+      },
+      {
+        "prenom": "Audrey",
+        "nom": "Pruski"
+      },
+      {
+        "prenom": "Gilles",
+        "nom": "Vetion"
+      }
+    ]
+  },
+  "lee": {
+    "sigle": "LEE",
+    "nom": "Laboratoire Eau et Environnement",
+    "site": "Bouguenais",
+    "identifiant": "",
+    "tutelles": ["IFSTTAR"],
+    "latLng": ["47.154889", "-1.6388"],
+    "domaines": ["univ"],
+    "techniques": ["A"],
+    "axes": ["1"],
+    "web": "http://www.ee.ifsttar.fr",
+    "fiche": {
+      "titre": "Débris plastiques (macro- et microplastiques) dans le continuum Terre-Mer : des émissions urbaines aux estuaires",
+      "bullets": [
+        "Étude des sources et eaux urbaines (retombées atmosphériques, eaux potables, eaux usées, eaux pluviales, surverses unitaires de temps de pluie) à l’échelle de l’agglomération Nantaise et de plusieurs mégalopoles.",
+        "Étude du transfert et du devenir des macro- et microplastiques sur le bassin de la Loire :  des têtes de bassins à l’estuaire. Influence des conditions hydrodynamiques (crues, débits, marée) sur le devenir des macro- et microplastiques, question entre processus sédimentaires et microplastiques, estimation des flux à l’échelle du bassin versant."
+      ]
+    },
+    "contact": {
+      "prenom": "Johnny",
+      "nom": "Gasperi",
+      "email": "johnny.gasperi@univ-eiffel.fr"
+    },
+    "membres": [{
+      "prenom": "Johnny",
+      "nom": "Gasperi"
+    }]
+  },
+  "leesu": {
+    "sigle": "Leesu",
+    "nom": "Laboratoire Eau Environnement et Systèmes Urbains",
+    "site": "Créteil",
+    "identifiant": "UMR MA102",
+    "tutelles": [
+      "Université Paris-Est Créteil",
+      "École des Ponts ParisTech",
+      "AgroParisTech"
+    ],
+    "latLng": ["48.788563", "2.44272"],
+    "domaines": ["univ"],
+    "techniques": ["A"],
+    "axes": ["1"],
+    "web": "http://www.leesu.fr",
+    "fiche": {
+      "titre": "Débris plastiques (macro- et microplastiques) dans le continuum Terre-Mer : des émissions urbaines aux estuaires",
+      "bullets": [
+        "Étude des sources et eaux urbaines (retombées atmosphériques, eaux potables, eaux usées, eaux pluviales, surverses unitaires de temps de pluie) à l’échelle de l’agglomération Nantaise et de plusieurs mégalopoles.",
+        "Étude du transfert et du devenir des macro- et microplastiques sur le bassin de la Loire :  des têtes de bassins à l’estuaire. Influence des conditions hydrodynamiques (crues, débits, marée) sur le devenir des macro- et microplastiques, question entre processus sédimentaires et microplastiques, estimation des flux à l’échelle du bassin versant."
+      ]
+    },
+    "contact": {
+      "prenom": "Bruno",
+      "nom": "Tassin",
+      "email": "bruno.tassin@enpc.fr"
+    },
+    "membres": [{
+      "prenom": "Bruno",
+      "nom": "Tassin"
+    }, {
+      "prenom": "Rachid",
+      "nom": "Dris"
+    }]
+  },
+  "legos": {
+    "sigle": "Legos",
+    "nom": "Laboratoire d’Études en Géophysique et Océanographie Spatiales",
+    "site": "Toulouse",
+    "identifiant": "UMR 5566",
+    "tutelles": ["CNES", "IRD", "Université Paul Sabatier", "CNRS"],
+    "latLng": ["43.561798", "1.479163"],
+    "domaines": ["univ"],
+    "techniques": ["D"],
+    "axes": ["1"],
+    "web": "http://www.legos.obs-mip.f",
+    "fiche": {
+      "titre": "Vulnérabilité des îles du Pacifique Sud-Est à la contamination par les plastiques",
+      "bullets": ["Alors qu'il est généralement admis que le niveau de contamination des îles du Pacifique dépend fortement de leur proximité avec les zones d'accumulation dans les gyres subtropicales, nous montrons que l'exposition à la contamination des îles Chiliennes, et en particulier l'île de Pâques, pourrait se faire par un chemin direct et moins long depuis les côtes du Pérou et du Chili. En particulier la zone côtière le long du Chili entre 20°S et 40°S représente la région depuis laquelle près de 50% des flotteurs virtuels atteignent l'île de Pâques en environ 2 ans. Les zones d'effort de pêches industrielles semblent aussi participer à la contamination des îles du Pacifique Sud selon des observations de terrain et la modélisation."]
+    },
+    "contact": {
+      "prenom": "Boris",
+      "nom": "Dewitte",
+      "email": "boris.dewitte@legos.obs-mip.fr"
+    },
+    "membres": [{
+        "prenom": "Boris",
+        "nom": "Dewitte"
+      },
+      {
+        "prenom": "Alexandre",
+        "nom": "Ganachaud"
+      },
+      {
+        "prenom": "Véronique",
+        "nom": "Garçon"
+      },
+      {
+        "prenom": "Ariane",
+        "nom": "Koch-Larrouy"
+      },
+      {
+        "prenom": "Joël",
+        "nom": "Sudre"
+      }
+    ]
+  },
+  "lemar": {
+    "sigle": "Lemar",
+    "nom": "Laboratoire des Sciences de l'Environnement Marin",
+    "site": "Plouzané",
+    "identifiant": "UMR 6539",
+    "tutelles": ["Université de Bretagne Occidentale", "CNRS", "IRD", "Ifremer"],
+    "latLng": ["48.358688", "-4.562719"],
+    "domaines": ["univ","eco"],
+    "techniques": ["A","B","C","E"],
+    "axes": ["1","2"],
+    "web": "http://www-iuem.univ-brest.fr/lemar",
+    "fiche": {
+      "titre": "Contamination de l’environnement marin côtier et impacts des micro et nanoplastiques : vers une approche expérimentale holistique de la complexité environnementale",
+      "bullets": [
+        "Devenir principal des MP ingérés = transit et excrétion (poissons, coquillages)",
+        "Même un simple transit de MP induit des modifications : digestion modifiée qui perturbent l'entrée d'énergie via l'alimentation avec des conséquences sur des fonctions comme la reproduction + des perturbations chimiques « endocriniennes-like »",
+        "NP, mais pas MP, altèrent les gamètes et embryons d’huître, ceux restant à l’état nano en mer de mer lié à leurs propriétés de surface étant les plus toxiques",
+        "L’alimentation des bivalves n’est pas épargnée puisque le cycle de vie de diatomées est apparu perturbé en phase de croissance algale",
+        "Les aggrégats de phytoplancton augmentent fortement les vitesses de chute des MNP",
+        "Des bactéries pathogènes d’huitre retrouvées à la surface de MP collectés en zone cotière, la question est alors si cela contribue à la transmission de maladies"
+      ]
+    },
+    "contact": {
+      "prenom": "Arnaud",
+      "nom": "Huvet",
+      "email": "arnaud.huvet@ifremer.fr"
+    },
+    "membres": [{
+        "prenom": "Arnaud",
+        "nom": "Huvet"
+      },
+      {
+        "prenom": "Ika",
+        "nom": "Paul-Pont"
+      },
+      {
+        "prenom": "Adeline",
+        "nom": "Bidault"
+      },
+      {
+        "prenom": "Patrice",
+        "nom": "Brehmer"
+      },
+      {
+        "prenom": "Aurélie",
+        "nom": "Chambouvet"
+      },
+      {
+        "prenom": "Charlotte",
+        "nom": "Corporeau"
+      },
+      {
+        "prenom": "Éric",
+        "nom": "Deslandes"
+      },
+      {
+        "prenom": "Christine",
+        "nom": "Dubreuil"
+      },
+      {
+        "prenom": "Caroline",
+        "nom": "Fabioux"
+      },
+      {
+        "prenom": "Christophe",
+        "nom": "Lambert"
+      },
+      {
+        "prenom": "Nelly",
+        "nom": "Le Goïc"
+      },
+      {
+        "prenom": "Brivaëla",
+        "nom": "Moriceau"
+      },
+      {
+        "prenom": "Philippe",
+        "nom": "Soudant"
+      },
+      {
+        "prenom": "Yoann",
+        "nom": "Thomas"
+      }
+    ]
+  },
+  "lerpac": {
+    "sigle": "LER/PAC",
+    "nom": "Laboratoire Environnement Ressources Provence Azur Corse",
+    "site": "Bastia",
+    "identifiant": "",
+    "tutelles": ["Ifremer"],
+    "latLng": ["42.662498", "9.439562"],
+    "domaines": ["univ","shs"],
+    "techniques": ["A","C","D"],
+    "axes": ["1","3"],
+    "web": "",
+    "fiche": {
+      "titre": "Aspects océanographiques de la pollution plastique",
+      "bullets": [
+        "Suivi DCSMM des déchets marins",
+        "Travaux sur les mesures automatisées, harmonisées pour la surveillance ( marqueurs fluorescents, inter-calibrations, etc.)",
+        "Déchets marins/plastiques  en milieu marin profond ( macro et micro plastiques )",
+        "Microplastiques dans les sédiments marins profonds",
+        "Surveillance  DCSMM ( France et Europe)",
+        "Support aux politiques publiques",
+        "Gestion des déchets marins dans les aires marines protégées"
+      ]
+    },
+    "contact": {
+      "prenom": "François",
+      "nom": "Galgani",
+      "email": "francois.galgani@ifremer.fr"
+    },
+    "membres": [{
+      "prenom": "François",
+      "nom": "Galgani"
+    }]
+  },
+  "lgpmm": {
+    "sigle": "LGPMM",
+    "nom": "Génétique et Pathologie des Mollusques Marins",
+    "site": "La Tremblade",
+    "identifiant": "",
+    "tutelles": ["Ifremer"],
+    "latLng": ["45.798345", "-1.149809"],
+    "domaines": ["bio","eco"],
+    "techniques": [],
+    "axes": ["2"],
+    "web": "http://wwz.ifremer.fr/sg2m/Laboratoire-de-Genetique-et-Pathologie-des-Mollusques-Marins/Presentation",
+    "fiche": {
+      "titre": "Étude de la diversité et de la dynamique spatio-temporelle de micro organismes marins en relation avec des polymères",
+      "bullets": [
+        "Recherche de micro organismes marins pathogènes/toxiques pour les mollusques bivalves ou pour l’homme à partir de polymères immergés dans l’eau de mer",
+        "Suivi temporel d’un an sur deux sites (Bretagne et Charente-Maritime)",
+        "Quantification des micro organismes pathogènes par qPCR dans l’eau ou à partir des polymères immergés",
+        "Adsorption des micro organismes marins pathogènes sur des polymères",
+        "Détection de bactéries (Vibrio spp.), OsHV-1, Norovirus, Bonamia ostreae, Martelia refringens, Ostreopsis spp., O. cf. siamensis"
+      ]
+    },
+    "contact": {
+      "prenom": "Benjamin",
+      "nom": "Morga",
+      "email": "benjamin.morga@ifremer.fr"
+    },
+    "membres": [{
+      "prenom": "Benjamin",
+      "nom": "Morga"
+    }]
+  },
+  "ljp": {
+    "sigle": "LJP",
+    "nom": "Laboratoire Jean Perrin",
+    "site": "Sorbonne Université",
+    "identifiant": "UMR 8237",
+    "tutelles": ["CNRS", "Sorbonne Université"],
+    "latLng": ["48.847697", "2.356808"],
+    "domaines": ["phy","bio"],
+    "techniques": [],
+    "axes": ["1","2"],
+    "web": "http://www.labos.upmc.fr/ljp",
+    "fiche": {
+      "titre": "Biophysique des microorganismes : Biofilms bactériens vivants suivis in situ en microscopie 5D",
+      "bullets": [
+        "Nous cherchons à comprendre les mécanismes de formation des biofilms bactériens et les relations causales qui lient leurs propriétés physiques et physicochimiques à leurs propriétés biologiques.",
+        "Nous avons montré les relations non triviales du développement du biofilm avec l’hydrodynamique de l’environnement et mis en évidence des effets de seuil déterminants.",
+        "Nous venons de mettre au point et de caractériser un modèle expérimental de biofilm bactérien multi-espèces sur lequel, nous projetons d’étudier les effets de diverses perturbations.",
+        "Nous avons aussi un nouveau projet de co-développement de l’innovation récente du micro-Raman comprimé pour l’analyse in situ de la matrice extracellulaire, organe clé et mal connu du biofilm bactérien."
+      ]
+    },
+    "contact": {
+      "prenom": "Nelly",
+      "nom": "Henry",
+      "email": "nelly.henry@upmc.fr"
+    },
+    "membres": [{
+        "prenom": "Nelly",
+        "nom": "Henry"
+      },
+      {
+        "prenom": "Maxime",
+        "nom": "Deforet"
+      },
+      {
+        "prenom": "Franck",
+        "nom": "Sureau"
+      }
+    ]
+  },
+  "lmge": {
+    "sigle": "LMGE",
+    "nom": "Laboratoire Microorganismes : Génome et Environnement",
+    "site": "Aubière",
+    "identifiant": "UMR 6023",
+    "tutelles": ["CNRS", "Université Clermont Auvergne"],
+    "latLng": ["45.760544", "3.116208"],
+    "domaines": ["eco"],
+    "techniques": [],
+    "axes": ["1"],
+    "web": "http://www.lmge.univ-bpclermont.fr",
+    "fiche": {
+      "titre": "Dynamique des déchets plastiques dans les écosystèmes continentaux aquatiques",
+      "bullets": [
+        "Comprendre la dégradation des plastiques dans les écosystèmes aquatiques continentaux (lacs et rivières).",
+        "Les micro-plastiques, supports et vecteurs de micropolluants : quels transferts au sein des réseaux trophiques aquatiques ?",
+        "Réduire de manière durable l’accumulation de plastiques dans les écosystèmes aquatiques de montagne et leur transport vers la mer."
+      ]
+    },
+    "contact": {
+      "prenom": "Didier",
+      "nom": "Debroas",
+      "email": "didier.debroas@uca.fr"
+    },
+    "membres": [{
+      "prenom": "Didier",
+      "nom": "Debroas"
+    }]
+  },
+  "lomic": {
+    "sigle": "Lomic",
+    "nom": "Laboratoire d'Océanographie microbienne",
+    "site": "Banyuls",
+    "identifiant": "UMR 7621",
+    "tutelles": ["CNRS", "Sorbonne Université"],
+    "latLng": ["42.479982", "3.136365"],
+    "domaines": ["univ","eco","bio"],
+    "techniques": ["A","B","C"],
+    "axes": ["1","3"],
+    "web": "http://lomic.obs-banyuls.fr",
+    "fiche": {
+      "titre": "Colonisation et biodégradation des plastiques par les microorganismes",
+      "bullets": [
+        "Nous avons montré que les processus de biodégradation en milieu marin sont largement accélérés pour certains polymères biosourcés, mais « biosourcé ne rime pas forcément avec biodégradable ».",
+        "Nous avons décrit une grande biodiversité d’organismes vivant sur les plastiques, appelée la ‘plastisphère’.",
+        "Nous participons à la mise en place d’une nouvelle norme de biodégradabilité des plastiques en mer."
+      ]
+    },
+    "contact": {
+      "prenom": "Jean-François",
+      "nom": "Ghiglione",
+      "email": "ghiglione@obs-banyuls.fr"
+    },
+    "membres": [{
+        "prenom": "Jean-François",
+        "nom": "Ghiglione"
+      },
+      {
+        "prenom": "Pascal",
+        "nom": "Conan"
+      },
+      {
+        "prenom": "Mireille",
+        "nom": "Pujo-Pay"
+      }
+    ]
+  },
+  "lops": {
+    "sigle": "Lops",
+    "nom": "Laboratoire d'Océanographie Physique et Spatiale",
+    "site": "Plouzané",
+    "identifiant": "UMR 6523",
+    "tutelles": ["CNRS", "Ifremer", "IRD", "Université de Bretagne Occidentale"],
+    "latLng": ["48.358688", "-4.562719"],
+    "domaines": ["univ"],
+    "techniques": ["D"],
+    "axes": ["1"],
+    "web": "http://www.umr-lops.fr",
+    "fiche": {
+      "titre": "Sur les cheminements océaniques des débris et plastiques marins, des étapes régionales à l’océan global…",
+      "bullets": [
+        "Nous avons montré l'importance de la dérive de Stokes (vagues) sur les routes principales empruntées par les déchets plastique en surface, des zones de fort rejet côtier (Asie du Sud-Est) vers les zones de convergence, notamment sur le transfert de l’Océan Indien vers le Pacifique Sud ou l'Atlantique Sud.",
+        "Nous avons mis en évidence l'importance du scénario de rejet côtier, issu des fleuves ou/et de la densité locale de population, sur l'accumulation dans les zones de convergence et sur les zones d'échouage, phénomène qui affecte environ 2/3 des particules plastiques rejetées dans nos modèles.",
+        "Nous nous intéressons à la dynamique verticale qui représente un verrou important pour envisager une modélisation 3D du cycle de vie des plastiques et micro-plastiques dans l'océan, ou les processus biologiques y jouent un rôle prépondérant : ingestion, excrétion, neige marine, biofouling..."
+      ]
+    },
+    "contact": {
+      "prenom": "Christophe",
+      "nom": "Maes",
+      "email": "christophe.maes@ird.fr"
+    },
+    "membres": [{
+        "prenom": "Christophe",
+        "nom": "Maes"
+      },
+      {
+        "prenom": "Bruno",
+        "nom": "Blanke"
+      },
+      {
+        "prenom": "Xavier",
+        "nom": "Carton"
+      },
+      {
+        "prenom": "Guillaume",
+        "nom": "Charria"
+      },
+      {
+        "prenom": "Nicolas",
+        "nom": "Grima"
+      },
+      {
+        "prenom": "Thierry",
+        "nom": "Huck"
+      },
+      {
+        "prenom": "Gwenaëlle",
+        "nom": "Jan"
+      },
+      {
+        "prenom": "Élodie",
+        "nom": "Martinez"
+      },
+      {
+        "prenom": "Florian",
+        "nom": "Sevellec"
+      }
+    ]
+  },
+  "lov": {
+    "sigle": "LOV",
+    "nom": "Laboratoire d'Océanographie de Villefranche",
+    "site": "Villefranche sur mer",
+    "identifiant": "UMR 7093",
+    "tutelles": ["Sorbonne Université", "CNRS"],
+    "latLng": ["43.696307", "7.306754"],
+    "domaines": ["univ","eco","bio"],
+    "techniques": [],
+    "axes": [],
+    "web": "http://lov.obs-vlfr.fr",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Maria Luiza",
+      "nom": "Pedrotti",
+      "email": "pedrotti@obs-vlfr.fr"
+    },
+    "membres": [{
+        "prenom": "Maria Luiza",
+        "nom": "Pedrotti"
+      },
+      {
+        "prenom": "Gabriel",
+        "nom": "Gorsky"
+      },
+      {
+        "prenom": "Marie-Emmanuelle",
+        "nom": "Kerros"
+      },
+      {
+        "prenom": "Fabien",
+        "nom": "Lombard"
+      }
+    ]
+  },
+  "lubem": {
+    "sigle": "Lubem",
+    "nom": "Laboratoire Universitaire de Biodiversité et d'Écologie Microbienne",
+    "site": "Brest",
+    "identifiant": "UR 3882",
+    "tutelles": ["Université de Bretagne Occidentale"],
+    "latLng": ["47.981089", "-4.099517"],
+    "domaines": ["bio","chi"],
+    "techniques": ["A","B","C"],
+    "axes": ["1","3"],
+    "web": "http://www.univ-brest.fr/lubem",
+    "fiche": {
+      "titre": "Caractérisation des communautés fongiques associées aux plastiques et potentiel en bioremédiation",
+      "bullets": [
+        "Le projet MycoPLAST vise à évaluer la diversité, l'activité et la répartition des champignons associés aux échantillons de déchets plastiques et d'évaluer, voire d’améliorer, leur capacité de dégradation de polymères plastiques complexes.",
+        "Les objectifs scientifiques sont les suivants : (i) fournir des informations détaillées sur l’identité et la pertinence environnementale des champignons associés à différents types de plastique par approche moléculaire, (ii) établir une collection exhaustive d’isolats et déterminer leur capacité à dégrader les polymères plastiques, et (iii) optimiser le rendement de dégradation par le biais de consortiums microbiens et par des approches d’adaptation forcée par cultures itératives."
+      ]
+    },
+    "contact": {
+      "prenom": "Gaëtan",
+      "nom": "Burgaud",
+      "email": "gaetan.burgaud@univ-brest.fr"
+    },
+    "membres": [{
+        "prenom": "Gaëtan",
+        "nom": "Burgaud"
+      },
+      {
+        "prenom": "Emmanuel",
+        "nom": "Coton"
+      }
+    ]
+  },
+  "mapiem": {
+    "sigle": "Mapiem",
+    "nom": "Laboratoire Matériaux Polymères Interfaces Environnement Marin",
+    "site": "Toulon",
+    "identifiant": "EA 4323",
+    "tutelles": ["Université de Toulon", "SeaTech"],
+    "latLng": ["43.136432", "6.012538"],
+    "domaines": ["bio","chi"],
+    "techniques": ["A","B","C"],
+    "axes": ["1"],
+    "web": "http://mapiem.univ-tln.fr",
+    "fiche": {
+      "titre": "Matériaux polymères et biofilms en environnements marins",
+      "bullets": [
+        "Influence de la nature des polymères (composition, énergie de surface, rugosité, viellissement…) et des facteurs environnementaux (température, salinité, nutriments, métaux, hydrodynamique…) sur les relations structure-fonctions dans les communautés procaryotes et eucaryotes des biofilms marins : Approche pluridisciplinaire (multi-omiques) et pluri-échelles (mésocosmes, in situ)",
+        "Interfaces/Interphases: vieillissement et adaptabilité. Identification des mécanismes et cinétiques de dégradation (vieillissements naturels et accélérés)",
+        "Synthèse et caractérisations chimiques de polymères (propriétés de surface et massiques des matériaux)",
+        "Formulation / Déformulation"
+      ]
+    },
+    "contact": {
+      "prenom": "Jean-François",
+      "nom": "Briand",
+      "email": "briand@univ-tln.fr"
+    },
+    "membres": [{
+        "prenom": "Jean-François",
+        "nom": "Briand"
+      },
+      {
+        "prenom": "Lenaik",
+        "nom": "Belec"
+      },
+      {
+        "prenom": "Christine",
+        "nom": "Bressy"
+      },
+      {
+        "prenom": "Pascal",
+        "nom": "Carrière"
+      },
+      {
+        "prenom": "Jean-François",
+        "nom": "Chailan"
+      },
+      {
+        "prenom": "François-Xavier",
+        "nom": "Perrin"
+      }
+    ]
+  },
+  "marbec1": {
+    "sigle": "Marbec",
+    "nom": "Marine Biodiversity Exploitation and Conservation",
+    "site": "Montpellier",
+    "identifiant": "UMR 9190",
+    "tutelles": ["IRD", "Ifremer", "Université de Montpellier", "CNRS"],
+    "latLng": ["43.631613", "3.863438"],
+    "domaines": ["eco"],
+    "techniques": ["A","B","C"],
+    "axes": ["2"],
+    "web": "http://www.umr-marbec.fr",
+    "fiche": {
+      "titre": "Evaluation de la toxicité des microplastiques sur la physiologie des poissons – exposition chronique",
+      "bullets": [
+        "Une exposition à long-terme à des concentrations faibles de microplastiques induit des altérations physiologiques majeures chez les poissons (altération de la croissance et de la reproduction)",
+        "Les effets au niveau des populations restent encore à déterminer de même que les mécanismes sous-jacents 🡪 L'hypothèse d'un déséquilibre énergétique est à tester",
+        "Certains effets varient en fonction de la nature des polymères 🡪 importance des polymères – quelle généralisation possible ?",
+        "La présence de polluants adsorbés interfère avec la toxicité des microplastiques 🡪 la contribution des microplastiques à l'exposition à ces polluants reste à déterminer"
+      ]
+    },
+    "contact": {
+      "prenom": "Delphine",
+      "nom": "Bonnet",
+      "email": "delphine.bonnet@umontpellier.fr"
+    },
+    "membres": [{
+        "prenom": "Delphine",
+        "nom": "Bonnet"
+      },
+      {
+        "prenom": "Thierry",
+        "nom": "Bouvier"
+      },
+      {
+        "prenom": "Philippe",
+        "nom": "Cecchi"
+      },
+      {
+        "prenom": "Estelle",
+        "nom": "Masseret"
+      },
+      {
+        "prenom": "Behzad",
+        "nom": "Mostajir"
+      },
+      {
+        "prenom": "Francesca",
+        "nom": "Vidussi"
+      }
+    ]
+  },
+  "marbec2": {
+    "sigle": "Marbec",
+    "nom": "MARine Biodiversity Exploitation and Conservation",
+    "site": "Palavas-les-Flots",
+    "identifiant": "UMR 9190",
+    "tutelles": ["IRD", "Ifremer", "Université de Montpellier", "CNRS"],
+    "latLng": ["43.519985", "3.910249"],
+    "domaines": ["eco"],
+    "techniques": ["A","B","C"],
+    "axes": [],
+    "web": "http://www.umr-marbec.fr",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Xavier",
+      "nom": "Cousin",
+      "email": "xavier.cousin@ifremer.fr"
+    },
+    "membres": [{
+        "prenom": "Xavier",
+        "nom": "Cousin"
+      },
+      {
+        "prenom": "Marie-Laure",
+        "nom": "Begout"
+      }
+    ]
+  },
+  "mio": {
+    "sigle": "MIO",
+    "nom": "Institut Méditerranéen d’Océanologie",
+    "site": "Marseille",
+    "identifiant": "UMR 7294",
+    "tutelles": ["Aix Marseille Université", "CNRS", "IRD", "Université de Toulon"],
+    "latLng": ["43.235053", "5.440751"],
+    "domaines": ["univ","chi","phy","eco"],
+    "techniques": ["A","D"],
+    "axes": ["1","2","3"],
+    "web": "http://www.mio.osupytheas.fr",
+    "fiche": {
+      "titre": "Trois équipes étudiant les plastiques dans les océans",
+      "bullets": [
+        "Équipe physique (Y. Ourmières, D. Sous) : Distribution en mer (Expédition Septième Continent) et en estuaire de MP ; Modélisation numérique du transport des micro et nano-plastiques ; Expérimentation en canal à houle sur la répartition et dynamique des MP",
+        "Equipe chimie (V. Fauvelle, V. Lenoble, S. Mounier, R. Sempéré, E. Strady) : Transport de MP vierges et enrobés d’un biofilm (V. Lenoble) ; Bioaccumulation des contaminants inorganiques dans le biofilm de surface des MP ; Caractérisation des MP par confocal et LDIR ; Dégradation des MP (eau de Mer, sédiment) ; Migration et transfert trophique des additifs organiques des MP i.e. phtalates, OPEs, Bisphenols",
+        "Equipes EMBIO et MEB (S. Coupé, T. Lefort, O. Pringault, P. Cuny, C. Militon) : Caractérisation des communautés colonisantes - Ecotoxicité des plastiques"
+      ]
+    },
+    "contact": {
+      "prenom": "Richard",
+      "nom": "Sempéré",
+      "email": "richard.sempere@mio.osupytheas.fr"
+    },
+    "membres": [{
+      "prenom": "Richard",
+      "nom": "Sempéré"
+    }]
+  },
+  "mms-nantes": {
+    "sigle": "MMS-Nantes",
+    "nom": "Mer, Molécules, Santé",
+    "site": "Nantes",
+    "identifiant": "",
+    "tutelles": ["Université de Nantes", "Université Catholique de l'Ouest", "Le Mans Université", "Institut Universitaire Mer et Littoral"],
+    "latLng": ["47.239499", "-1.553298"],
+    "domaines": ["eco"],
+    "techniques": ["A","B","C"],
+    "axes": ["2","3"],
+    "web": "http://mms.univ-nantes.fr",
+    "fiche": {
+      "titre": "Accumulation et effets des microplastiques sur des espèces benthiques: approches in situ et in vivo",
+      "bullets": [
+        "Caractérisation du contenu en microplastiques dans un habitat benthique spécifique, celui des Haploops sp.. Ce sont des crustacés des fonds marins qui font partie des espèces ingénieures car ils construisent des tubes à partir des particules en suspension dans l’eau. Développement de nouvelles méthodologies de préparation des échantillons afin de faciliter l’analyse des microplastiques, étude d’écosystèmes encore méconnus en termes de contamination.",
+        "Évaluation des effets de microplastiques biosourcés et biodégradables sur la moule bleue (Mytilus edulis) par des approches biochimiques et métabolomiques après exposition en laboratoire. Étude de matières plastiques alternatives aux pétrosourcées, mise au point et application d’outils complémentaires dans la détermination des effets des contaminants sur les organismes marins."
+      ]
+    },
+    "contact": {
+      "prenom": "Aurore",
+      "nom": "Zalouk-Vergnoux",
+      "email": "aurore.zalouk-vergnoux@univ-nantes.fr"
+    },
+    "membres": [{
+        "prenom": "Aurore",
+        "nom": "Zalouk-Vergnoux"
+      },
+      {
+        "prenom": "Abderrahmane",
+        "nom": "Kamari"
+      },
+      {
+        "prenom": "Laurence",
+        "nom": "Poirier"
+      }
+    ]
+  },
+  "mms-uco": {
+    "sigle": "MMS-UCO",
+    "nom": "Mer, Molécules, Santé",
+    "site": "Angers",
+    "identifiant": "",
+    "tutelles": ["Université de Nantes", "Université Catholique de l'Ouest", "Le Mans Université", "Institut Universitaire Mer et Littoral"],
+    "latLng": ["47.463136757822454", "-0.5467647991358272"],
+    "domaines": ["eco"],
+    "techniques": ["B","C"],
+    "axes": ["2"],
+    "web": "http://mms.univ-nantes.fr",
+    "fiche": {
+      "titre": "Étude de l’écotoxicité des micro et nanoplastiques sur des invertébrés aquatiques estuariens et marins, en conditions contrôlées et sur le terrain",
+      "bullets": [
+        "Nous avons montré l’ingestion de microplastiques par les moules en lien avec une induction de stress oxydant, du système immunitaire et des dommages de l’ADN à des concentrations parfois très faibles.",
+        "Différents types de microplastiques ont été identifiés dans les vers et le tube digestif des vers récoltés dans la vase de l’estuaire de la Seine et une diminution de la viabilité cellulaire a été observée après exposition en laboratoire.",
+        "Nous avons pu identifier les microplastiques mais pas les nanoplastiques qui sont pourtant susceptibles d’induire des effets toxiques plus important. Les nouveaux projets s’intéresseront aux effets des nano et des microplastiques et au transfert trophique le long du continuum eau douce-eau marine et le long de la chaine trophique."
+      ]
+    },
+    "contact": {
+      "prenom": "Amélie",
+      "nom": "Châtel",
+      "email": "amelie.chatel@uco.fr "
+    },
+    "membres": [{
+        "prenom": "Amélie",
+        "nom": "Châtel"
+      },
+      {
+        "prenom": "Catherine",
+        "nom": "Mouneyrac"
+      },
+      {
+        "prenom": "Mélanie",
+        "nom": "Bruneau"
+      },
+      {
+        "prenom": "Aurore",
+        "nom": "Caruso"
+      },
+      {
+        "prenom": "Isabelle",
+        "nom": "Métais"
+      },
+      {
+        "prenom": "Mohammed",
+        "nom": "Mouloud"
+      },
+      {
+        "prenom": "Hanane",
+        "nom": "Perrein-Ettajani"
+      }
+    ]
+  },
+  "msc": {
+    "sigle": "MSC",
+    "nom": "Laboratoire Matière et Système Complexe",
+    "site": "Paris",
+    "identifiant": "UMR 7057",
+    "tutelles": ["CNRS", "Université Paris Diderot"],
+    "latLng": ["48.828527", "2.382547"],
+    "domaines": ["phy","ing","bio"],
+    "techniques": ["A"],
+    "axes": ["1"],
+    "web": "http://www.msc.univ-paris-diderot.fr",
+    "fiche": {
+      "titre": "Formation de la plastisphère : dynamique précoce de l’adhésion de phytoplancton sur le plastique",
+      "bullets": [
+        "Nous nous intéressons aux premières étapes de la dynamique de micro-algues flagellées sur des surfaces solides.",
+        "Nous utilisons des méthodes de suivi 3D de particules Browniennes au voisinage immédiat d’un substrat, pour définir des observables permettant de quantifier l’interaction entre une algue et le substrat.",
+        "Nous avons mis en évidence trois type de comportement du mouvement de l’algue près d’un substrat lisse : (i) adhésion irréversible, (ii) adhésion réversible et (iii) glissement (gliding) le long du substrat.",
+        "Nous avons mis en évidence le blocage d’algues flagellées motiles dans les aspérités d’un micropuits"
+      ]
+    },
+    "contact": {
+      "prenom": "Florence",
+      "nom": "Elias",
+      "email": "florence.elias@univ-paris-diderot.fr"
+    },
+    "membres": [{
+        "prenom": "Florence",
+        "nom": "Elias"
+      },
+      {
+        "prenom": "Philippe",
+        "nom": "Brunet"
+      },
+      {
+        "prenom": "Éric",
+        "nom": "Buhler"
+      },
+      {
+        "prenom": "Gaëlle",
+        "nom": "Charron"
+      },
+      {
+        "prenom": "Adrian",
+        "nom": "Daerr"
+      },
+      {
+        "prenom": "Jean-Marc",
+        "nom": "Di Meglio"
+      },
+      {
+        "prenom": "Nathalie",
+        "nom": "Luciani"
+      }
+    ]
+  },
+  "oreme": {
+    "sigle": "OREME",
+    "nom": "Observatoire de Recherche Méditerranéen de l’Environnement",
+    "site": "Sète",
+    "identifiant": "UMS 3282",
+    "tutelles": ["Montpellier Université d'Excellence", "CNRS", "IRD", "Inrae", "Université de Montpellier"],
+    "latLng": ["43.414116", "3.688975"],
+    "domaines": ["univ","eco"],
+    "techniques": ["A","C"],
+    "axes": [],
+    "web": "http://www.oreme.org",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Sebastien",
+      "nom": "Mas",
+      "email": "sebastien.mas1@umontpellier.fr"
+    },
+    "membres": [{
+      "prenom": "Sebastien",
+      "nom": "Mas"
+    }]
+  },
+  "promes": {
+    "sigle": "PROMES",
+    "nom": "Procédés, Matériaux et Énergie Solaire",
+    "site": "Perpignan",
+    "identifiant": "UPR 8521",
+    "tutelles": ["CNRS", "Université Perpignan"],
+    "latLng": ["42.664846", "2.910082"],
+    "domaines": ["ing"],
+    "techniques": [],
+    "axes": ["1"],
+    "web": "http://www.promes.cnrs.fr",
+    "fiche": {
+      "titre": "Microplastiques plasmas, traceurs des décharges électriques sur les transferts atmosphériques d’aérosols biosourcés",
+      "bullets": [
+        "Nous coordonnons le GIEAN pour identifier les sources de nanoparticules mobilisées et transformées par les décharges plasmas dans l’atmosphère en croisant expérimentations par plasmas de laboratoire, suivi des aérosols actuels et études des aérosols anciens.",
+        "Les nanostructures, les composition moléculaires et isotopiques démontrent que les microplastiques en transit dans l’atmosphère sont (1) issus de décharges plasmas, (2) ne sont pas dérivés de la pétrochimie.",
+        "Depuis mars 2010, la réduction de 90% de la pollution atmosphérique liée à la situation sanitaire du Covid 19 nous a permis d’identifier la biopulation de filaments de cyanophycées impliquée dans la synthèse par décharges plasma des microplastiques en transit dans l’atmosphère.",
+        "Des phénomènes vibrationnels concentrent dans ces biofilaments des nanofeuillets semi-conducteurs et réfractaires, en particulier de TiO2.",
+        "Nous étudions la ségrégation par les abeilles mellifères de cette population de nanofeuillets semi-conducteurs afin de comprendre comment assurer leur biocompatibilité pour la santé animale et humaine."
+      ]
+    },
+    "contact": {
+      "prenom": "Marie-Agnès",
+      "nom": "Courty",
+      "email": "marie-agnes.courty@promes.cnrs.fr"
+    },
+    "membres": [{
+        "prenom": "Marie-Agnès",
+        "nom": "Courty"
+      },
+      {
+        "prenom": "Jean-Michel",
+        "nom": "Martinez"
+      },
+      {
+        "prenom": "Françoise",
+        "nom": "Massines"
+      }
+    ]
+  },
+  "rdt": {
+    "sigle": "RDT",
+    "nom": "Recherche et Développement technique",
+    "site": "Plouzané",
+    "identifiant": "",
+    "tutelles": ["Ifremer"],
+    "latLng": ["48.358688", "-4.562719"],
+    "domaines": [],
+    "techniques": ["A"],
+    "axes": [],
+    "web": "http://wwz.ifremer.fr/Recherche/Departements-scientifiques/Departement-Ressources-physiques-et-Ecosystemes-de-fond-de-Mer/Unite-Recherche-et-Developpements-Technologiques",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Chantal",
+      "nom": "Compère",
+      "email": "chantal.compere@ifremer.fr"
+    },
+    "membres": [{
+        "prenom": "Chantal",
+        "nom": "Compère"
+      },
+      {
+        "prenom": "Maël",
+        "nom": "Arhant"
+      },
+      {
+        "prenom": "Kada",
+        "nom": "Boukerma"
+      },
+      {
+        "prenom": "Lylian",
+        "nom": "Challier"
+      },
+      {
+        "prenom": "Florent",
+        "nom": "Colas"
+      },
+      {
+        "prenom": "Peter",
+        "nom": "Davies"
+      },
+      {
+        "prenom": "Catherine",
+        "nom": "Dreanno"
+      },
+      {
+        "prenom": "Maria",
+        "nom": "El Rakwe"
+      },
+      {
+        "prenom": "Pierre-Yves",
+        "nom": "Le Gac"
+      },
+      {
+        "prenom": "Maëlenn",
+        "nom": "Le Gall"
+      }
+    ]
+  },
+  "rmpf": {
+    "sigle": "RMPF",
+    "nom": "Ressources Marines en Polynésie Française",
+    "site": "Pacifique",
+    "identifiant": "",
+    "tutelles": ["Ifremer"],
+    "latLng": ["-17.805917", "-149.292913"],
+    "domaines": [],
+    "techniques": [],
+    "axes": [],
+    "web": "http://wwz.ifremer.fr/Recherche/Departements-scientifiques/Departement-Ressources-Biologiques-et-Environnement/Unite-Ressources-Marines-en-Polynesie-Francaise",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Gilles",
+      "nom": "Le Moullac",
+      "email": "gilles.le.moullac@ifremer.fr"
+    },
+    "membres": [{
+        "prenom": "Gilles",
+        "nom": "Le Moullac"
+      },
+      {
+        "prenom": "Jérémy",
+        "nom": "Le Luyer"
+      },
+      {
+        "prenom": "Alain",
+        "nom": "Lo Yat"
+      },
+      {
+        "prenom": "Denis",
+        "nom": "Saulnier"
+      }
+    ]
+  },
+  "sayfood": {
+    "sigle": "SayFood",
+    "nom": "Food and Bioproduct Engineering Research Unit",
+    "site": "Paris Saclay",
+    "identifiant": "UMR 0782",
+    "tutelles": ["Inrae", "AgroParisTech"],
+    "latLng": ["48.839772", "2.347657"],
+    "domaines": ["ing","bio"],
+    "techniques": [],
+    "axes": [],
+    "web": "",
+    "fiche": {
+      "titre": "",
+      "bullets": []
+    },
+    "contact": {
+      "prenom": "Sandra",
+      "nom": "Domenek",
+      "email": "sandra.domenek@agroparistech.fr"
+    },
+    "membres": [{
+      "prenom": "Sandra",
+      "nom": "Domenek"
+    }]
+  },
+  "smpc": {
+    "sigle": "SMPC",
+    "nom": "Service des Matériaux Polymères et Composites",
+    "site": "Mons, Belgique",
+    "identifiant": "",
+    "tutelles": ["Université de Mons", "Materia Nova"],
+    "latLng": ["50.451686", "3.958992"],
+    "domaines": ["eco","chi"],
+    "techniques": [],
+    "axes": ["3"],
+    "web": "http://morris.umons.ac.be/SMPC/",
+    "fiche": {
+      "titre": "Formulation de nouveaux matériaux plastiques plus respectueux du milieu marin",
+      "bullets": [
+        "Dans le cadre du GDR, le SMPC a choisi de mettre à la disposition de la communauté scientifique son expertise des matériaux  biodégradables pour non seulement (1) mieux comprendre l’impact de ces matériaux émergents sur le biote marin mais aussi pour (2) proposer de nouvelles formulations permettant de répondre aussi bien aux besoins légitimes des industriels du plastiques qu’aux nécessités environnementales.",
+        "Des premiers résultats intéressants ont été obtenus sur l’impact des microplastiques à base de polylactide sur les moules Mytilus edulis et une étude en cours permettra de mieux comprendre l’impact du polylactide sur le microbiote des copépodes (Eurytomeras affinis).",
+        "Les premiers verrous sont, comme souvent dans l’étude de l’impact des microplastiques, méthodologiques. Pour pouvoir les surmonter, il est nécessaire de s’appuyer sur une collaboration transdisciplinaire entre polyméristes, biologistes et écotoxicologistes."
+      ]
+    },
+    "contact": {
+      "prenom": "Samira",
+      "nom": "Benali",
+      "email": "samira.benali@umons.ac.be"
+    },
+    "membres": [{
+        "prenom": "Samira",
+        "nom": "Benali"
+      },
+      {
+        "prenom": "Rosica",
+        "nom": "Mincheva"
+      },
+      {
+        "prenom": "Jean-Marie",
+        "nom": "Raquez"
+      }
+    ]
+  },
+  "takuvik": {
+    "sigle": "Takuvik",
+    "nom": "Takuvik",
+    "site": "Québec, Canada",
+    "identifiant": "UMI 3376",
+    "tutelles": ["Université Laval", "CNRS"],
+    "latLng": ["46.778422", "-71.277567"],
+    "domaines": ["phy","chi","eco"],
+    "techniques": [],
+    "axes": ["1"],
+    "web": "http://www.takuvik.ulaval.ca",
+    "fiche": {
+      "titre": "Source, transport et devenir des nanoplastiques aux interfaces environnementales",
+      "bullets": [
+        "Physico-chimie : comportement colloïdale des nanoparticules aux interfaces/hotspots environnementaux",
+        "Environnement : eaux de mer, rivière, sol, sable, glace, organismes, phytoplancton, benthos (comportement /transfert)",
+        "Analytique: développement de méthode de caractérisation en taille (DLS, AF4, SP-ICP/MS) et en composition chimique (IR, Py-GC/MS/IRMS; LA-ICM/MS); Réactivité (spéciation, modélisation"
+      ]
+    },
+    "contact": {
+      "prenom": "Julien",
+      "nom": "Gigault",
+      "email": "julien.gigault@takuvik.ulaval.ca"
+    },
+    "membres": [{
+        "prenom": "Julien",
+        "nom": "Gigault"
+      },
+      {
+        "prenom": "Philippe",
+        "nom": "Archambault"
+      },
+      {
+        "prenom": "Marcel",
+        "nom": "Babin"
+      },
+      {
+        "prenom": "Raoul-Marie",
+        "nom": "Couture"
+      },
+      {
+        "prenom": "Caroline",
+        "nom": "Guillmette"
+      },
+      {
+        "prenom": "Jean-Éric",
+        "nom": "Tremblay"
+      }
+    ]
+  },
+  "uccs": {
+    "sigle": "UCCS",
+    "nom": "Unité de Catalyse et Chimie du Solide",
+    "site": "Lille",
+    "identifiant": "UMR 8181",
+    "tutelles": ["CNRS", "Université de Lille", "Université d'Artois", "Centrale Lille"],
+    "latLng": ["50.608156", "3.140678"],
+    "domaines": ["chi"],
+    "techniques": [],
+    "axes": ["3"],
+    "web": "http://uccs.univ-lille1.fr",
+    "fiche": {
+      "titre": "Conception et synthèse de polymères biosourcés respectueux de l’environnement marin",
+      "bullets": [
+        "Notre domaine d'expertise couvre la conception et la synthèse de polymères et de plastiques fonctionnels et biosourcés. Dans le cadre du GDR Polymères & Océans, nous nous intéressons au design et à la synthèse écocompatible de plastiques notamment biosourcés qui sont plus respectueux de l’environnement marin.",
+        "Nous travaillons avec le Laboratoire d’Océanographie et de Géosciences, LOG, UMR 8187 de Wimereux sur des projets visant à étudier les effets de la pollution par les fragments de ces plastiques sur le comportement du zooplancton."
+      ]
+    },
+    "contact": {
+      "prenom": "Philippe",
+      "nom": "Zinck",
+      "email": "philippe.zinck@univ-lille.fr "
+    },
+    "membres": [{
+      "prenom": "Philippe",
+      "nom": "Zinck"
+    }]
+  }
+}
