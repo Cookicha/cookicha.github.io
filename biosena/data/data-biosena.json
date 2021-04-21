@@ -1,31 +1,147 @@
 {
-"BIOGECO": {"sigle":"BIOGECO","nom":"Biodiversité gènes et communautés","latLng": ["44.736029103621405", "-0.773977141408295"]},
-"CEBC": {"sigle":"CEBC","nom":"Centre d’études biologiques de Chizé","latLng": ["46.14664419181798", "-0.425765271840331"]},
-"CEJEP": {"sigle":"CEJEP","nom":"Centre d’études juridiques et politiques","latLng": ["46.14763063705896", "-1.1549409286121282"]},
-"Centre É. Durkheim": {"sigle":"Centre Émile Durkheim","nom":"Science politique et sociologie comparative","latLng": ["44.79836593866803", "-0.6148187658119546"]},
-"CEREGE": {"sigle":"CEREGE","nom":"Centre de recherche en gestion","latLng": ["46.588037020015086", "0.344573693160009"]},
-"CRHIA": {"sigle":"CRHIA","nom":"Centre de recherches en histoire internationale et atlantique","latLng": ["46.14763063705896", "-1.1549409286121282"]},
-"CRIEF": {"sigle":"CRIEF","nom":"Centre de recherche sur l’intégration économique et financière","latLng": ["46.57107273129483", "0.3799120278573305"]},
-"EABX": {"sigle":"EABX","nom":"Écosystèmes aquatiques et changements globaux","latLng": ["44.77432459101344", "-0.6965829530690293"]},
-"EBI": {"sigle":"EBI","nom":"Écologie, biologie des interactions","latLng": ["46.56482990758912", "0.3814106678569325"]},
-"ECOBIOP": {"sigle":"ECOBIOP","nom":"Écologie comportementale et biologie des populations de poissons","latLng": ["43.35560048289736", "-1.5621734878155213"]},
-"EGFV": {"sigle":"EGFV","nom":"Écophysiologie et génomique fonctionnelle de la vigne","latLng": ["44.791726530888546", "-0.5809910872740808"]},
-"EPOC": {"sigle":"EPOC","nom":"Environnements et paléoenvironnements océaniques et continentaux","latLng": ["44.80480051709232", "-0.6066919004860893"]},
-"ETBX": {"sigle":"ETBX","nom":"Environnement, territoires et infrastructures","latLng": ["44.77439000695353", "-0.6965448991175228"]},
-"GEOLAB": {"sigle":"GEOLAB","nom":"Laboratoire de géographie physique et environnementale","latLng": ["45.81745187188267", "1.2305397831226033"]},
-"Gretha": {"sigle":"Gretha","nom":"Groupe de recherche en économie théorique et appliquée","latLng": ["44.79831745778145", "-0.6162320422543052"]},
-"IPREM": {"sigle":"IPREM","nom":"Institut des sciences analytiques et de physico-chimie pour l’environnement et les matériaux","latLng": ["43.321049747565525", "-0.3663146295394064"]},
-"LER - AR": {"sigle":"LER - AR","nom":"Environnement ressources Arcachon/Anglet","latLng": ["44.657401202521406", "-1.1445193846285793"]},
-"LIENSs": {"sigle":"LIENSs","nom":"Littoral, environnements et sociétés","latLng": ["46.14225538203028", "-1.1572995956094294"]},
-"MIA": {"sigle":"MIA","nom":"Mathématiques, images et applications","latLng": ["46.14865969942627", "-1.152854292582904"]},
-"OMIJ": {"sigle":"OMIJ","nom":"Observatoire des mutations institutionnelles et juridiques","latLng": ["45.825220902984135", "1.260143676023134"]},
-"PACEA": {"sigle":"PACEA","nom":"De la préhistoire à l'actuel : culture, environnement et anthropologie","latLng": ["44.80191510772376", "-0.6089819012678299"]},
-"PALEVOPRIM": {"sigle":"PALEVOPRIM","nom":"Paléontologie, évolution, paléoécosystèmes, paléoprimatologie","latLng": ["46.565793328927725", "0.3808875567177064"]},
-"PASSAGES": {"sigle":"PASSAGES","nom":"Reconfiguration des spatialités et changements globaux","latLng": ["44.79455230363013", "-0.6174820724078198"]},
-"Pélagis": {"sigle":"Pélagis","nom":"Observatoire des mammifères et oiseaux marins","latLng": ["46.146715250157385", "-1.1552180647173316"]},
-"RURALITE": {"sigle":"RURALITE","nom":"Rural urbain liens environnement territoires sociétés","latLng": ["46.569251921221095", "0.3851219995056324"]},
-"SAVE": {"sigle":"SAVE","nom":"Santé et agroécologie du vignoble","latLng": ["44.788373689331436", "-0.5794254842410305"]},
-"UGMA": {"sigle":"UGMA","nom":"Unité de génétique moléculaire animale","latLng": ["45.8378767623401", "1.2385922786622814"]},
-"URP3F": {"sigle":"URP3F","nom":"Unité de recherche pluridisciplinaire prairies et plantes fourragères","latLng": ["46.404435318943136", "0.07910858246265957"]},
-"L3i": {"sigle":"L3i","nom":"Laboratoire informatique, image, interaction","latLng": ["46.14643855832229", "-1.1571086575567981"]}
+  "BIOGECO": {
+    "sigle": "BIOGECO",
+    "nom": "Biodiversité gènes et communautés",
+    "latLng": ["44.736029103621405", "-0.773977141408295"]
+  },
+  "CEBC": {
+    "sigle": "CEBC",
+    "nom": "Centre d’études biologiques de Chizé",
+    "latLng": ["46.14664419181798", "-0.425765271840331"]
+  },
+  "CEJEP": {
+    "sigle": "CEJEP",
+    "nom": "Centre d’études juridiques et politiques",
+    "latLng": ["46.14763063705896", "-1.1549409286121282"]
+  },
+  "Centre É. Durkheim": {
+    "sigle": "Centre Émile Durkheim",
+    "nom": "Science politique et sociologie comparative",
+    "latLng": ["44.79836593866803", "-0.6148187658119546"]
+  },
+  "CEREGE": {
+    "sigle": "CEREGE",
+    "nom": "Centre de recherche en gestion",
+    "latLng": ["46.588037020015086", "0.344573693160009"]
+  },
+  "CRHIA": {
+    "sigle": "CRHIA",
+    "nom": "Centre de recherches en histoire internationale et atlantique",
+    "latLng": ["46.14763063705896", "-1.1549409286121282"]
+  },
+  "CRIEF": {
+    "sigle": "CRIEF",
+    "nom": "Centre de recherche sur l’intégration économique et financière",
+    "latLng": ["46.57107273129483", "0.3799120278573305"]
+  },
+  "EABX": {
+    "sigle": "EABX",
+    "nom": "Écosystèmes aquatiques et changements globaux",
+    "latLng": ["44.77432459101344", "-0.6965829530690293"]
+  },
+  "EBI": {
+    "sigle": "EBI",
+    "nom": "Écologie, biologie des interactions",
+    "latLng": ["46.56482990758912", "0.3814106678569325"]
+  },
+  "ECOBIOP": {
+    "sigle": "ECOBIOP",
+    "nom": "Écologie comportementale et biologie des populations de poissons",
+    "latLng": ["43.35560048289736", "-1.5621734878155213"]
+  },
+  "EGFV": {
+    "sigle": "EGFV",
+    "nom": "Écophysiologie et génomique fonctionnelle de la vigne",
+    "latLng": ["44.791726530888546", "-0.5809910872740808"]
+  },
+  "EPOC": {
+    "sigle": "EPOC",
+    "nom": "Environnements et paléoenvironnements océaniques et continentaux",
+    "latLng": ["44.80480051709232", "-0.6066919004860893"]
+  },
+  "ETBX": {
+    "sigle": "ETBX",
+    "nom": "Environnement, territoires et infrastructures",
+    "latLng": ["44.77439000695353", "-0.6965448991175228"]
+  },
+  "GEOLAB": {
+    "sigle": "GEOLAB",
+    "nom": "Laboratoire de géographie physique et environnementale",
+    "latLng": ["45.81745187188267", "1.2305397831226033"]
+  },
+  "Gretha": {
+    "sigle": "Gretha",
+    "nom": "Groupe de recherche en économie théorique et appliquée",
+    "latLng": ["44.79831745778145", "-0.6162320422543052"]
+  },
+  "IPREM": {
+    "sigle": "IPREM",
+    "nom": "Institut des sciences analytiques et de physico-chimie pour l’environnement et les matériaux",
+    "latLng": ["43.321049747565525", "-0.3663146295394064"]
+  },
+  "LER - AR": {
+    "sigle": "LER - AR",
+    "nom": "Environnement ressources Arcachon/Anglet",
+    "latLng": ["44.657401202521406", "-1.1445193846285793"]
+  },
+  "LIENSs": {
+    "sigle": "LIENSs",
+    "nom": "Littoral, environnements et sociétés",
+    "latLng": ["46.14225538203028", "-1.1572995956094294"]
+  },
+  "MIA": {
+    "sigle": "MIA",
+    "nom": "Mathématiques, images et applications",
+    "latLng": ["46.14865969942627", "-1.152854292582904"]
+  },
+  "OMIJ": {
+    "sigle": "OMIJ",
+    "nom": "Observatoire des mutations institutionnelles et juridiques",
+    "latLng": ["45.825220902984135", "1.260143676023134"]
+  },
+  "PACEA": {
+    "sigle": "PACEA",
+    "nom": "De la préhistoire à l'actuel : culture, environnement et anthropologie",
+    "latLng": ["44.80191510772376", "-0.6089819012678299"]
+  },
+  "PALEVOPRIM": {
+    "sigle": "PALEVOPRIM",
+    "nom": "Paléontologie, évolution, paléoécosystèmes, paléoprimatologie",
+    "latLng": ["46.565793328927725", "0.3808875567177064"]
+  },
+  "PASSAGES": {
+    "sigle": "PASSAGES",
+    "nom": "Reconfiguration des spatialités et changements globaux",
+    "latLng": ["44.79455230363013", "-0.6174820724078198"]
+  },
+  "Pélagis": {
+    "sigle": "Pélagis",
+    "nom": "Observatoire des mammifères et oiseaux marins",
+    "latLng": ["46.146715250157385", "-1.1552180647173316"]
+  },
+  "RURALITE": {
+    "sigle": "RURALITE",
+    "nom": "Rural urbain liens environnement territoires sociétés",
+    "latLng": ["46.569251921221095", "0.3851219995056324"]
+  },
+  "SAVE": {
+    "sigle": "SAVE",
+    "nom": "Santé et agroécologie du vignoble",
+    "latLng": ["44.788373689331436", "-0.5794254842410305"]
+  },
+  "UGMA": {
+    "sigle": "UGMA",
+    "nom": "Unité de génétique moléculaire animale",
+    "latLng": ["45.8378767623401", "1.2385922786622814"]
+  },
+  "URP3F": {
+    "sigle": "URP3F",
+    "nom": "Unité de recherche pluridisciplinaire prairies et plantes fourragères",
+    "latLng": ["46.404435318943136", "0.07910858246265957"]
+  },
+  "L3i": {
+    "sigle": "L3i",
+    "nom": "Laboratoire informatique, image, interaction",
+    "latLng": ["46.14643855832229", "-1.1571086575567981"]
+  }
 }
