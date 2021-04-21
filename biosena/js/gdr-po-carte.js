@@ -12,7 +12,7 @@ request.onload = function() {
 
   var convertGPS = function(latLng) {
     latLng[2] = (latLng[0] * (-142.34) + 6691 + 63);
-    latLng[3] = (latLng[1] * (-93.3) + 52.97 + 323);
+    latLng[3] = (latLng[1] * (-94) + 52.97 + 323);
   }
   for (var i = 0; i < ids.length; i++) {
     var id = ids[i];
