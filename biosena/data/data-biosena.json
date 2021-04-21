@@ -143,5 +143,15 @@
     "sigle": "L3i",
     "nom": "Laboratoire informatique, image, interaction",
     "latLng": ["46.14643855832229", "-1.1571086575567981"]
+  },
+  "Creuse-Vienne": {
+    "sigle": "Creuse-Vienne",
+    "nom": "Creuse Vienne",
+    "latLng": ["47.00577642707762", "0.568301648712976"]
+  },
+  "Plage Hendaye": {
+    "sigle": "Plage Hendaye",
+    "nom": "Plage Hendaye",
+    "latLng": ["43.37352647534082", "-1.7814168435074924"]
   }
 }
