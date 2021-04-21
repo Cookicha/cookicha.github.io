@@ -1,4 +1,4 @@
-var requestURL = 'data/dataGdrPo.json';
+var requestURL = 'data/data-biosena.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
