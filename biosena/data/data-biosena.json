@@ -14,7 +14,7 @@
     "nom": "Centre d’études juridiques et politiques",
     "latLng": ["46.14763063705896", "-1.1549409286121282"]
   },
-  "Centre É. Durkheim": {
+  "Durkheim": {
     "sigle": "Centre Émile Durkheim",
     "nom": "Science politique et sociologie comparative",
     "latLng": ["44.79836593866803", "-0.6148187658119546"]
@@ -79,7 +79,7 @@
     "nom": "Institut des sciences analytiques et de physico-chimie pour l’environnement et les matériaux",
     "latLng": ["43.321049747565525", "-0.3663146295394064"]
   },
-  "LER - AR": {
+  "LER-AR": {
     "sigle": "LER - AR",
     "nom": "Environnement ressources Arcachon/Anglet",
     "latLng": ["44.657401202521406", "-1.1445193846285793"]
@@ -114,7 +114,7 @@
     "nom": "Reconfiguration des spatialités et changements globaux",
     "latLng": ["44.79455230363013", "-0.6174820724078198"]
   },
-  "Pélagis": {
+  "Pelagis": {
     "sigle": "Pélagis",
     "nom": "Observatoire des mammifères et oiseaux marins",
     "latLng": ["46.146715250157385", "-1.1552180647173316"]
@@ -149,7 +149,7 @@
     "nom": "Creuse Vienne",
     "latLng": ["47.00577642707762", "0.568301648712976"]
   },
-  "Plage Hendaye": {
+  "PlageHendaye": {
     "sigle": "Plage Hendaye",
     "nom": "Plage Hendaye",
     "latLng": ["43.37352647534082", "-1.7814168435074924"]
