@@ -83,19 +83,20 @@ display:block;
 #stylekey {
 position:absolute;
 top:100px;
-left:300px;
-width:800px;
+right:600px;
 display:flex;
-flex-flow: row wrap;
+flex-flow: row nowrap;
 justify-content: flex-start;
 align-content: flex-end;
+user-select: none;
 }
 #stylekey > div {
   margin:24px 4px 0 4px;
+  width:200px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  align-items: stretch ;
+  align-items: stretch;
 }
 
 #stylekey .titre {
@@ -112,7 +113,6 @@ text-shadow: 0 0 6px white;
 #stylekey .bouton {
 margin:0 7px;
 padding:3px;
-background:transparent;
 border:none;
 }
 
@@ -130,6 +130,7 @@ color:white;
 }
 #stylekey .bouton .texte-bouton {
   background: var(--main0);
+  background:#fbfcff;
   border-radius: 4px;
   padding:10px 20px;
   color:var(--main2);

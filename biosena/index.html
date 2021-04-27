@@ -10,7 +10,7 @@
   <meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height" />
   <link rel="stylesheet" href="css/gdrPO.css" />
   <link rel="stylesheet" href="css/carte.css" />
-  <link rel="stylesheet" href="css/fiches.css" />
+  <!-- <link rel="stylesheet" href="css/fiches.css" /> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
 
 <body>
   <main>
-    <div id="headerMap" class="header">
+    <div id="headerMap" class="header" style="box-shadow:none;">
       <div id="dotsBox">
       </div>
       <!-- <div id="creuse" class="dot" style="position: absolute; top: 63px; right: 323px;"></div>
@@ -29,6 +29,12 @@
           <div class="titre">Structures</div>
           <div id="laboratoire" class="bouton structure"><div class="texte-bouton">Laboratoire de recherche</div></div>
           <div id="aire" class="bouton structure"><div class="texte-bouton">Aire naturelle protégée</div></div>
+          <div id="pub" class="bouton structure"><div class="texte-bouton">Institutions publiques</div></div>
+          <div id="cons" class="bouton structure"><div class="texte-bouton">Expertise & conseil</div></div>
+          <div id="terr" class="bouton structure"><div class="texte-bouton">Collectivités territoriales</div></div>
+          <div id="exp" class="bouton structure"><div class="texte-bouton">Producteurs & exploitants</div></div>
+          <div id="asso" class="bouton structure"><div class="texte-bouton">Associations & naturalistes</div></div>
+          <div id="edu" class="bouton structure"><div class="texte-bouton">Culture scientifique & éducation</div></div>
           <!-- <div id="bio" class="bouton structure"><div class="texte-bouton">Institution publique</div></div>
           <div id="eco" class="bouton structure"><div class="texte-bouton">Association</div></div>
           <div id="ing" class="bouton structure"><div class="texte-bouton">Groupe d'intérêt</div></div>
@@ -50,13 +56,6 @@
         </div> -->
       </div>
     </div>
-    <div id="fiches-container">
-      <section id="pre-fiches">
-        <p>Seules les fiches des laboratoires apparaissant sur la carte sont affichées. Utilisez les filtres pour réduire le nombre de fiches et préciser votre recherche, ou dé-selectionnez des filtres pour voir davantage de fiches et les parcourir librement.</p>
-      </section>
-      <section id="fiches-section">
-
-      </section>
     </div>
   </main>
   <script type="text/javascript">
@@ -94,7 +93,29 @@
     PNRMP: {sigle: "PNR Marais Poitevin", nom: "PNRMP", latLng: [46.321590491759515, -0.5861150443494794], agglo: "Coulon", visible: 1, domaine: "ecologie", hover: 0, structure : "aire"},
     PNRPL: {sigle: "PNR Perigord-Limousin", nom: "PNRPL", latLng: [45.556619992172514, 1.004780063237875], agglo: "LaCoquille", visible: 1, domaine: "ecologie", hover: 0, structure : "aire"},
     PNRML: {sigle: "PNR Millevaches en Limousin", nom: "PNRML", latLng: [45.642591818536076, 2.094984282208508], agglo: "Millevaches", visible: 1, domaine: "ecologie", hover: 0, structure : "aire"},
-    PNRM: {sigle: "PNR Médoc", nom: "PNRM", latLng: [45.15137260206972, -0.8226002608899545], agglo: "StLaurentMedoc", visible: 1, domaine: "ecologie", hover: 0, structure : "aire"}
+    PNRM: {sigle: "PNR Médoc", nom: "PNRM", latLng: [45.15137260206972, -0.8226002608899545], agglo: "StLaurentMedoc", visible: 1, domaine: "ecologie", hover: 0, structure : "aire"},
+    TEST: {sigle: "Test", nom: "test", latLng: [43.48, 1.475], agglo: "Test", visible: 1, domaine: "ecologie", hover: 0, structure : "aire"},
+    ARB: {sigle: "ARB", agglo: "Poitiers", latLng: [46.588037020015086, 0.344573693160009], visible: 1, domaine: "ecologie", hover: 0, structure : "pub"},
+    Biotope: {sigle: "Biotope", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "cons"},
+    BordeauxMétropole: {sigle: "Bordeaux Métropole", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "terr"},
+    CDEO: {sigle: "CDEO", agglo: "Ordiarp",latLng: [43.19420751296989, -0.9545812612902761], visible: 1, domaine: "ecologie", hover: 0, structure : "exp"},
+    Cohabys: {sigle: "Cohabys", agglo: "LaRochelle", latLng: [46.14763063705896, -1.1549409286121282], visible: 1, domaine: "ecologie", hover: 0, structure : "cons"},
+    ConservatoireLittoral: {sigle: "Conservatoire du Littoral", agglo: "Rochefort", latLng: [45.93614452952699, -0.9614516613147917], visible: 1, domaine: "ecologie", hover: 0, structure : "pub"},
+    CRED: {sigle: "CRED 86", agglo: "Poitiers", latLng: [46.588037020015086, 0.344573693160009], visible: 1, domaine: "ecologie", hover: 0, structure : "edu"},
+    CRPF: {sigle: "CRPF", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "pub"},
+    DDT: {sigle: "DDT 86", agglo: "Poitiers", latLng: [46.588037020015086, 0.344573693160009], visible: 1, domaine: "ecologie", hover: 0, structure : "pub"},
+    DREAL: {sigle: "DREAL", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "pub"},
+    Fauna: {sigle: "Fauna", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "asso"},
+    FCBA: {sigle: "FCBA", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "cons"},
+    FRAB: {sigle: "FRAB", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "exp"},
+    Hennessy: {sigle: "Hennessy", agglo: "Cognac", latLng: [45.695171942479384, -0.32818344089036006], visible: 1, domaine: "ecologie", hover: 0, structure : "exp"},
+    Ifree: {sigle: "Ifrée", agglo: "Melle", latLng: [46.22048296951267, -0.14504620775488766], visible: 1, domaine: "ecologie", hover: 0, structure : "edu"},
+    LaRochelleAgglo: {sigle: "La Rochelle Agglomération", agglo: "LaRochelle", latLng: [46.14763063705896, -1.1549409286121282], visible: 1, domaine: "ecologie", hover: 0, structure : "terr"},
+    OFB: {sigle: "OFB", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "pub"},
+    PMGP: {sigle: "Parc Marin Gironde Pertuis",	agglo: "Marennes", latLng:	[45.82277184478934, -1.1052959372771283], visible: 1, domaine: "ecologie", hover: 0, structure : "aire"},
+    ProSilva: {sigle: "Pro Silva France", agglo: "Hostens",	latLng: [44.492374912328636, -0.6406953048681223], visible: 1, domaine: "ecologie", hover: 0, structure : "asso"},
+    Sepanso: {sigle: "Sepanso", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "asso"},
+    SSSO: {sigle: "SSSO", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "exp"}
   }
 </script>
 <script type="text/javascript" src="js/jquery.js"></script>

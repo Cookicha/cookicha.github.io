@@ -42,6 +42,7 @@ function spiral() { //n=agglo, x=latLng[3], y=latLng[2];
 
 var convertGPS = function() {
   for (var labo in data) {
+    console.log(data[labo].sigle);
     data[labo].latLng[2] = (data[labo].latLng[0] * (-142.34) + 6691 + 63);
     data[labo].latLng[3] = (data[labo].latLng[1] * (-96) + 52.97 + 323);
   }
@@ -88,12 +89,14 @@ function launcher() {
 
 launcher();
 
-$(document).ready(function() {
+  $(document).ready(function() {
     $('.dot').click(function() {
       if ($(this).hasClass('clicked')) {
         $(this).removeClass('clicked');
+        console.log("unclic");
       } else {
         $(this).addClass('clicked');
+        console.log("clic");
         // $('#fiche-' + this.id).children(".grosPlus").click();
       }
     });
