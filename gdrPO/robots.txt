@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /*.html$
 Disallow: /data/*
-Sitemap: http://www.gdr-polymeresetoceans.fr/sitemap.txt
+Sitemap: https://gdr-po.cnrs.fr/sitemap.txt
