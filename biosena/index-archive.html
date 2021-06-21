@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Biosena</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height" />
+  <link rel="stylesheet" href="css/gdrPO.css" />
+  <link rel="stylesheet" href="css/carte.css" />
+  <!-- <link rel="stylesheet" href="css/fiches.css" /> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div id="headerMap" class="header" style="box-shadow:none;">
+      <div id="dotsBox">
+      </div>
+      <!-- <div id="creuse" class="dot" style="position: absolute; top: 63px; right: 323px;"></div>
+      <div id="hendaye" class="dot" style="position: absolute; top: 580px; right: 551px;"></div> -->
+      <div id="stylekey">
+        <div id="domaines">
+          <div class="titre">Structures</div>
+          <div id="laboratoire" class="bouton structure"><div class="texte-bouton">Laboratoire de recherche</div></div>
+          <div id="aire" class="bouton structure"><div class="texte-bouton">Aire naturelle protégée</div></div>
+          <div id="pub" class="bouton structure"><div class="texte-bouton">Institutions publiques</div></div>
+          <div id="cons" class="bouton structure"><div class="texte-bouton">Expertise & conseil</div></div>
+          <div id="terr" class="bouton structure"><div class="texte-bouton">Collectivités territoriales</div></div>
+          <div id="exp" class="bouton structure"><div class="texte-bouton">Producteurs & exploitants</div></div>
+          <div id="asso" class="bouton structure"><div class="texte-bouton">Associations & naturalistes</div></div>
+          <div id="edu" class="bouton structure"><div class="texte-bouton">Culture scientifique & éducation</div></div>
+          <!-- <div id="bio" class="bouton structure"><div class="texte-bouton">Institution publique</div></div>
+          <div id="eco" class="bouton structure"><div class="texte-bouton">Association</div></div>
+          <div id="ing" class="bouton structure"><div class="texte-bouton">Groupe d'intérêt</div></div>
+          <div id="univ" class="bouton structure"><div class="texte-bouton">Entreprise</div></div> -->
+        </div>
+        <div id="axes">
+          <div class="titre">Domaine</div>
+          <div id="ecologie" class="bouton domaine"><div class="texte-bouton">Écologie</div></div>
+          <div id="politique" class="bouton domaine"><div class="texte-bouton">Politique</div></div>
+          <div id="geographie" class="bouton domaine"><div class="texte-bouton">Géographie</div></div>
+        </div>
+        <!-- <div id="techniques">
+          <div class="titre">Techniques mobilisées</div>
+          <div id="techA" class="bouton technique"><div class="texte-bouton">Échantillonnage et caractérisation des polymères</div></div>
+          <div id="techB" class="bouton technique"><div class="texte-bouton">Caractérisation des micro-organismes</div></div>
+          <div id="techC" class="bouton technique"><div class="texte-bouton">Outils écotoxicologiques</div></div>
+          <div id="techD" class="bouton technique"><div class="texte-bouton">Modélisation</div></div>
+          <div id="techE" class="bouton technique"><div class="texte-bouton">Outils SHS</div></div>
+        </div> -->
+      </div>
+    </div>
+    </div>
+  </main>
+  <script type="text/javascript">
+
+  const data = {
+    BIOGECO: {sigle: "BIOGECO", nom: "Biodiversité gènes et communautés", latLng: [44.811518813648554, -0.5952579000890186], agglo: "Bordeaux", visible: 1, domaine: "geographie", hover: 0, structure : "laboratoire"},
+    CEBC: {sigle: "CEBC", nom: "Centre d’études biologiques de Chizé", latLng: [46.14664419181798, -0.425765271840331], agglo: "Chizé", visible: 1, domaine: "ecologie", hover: 0, structure : "laboratoire"},
+    CEJEP: {sigle: "CEJEP", nom: "Centre d’études juridiques et politiques", latLng: [46.15835388210695, -1.1518680186413495], agglo: "LaRochelle", visible: 1, domaine: "geographie", hover: 0, structure : "laboratoire"},
+    DURKHEIM: {sigle: "Centre Émile Durkheim", nom: "Science politique et sociologie comparative", latLng: [44.811518813648554, -0.5952579000890186], agglo: "Bordeaux", visible: 1, domaine: "ecologie", hover: 0, structure : "laboratoire"},
+    CEREGE: {sigle: "CEREGE", nom: "Centre de recherche en gestion", latLng: [46.581537478043046, 0.3433130142101322], agglo: "Poitiers", visible: 1, domaine: "ecologie", hover: 0, structure : "laboratoire"},
+    CRHIA: {sigle: "CRHIA", nom: "Centre de recherches en histoire internationale et atlantique", latLng: [46.15835388210695, -1.1518680186413495], agglo: "LaRochelle", visible: 1, domaine: "geographie", hover: 0, structure : "laboratoire"},
+    CRIEF: {sigle: "CRIEF", nom: "Centre de recherche sur l’intégration économique et financière", latLng: [46.581537478043046, 0.3433130142101322], agglo: "Poitiers", visible: 1, domaine: "politique", hover: 0, structure : "laboratoire"},
+    EABX: {sigle: "EABX", nom: "Écosystèmes aquatiques et changements globaux", latLng: [44.811518813648554, -0.5952579000890186], agglo: "Bordeaux", visible: 1, domaine: "politique", hover: 0, structure : "laboratoire"},
+    EBI: {sigle: "EBI", nom: "Écologie, biologie des interactions", latLng: [46.581537478043046, 0.3433130142101322], agglo: "Poitiers", visible: 1, domaine: "politique", hover: 0, structure : "laboratoire"},
+    ECOBIOP: {sigle: "ECOBIOP", nom: "Écologie comportementale et biologie des populations de poissons", latLng: [43.355560987763425, -1.5622285397272606], agglo: "StPee", visible: 1, domaine: "geographie", hover: 0, structure : "laboratoire"},
+    EGFV: {sigle: "EGFV", nom: "Écophysiologie et génomique fonctionnelle de la vigne", latLng: [44.811518813648554, -0.5952579000890186], agglo: "Bordeaux", visible: 1, domaine: "ecologie", hover: 0, structure : "laboratoire"},
+    EPOC: {sigle: "EPOC", nom: "Environnements et paléoenvironnements océaniques et continentaux", latLng: [44.811518813648554, -0.5952579000890186], agglo: "Bordeaux", visible: 1, domaine: "politique", hover: 0, structure : "laboratoire"},
+    ETBX: {sigle: "ETBX", nom: "Environnement, territoires et infrastructures", latLng: [44.811518813648554, -0.5952579000890186], agglo: "Bordeaux", visible: 1, domaine: "geographie", hover: 0, structure : "laboratoire"},
+    GEOLAB: {sigle: "GEOLAB", nom: "Laboratoire de geographie physique et environnementale", latLng: [45.825220902984135, 1.260143676023134], agglo: "Limoges", visible: 1, domaine: "ecologie", hover: 0, structure : "laboratoire"},
+    GRETHA: {sigle: "Gretha", nom: "Groupe de recherche en économie théorique et appliquée", latLng: [44.811518813648554, -0.5952579000890186], agglo: "Bordeaux", visible: 1, domaine: "geographie", hover: 0, structure : "laboratoire"},
+    IPREM: {sigle: "IPREM", nom: "Institut des sciences analytiques et de physico-chimie pour l’environnement et les matériaux", latLng: [43.321049747565525, -0.3663146295394064], agglo: "Pau", visible: 1, domaine: "geographie", hover: 0, structure : "laboratoire"},
+    LERAR: {sigle: "LER - AR", nom: "Environnement ressources Arcachon/Anglet", latLng: [44.657401202521406, -1.1445193846285793], agglo: "Arcachon", visible: 1, domaine: "ecologie", hover: 0, structure : "laboratoire"},
+    LIENSs: {sigle: "LIENSs", nom: "Littoral, environnements et sociétés", latLng: [46.15835388210695, -1.1518680186413495], agglo: "LaRochelle", visible: 1, domaine: "ecologie", hover: 0, structure : "laboratoire"},
+    MIA: {sigle: "MIA", nom: "Mathématiques, images et applications", latLng: [46.15835388210695, -1.1518680186413495], agglo: "LaRochelle", visible: 1, domaine: "geographie", hover: 0, structure : "laboratoire"},
+    OMIJ: {sigle: "OMIJ", nom: "Observatoire des mutations institutionnelles et juridiques", latLng: [45.825220902984135, 1.260143676023134], agglo: "Limoges", visible: 1, domaine: "politique", hover: 0, structure : "laboratoire"},
+    PACEA: {sigle: "PACEA", nom: "De la préhistoire à l'actuel : culture, environnement et anthropologie", latLng: [44.811518813648554, -0.5952579000890186], agglo: "Bordeaux", visible: 1, domaine: "geographie", hover: 0, structure : "laboratoire"},
+    PALEVOPRIM: {sigle: "PALEVOPRIM", nom: "Paléontologie, évolution, paléoécosystèmes, paléoprimatologie", latLng: [46.581537478043046, 0.3433130142101322], agglo: "Poitiers", visible: 1, domaine: "geographie", hover: 0, structure : "laboratoire"},
+    PASSAGES: {sigle: "PASSAGES", nom: "Reconfiguration des spatialités et changements globaux", latLng: [44.811518813648554, -0.5952579000890186], agglo: "Bordeaux", visible: 1, domaine: "geographie", hover: 0, structure : "laboratoire"},
+    PELAGIS: {sigle: "Pélagis", nom: "Observatoire des mammifères et oiseaux marins", latLng: [46.15835388210695, -1.1518680186413495], agglo: "LaRochelle", visible: 1, domaine: "ecologie", hover: 0, structure : "laboratoire"},
+    RURALITE: {sigle: "RURALITE", nom: "Rural urbain liens environnement territoires sociétés", latLng: [46.581537478043046, 0.3433130142101322], agglo: "Poitiers", visible: 1, domaine: "ecologie", hover: 0, structure : "laboratoire"},
+    SAVE: {sigle: "SAVE", nom: "Santé et agroécologie du vignoble", latLng: [44.811518813648554, -0.5952579000890186], agglo: "Bordeaux", visible: 1, domaine: "geographie", hover: 0, structure : "laboratoire"},
+    UGMA: {sigle: "UGMA", nom: "Unité de génétique moléculaire animale", latLng: [45.825220902984135, 1.260143676023134], agglo: "Limoges", visible: 1, domaine: "politique", hover: 0, structure : "laboratoire"},
+    URP3F: {sigle: "URP3F", nom: "Unité de recherche pluridisciplinaire prairies et plantes fourragères", latLng: [46.404435318943136, 0.07910858246265957], agglo: "Lusignan", visible: 1, domaine: "politique", hover: 0, structure : "laboratoire"},
+    PNRLG: {sigle: "PNR Landes de Gascogne", nom: "PNRLG", latLng: [44.490603857766885, -0.791267361004927], agglo: "BelinBeliet", visible: 1, domaine: "ecologie", hover: 0, structure : "aire"},
+    PNRMP: {sigle: "PNR Marais Poitevin", nom: "PNRMP", latLng: [46.321590491759515, -0.5861150443494794], agglo: "Coulon", visible: 1, domaine: "ecologie", hover: 0, structure : "aire"},
+    PNRPL: {sigle: "PNR Perigord-Limousin", nom: "PNRPL", latLng: [45.556619992172514, 1.004780063237875], agglo: "LaCoquille", visible: 1, domaine: "ecologie", hover: 0, structure : "aire"},
+    PNRML: {sigle: "PNR Millevaches en Limousin", nom: "PNRML", latLng: [45.642591818536076, 2.094984282208508], agglo: "Millevaches", visible: 1, domaine: "ecologie", hover: 0, structure : "aire"},
+    PNRM: {sigle: "PNR Médoc", nom: "PNRM", latLng: [45.15137260206972, -0.8226002608899545], agglo: "StLaurentMedoc", visible: 1, domaine: "ecologie", hover: 0, structure : "aire"},
+    TEST: {sigle: "Test", nom: "test", latLng: [43.48, 1.475], agglo: "Test", visible: 1, domaine: "ecologie", hover: 0, structure : "aire"},
+    ARB: {sigle: "ARB", agglo: "Poitiers", latLng: [46.588037020015086, 0.344573693160009], visible: 1, domaine: "ecologie", hover: 0, structure : "pub"},
+    Biotope: {sigle: "Biotope", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "cons"},
+    BordeauxMétropole: {sigle: "Bordeaux Métropole", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "terr"},
+    CDEO: {sigle: "CDEO", agglo: "Ordiarp",latLng: [43.19420751296989, -0.9545812612902761], visible: 1, domaine: "ecologie", hover: 0, structure : "exp"},
+    Cohabys: {sigle: "Cohabys", agglo: "LaRochelle", latLng: [46.14763063705896, -1.1549409286121282], visible: 1, domaine: "ecologie", hover: 0, structure : "cons"},
+    ConservatoireLittoral: {sigle: "Conservatoire du Littoral", agglo: "Rochefort", latLng: [45.93614452952699, -0.9614516613147917], visible: 1, domaine: "ecologie", hover: 0, structure : "pub"},
+    CRED: {sigle: "CRED 86", agglo: "Poitiers", latLng: [46.588037020015086, 0.344573693160009], visible: 1, domaine: "ecologie", hover: 0, structure : "edu"},
+    CRPF: {sigle: "CRPF", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "pub"},
+    DDT: {sigle: "DDT 86", agglo: "Poitiers", latLng: [46.588037020015086, 0.344573693160009], visible: 1, domaine: "ecologie", hover: 0, structure : "pub"},
+    DREAL: {sigle: "DREAL", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "pub"},
+    Fauna: {sigle: "Fauna", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "asso"},
+    FCBA: {sigle: "FCBA", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "cons"},
+    FRAB: {sigle: "FRAB", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "exp"},
+    Hennessy: {sigle: "Hennessy", agglo: "Cognac", latLng: [45.695171942479384, -0.32818344089036006], visible: 1, domaine: "ecologie", hover: 0, structure : "exp"},
+    Ifree: {sigle: "Ifrée", agglo: "Melle", latLng: [46.22048296951267, -0.14504620775488766], visible: 1, domaine: "ecologie", hover: 0, structure : "edu"},
+    LaRochelleAgglo: {sigle: "La Rochelle Agglomération", agglo: "LaRochelle", latLng: [46.14763063705896, -1.1549409286121282], visible: 1, domaine: "ecologie", hover: 0, structure : "terr"},
+    OFB: {sigle: "OFB", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "pub"},
+    PMGP: {sigle: "Parc Marin Gironde Pertuis",	agglo: "Marennes", latLng:	[45.82277184478934, -1.1052959372771283], visible: 1, domaine: "ecologie", hover: 0, structure : "aire"},
+    ProSilva: {sigle: "Pro Silva France", agglo: "Hostens",	latLng: [44.492374912328636, -0.6406953048681223], visible: 1, domaine: "ecologie", hover: 0, structure : "asso"},
+    Sepanso: {sigle: "Sepanso", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "asso"},
+    SSSO: {sigle: "SSSO", agglo: "Bordeaux", latLng: [44.811518813648554, -0.5952579000890186], visible: 1, domaine: "ecologie", hover: 0, structure : "exp"}
+  }
+</script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/gdr-po.js"></script>
+<script type="text/javascript" src="js/biosena-carte.js"></script>
+</body>
+
+</html>

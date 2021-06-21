@@ -8,6 +8,20 @@
 // const labos = Object.values(data);
 // const ids = Object.keys(data);
 
+function countLieux() {
+  for (var labo in data) {
+    if (data[labo].visible == 1) {
+      gps[data[labo].lieu].n += 1;
+    }
+  }
+}
+function getGPS() {
+  for (var labo in data) {
+    data[labo].latPx = (gps[data[labo].lieu].lat * (-142.34) + 6691 + 63);
+    data[labo].lngPx = (gps[data[labo].lieu].lng * (-96) + 52.97 + 323);
+    // eval(data[labo].lieu + " = 0;");
+  }
+}
 
 function coord(n) {
   // rang = dans quel carré on se retrouve (0 -> {1}, 1 -> {2..9}, 2 -> {10..25}, ...)
@@ -27,38 +41,16 @@ function coord(n) {
   }
 }
 
-function spiral() { //n=agglo, x=latLng[3], y=latLng[2];
-  for (var labo in data) {
-    if (data[labo].visible == 1) {
-      n = eval(data[labo].agglo);
+function spiral() { //m=lieu, x=lat, y=lng[2];
+  for (var labo in data) { // pour chaque labo
+    if (data[labo].visible == 1) { // si le labo est visible
+      // m = eval(data[labo].lieu); //
       let temp = [];
-      temp = coord(n);
-      data[labo].latLng[2] += temp[0] * 11;
-      data[labo].latLng[3] += temp[1] * 11;
-      eval(data[labo].agglo + " -= 1;");
+      temp = coord(gps[data[labo].lieu].n);
+      data[labo].lngPx += temp[0] * 11;
+      data[labo].latPx += temp[1] * 11;
+      gps[data[labo].lieu].n -= 1;
     }
-  }
-}
-
-var convertGPS = function() {
-  for (var labo in data) {
-    console.log(data[labo].sigle);
-    data[labo].latLng[2] = (data[labo].latLng[0] * (-142.34) + 6691 + 63);
-    data[labo].latLng[3] = (data[labo].latLng[1] * (-96) + 52.97 + 323);
-  }
-}
-
-function countAgglos() {
-  for (var labo in data) {
-    if (data[labo].visible == 1) {
-      eval(data[labo].agglo + " += 1;");
-    }
-  }
-}
-
-function createAgglos() {
-  for (var labo in data) {
-    eval(data[labo].agglo + " = 0;");
   }
 }
 
@@ -69,20 +61,26 @@ function placeDots() {
 
     // var nom = "<div class='nom-fiche'>" + data[labo].nom + "</div>";
     // //  convertGPS(data[labo].latLng);
-    var domaine = data[labo].domaine;
+    let dom = "";
+    if (typeof data[labo].domaine === 'string' || data[labo].domaine instanceof String){
+      dom = data[labo].domaine;
+    } else if (typeof data[labo].domaine === 'array' || data[labo].domaine instanceof Array){
+      for (var i = 0; i < data[labo].domaine.length; i++) {
+        dom += (data[labo].domaine[i] + " ");
+      }
+    }
     var hover = "";
     if (data[labo].hover == 1) {
       hover = "hover";
     }
-    $('#dotsBox').append("<div class='dot " + domaine + " " + hover +"' id='" + labo + "' style='top: " + data[labo].latLng[2] + "px; right: " + data[labo].latLng[3] + "px;'><div class='label'>" + data[labo].sigle + "</div></div>");
+    $('#dotsBox').append("<div class='dot " + dom + " " + hover +"' id='" + labo + "' style='top: " + data[labo].latPx + "px; right: " + data[labo].lngPx + "px;'><div class='label'>" + data[labo].sigle + "</div></div>");
     }
   }
 }
 
 function launcher() {
-  createAgglos();
-  countAgglos();
-  convertGPS();
+  countLieux();
+  getGPS();
   spiral();
   placeDots();
 }
@@ -137,12 +135,7 @@ launcher();
             data[labo].visible = 1;
           }
         }
-        launcher(createAgglos, countAgglos, convertGPS, spiral, placeDots);
-        // $('.dot.' + this.id).removeClass('selected');
-        // filtre = filtre.filter(e => e !== ('.' + this.id));
-        // $('.fiche.' + this.id).removeClass('selected');
-        // filtre = filtre.filter(e => e !== ('.' + this.id));
-        // displayOut();
+        launcher(createlieux, countlieux, convertGPS, spiral, placeDots);
       } else {
         $(this).addClass('clicked');
         for (var labo in data) {
@@ -150,21 +143,22 @@ launcher();
             data[labo].visible = 0;
           }
         }
-        launcher(createAgglos, countAgglos, convertGPS, spiral, placeDots);
+        launcher();
         //$('.dot.' + this.id).addClass('selected');
         //filtre.push('.' + this.id);
       }
     });
     $('.bouton').hover(
-      function() {
+      function() { // hover in
         for (var labo in data) {
           data[labo].hover = 0;
-          if (data[labo].domaine == this.id || data[labo].structure == this.id) {
+          if (data[labo].domaine.indexOf(this.id)!=-1) { // if the Domaine array contains the hovered ID
+            console.log(this.id);
             data[labo].hover = 1;
           }
         }
         launcher();
-      },
+      }, // hover out
       function() {
         for (var labo in data) {
           data[labo].hover = 1;
@@ -172,14 +166,6 @@ launcher();
         launcher();
       },
     );
-    // $('#headerMap').hover(
-    //   forEach((item, i) => {
-    //
-    //   });
-    // espacement();
-
-
   }
-
 
 );

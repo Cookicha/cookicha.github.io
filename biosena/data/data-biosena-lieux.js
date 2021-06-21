@@ -1,0 +1,20 @@
+const gps = {
+ Agen: {lat: 44.201408, lng: 0.611980, n: 0},
+ Arcachon: {lat: 44.654800, lng: -1.149960, n: 0},
+ Bordeaux: {lat: 44.837788, lng: -0.579180, n: 0},
+ Chize: {lat: 46.147092, lng: -0.425621, n: 0},
+ Cognac: {lat: 45.6931647, lng: -0.3250175, n: 0},
+ Coulon: {lat: 46.3221277, lng: -0.5861466, n: 0},
+ Hostens: {lat: 44.493057, lng: -0.638056, n: 0},
+ LaRochelle: {lat: 46.1657562, lng: -1.1785378, n: 0},
+ Limoges: {lat: 45.8354243, lng: 1.2644847, n: 0},
+ Lusignan: {lat: 46.4351549, lng: 0.1223765, n: 0},
+ Marennes: {lat: 45.8224965, lng: -1.112795, n: 0},
+ Melle: {lat: 46.2318164, lng: -0.1395367, n: 0},
+ Millevaches: {lat: 45.6420376, lng: 2.0950769, n: 0},
+ Niort: {lat: 46.3241132, lng: -0.4649403, n: 0},
+ Ordiarp: {lat: 43.1865888, lng: -0.9444994, n: 0},
+ Pau: {lat: 43.2957547, lng: -0.3685668, n: 0},
+ Poitiers: {lat: 46.5802596, lng: 0.340196, n: 0},
+ Rochefort: {lat: 45.9438412, lng: -0.9687519, n: 0}
+}
