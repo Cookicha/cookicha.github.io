@@ -13,7 +13,7 @@
     "axes": ["3"],
     "domaines": ["eco","shs"],
     "techniques": ["D"],
-    "web": "http://www.umr-amure.fr",
+    "web": "https://www.umr-amure.fr",
     "fiche": {
       "titre": "",
       "bullets": []
@@ -96,7 +96,7 @@
       "A","B","C"
     ],
     "axes": ["1","2"],
-    "web": "http://wwz.ifremer.fr/pollution",
+    "web": "https://wwz.ifremer.fr/pollution",
     "fiche": {
       "titre": "Occurrence environnementale des additifs et des déchets plastiques, interactions plastiques-additifs et bioaccumulation dans les organismes marins",
       "bullets": [
@@ -215,7 +215,7 @@
     "domaines": ["chi"],
     "techniques": ["A"],
     "axes": ["3"],
-    "web": "http://www.armines.net/fr/centres-de-recherche-departements-thematiques/sciences-et-g%C3%A9nie-des-mat%C3%A9riaux/centre-des-mat%C3%A9riaux",
+    "web": "https://www.armines.net/fr/centres-de-recherche-departements-thematiques/sciences-et-g%C3%A9nie-des-mat%C3%A9riaux/centre-des-mat%C3%A9riaux",
     "fiche": {
       "titre": "",
       "bullets": []
@@ -265,7 +265,7 @@
     "domaines": ["chi"],
     "techniques": ["A"],
     "axes": ["1"],
-    "web": "http://www.c2p2-cpe.com",
+    "web": "https://www.c2p2-cpe.com",
     "fiche": {
       "titre": "Synthèse de nanoparticule de polyéthylène (PE) « modèles » par polymérisation de l’éthylène en émulsion / Caractérisation de débris marins de polyoléfines",
       "bullets": [
@@ -326,7 +326,7 @@
     "domaines": ["shs","eco"],
     "techniques": ["D","E"],
     "axes": ["3"],
-    "web": "http://www.cearc.fr",
+    "web": "https://www.cearc.fr",
     "fiche": {
       "titre": "Comment le socio-écosystème conduit à produire, consommer et rejeter des produits plastiques dans les écosystèmes",
       "bullets": [
@@ -363,7 +363,7 @@
     "domaines": ["eco"],
     "techniques": ["A","C"],
     "axes": ["1"],
-    "web": "http://wwz.cedre.fr",
+    "web": "https://wwz.cedre.fr",
     "fiche": {
       "titre": "Surveillance et étude des déchets aquatiques : distribution, comportement, vieillissement et impacts",
       "bullets": [
@@ -399,7 +399,7 @@
     "domaines": ["eco"],
     "techniques": ["A","C"],
     "axes": ["1","2"],
-    "web": "http://www.cefe.cnrs.fr",
+    "web": "https://www.cefe.cnrs.fr",
     "fiche": {
       "titre": "(1) Inventaire des macro-plastiques flottants, (2) détection des micro-plastiques ingérés chez les poissons, (3) analyse des déchets ingérés par les tortues marines",
       "bullets": [
@@ -428,7 +428,7 @@
     "domaines": ["univ","eco"],
     "techniques": [],
     "axes": [],
-    "web": "http://cefrem.univ-perp.fr",
+    "web": "https://cefrem.univ-perp.fr",
     "fiche": {
       "titre": "",
       "bullets": []
@@ -462,7 +462,7 @@
     "domaines": ["eco"],
     "techniques": ["B","C"],
     "axes": ["2"],
-    "web": "http://www.eco.omp.eu/",
+    "web": "https://www.eco.omp.eu/",
     "fiche": {
       "titre": "",
       "bullets": []
@@ -508,7 +508,7 @@
     "domaines": ["univ"],
     "techniques": ["A","B","C"],
     "axes": ["2"],
-    "web": "http://www.epoc.u-bordeaux.fr",
+    "web": "https://www.epoc.u-bordeaux.fr",
     "fiche": {
       "titre": "Contamination et effets des micro- et nanoplastiques sur les espèces aquatiques. Conséquences liées au vieillissement du plastique",
       "bullets": [
@@ -564,7 +564,7 @@
     "domaines": ["eco"],
     "techniques": ["B","C"],
     "axes": ["1","3"],
-    "web": "http://jacob.cea.fr/drf/ifrancoisjacob/Pages/Departements/Genoscope.aspx",
+    "web": "https://jacob.cea.fr/drf/ifrancoisjacob/Pages/Departements/Genoscope.aspx",
     "fiche": {
       "titre": "",
       "bullets": []
@@ -589,7 +589,7 @@
     "domaines": ["univ","chi","eco"],
     "techniques": [],
     "axes": ["2"],
-    "web": "http://geosciences.univ-rennes1.fr",
+    "web": "https://geosciences.univ-rennes1.fr",
     "fiche": {
       "titre": "Nanoplastiques en matrices complexes et interactions avec les métaux (mécanismes et traçage)",
       "bullets": [
@@ -636,7 +636,7 @@
     "domaines": ["phy"],
     "techniques": ["A"],
     "axes": ["1"],
-    "web": "http://gpm.univ-rouen.fr",
+    "web": "https://gpm.univ-rouen.fr",
     "fiche": {
       "titre": "Caractérisation des phases amorphes des biopolymères & détection de nanoparticules dans les tissus vivants",
       "bullets": [
@@ -683,7 +683,7 @@
     "domaines": ["eco","chi","bio"],
     "techniques": ["A","B"],
     "axes": ["1","3"],
-    "web": "http://umr-iate.cirad.fr",
+    "web": "https://umr-iate.cirad.fr",
     "fiche": {
       "titre": "Biodégradabilité des polymères dans l’environnement",
       "bullets": [
@@ -717,7 +717,7 @@
     "domaines": ["chi","univ","eco"],
     "techniques": ["A","B","C"],
     "axes": ["1"],
-    "web": "http://iccf.uca.fr",
+    "web": "https://iccf.uca.fr",
     "fiche": {
       "titre": "Devenir des plastiques dans l’environnement: Collecte, caractérisation et (bio)dégradation",
       "bullets": [
@@ -799,7 +799,7 @@
     "domaines": ["chi"],
     "techniques": [],
     "axes": [],
-    "web": "http://icmpe.cnrs.fr",
+    "web": "https://icmpe.cnrs.fr",
     "fiche": {
       "titre": "",
       "bullets": []
@@ -833,7 +833,7 @@
     "domaines": ["phy","bio"],
     "techniques": ["A","C"],
     "axes": ["1","2"],
-    "web": "http://www.imft.fr",
+    "web": "https://www.imft.fr",
     "fiche": {
       "titre": "(1)Effet des microplastiques sur la motilité des copépodes et (2)Distribution verticale des plastiques dans la turbulence de surface",
       "bullets": [
@@ -874,7 +874,7 @@
     "domaines": ["phy","chi"],
     "techniques": ["A"],
     "axes": ["1"],
-    "web": "http://immm.univ-lemans.fr",
+    "web": "https://immm.univ-lemans.fr",
     "fiche": {
       "titre": "Fragmentation des polymères dans l’environnement, préparation de microplastiques “modèles” et caractérisation spectroscopique",
       "bullets": [
@@ -956,7 +956,7 @@
     "domaines": ["chi"],
     "techniques": ["A"],
     "axes": ["3"],
-    "web": "http://imp.cnrs.fr",
+    "web": "https://imp.cnrs.fr",
     "fiche": {
       "titre": "Relations entre structure, composition des matériaux et aptitude à la biodégradation dans des conditions données",
       "bullets": [
@@ -985,7 +985,7 @@
     "domaines": ["chi"],
     "techniques": [],
     "axes": ["1"],
-    "web": "http://imrcp.ups-tlse.fr/",
+    "web": "https://imrcp.ups-tlse.fr/",
     "fiche": {
       "titre": "Caractérisation physico-chimique des micro- et nanoplastiques, une caractérisation multi-échelle afin de comprendre leur réactivité et devenir dans l’environnement",
       "bullets": [
@@ -1032,7 +1032,7 @@
     "domaines": ["phy"],
     "techniques": [],
     "axes": ["1"],
-    "web": "http://inphyni.cnrs.fr",
+    "web": "https://inphyni.cnrs.fr",
     "fiche": {
       "titre": "Rôle de la physique des polymères extracellulaires dans la croissance et l’étalement des biofilms bactériens",
       "bullets": [
@@ -1062,7 +1062,7 @@
     "domaines": ["chi"],
     "techniques": ["A","C"],
     "axes": ["1"],
-    "web": "http://iprem.univ-pau.fr",
+    "web": "https://iprem.univ-pau.fr",
     "fiche": {
       "titre": "Nanoplastiques/Microplastiques : préparation de modèles, stratégies analytiques pour la quantification de leurs comportements physico-chimiques et études environnementales",
       "bullets": [
@@ -1125,7 +1125,7 @@
     "domaines": ["ing"],
     "techniques": ["A"],
     "axes": ["1","3"],
-    "web": "http://www.irdl.fr",
+    "web": "https://www.irdl.fr",
     "fiche": {
       "titre": "(1) Ingénierie des biopolymères & (2) Pollution environnementale par les plastiques",
       "bullets": [
@@ -1158,7 +1158,7 @@
     "domaines": ["phy","chi"],
     "techniques": ["A"],
     "axes": ["1"],
-    "web": "http://coulomb.umontpellier.fr",
+    "web": "https://coulomb.umontpellier.fr",
     "fiche": {
       "titre": "Physique de la bio-dégradation des polymères semi-cristallins en milieu marin",
       "bullets": [
@@ -1193,7 +1193,7 @@
     "domaines": ["eco","univ"],
     "techniques": ["A","B","C"],
     "axes": ["1"],
-    "web": "http://www.labocea.fr",
+    "web": "https://www.labocea.fr",
     "fiche": {
       "titre": "Prélèvements sur les bassins versant (rivières, sédiments) + plages, analyses des MP par IRTF, interprétation, modélisation des MP et macroplastiques sur les bassins versants, couplage avec les modèles milieu marin développés par Actimar",
       "bullets": [
@@ -1237,7 +1237,7 @@
     "domaines": ["chi","bio","ing"],
     "techniques": ["A","B","C"],
     "axes": [],
-    "web": "http://www-lbcm.univ-ubs.fr",
+    "web": "https://www-lbcm.univ-ubs.fr",
     "fiche": {
       "titre": "",
       "bullets": []
@@ -1271,7 +1271,7 @@
     "domaines": ["chi","eco"],
     "techniques": ["A","C"],
     "axes": ["1"],
-    "web": "http://lce.univ-amu.fr",
+    "web": "https://lce.univ-amu.fr",
     "fiche": {
       "titre": "Sur la compréhension du devenir des débris plastiques marins",
       "bullets": [
@@ -1318,7 +1318,7 @@
     "domaines": ["eco"],
     "techniques": ["A","C"],
     "axes": ["2"],
-    "web": "http://lecob1.obs-banyuls.fr",
+    "web": "https://lecob1.obs-banyuls.fr",
     "fiche": {
       "titre": "Réponse des organismes marins à la pollution plastique – une vision intégrée à l’échelle de l’holobionte",
       "bullets": [
@@ -1360,7 +1360,7 @@
     "domaines": ["univ"],
     "techniques": ["A"],
     "axes": ["1"],
-    "web": "http://www.ee.ifsttar.fr",
+    "web": "https://www.ee.ifsttar.fr",
     "fiche": {
       "titre": "Débris plastiques (macro- et microplastiques) dans le continuum Terre-Mer : des émissions urbaines aux estuaires",
       "bullets": [
@@ -1392,7 +1392,7 @@
     "domaines": ["univ"],
     "techniques": ["A"],
     "axes": ["1"],
-    "web": "http://www.leesu.fr",
+    "web": "https://www.leesu.fr",
     "fiche": {
       "titre": "Débris plastiques (macro- et microplastiques) dans le continuum Terre-Mer : des émissions urbaines aux estuaires",
       "bullets": [
@@ -1423,7 +1423,7 @@
     "domaines": ["univ"],
     "techniques": ["D"],
     "axes": ["1"],
-    "web": "http://www.legos.obs-mip.f",
+    "web": "https://www.legos.obs-mip.f",
     "fiche": {
       "titre": "Vulnérabilité des îles du Pacifique Sud-Est à la contamination par les plastiques",
       "bullets": ["Alors qu'il est généralement admis que le niveau de contamination des îles du Pacifique dépend fortement de leur proximité avec les zones d'accumulation dans les gyres subtropicales, nous montrons que l'exposition à la contamination des îles Chiliennes, et en particulier l'île de Pâques, pourrait se faire par un chemin direct et moins long depuis les côtes du Pérou et du Chili. En particulier la zone côtière le long du Chili entre 20°S et 40°S représente la région depuis laquelle près de 50% des flotteurs virtuels atteignent l'île de Pâques en environ 2 ans. Les zones d'effort de pêches industrielles semblent aussi participer à la contamination des îles du Pacifique Sud selon des observations de terrain et la modélisation."]
@@ -1462,19 +1462,14 @@
     "identifiant": "UMR 6539",
     "tutelles": ["Université de Bretagne Occidentale", "CNRS", "IRD", "Ifremer"],
     "latLng": ["48.358688", "-4.562719"],
-    "domaines": ["univ","eco"],
+    "domaines": ["univ","bio","eco"],
     "techniques": ["A","B","C","E"],
     "axes": ["1","2"],
-    "web": "http://www-iuem.univ-brest.fr/lemar",
+    "web": "https://www-iuem.univ-brest.fr/lemar",
     "fiche": {
       "titre": "Contamination de l’environnement marin côtier et impacts des micro et nanoplastiques : vers une approche expérimentale holistique de la complexité environnementale",
       "bullets": [
-        "Devenir principal des MP ingérés = transit et excrétion (poissons, coquillages)",
-        "Même un simple transit de MP induit des modifications : digestion modifiée qui perturbent l'entrée d'énergie via l'alimentation avec des conséquences sur des fonctions comme la reproduction + des perturbations chimiques « endocriniennes-like »",
-        "NP, mais pas MP, altèrent les gamètes et embryons d’huître, ceux restant à l’état nano en mer de mer lié à leurs propriétés de surface étant les plus toxiques",
-        "L’alimentation des bivalves n’est pas épargnée puisque le cycle de vie de diatomées est apparu perturbé en phase de croissance algale",
-        "Les aggrégats de phytoplancton augmentent fortement les vitesses de chute des MNP",
-        "Des bactéries pathogènes d’huitre retrouvées à la surface de MP collectés en zone cotière, la question est alors si cela contribue à la transmission de maladies"
+        "Le LEMAR développe 3 axes de recherche principaux: <br />(1) L’échantillonnage et la caractérisation des microplastiques dans les écosystèmes côtiers de manière à identifier les niveaux de contamination, ainsi que les sources et le devenir des particules; <br />(2) La caractérisation des microorganismes colonisant les microplastiques, ainsi que le rôle de ces particules dans la dissémination de microorganismes pathogènes et l’émergence de maladies d’origine virale et bactérienne; <br />(3)L’étude de la toxicité des micro- et nanoplastiques sur des organismes marins modèles, phytoplancton, bivalves et poissons marins, par des approches in vitro et in vivo en laboratoire. Les effets sont évalués aux différents niveaux d’organisation du vivant (molécule, cellule, organe, organisme, communauté) combinant écophysiologie, aspects cellulaires et moléculaires (-omiques)."
       ]
     },
     "contact": {
@@ -1583,7 +1578,7 @@
     "domaines": ["bio","eco"],
     "techniques": [],
     "axes": ["2"],
-    "web": "http://wwz.ifremer.fr/sg2m/Laboratoire-de-Genetique-et-Pathologie-des-Mollusques-Marins/Presentation",
+    "web": "https://wwz.ifremer.fr/sg2m/Laboratoire-de-Genetique-et-Pathologie-des-Mollusques-Marins/Presentation",
     "fiche": {
       "titre": "Étude de la diversité et de la dynamique spatio-temporelle de micro organismes marins en relation avec des polymères",
       "bullets": [
@@ -1614,7 +1609,7 @@
     "domaines": ["phy","bio"],
     "techniques": [],
     "axes": ["1","2"],
-    "web": "http://www.labos.upmc.fr/ljp",
+    "web": "https://www.labos.upmc.fr/ljp",
     "fiche": {
       "titre": "Biophysique des microorganismes : Biofilms bactériens vivants suivis in situ en microscopie 5D",
       "bullets": [
@@ -1653,7 +1648,7 @@
     "domaines": ["eco"],
     "techniques": [],
     "axes": ["1"],
-    "web": "http://www.lmge.univ-bpclermont.fr",
+    "web": "https://www.lmge.univ-bpclermont.fr",
     "fiche": {
       "titre": "Dynamique des déchets plastiques dans les écosystèmes continentaux aquatiques",
       "bullets": [
@@ -1682,7 +1677,7 @@
     "domaines": ["univ","eco","bio"],
     "techniques": ["A","B","C"],
     "axes": ["1","3"],
-    "web": "http://lomic.obs-banyuls.fr",
+    "web": "https://lomic.obs-banyuls.fr",
     "fiche": {
       "titre": "Colonisation et biodégradation des plastiques par les microorganismes",
       "bullets": [
@@ -1720,7 +1715,7 @@
     "domaines": ["univ"],
     "techniques": ["D"],
     "axes": ["1"],
-    "web": "http://www.umr-lops.fr",
+    "web": "https://www.umr-lops.fr",
     "fiche": {
       "titre": "Sur les cheminements océaniques des débris et plastiques marins, des étapes régionales à l’océan global…",
       "bullets": [
@@ -1782,7 +1777,7 @@
     "domaines": ["univ","eco","bio"],
     "techniques": [],
     "axes": [],
-    "web": "http://lov.obs-vlfr.fr",
+    "web": "https://lov.obs-vlfr.fr",
     "fiche": {
       "titre": "",
       "bullets": []
@@ -1820,7 +1815,7 @@
     "domaines": ["bio","chi"],
     "techniques": ["A","B","C"],
     "axes": ["1","3"],
-    "web": "http://www.univ-brest.fr/lubem",
+    "web": "https://www.univ-brest.fr/lubem",
     "fiche": {
       "titre": "Caractérisation des communautés fongiques associées aux plastiques et potentiel en bioremédiation",
       "bullets": [
@@ -1853,7 +1848,7 @@
     "domaines": ["bio","chi"],
     "techniques": ["A","B","C"],
     "axes": ["1"],
-    "web": "http://mapiem.univ-tln.fr",
+    "web": "https://mapiem.univ-tln.fr",
     "fiche": {
       "titre": "Matériaux polymères et biofilms en environnements marins",
       "bullets": [
@@ -1904,7 +1899,7 @@
     "domaines": ["eco"],
     "techniques": ["A","B","C"],
     "axes": ["2"],
-    "web": "http://www.umr-marbec.fr",
+    "web": "https://www.umr-marbec.fr",
     "fiche": {
       "titre": "Evaluation de la toxicité des microplastiques sur la physiologie des poissons – exposition chronique",
       "bullets": [
@@ -1955,7 +1950,7 @@
     "domaines": ["eco"],
     "techniques": ["A","B","C"],
     "axes": [],
-    "web": "http://www.umr-marbec.fr",
+    "web": "https://www.umr-marbec.fr",
     "fiche": {
       "titre": "",
       "bullets": []
@@ -1985,7 +1980,7 @@
     "domaines": ["univ","chi","phy","eco"],
     "techniques": ["A","D"],
     "axes": ["1","2","3"],
-    "web": "http://www.mio.osupytheas.fr",
+    "web": "https://www.mio.osupytheas.fr",
     "fiche": {
       "titre": "Trois équipes étudiant les plastiques dans les océans",
       "bullets": [
@@ -2014,7 +2009,7 @@
     "domaines": ["eco"],
     "techniques": ["A","B","C"],
     "axes": ["2","3"],
-    "web": "http://mms.univ-nantes.fr",
+    "web": "https://mms.univ-nantes.fr",
     "fiche": {
       "titre": "Accumulation et effets des microplastiques sur des espèces benthiques: approches in situ et in vivo",
       "bullets": [
@@ -2051,7 +2046,7 @@
     "domaines": ["eco"],
     "techniques": ["B","C"],
     "axes": ["2"],
-    "web": "http://mms.univ-nantes.fr",
+    "web": "https://mms.univ-nantes.fr",
     "fiche": {
       "titre": "Étude de l’écotoxicité des micro et nanoplastiques sur des invertébrés aquatiques estuariens et marins, en conditions contrôlées et sur le terrain",
       "bullets": [
@@ -2105,7 +2100,7 @@
     "domaines": ["phy","ing","bio"],
     "techniques": ["A"],
     "axes": ["1"],
-    "web": "http://www.msc.univ-paris-diderot.fr",
+    "web": "https://www.msc.univ-paris-diderot.fr",
     "fiche": {
       "titre": "Formation de la plastisphère : dynamique précoce de l’adhésion de phytoplancton sur le plastique",
       "bullets": [
@@ -2160,7 +2155,7 @@
     "domaines": ["univ","eco"],
     "techniques": ["A","C"],
     "axes": [],
-    "web": "http://www.oreme.org",
+    "web": "https://www.oreme.org",
     "fiche": {
       "titre": "",
       "bullets": []
@@ -2185,7 +2180,7 @@
     "domaines": ["ing"],
     "techniques": [],
     "axes": ["1"],
-    "web": "http://www.promes.cnrs.fr",
+    "web": "https://www.promes.cnrs.fr",
     "fiche": {
       "titre": "Microplastiques plasmas, traceurs des décharges électriques sur les transferts atmosphériques d’aérosols biosourcés",
       "bullets": [
@@ -2225,7 +2220,7 @@
     "domaines": [],
     "techniques": ["A"],
     "axes": [],
-    "web": "http://wwz.ifremer.fr/Recherche/Departements-scientifiques/Departement-Ressources-physiques-et-Ecosystemes-de-fond-de-Mer/Unite-Recherche-et-Developpements-Technologiques",
+    "web": "https://wwz.ifremer.fr/Recherche/Departements-scientifiques/Departement-Ressources-physiques-et-Ecosystemes-de-fond-de-Mer/Unite-Recherche-et-Developpements-Technologiques",
     "fiche": {
       "titre": "",
       "bullets": []
@@ -2287,7 +2282,7 @@
     "domaines": [],
     "techniques": [],
     "axes": [],
-    "web": "http://wwz.ifremer.fr/Recherche/Departements-scientifiques/Departement-Ressources-Biologiques-et-Environnement/Unite-Ressources-Marines-en-Polynesie-Francaise",
+    "web": "https://wwz.ifremer.fr/Recherche/Departements-scientifiques/Departement-Ressources-Biologiques-et-Environnement/Unite-Ressources-Marines-en-Polynesie-Francaise",
     "fiche": {
       "titre": "",
       "bullets": []
@@ -2350,7 +2345,7 @@
     "domaines": ["eco","chi"],
     "techniques": [],
     "axes": ["3"],
-    "web": "http://morris.umons.ac.be/SMPC/",
+    "web": "https://morris.umons.ac.be/SMPC/",
     "fiche": {
       "titre": "Formulation de nouveaux matériaux plastiques plus respectueux du milieu marin",
       "bullets": [
@@ -2388,7 +2383,7 @@
     "domaines": ["phy","chi","eco"],
     "techniques": [],
     "axes": ["1"],
-    "web": "http://www.takuvik.ulaval.ca",
+    "web": "https://www.takuvik.ulaval.ca",
     "fiche": {
       "titre": "Source, transport et devenir des nanoplastiques aux interfaces environnementales",
       "bullets": [
@@ -2438,7 +2433,7 @@
     "domaines": ["chi"],
     "techniques": [],
     "axes": ["3"],
-    "web": "http://uccs.univ-lille1.fr",
+    "web": "https://uccs.univ-lille1.fr",
     "fiche": {
       "titre": "Conception et synthèse de polymères biosourcés respectueux de l’environnement marin",
       "bullets": [

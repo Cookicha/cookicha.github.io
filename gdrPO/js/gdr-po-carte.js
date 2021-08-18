@@ -92,7 +92,7 @@ request.onload = function() {
         paragraphes += "<div class='p-fiche'>" + data[id].fiche.bullets[j] + "</div>";
       }
     }
-    var contact = "<div class='contact-fiche'><div class='nom-contact-fiche'>Contact GDR : <span>" + data[id].contact.prenom + " </span><span class='contact-nom'>" + data[id].contact.nom + "</span></div><div class='contact-contact-fiche'><span class='force-select-all'>" + data[id].contact.email + "</span></div><div class='web-contact-fiche'><a href='" + data[id].web + "'>" + data[id].web + "</a></div></div>";
+    var contact = "<div class='contact-fiche'><div class='nom-contact-fiche'>Contact GDR : <span>" + data[id].contact.prenom + " </span><span class='contact-nom'>" + data[id].contact.nom + "</span></div><div class='contact-contact-fiche'><span class='force-select-all'>" + data[id].contact.email + "</span></div><div class='web-contact-fiche'><a href='" + data[id].web + "' target='_blank'>" + data[id].web + "</a></div></div>";
     $('#fiches-section').append("<div class='fiche' id='fiche-" + id + "'><div class='tete'>" + sigle + nom + identifiant + "</div>" + logo + filtres + grosPlus + titre + paragraphes + contact + "</div>");
     convertGPS(data[id].latLng);
     var classes = "";

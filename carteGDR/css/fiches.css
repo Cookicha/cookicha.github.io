@@ -1,0 +1,126 @@
+div#fiches-container {
+  background: #f0f6fa;
+  margin:0;
+  padding:20px 0;
+}
+section#fiches-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width:100vw;
+  max-width:1200px;
+  margin:40px auto;
+  border:none;
+}
+
+.fiche {
+  position:relative;
+  background: var(--main0);
+  font-family: 'Montserrat' sans-serif;
+  border-top: 10px solid white;
+  box-shadow: 2px 2px 2px #888;
+  width: 360px;
+  padding: 40px 0 10px 0;
+  margin:8px;
+  font-size: 0.9em;
+}
+.fiche > * {
+  padding:0 20px ;
+  border:none;
+}
+.fiche img.pin-fiche {
+    padding:0;
+    display:none  ;
+    width:20px;
+    margin: 0 0 20px 20px ;
+    cursor:pointer;
+}
+.filtres-fiche {
+  font-size:0.9em;
+  font-weight:bold;
+  color:var(--main0);
+  background:var(--main4);
+  padding:16px 22px;
+}
+.filtres-fiche > * {
+  padding:4px 0;
+}
+.fiche .logo-box-fiche {
+  margin:20px auto;
+  padding:0;
+  height:100px;
+  width:100%;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+}
+.fiche img.logo-fiche {
+  display: block;
+  max-height:100px;
+  max-width:60%;
+  margin:0 auto;
+}
+.fiche .tete {
+  text-align:center;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-content: center;
+  height:5em;
+}
+
+.fiche .tete div {
+  margin:4px auto;
+}
+.fiche .tete .sigle-fiche {
+  font-weight:bold;
+}
+.fiche .grosPlus {
+  font-size: 60px;
+  margin: 0 auto;
+  padding:0;
+  width: 100%;
+  text-align: center;
+  color:var(--main2);
+}
+.fiche .grosPlus:hover {
+  cursor:pointer;
+  color:var(--highlight);
+}
+.fiche .grosPlus.clos:after {
+  content:"+";
+}
+.fiche .grosPlus.ouvert:after {
+  content:"\2212";
+}
+.contact-fiche {
+  display:none;
+  margin:40px 0 0 0;
+}
+.contact-fiche * {
+  line-height:1.6;
+}
+.nom-contact-fiche span {
+  font-weight: bold;
+}
+.contact-fiche .contact-nom {
+  font-variant: small-caps;
+}
+
+.titre-fiche {
+  display:none;
+  font-size:1.2em;
+  color:var(--main4);
+  font-weight:bold;
+  margin:20px 0;
+}
+.p-fiche {
+  display:none;
+  margin:10px 0;
+}
+.fiche.highlight {
+  border-top: 10px solid var(--highlight);
+  order:-1;
+}
