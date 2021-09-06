@@ -1,12 +1,3 @@
-div#fiches-container {
-  background: #f0f6fa;
-  margin:0;
-  padding:20px 0;
-}
-#carte-credit {
-  background: #f0f6fa;
-}
-
 section#fiches-section {
   display: flex;
   flex-flow: row wrap;
@@ -21,26 +12,22 @@ section#fiches-section {
 .fiche {
   position:relative;
   background: var(--main0);
-  font-family: 'Montserrat' sans-serif;
   border-top: 10px solid white;
-  box-shadow: 2px 2px 2px #888;
+  box-shadow: 2px 2px 4px #888;
   width: 360px;
   padding: 40px 0 10px 0;
   margin:8px;
   font-size: 0.9em;
+  display:none;
+}
+.fiche.selected {
+  display:block;
 }
 .fiche > * {
   padding:0 20px ;
   border:none;
 }
-.fiche img.pin-fiche {
-    padding:0;
-    display:none  ;
-    width:20px;
-    margin: 0 0 20px 20px ;
-    cursor:pointer;
-}
-.filtres-fiche {
+/* .filtres-fiche {
   font-size:0.9em;
   font-weight:bold;
   color:var(--main0);
@@ -49,9 +36,67 @@ section#fiches-section {
 }
 .filtres-fiche > * {
   padding:4px 0;
+} */
+.fiche .tete {
+  text-align:center;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-content: center;
+  height:8em;
 }
+
+.fiche .tete div {
+  margin:4px auto;
+}
+.fiche .tete .sigle-fiche {
+  font-weight:bold;
+  font-size:1.4em;
+  margin: 0;
+  padding:4px;
+  cursor:pointer;
+  position:relative;
+  user-select: none;
+}
+.fiche .tete .sigle-fiche:hover {
+  color:var(--highlight);
+}
+.fiche .tete .sigle-fiche:hover::after {
+  content: "\01F4CC";
+  position:absolute;
+  top:0px;
+  margin:0 6px;
+}
+.fiche .tete .sigle-fiche.highlighted::after {
+  color:var(--highlight);
+    content: "\01F4CC";
+    position:absolute;
+    top:0px;
+    margin:0 6px;
+}
+.fiche .tete .identifiant-fiche {
+  font-size:0.8em;
+  line-height: 1;
+}
+.fiche .tete .domaine-fiche span {
+  display:inline-block;
+  font-weight:bold;
+  border-radius: 6px;
+  background-color: lightgray;
+  margin:3px;
+  padding: 4px 6px;
+}
+.fiche .tete .domaine-fiche span.bio {color:var(--bio2);background:var(--bio);}
+.fiche .tete .domaine-fiche span.socio {color:var(--socio2);background:var(--socio);}
+.fiche .tete .domaine-fiche span.geo {color:var(--geo2);background:var(--geo);}
+.fiche .tete .domaine-fiche span.eco {color:var(--eco2);background:var(--eco);}
+.fiche .tete .domaine-fiche span.hist {color:var(--hist2);background:var(--hist);}
+.fiche .tete .domaine-fiche span.inge {color:var(--inge2);background:var(--inge);}
+.fiche .tete .domaine-fiche span.info {color:var(--info2);background:var(--info);}
+.fiche .tete .domaine-fiche span.lettres {color:var(--lettres2);background:var(--lettres);}
+
 .fiche .logo-box-fiche {
-  margin:20px auto;
+  margin:40px auto;
   padding:0;
   height:100px;
   width:100%;
@@ -60,28 +105,42 @@ section#fiches-section {
   justify-content: center;
   align-content: center;
 }
-.fiche img.logo-fiche {
-  display: block;
+.fiche .logo-box-fiche a {
+  text-decoration:none;
+  color:inherit;
   max-height:100px;
-  max-width:60%;
+  width:60%;
   margin:0 auto;
 }
-.fiche .tete {
-  text-align:center;
-  display:flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-content: center;
-  height:5em;
+.fiche img.logo-fiche {
+  display: block;
+  max-height:100%;
+  max-width:100%;
+  margin:0 auto;
 }
-
-.fiche .tete div {
-  margin:4px auto;
+.fiche .logo-box-fiche a:hover {
+  max-height:105px;
+  width:63%;
 }
-.fiche .tete .sigle-fiche {
+.fiche .forces-fiches {
+  padding:4px;
+  margin:0;
   font-weight:bold;
+  color:#555;
 }
-.fiche .grosPlus {
+.fiche .forces-fiches:hover {
+  cursor:pointer;
+  color:black;
+}
+.fiche .forces-fiches:hover::before {
+  content:"\2193";
+  padding-right: 10px;
+}
+.fiche .forces-fiches:hover::after {
+  content:"\2193";
+  padding-left: 10px;
+}
+/* .fiche .grosPlus {
   font-size: 60px;
   margin: 0 auto;
   padding:0;
@@ -98,7 +157,7 @@ section#fiches-section {
 }
 .fiche .grosPlus.ouvert:after {
   content:"\2212";
-}
+} */
 .contact-fiche {
   display:none;
   margin:40px 0 0 0;
@@ -124,7 +183,7 @@ section#fiches-section {
   display:none;
   margin:10px 0;
 }
-.fiche.highlight {
+.fiche.highlighted {
   border-top: 10px solid var(--highlight);
   order:-1;
 }

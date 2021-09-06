@@ -16,5 +16,8 @@ const gps = {
  Ordiarp: {lat: 43.1865888, lng: -0.9444994, n: 0},
  Pau: {lat: 43.2957547, lng: -0.3685668, n: 0},
  Poitiers: {lat: 46.5802596, lng: 0.340196, n: 0},
- Rochefort: {lat: 45.9438412, lng: -0.9687519, n: 0}
+ Rochefort: {lat: 45.9438412, lng: -0.9687519, n: 0},
+ StPierredAmilly:	{lat: 46.168212890625,	lng: -0.6897526979446411, n: 0},
+ LaTremblade: {lat: 45.7773017,	lng: -1.157272, n: 0},
+ StLaurentdelaPree:	{lat: 45.9817008972168,	lng: -1.0408568382263184, n: 0}
 }

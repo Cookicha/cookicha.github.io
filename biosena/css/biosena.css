@@ -1,21 +1,77 @@
 
 :root {
+  --bio:#C9E4DE;
+  --socio:#FAEDCB;
+  --geo:#F7D9C4;
+  --eco:#C6DEF1;
+  --hist:#E2CFC4;
+  --inge:#F9C6C9;
+  --info:#F2C6DE;
+  --lettres:#DBCDF0;
+  --bio2:#114539;
+  --socio2:#563F05;
+  --geo2:#522607;
+  --eco2:#0A2F4E;
+  --hist2:#442411;
+  --inge2:#55040A;
+  --info2:#4E0A2F;
+  --lettres2:#260C4D;
+  --bio3:#228971;
+  --socio3:#A67A0A;
+  --geo3:#9E4A0E;
+  --eco3:#145C98;
+  --hist3:#894822;
+  --inge3:#A40812;
+  --info3:#98145C;
+  --lettres3:#491794;
   --main0: white;
   --main1: #e0f5ff;
   --main2: #5a89ac;
   --main3: #37557D;
   --main4: #11284b;
   --complement: #78AD50;
-  --highlight: #ec6608;
+  --highlight: #c2022e;
   --p-marge: 20px;
   --g-marge: 100px;
   --text-width: 600px;
   --dark: black;
-  --p-titre: font-family: 'Libre Franklin', sans-serif;
-  /*'Poppins',sans-serif;*/
-  --p-corps: 'Montserrat', sans-serif;
+  --p-titre: 'Lato', sans-serif;
+  --p-corps: 'Lato', sans-serif;
   --taille-logo: 42px;
 }
+#stylekey .bouton#bio .texte-bouton {
+  background: #C9E4DE;
+  color:#114539;
+}
+#stylekey .bouton#socio .texte-bouton {
+  background: #FAEDCB;
+  color:#563F05;
+}
+#stylekey .bouton#geo .texte-bouton {
+  background: #F7D9C4;
+  color:#522607;
+}
+#stylekey .bouton#eco .texte-bouton {
+  background: #C6DEF1;
+  color:#0A2F4E;
+}
+#stylekey .bouton#hist .texte-bouton {
+  background: #E2CFC4;
+  color:#442411;
+}
+#stylekey .bouton#inge .texte-bouton {
+  background: #F9C6C9;
+  color:#55040A;
+}
+#stylekey .bouton#info .texte-bouton {
+  background: #F2C6DE;
+  color:#4E0A2F;
+}
+#stylekey .bouton#lettres .texte-bouton {
+  background: #DBCDF0;
+  color:#260C4D;
+}
+
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -29,6 +85,7 @@ html.touch *:hover {
 body {
   background: var(--main0);
   font-size: 16px;
+  font-family: var(--p-corps);
 }
 
 body, div {
@@ -86,16 +143,6 @@ p, p * {
 p {
   margin: 1em 0;
   max-width: var(--text-width);
-}
-
-a {
-  font-weight: 500;
-  text-decoration: none;
-  background-position: 0 1.04em;
-  background-repeat: no-repeat;
-  background-size: auto 0.8px;
-  color: var(--main3);
-  background-image: linear-gradient(var(--main3), var(--main3));
 }
 
 * a:hover {
