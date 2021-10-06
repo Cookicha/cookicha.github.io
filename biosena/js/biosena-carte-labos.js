@@ -134,7 +134,7 @@ $(document).ready(function() {
         var sigle = "<div class='sigle-fiche' id='sigle-" + labo + "'>" + data[labo].sigle + "</div>";
         var nom = "<div class='nom-fiche'>" + data[labo].nom + "</div>";
         var identifiant = "<div class='identifiant-fiche'>" + data[labo].identifiant + "</div>";
-        var logo = "<div class='logo-box-fiche'><a href='" + data[labo].website + "' target='_blank'><img src='img/logos/" + labo + "-logo.png' class='logo-fiche'/></a></div>";
+        var logo = "<div class='logo-box-fiche'><a href='" + data[labo].website + "' target='_blank'><img src='https://biosena.univ-lr.fr/wp-content/uploads/img/logos/" + labo.toLowerCase() + "-logo.png' class='logo-fiche'/></a></div>";
         var domaine = "";
         var codeDomaine = "";
         // var axes = "";
@@ -147,7 +147,7 @@ $(document).ready(function() {
           }
           domaine += "</div>";
         }
-        var forces = "<div class='forces-fiches' style='text-align:center;margin-bottom:20px;'>" + data[labo].forces + " contacts</div>";
+        var forces = "<div class='forces-fiche clos' style='text-align:center;margin-bottom:20px;'>" + data[labo].forces + " contacts</div>";
     // if (labo.axes.length > 0) {
     //   axes = decodeAxes(labo.axes[0]);
     //   for (var j = 1; j < labo.axes.length; j++) {
@@ -173,18 +173,20 @@ $(document).ready(function() {
     //     paragraphes += "<div class='p-fiche'>" + labo.fiche.bullets[j] + "</div>";
     //   }
     // }
-    // var contact = "<div class='contact-fiche'><div class='nom-contact-fiche'>Contact GDR : <span>" + labo.contact.prenom + " </span><span class='contact-nom'>" + labo.contact.nom + "</span></div><div class='contact-contact-fiche'><span class='force-select-all'>" + labo.contact.email + "</span></div><div class='web-contact-fiche'><a href='" + labo.web + "'>" + labo.web + "</a></div></div>";
-      $('#fiches-section').append("<div class='fiche selected" + codeDomaine + "' id='fiche-" + labo + "'><div class='tete'>" + sigle + identifiant + nom + domaine + "</div>" + logo + forces + "</div>");
+      var forcesListe = "<div class='forces-fiche-liste'>";
+      for (var j = 0; j < data[labo].forcesListe.length; j++) {
+        forcesListe += data[labo].forcesListe[j] + "<br />";
+      }
+      forcesListe += "</div>";
+			var contact = "";
+			if (data[labo].nomContact) {
+				contact = "<h2 class='contact'>Contact</h2><div class='contact'>" + data[labo].prenomContact + " " + data[labo].nomContact + "<br />" + data[labo].emailContact + "</div>";
+			}
+      $('#fiches-section').append("<div class='fiche selected" + codeDomaine + "' id='fiche-" + labo + "'><div class='tete'>" + sigle + identifiant + nom + domaine + "</div>" + logo + forces + forcesListe + contact + "</div>");
       }
     }
 
   }
-  // $(document).ready(function() {
-  //   $(".grosPlus.clos").click(function() {
-  //     $(this).toggleClass('clos');
-  //     $(this).toggleClass('ouvert');
-  //     $(this).siblings('.titre-fiche,.p-fiche,.contact-fiche').toggle(200);
-  //   });
 
 
   // var active = [];
@@ -275,6 +277,12 @@ $(document).ready(function() {
     let highlightedLab = this.id.replace('sigle-', '');
     highlighter(highlightedLab);
   });
+  $('#fiches-section').on("click", '.forces-fiche', function() {
+    $(this).toggleClass('clos');
+    $(this).toggleClass('ouvert');
+    $(this).siblings('.forces-fiche-liste').toggle(200);
+  });
+
   $('.dot').addClass("solid");
   makeFiches();
 });

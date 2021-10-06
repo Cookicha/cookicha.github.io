@@ -26,6 +26,7 @@ section#fiches-section {
 .fiche > * {
   padding:0 20px ;
   border:none;
+	text-align:center;
 }
 /* .filtres-fiche {
   font-size:0.9em;
@@ -46,8 +47,9 @@ section#fiches-section {
   height:8em;
 }
 
-.fiche .tete div {
+div.fiche div.tete div {
   margin:4px auto;
+  color:black;
 }
 .fiche .tete .sigle-fiche {
   font-weight:bold;
@@ -62,6 +64,7 @@ section#fiches-section {
   color:var(--highlight);
 }
 .fiche .tete .sigle-fiche:hover::after {
+  display:inline;
   content: "\01F4CC";
   position:absolute;
   top:0px;
@@ -69,6 +72,7 @@ section#fiches-section {
 }
 .fiche .tete .sigle-fiche.highlighted::after {
   color:var(--highlight);
+  display:inline;
     content: "\01F4CC";
     position:absolute;
     top:0px;
@@ -122,24 +126,43 @@ section#fiches-section {
   max-height:105px;
   width:63%;
 }
-.fiche .forces-fiches {
+.fiche .forces-fiche {
   padding:4px;
   margin:0;
   font-weight:bold;
   color:#555;
+  user-select: none;
+  display: none;
 }
-.fiche .forces-fiches:hover {
+.fiche .forces-fiche:hover {
   cursor:pointer;
   color:black;
 }
-.fiche .forces-fiches:hover::before {
+.fiche .forces-fiche.clos:hover::before {
   content:"\2193";
+  display: inline;
   padding-right: 10px;
 }
-.fiche .forces-fiches:hover::after {
+.fiche .forces-fiche.clos:hover::after {
+  display: inline;
   content:"\2193";
   padding-left: 10px;
 }
+.fiche .forces-fiche.ouvert:hover::before {
+  display: inline;
+  content:"\2191";
+  padding-right: 10px;
+}
+.fiche .forces-fiche.ouvert:hover::after {
+  display: inline;
+  content:"\2191";
+  padding-left: 10px;
+}
+.fiche .forces-fiche-liste {
+  display: none;
+  margin: 20px;
+}
+
 /* .fiche .grosPlus {
   font-size: 60px;
   margin: 0 auto;
@@ -158,9 +181,14 @@ section#fiches-section {
 .fiche .grosPlus.ouvert:after {
   content:"\2212";
 } */
-.contact-fiche {
-  display:none;
-  margin:40px 0 0 0;
+.fiche .contact {
+}
+.fiche h2.contact {
+	text-transform:uppercase;
+	color:#444;
+	font-size:1em;
+	margin:0;
+	
 }
 .contact-fiche * {
   line-height:1.6;
