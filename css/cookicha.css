@@ -263,7 +263,7 @@ font-family:'Ubuntu';
 }
 
 #section1 #ingenieur {margin-top:30px;}
-#section1 #soutenabilite {margin-top:6px;}
+#section1 #soutenabilite, #section1 #reseaux {margin-top:6px;}
 
 #section1 #credit {
 	position:absolute;
