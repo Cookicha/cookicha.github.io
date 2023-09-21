@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cours de Musique</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height" />
+  <link rel="stylesheet" href="css/music.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+</head>
+
+<body>
+  <main>
+    <section class="container">
+      <h1>Gamme pentatonique majeure</h1>
+        <div id="canvas">
+          <div class="box" id="fond">
+            <div id="circle"></div>
+            <div class="box tickbox c12" id="t12">
+              <div class="tick"></div>
+            </div>
+            <div class="box tickbox c01" id="t01">
+            </div>
+            <div class="box tickbox c02" id="t02">
+              <div class="tick"></div>
+            </div>
+            <div class="box tickbox c03" id="t03">
+
+            </div>
+            <div class="box tickbox c04" id="t04">
+              <div class="tick"></div>
+            </div>
+            <div class="box tickbox c05" id="t05">
+
+            </div>
+            <div class="box tickbox c06" id="t06">
+
+            </div>
+            <div class="box tickbox c07" id="t07">
+              <div class="tick"></div>
+            </div>
+            <div class="box tickbox c08" id="t08">
+            </div>
+            <div class="box tickbox c09" id="t09">
+              <div class="tick"></div>
+            </div>
+            <div class="box tickbox c10" id="t10">
+            </div>
+            <div class="box tickbox c11" id="t11">
+            </div>
+          </div>
+          <!-- <div class="box" id="out">
+          <div class="box textbox c12" id="o12">
+            <div class="text">Do</div>
+          </div>
+          <div class="box textbox c01" id="o01">
+            <div class="text">Do#</div>
+          </div>
+          <div class="box textbox c02" id="o02">
+            <div class="text">Ré</div>
+          </div>
+          <div class="box textbox c03" id="o03">
+            <div class="text">Ré#</div>
+          </div>
+          <div class="box textbox c04" id="o04">
+            <div class="text">Mi</div>
+          </div>
+          <div class="box textbox c05" id="o05">
+            <div class="text">Fa</div>
+          </div>
+          <div class="box textbox c06" id="o06">
+            <div class="text">Fa#</div>
+          </div>
+          <div class="box textbox c07" id="o07">
+            <div class="text">Sol</div>
+          </div>
+          <div class="box textbox c08" id="o08">
+            <div class="text">Sol#</div>
+          </div>
+          <div class="box textbox c09" id="o09">
+            <div class="text">La</div>
+          </div>
+          <div class="box textbox c10" id="o10">
+            <div class="text">La#</div>
+          </div>
+          <div class="box textbox c11" id="o11">
+            <div class="text">Si</div>
+          </div>
+        </div> -->
+          <div class="box" id="out">
+            <div class="box textbox c12" id="o12">
+              <div class="text">I</div>
+            </div>
+            <div class="box textbox c01" id="o01">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox c02" id="o02">
+              <div class="text">II</div>
+            </div>
+            <div class="box textbox c03" id="o03">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox c04" id="o04">
+              <div class="text">III</div>
+            </div>
+            <div class="box textbox c05" id="o05">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox c06" id="o06">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox c07" id="o07">
+              <div class="text">V</div>
+            </div>
+            <div class="box textbox c08" id="o08">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox c09" id="o09">
+              <div class="text">VI</div>
+            </div>
+            <div class="box textbox c10" id="o10">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox c11" id="o11">
+              <div class="text"></div>
+            </div>
+          </div>
+          <div class="box" id="in">
+            <div class="box textbox c12" id="i12">
+              <div class="text">Do</div>
+            </div>
+            <div class="box textbox c01" id="i01">
+              <div class="text">Do#</div>
+            </div>
+            <div class="box textbox c02" id="i02">
+              <div class="text">Ré</div>
+            </div>
+            <div class="box textbox c03" id="i03">
+              <div class="text">Ré#</div>
+            </div>
+            <div class="box textbox c04" id="i04">
+              <div class="text">Mi</div>
+            </div>
+            <div class="box textbox c05" id="i05">
+              <div class="text">Fa</div>
+            </div>
+            <div class="box textbox c06" id="i06">
+              <div class="text">Fa#</div>
+            </div>
+            <div class="box textbox c07" id="i07">
+              <div class="text">Sol</div>
+            </div>
+            <div class="box textbox c08" id="i08">
+              <div class="text">Sol#</div>
+            </div>
+            <div class="box textbox c09" id="i09">
+              <div class="text">La</div>
+            </div>
+            <div class="box textbox c10" id="i10">
+              <div class="text">La#</div>
+            </div>
+            <div class="box textbox c11" id="i11">
+              <div class="text">Si</div>
+            </div>
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/music.js"></script>
+</body>
+
+</html>

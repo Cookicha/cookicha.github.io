@@ -1,0 +1,198 @@
+* {
+ margin: 0;
+ -webkit-user-select: none;
+ /* Safari */
+ -ms-user-select: none;
+ /* IE 10 and IE 11 */
+ user-select: none;
+ /* Standard syntax */
+ color:#555;
+}
+body{
+ font-family: Quicksand;
+}
+
+.container {
+ width: 100vw;
+ height: 100vh;
+ background: #eee;
+ display: flex;
+ flex-flow: column nowrap;
+ gap:4vh;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ overflow: hidden;
+}
+h1 {
+ background: white;
+ color: #ccc;
+ width: 100%;
+ text-align: center;
+ padding: 1em 0;
+ font-size: 2em;
+}
+
+#infos {
+ display:flex;
+ flex-flow: line nowrap;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ gap:1vw;
+ color:white;
+}
+#infos > div {
+ width:10vw;
+ height:10vh;
+}
+#gamme {
+ color: inherit;
+ font-size: 4em;
+ line-height: 1.6em;
+ text-align: center;
+ font-weight: bold;
+}
+#alterations{
+ display: flex;
+ flex-flow: column nowrap;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ gap: 0.5vh;
+}
+#alterations > div {
+ height:2px;
+ width:80%;
+ color:white;
+ font-size:4vh;
+ position:relative;
+}
+#alterations > div.line {
+ background: white;
+ z-index: 1;
+}
+#alterations > div > span {
+ position:absolute;
+ bottom:-1.8vh;
+ z-index:100;
+}
+#alterations #line1 {left:1.5vw;}
+#alterations #line2 {left:2vw;}
+#alterations #line3 {left:4vw;}
+#alterations #line4 {left:2.5vw;}
+#alterations #line5 {left:1vw;}
+#alterations #line6 {left:3vw;}
+#alterations #line7 {left:3.5vw;}
+#alterations #line8 {left:1vw;}
+#alterations #line9 {left:1vw;}
+
+#alterations .smaller {font-size: 0.7em;top:10px;}
+#canvas {
+ width: 50vh;
+ height: 50vh;
+ position: relative;
+}
+
+#circle {
+ position: absolute;
+ top: 4%;
+ left: 4%;
+ border-radius: 100%;
+ border: none;
+ background: white;
+ width: 92%;
+ height: 92%;
+ box-shadow: inset 0 0 0 2px #555, 0 0 0 1px #555;
+}
+
+.box {
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+.tick {
+ width: 2%;
+ height: 2%;
+ border-radius: 100%;
+ border: none;
+ background: #555;
+ position: absolute;
+ left: 49%;
+ top: 3%;
+}
+.tick.blues {
+  background: cornflowerblue;
+}
+.text {
+ vertical-align: sub;
+ position: absolute;
+ width: 100%;
+ left: 0%;
+ text-align: center;
+ font-size: 2em;
+}
+.text.blues {
+  color:cornflowerblue;
+  rotate:180deg;
+}
+#out .text {
+ bottom: 98%;
+}
+#in {
+ position: relative;
+ rotae:0deg;
+}
+#in .text {
+ top: 6%;
+}
+
+.c01 {
+ rotate: 30deg;
+}
+
+.c02 {
+ transform: rotate(60deg);
+}
+
+.c03 {
+ transform: rotate(90deg);
+}
+
+.c04 {
+ transform: rotate(120deg);
+}
+
+.c05 {
+ transform: rotate(150deg);
+}
+
+.c06 {
+ transform: rotate(180deg);
+}
+
+.c07 {
+ transform: rotate(210deg);
+}
+
+.c08 {
+ transform: rotate(240deg);
+}
+
+.c09 {
+ transform: rotate(270deg);
+}
+
+.c10 {
+ transform: rotate(300deg);
+}
+
+.c11 {
+ transform: rotate(330deg);
+}
+
+.c12 {
+ transform: rotate(0deg);
+}
