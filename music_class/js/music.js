@@ -180,6 +180,7 @@ $(function() {
       target.css('-ms-transform', 'rotate(' + degree + 'deg)');
       target.css('-ms-transform-origin', '50% 50%');
       gamme();
+      event.stopPropagation();
     }
   });
 })
