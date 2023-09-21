@@ -149,28 +149,28 @@ center_x = (pwBox.left + pwBox.right) / 2;
 center_y = (pwBox.top + pwBox.bottom) / 2;
 $(function() {
   var target = $('#in');
-  target.on('pointerdown',function(e) {
+  target.on('pointerdown', function(e) {
     mouse_x = e.pageX;
     mouse_y = e.pageY;
     radians_click = Math.atan2(mouse_x - center_x, mouse_y - center_y);
     degree_click = (radians_click * (180 / Math.PI) * -1) + 180;
     dragging = true;
   });
-  $(document).on('pointerup',function() {
+  $(document).on('pointerup', function() {
     dragging = false;
     degree_start = degree;
   });
-  $(document).on('pointermove',function(event) {
+  $(document).on('pointermove', function(event) {
     if (dragging) {
       mouse_x = event.pageX;
       mouse_y = event.pageY;
       var radians = Math.atan2(mouse_x - center_x, mouse_y - center_y);
-      var degree_raw = ((radians * (180 / Math.PI) * -1) + 180 ) - degree_click + degree_start;
-       if (degree_raw % 30 <= 8) {
-         degree = degree_raw - degree_raw % 30;
-       } else {
+      var degree_raw = ((radians * (180 / Math.PI) * -1) + 180) - degree_click + degree_start;
+      if (degree_raw % 30 <= 8) {
+        degree = degree_raw - degree_raw % 30;
+      } else {
         degree = degree_raw;
-        }
+      }
       target.css('-moz-transform', 'rotate(' + degree + 'deg)');
       target.css('-moz-transform-origin', '50% 50%');
       target.css('-webkit-transform', 'rotate(' + degree + 'deg)');
@@ -179,12 +179,9 @@ $(function() {
       target.css('-o-transform-origin', '50% 50%');
       target.css('-ms-transform', 'rotate(' + degree + 'deg)');
       target.css('-ms-transform-origin', '50% 50%');
-      gamme();
-      event.stopPropagation();
     }
   });
 })
 
-$(document).ready(function(){
-  gamme();
+$(document).ready(function() {
 })
