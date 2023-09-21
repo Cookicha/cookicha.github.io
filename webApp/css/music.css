@@ -148,6 +148,16 @@ h1 {
 #in .text {
  top: 6%;
 }
+#rotate{
+  z-index:999;
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  border: none;
+  width: 92%;
+  height: 92%;
+  border-radius: 100%;
+}
 
 .c01 {
  rotate: 30deg;
