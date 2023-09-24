@@ -1,38 +1,189 @@
 * {
- margin: 0;
- -webkit-user-select: none;
- /* Safari */
- -ms-user-select: none;
- /* IE 10 and IE 11 */
- user-select: none;
- /* Standard syntax */
- color:#555;
-}
-body{
- font-family: Quicksand;
+  margin: 0;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+  color: #555;
+  z-index: inherit;
 }
 
-.container {
- width: 100vw;
- height: 100vh;
- background: #eee;
- display: flex;
- flex-flow: column nowrap;
- gap:4vh;
- justify-content: center;
- align-items: center;
- align-content: center;
- overflow: hidden;
+body {
+  font-family: Quicksand;
 }
+
+section {
+  background: #eee;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+  padding: 12vh 0;
+}
+
+
 h1 {
- background: white;
- color: #ccc;
- width: 100%;
- text-align: center;
- padding: 1em 0;
- font-size: 2em;
+  background: white;
+  color: #ccc;
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 2.4em;
 }
 
+.canvas {
+  width: 60vh;
+  height: 60vh;
+  position: relative;
+  max-width: 96vw;
+  max-height: 96vw;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tickbox {
+  z-index: 2;
+}
+
+.tick {
+  width: 3%;
+  height: 3%;
+  border-radius: 100%;
+  border: none;
+  background: #555;
+  position: absolute;
+  left: 48.5%;
+  top: 6.5%;
+}
+  .t12 .tick {box-shadow: 0 0 0 3px #fff, 0 0 0 4px #555;}
+.tick.blues {background: blue;}
+
+.text {
+  vertical-align: sub;
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  text-align: center;
+  font-size: 2em;
+  line-height: 0.9em;
+}
+.exp {
+  font-size: 0.6em;
+  vertical-align: super;
+}
+
+.text.blues {
+  rotate: 180deg;
+}
+
+.out .text {
+  bottom: 96%;
+  z-index: 2;
+}
+
+.circle, .in {
+  position: absolute;
+  width: 84%;
+  height: 84%;
+  top: 8%;
+  left: 8%;
+  border-radius: 100%;
+  border: none;
+}
+
+.circle {
+  background: white;
+  box-shadow: inset 0 0 0 2px #555, 0 0 0 1px #555;
+  z-index: 0;
+}
+
+.in {
+  background: transparent;
+  rotate: 0deg;
+  cursor: grab;
+  z-index: 100;
+}
+
+.in .text {
+  top: 4%;
+}
+
+.c01, .t01, .i01, .o01 {
+  rotate: 30deg;
+}
+
+.c02, .t02, .i02, .o02 {
+  rotate: 60deg;
+}
+
+.c03, .t03, .i03, .o03 {
+  rotate: 90deg;
+}
+
+.c04, .t04, .i04, .o04 {
+  rotate: 120deg;
+}
+
+.c05, .t05, .i05, .o05 {
+  rotate: 150deg;
+}
+
+.c06, .t06, .i06, .o06 {
+  rotate: 180deg;
+}
+
+.c07, .t07, .i07, .o07 {
+  rotate: 210deg;
+}
+
+.c08, .t08, .i08, .o08 {
+  rotate: 240deg;
+}
+
+.c09, .t09, .i09, .o09 {
+  rotate: 270deg;
+}
+
+.c10, .t10, .i10, .o10 {
+  rotate: 300deg;
+}
+
+.c11, .t11, .i11, .o11 {
+  rotate: 330deg;
+}
+
+.c12, .t12, .i12, .o12 {
+  rotate: 0deg;
+}
+#intervals_section .out .text {
+  font-size: 1.4em;
+}
+#major_section .out .text, #major5_section .out .text, #minor_section .out .text, #minor5_section .out .text, #blues_section .out .text {
+  font-size: 1.8em;
+}
+
+/* #intervals_section .out .o04 .text, #intervals_section .out .o05 .text, #intervals_section .out .o06 .text, #intervals_section .out .o07 .text, #intervals_section .out .o08 .text {rotate:180deg;} */
+  #cheat_section .t01, #cheat_section .t06, #cheat_section .t08, #cheat_section .t10  {display: none;}
+  #cheat_section .t03 .tick {background: #acd;}
+  #cheat_section .t05 .tick, #cheat_section .t11 .tick {background: #bbb;}
+  #cheat_section .t12 .tick, #cheat_section .t09 .tick {box-shadow: 0 0 0 3px #fff, 0 0 0 4px #555;}
+  #major_section .t01, #major_section .t03, #major_section .t06, #major_section .t08, #major_section .t10  {display: none;}
+  #major5_section .t01, #major5_section .t03, #major5_section .t06, #major5_section .t08, #major5_section .t10, #major5_section .t05, #major5_section .t11  {display: none;}
+  #minor_section .t01, #minor_section .t04, #minor_section .t06, #minor_section .t09, #minor_section .t11  {display: none;}
+  #minor5_section .t01, #minor5_section .t02, #minor5_section .t04, #minor5_section .t06, #minor5_section .t08, #minor5_section .t09, #minor5_section .t11  {display: none;}
+  #blues_section .t01, #blues_section .t02, #blues_section .t04, #blues_section .t08, #blues_section .t09, #blues_section .t11  {display: none;}
+/*
 #infos {
  display:flex;
  flex-flow: line nowrap;
@@ -87,122 +238,4 @@ h1 {
 #alterations #line8 {left:1vw;}
 #alterations #line9 {left:1vw;}
 
-#alterations .smaller {font-size: 0.7em;top:10px;}
-#canvas {
- width: 50vh;
- height: 50vh;
- position: relative;
-}
-
-#circle {
- position: absolute;
- top: 4%;
- left: 4%;
- border-radius: 100%;
- border: none;
- background: white;
- width: 92%;
- height: 92%;
- box-shadow: inset 0 0 0 2px #555, 0 0 0 1px #555;
-}
-
-.box {
- width: 100%;
- height: 100%;
- position: absolute;
- top: 0;
- left: 0;
-}
-.tick {
- width: 2%;
- height: 2%;
- border-radius: 100%;
- border: none;
- background: #555;
- position: absolute;
- left: 49%;
- top: 3%;
-}
-.tick.blues {
-  background: cornflowerblue;
-}
-.text {
- vertical-align: sub;
- position: absolute;
- width: 100%;
- left: 0%;
- text-align: center;
- font-size: 2em;
-}
-.text.blues {
-  color:cornflowerblue;
-  rotate:180deg;
-}
-#out .text {
- bottom: 98%;
-}
-#in {
- position: relative;
- rotae:0deg;
-}
-#in .text {
- top: 6%;
-}
-#rotate{
-  z-index:999;
-  position: absolute;
-  top: 4%;
-  left: 4%;
-  border: none;
-  width: 92%;
-  height: 92%;
-  border-radius: 100%;
-}
-
-.c01 {
- rotate: 30deg;
-}
-
-.c02 {
- transform: rotate(60deg);
-}
-
-.c03 {
- transform: rotate(90deg);
-}
-
-.c04 {
- transform: rotate(120deg);
-}
-
-.c05 {
- transform: rotate(150deg);
-}
-
-.c06 {
- transform: rotate(180deg);
-}
-
-.c07 {
- transform: rotate(210deg);
-}
-
-.c08 {
- transform: rotate(240deg);
-}
-
-.c09 {
- transform: rotate(270deg);
-}
-
-.c10 {
- transform: rotate(300deg);
-}
-
-.c11 {
- transform: rotate(330deg);
-}
-
-.c12 {
- transform: rotate(0deg);
-}
+#alterations .smaller {font-size: 0.7em;top:10px;} */

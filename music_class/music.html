@@ -1,0 +1,444 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cours de Musique</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height" />
+  <link rel="stylesheet" href="css/music.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+</head>
+
+<body>
+  <main>
+    <section id="cheat_section">
+      <h1>Cheat Sheet</h1>
+      <div class="canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+            </div>
+            <div class="box textbox o01">
+            </div>
+            <div class="box textbox o02">
+            </div>
+            <div class="box textbox o03">
+            </div>
+            <div class="box textbox o04">
+            </div>
+            <div class="box textbox o05">
+            </div>
+            <div class="box textbox o06">
+            </div>
+            <div class="box textbox o07">
+            </div>
+            <div class="box textbox o08">
+            </div>
+            <div class="box textbox o09">
+            </div>
+            <div class="box textbox o10">
+            </div>
+            <div class="box textbox o11">
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="cheat">
+          </div>
+        </div>
+    </section>
+    <section id="intervals_section">
+      <h1>Intervalles</h1>
+      <div style="text-align:center;font-size:1.6em;">À partir la<br /><b>tonique</b><br />&darr;</div>
+      <div class="canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+              <div class="text">Unisson<br />(et Octave)</div>
+            </div>
+            <div class="box textbox o01">
+              <div class="text">Seconde<br />mineure</div>
+            </div>
+            <div class="box textbox o02">
+              <div class="text">Seconde<br />majeure</div>
+            </div>
+            <div class="box textbox o03">
+              <div class="text">Tierce<br />mineure</div>
+            </div>
+            <div class="box textbox o04">
+              <div class="text">Tierce<br />majeure</div>
+            </div>
+            <div class="box textbox o05">
+              <div class="text">Quarte</div>
+            </div>
+            <div class="box textbox o06">
+              <div class="text">Triton</div>
+            </div>
+            <div class="box textbox o07">
+              <div class="text">Quinte</div>
+            </div>
+            <div class="box textbox o08">
+              <div class="text">Sixte<br />mineure</div>
+            </div>
+            <div class="box textbox o09">
+              <div class="text">Sixte<br />majeure</div>
+            </div>
+            <div class="box textbox o10">
+              <div class="text">Septième<br />mineure</div>
+            </div>
+            <div class="box textbox o11">
+              <div class="text">Septième<br />majeure</div>
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="intervals">
+          </div>
+        </div>
+    </section>
+    <section id="major_section">
+      <h1>Gamme majeure</h1>
+      <div class="canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+              <div class="text">Tonique</div>
+            </div>
+            <div class="box textbox o01">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o02">
+              <div class="text">2<span class="exp">de</span> Maj</div>
+            </div>
+            <div class="box textbox o03">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o04">
+              <div class="text">3<span class="exp">ce</span> Maj</div>
+            </div>
+            <div class="box textbox o05">
+              <div class="text">4<span class="exp">te</span></div>
+            </div>
+            <div class="box textbox o06">
+            </div>
+            <div class="box textbox o07">
+              <div class="text">5<span class="exp">te</span></div>
+            </div>
+            <div class="box textbox o08">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o09">
+              <div class="text">6<span class="exp">te</span> Maj</div>
+            </div>
+            <div class="box textbox o10">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o11">
+              <div class="text">7<span class="exp">e</span> Maj</div>
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="major">
+          </div>
+        </div>
+    </section>
+    <section id="major5_section">
+      <h1>Gamme majeure pentatonique</h1>
+      <div class="canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+              <div class="text">Tonique</div>
+            </div>
+            <div class="box textbox o01">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o02">
+              <div class="text">2<span class="exp">de</span> Maj</div>
+            </div>
+            <div class="box textbox o03">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o04">
+              <div class="text">3<span class="exp">ce</span> Maj</div>
+            </div>
+            <div class="box textbox o05">
+            </div>
+            <div class="box textbox o06">
+            </div>
+            <div class="box textbox o07">
+              <div class="text">5<span class="exp">te</span></div>
+            </div>
+            <div class="box textbox o08">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o09">
+              <div class="text">6<span class="exp">te</span> Maj</div>
+            </div>
+            <div class="box textbox o10">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o11">
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="major5">
+          </div>
+        </div>
+    </section>
+    <section id="major_chords_section">
+      <h1>Accords gamme majeure</h1>
+      <div class="canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+              <div class="text">I</div>
+            </div>
+            <div class="box textbox o01">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o02">
+              <div class="text">ii</div>
+            </div>
+            <div class="box textbox o03">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o04">
+              <div class="text">iii</div>
+            </div>
+            <div class="box textbox o05">
+              <div class="text">IV</div>
+            </div>
+            <div class="box textbox o06">
+            </div>
+            <div class="box textbox o07">
+              <div class="text">V</div>
+            </div>
+            <div class="box textbox o08">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o09">
+              <div class="text">vi</div>
+            </div>
+            <div class="box textbox o10">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o11">
+              <div class="text">vii°</div>
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="major_chords">
+          </div>
+        </div>
+    </section>
+    <section id="minor_section">
+      <h1>Gamme mineure naturelle</h1>
+      <div class="canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+              <div class="text">Tonique</div>
+            </div>
+            <div class="box textbox o01">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o02">
+              <div class="text">2<span class="exp">de</span> Maj</div>
+            </div>
+            <div class="box textbox o03">
+              <div class="text">3<span class="exp">ce</span> min</div>
+            </div>
+            <div class="box textbox o04">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o05">
+              <div class="text">4<span class="exp">te</span></div>
+            </div>
+            <div class="box textbox o06">
+            </div>
+            <div class="box textbox o07">
+              <div class="text">5<span class="exp">te</span></div>
+            </div>
+            <div class="box textbox o08">
+              <div class="text">6<span class="exp">te</span> min</div>
+            </div>
+            <div class="box textbox o09">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o10">
+              <div class="text">7<span class="exp">e</span> min</div>
+            </div>
+            <div class="box textbox o11">
+              <div class="text"></div>
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="minor">
+          </div>
+        </div>
+    </section>
+    <section id="minor5_section">
+      <h1>Gamme mineure pentatonique</h1>
+      <div class="canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+              <div class="text">Tonique</div>
+            </div>
+            <div class="box textbox o01">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o02">
+            </div>
+            <div class="box textbox o03">
+              <div class="text">3<span class="exp">ce</span> min</div>
+            </div>
+            <div class="box textbox o04">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o05">
+              <div class="text">4<span class="exp">te</span></div>
+            </div>
+            <div class="box textbox o07">
+              <div class="text">5<span class="exp">te</span></div>
+            </div>
+            <div class="box textbox o08">
+            </div>
+            <div class="box textbox o09">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o10">
+              <div class="text">7<span class="exp">e</span> min</div>
+            </div>
+            <div class="box textbox o11">
+              <div class="text"></div>
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="minor5">
+          </div>
+        </div>
+    </section>
+    <section id="blues_section">
+      <h1>Gamme blues</h1>
+      <div class="canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+              <div class="text">Tonique</div>
+            </div>
+            <div class="box textbox o01">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o02">
+            </div>
+            <div class="box textbox o03">
+              <div class="text">3<span class="exp">ce</span> min</div>
+            </div>
+            <div class="box textbox o04">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o05">
+              <div class="text">4<span class="exp">te</span></div>
+            </div>
+            <div class="box textbox o06">
+              <div class="text blues">blue<br />note</div>
+            </div>
+            <div class="box textbox o07">
+              <div class="text">5<span class="exp">te</span></div>
+            </div>
+            <div class="box textbox o08">
+            </div>
+            <div class="box textbox o09">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o10">
+              <div class="text">7<span class="exp">e</span> min</div>
+            </div>
+            <div class="box textbox o11">
+              <div class="text"></div>
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="blues">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="major_chords_section">
+      <h1>Accords gamme mineure naturelle</h1>
+      <div class="canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+              <div class="text">i</div>
+            </div>
+            <div class="box textbox o01">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o02">
+              <div class="text">ii°</div>
+            </div>
+            <div class="box textbox o03">
+              <div class="text">III</div>
+            </div>
+            <div class="box textbox o04">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o05">
+              <div class="text">iv</div>
+            </div>
+            <div class="box textbox o06">
+            </div>
+            <div class="box textbox o07">
+              <div class="text">v</div>
+            </div>
+            <div class="box textbox o08">
+              <div class="text">VI</div>
+            </div>
+            <div class="box textbox o09">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o10">
+              <div class="text">VII</div>
+            </div>
+            <div class="box textbox o11">
+              <div class="text"></div>
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="minor_chords">
+          </div>
+        </div>
+    </section>
+
+  </main>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="js/music.js"></script>
+</body>
+
+</html>

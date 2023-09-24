@@ -1,187 +1,66 @@
 var degree = 0;
-
-function gamme() {
-  if (degree == 0) {
-    $("#gamme").html("Do m");
-    $("#line1").html("");
-    $("#line2").html("♭");
-    $("#line3").html("");
-    $("#line4").html("");
-    $("#line5").html("♭");
-    $("#line6").html("♭");
-    $("#line7").html("");
-    $("#line8").html("");
-    $("#line9").html("");
-
-  } else if (degree == 30) {
-    $("#gamme").html("Si m");
-    $("#line1").html("<span class='smaller'>#</span>");
-    $("#line2").html("");
-    $("#line3").html("");
-    $("#line4").html("<span class='smaller'>#</span>");
-    $("#line5").html("");
-    $("#line6").html("");
-    $("#line7").html("");
-    $("#line8").html("");
-    $("#line9").html("");
-  } else if (degree == 60) {
-    $("#gamme").html("La# m");
-    $("#line1").html("");
-    $("#line2").html("♭");
-    $("#line3").html("♭");
-    $("#line4").html("");
-    $("#line5").html("♭");
-    $("#line6").html("♭");
-    $("#line7").html("♭");
-    $("#line8").html("");
-    $("#line9").html("");
-  } else if (degree == 90) {
-    $("#gamme").html("La m");
-    $("#line1").html("");
-    $("#line2").html("");
-    $("#line3").html("");
-    $("#line4").html("");
-    $("#line5").html("");
-    $("#line6").html("");
-    $("#line7").html("");
-    $("#line8").html("");
-    $("#line9").html("");
-  } else if (degree == 120) {
-    $("#gamme").html("Sol# m");
-    $("#line1").html("<span class='smaller'>#</span>");
-    $("#line2").html("<span class='smaller'>#</span>");
-    $("#line3").html("<span class='smaller'>#</span>");
-    $("#line4").html("<span class='smaller'>#</span>");
-    $("#line5").html("<span class='smaller'>#</span>");
-    $("#line6").html("<span class='smaller'>#</span>");
-    $("#line7").html("<span class='smaller'>#</span>");
-    $("#line8").html("");
-    $("#line9").html("");
-  } else if (degree == 150) {
-    $("#gamme").html("Sol m");
-    $("#line1").html("");
-    $("#line2").html("♭");
-    $("#line3").html("");
-    $("#line4").html("");
-    $("#line5").html("♭");
-    $("#line6").html("");
-    $("#line7").html("");
-    $("#line8").html("");
-    $("#line9").html("");
-  } else if (degree == 180) {
-    $("#gamme").html("Fa# m");
-    $("#line1").html("<span class='smaller'>#</span>");
-    $("#line2").html("");
-    $("#line3").html("");
-    $("#line4").html("<span class='smaller'>#</span>");
-    $("#line5").html("");
-    $("#line6").html("");
-    $("#line7").html("<span class='smaller'>#</span>");
-    $("#line8").html("");
-    $("#line9").html("");
-  } else if (degree == 210) {
-    $("#gamme").html("Fa m");
-    $("#line1").html("");
-    $("#line2").html("♭");
-    $("#line3").html("♭");
-    $("#line4").html("");
-    $("#line5").html("♭");
-    $("#line6").html("♭");
-    $("#line7").html("");
-    $("#line8").html("");
-    $("#line9").html("");
-  } else if (degree == 240) {
-    $("#gamme").html("Mi m");
-    $("#line1").html("<span class='smaller'>#</span>");
-    $("#line2").html("");
-    $("#line3").html("");
-    $("#line4").html("");
-    $("#line5").html("");
-    $("#line6").html("");
-    $("#line7").html("");
-    $("#line8").html("");
-    $("#line9").html("");
-  } else if (degree == 270) {
-    $("#gamme").html("Ré# m");
-    $("#line1").html("<span class='smaller'>#</span>");
-    $("#line2").html("<span class='smaller'>#</span>");
-    $("#line3").html("<span class='smaller'>#</span>");
-    $("#line4").html("<span class='smaller'>#</span>");
-    $("#line5").html("");
-    $("#line6").html("<span class='smaller'>#</span>");
-    $("#line7").html("<span class='smaller'>#</span>");
-    $("#line8").html("");
-    $("#line9").html("");
-  } else if (degree == 300) {
-    $("#gamme").html("Ré m");
-    $("#line1").html("");
-    $("#line2").html("");
-    $("#line3").html("");
-    $("#line4").html("");
-    $("#line5").html("♭");
-    $("#line6").html("");
-    $("#line7").html("");
-    $("#line8").html("");
-    $("#line9").html("");
-  } else if (degree == 330) {
-    $("#gamme").html("Do# m");
-    $("#line1").html("<span class='smaller'>#</span>");
-    $("#line2").html("");
-    $("#line3").html("<span class='smaller'>#</span>");
-    $("#line4").html("<span class='smaller'>#</span>");
-    $("#line5").html("");
-    $("#line6").html("");
-    $("#line7").html("<span class='smaller'>#</span>");
-    $("#line8").html("");
-    $("#line9").html("");
-  }
-}
-
-
 var dragging = false;
 var radians_click;
 var degree_click;
-var degree_start = 0;
+var degree_start = {
+  'cheat':0,
+  'intervals':0,
+  'major': 0,
+  'major5': 0,
+  'major_chords':0,
+  'minor': 0,
+  'minor5': 0,
+  'blues': 0,
+  'minor_chords':0
+}
+var center_x;
+var center_y;
+var target;
 // get center of div to rotate
-var pw = document.getElementById('in');
-pwBox = pw.getBoundingClientRect();
-center_x = (pwBox.left + pwBox.right) / 2;
-center_y = (pwBox.top + pwBox.bottom) / 2;
+
 $(function() {
-  var target = $('#in');
-  target.on('pointerdown', function(e) {
-    mouse_x = e.pageX;
-    mouse_y = e.pageY;
+  $('.in').on('pointerdown', function(e) {
+    $(this).css("cursor", "grabbing");
+    target = this;
+    pwBox = this.getBoundingClientRect();
+    center_x = (pwBox.left + pwBox.right) / 2;
+    center_y = (pwBox.top + pwBox.bottom) / 2;
+    mouse_x = e.clientX;
+    mouse_y = e.clientY;
     radians_click = Math.atan2(mouse_x - center_x, mouse_y - center_y);
     degree_click = (radians_click * (180 / Math.PI) * -1) + 180;
     dragging = true;
   });
   $(document).on('pointerup', function() {
+    $('.in').css("cursor", "grab");
     dragging = false;
-    degree_start = degree;
+    degree_start[target.id] = degree;
   });
   $(document).on('pointermove', function(event) {
     if (dragging) {
-      mouse_x = event.pageX;
-      mouse_y = event.pageY;
+      mouse_x = event.clientX;
+      mouse_y = event.clientY;
       var radians = Math.atan2(mouse_x - center_x, mouse_y - center_y);
-      var degree_raw = ((radians * (180 / Math.PI) * -1) + 180) - degree_click + degree_start;
-      if (degree_raw % 30 <= 8) {
-        degree = degree_raw - degree_raw % 30;
+      var degree_raw = ((radians * (180 / Math.PI) * -1) + 180) - degree_click + degree_start[target.id];
+      if (Math.abs(degree_raw) % 30 <= 8) {
+        degree = degree_raw - (degree_raw % 30);
       } else {
         degree = degree_raw;
       }
-      target.css('-moz-transform', 'rotate(' + degree + 'deg)');
-      target.css('-moz-transform-origin', '50% 50%');
-      target.css('-webkit-transform', 'rotate(' + degree + 'deg)');
-      target.css('-webkit-transform-origin', '50% 50%');
-      target.css('-o-transform', 'rotate(' + degree + 'deg)');
-      target.css('-o-transform-origin', '50% 50%');
-      target.css('-ms-transform', 'rotate(' + degree + 'deg)');
-      target.css('-ms-transform-origin', '50% 50%');
+      $(target).css('-moz-transform', 'rotate(' + degree + 'deg)');
+      $(target).css('-moz-transform-origin', '50% 50%');
+      $(target).css('-webkit-transform', 'rotate(' + degree + 'deg)');
+      $(target).css('-webkit-transform-origin', '50% 50%');
+      $(target).css('-o-transform', 'rotate(' + degree + 'deg)');
+      $(target).css('-o-transform-origin', '50% 50%');
+      $(target).css('-ms-transform', 'rotate(' + degree + 'deg)');
+      $(target).css('-ms-transform-origin', '50% 50%');
     }
   });
 })
 
 $(document).ready(function() {
+  $('.in').html('<div class="box textbox i12"><div class="text">Do</div></div><div class="box textbox i01"><div class="text">Do#</div></div><div class="box textbox i02"><div class="text">Ré</div></div><div class="box textbox i03"><div class="text">Ré#</div></div><div class="box textbox i04"><div class="text">Mi</div></div><div class="box textbox i05"><div class="text">Fa</div></div><div class="box textbox i06"><div class="text">Fa#</div></div><div class="box textbox i07"><div class="text">Sol</div></div><div class="box textbox i08"><div class="text">Sol#</div></div><div class="box textbox i09"><div class="text">La</div></div><div class="box textbox i10"><div class="text">La#</div></div><div class="box textbox i11"><div class="text">Si</div></div>');
+  $('.tickbox').html('<div class="box tickbox t12"><div class="tick"></div></div><div class="box tickbox t01"><div class="tick"></div></div><div class="box tickbox t02"><div class="tick"></div></div><div class="box tickbox t03"><div class="tick"></div></div><div class="box tickbox t04"><div class="tick"></div></div><div class="box tickbox t05"><div class="tick"></div></div><div class="box tickbox t06"><div class="tick"></div></div><div class="box tickbox t07"><div class="tick"></div></div><div class="box tickbox t08"><div class="tick"></div></div><div class="box tickbox t09"><div class="tick"></div></div><div class="box tickbox t10"><div class="tick"></div></div><div class="box tickbox t11"><div class="tick"></div></div>');
+  $('#cheat_section .canvas .fond .in').html('<div class="box textbox i12"><div class="text">C</div></div><div class="box textbox i01"><div class="text">C#</div></div><div class="box textbox i02"><div class="text">D</div></div><div class="box textbox i03"><div class="text">D#</div></div><div class="box textbox i04"><div class="text">E</div></div><div class="box textbox i05"><div class="text">F</div></div><div class="box textbox i06"><div class="text">F#</div></div><div class="box textbox i07"><div class="text">G</div></div><div class="box textbox i08"><div class="text">G#</div></div><div class="box textbox i09"><div class="text">A</div></div><div class="box textbox i10"><div class="text">A#</div></div><div class="box textbox i11"><div class="text">B</div></div>');
 })
