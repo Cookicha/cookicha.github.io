@@ -59,14 +59,6 @@ $(function() {
   });
 })
 
-function disable(e) {
-  e.preventDefault();
-  e.stopPropagation();
-}
-document.querySelector('.in').addEventListener('touchmove', disable, {
-  passive: false
-});
-
 $(document).ready(function() {
   $('.in').html('<div class="box textbox i12"><div class="text">Do</div></div><div class="box textbox i01"><div class="text">Do#</div></div><div class="box textbox i02"><div class="text">Ré</div></div><div class="box textbox i03"><div class="text">Ré#</div></div><div class="box textbox i04"><div class="text">Mi</div></div><div class="box textbox i05"><div class="text">Fa</div></div><div class="box textbox i06"><div class="text">Fa#</div></div><div class="box textbox i07"><div class="text">Sol</div></div><div class="box textbox i08"><div class="text">Sol#</div></div><div class="box textbox i09"><div class="text">La</div></div><div class="box textbox i10"><div class="text">La#</div></div><div class="box textbox i11"><div class="text">Si</div></div>');
   $('.tickbox').html('<div class="box tickbox t12"><div class="tick"></div></div><div class="box tickbox t01"><div class="tick"></div></div><div class="box tickbox t02"><div class="tick"></div></div><div class="box tickbox t03"><div class="tick"></div></div><div class="box tickbox t04"><div class="tick"></div></div><div class="box tickbox t05"><div class="tick"></div></div><div class="box tickbox t06"><div class="tick"></div></div><div class="box tickbox t07"><div class="tick"></div></div><div class="box tickbox t08"><div class="tick"></div></div><div class="box tickbox t09"><div class="tick"></div></div><div class="box tickbox t10"><div class="tick"></div></div><div class="box tickbox t11"><div class="tick"></div></div>');

@@ -113,6 +113,7 @@ h1 {
   rotate: 0deg;
   cursor: grab;
   z-index: 100;
+  touch-action:none;
 }
 
 .in .text {
