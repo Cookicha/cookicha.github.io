@@ -3,15 +3,15 @@ var dragging = false;
 var radians_click;
 var degree_click;
 var degree_start = {
-  'cheat':0,
-  'intervals':0,
+  'cheat': 0,
+  'intervals': 0,
   'major': 0,
   'major5': 0,
-  'major_chords':0,
+  'major_chords': 0,
   'minor': 0,
   'minor5': 0,
   'blues': 0,
-  'minor_chords':0
+  'minor_chords': 0
 }
 var center_x;
 var center_y;
@@ -58,6 +58,14 @@ $(function() {
     }
   });
 })
+
+function disable(e) {
+  e.preventDefault();
+  e.stopPropagation();
+}
+document.querySelector('.in').addEventListener('touchmove', disable, {
+  passive: false
+});
 
 $(document).ready(function() {
   $('.in').html('<div class="box textbox i12"><div class="text">Do</div></div><div class="box textbox i01"><div class="text">Do#</div></div><div class="box textbox i02"><div class="text">Ré</div></div><div class="box textbox i03"><div class="text">Ré#</div></div><div class="box textbox i04"><div class="text">Mi</div></div><div class="box textbox i05"><div class="text">Fa</div></div><div class="box textbox i06"><div class="text">Fa#</div></div><div class="box textbox i07"><div class="text">Sol</div></div><div class="box textbox i08"><div class="text">Sol#</div></div><div class="box textbox i09"><div class="text">La</div></div><div class="box textbox i10"><div class="text">La#</div></div><div class="box textbox i11"><div class="text">Si</div></div>');
