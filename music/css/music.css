@@ -1,17 +1,12 @@
 * {
   margin: 0;
-  -webkit-user-select: none;
-  /* Safari */
-  -ms-user-select: none;
-  /* IE 10 and IE 11 */
-  user-select: none;
-  /* Standard syntax */
   color: #555;
   z-index: inherit;
 }
 
 body {
   font-family: Quicksand;
+  background: #eee;
 }
 
 section {
@@ -23,11 +18,21 @@ section {
   align-items: center;
   align-content: center;
   overflow: hidden;
-  padding: 12vh 0;
+  padding: 10vh 0;
 }
 
-
 h1 {
+  font-family: Modak;
+  color: white;
+  text-align: center;
+  margin: 12vh 20vw 0 20vw;
+  font-size: 8em;
+  line-height: 1em;
+  font-weight: 100;
+  text-shadow: 3px 4px 0 #aaa;
+}
+
+h2 {
   background: white;
   color: #ccc;
   width: 100%;
@@ -35,13 +40,184 @@ h1 {
   padding: 1em 0;
   font-size: 2.4em;
 }
+h3 {
+  font-weight:bold;
+  text-align: center;
+  font-size: 2.4em;
+  line-height: 1.4em;
+  border-radius: 0;
+  margin: 0;
+  color:white;
+  margin-top: 6vh;
+}
+p {
+  width: 60%;
+  max-width: 960px;
+  text-align: justify;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: #555;
+  border-radius: 0;
+  margin: 0;
+}
 
+b {
+  font-weight: 900;
+  /* Fallback: Set a background color. */
+  background-color: #ff0068;
+  /* Create the gradient. */
+  background-image: linear-gradient(90deg, rgba(255, 158, 0, 1) 0%, rgba(255, 0, 224, 1) 50%, rgba(255, 0, 104, 1) 80%);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 900;
+  /* Fallback: Set a background color. */
+  background-color: rgb(0, 173, 163);
+  /* Create the gradient. */
+  background-image: linear-gradient(90deg, rgba(0, 173, 163, 1) 0%, rgba(24, 113, 174, 1) 20%, rgba(37, 51, 204, 1) 74%, rgba(121, 0, 219, 1) 100%);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a:hover {
+  background-image: linear-gradient(90deg, rgba(255, 158, 1, 1) 0%, rgba(255, 115, 0, 1) 100%);
+}
+sup {
+  line-height: 1em;
+}
+img.illustration {
+  width: 60%;
+  max-width: 960px;
+  height:30vh;
+  background: aqua;
+  border: none;
+  box-shadow: none;
+}
+.bandeau {
+  width:100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 10vh;
+}
+.table {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 60%;
+  max-width: 960px;
+  user-select: none;
+}
+#barre_modes {
+  height:2em;
+  width: 60%;
+  max-width: 960px;
+  background-image: linear-gradient(90deg, #663f00 0%, #ffaf2e 100%);
+
+}
+.table .column {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+#diesebemol .column {
+  width: 7%;
+  min-width: 40px;
+  margin: 2vh 0;
+}
+
+#diesebemol .column div {
+  background: white;
+  color: #555;
+  font-size: 1.2em;
+  text-align: center;
+  width: 100%;
+  line-height: 3em;
+  border-radius: 10px;
+}
+
+#diesebemol .column .titre {
+  font-weight: 900;
+  background-image: linear-gradient(120deg, rgba(255, 158, 0, 1) 10%, rgba(255, 0, 224, 1) 50%, rgba(255, 0, 104, 1) 90%);
+  color: white;
+}
+#modes_table {
+  justify-content: space-between;
+  gap:0;
+  width: 60%;
+  max-width: 960px;
+}
+#modes_table .column {
+}
+#modes_table .column div {
+  font-size: 1.2em;
+  text-align: center;
+  width: 100%;
+  line-height: 3em;
+  border-radius: 10px;
+  font-weight: 900;
+}
+#modes_table .column #locrian {color:#663f00;}
+#modes_table .column #phrygian {color:#805004;}
+#modes_table .column #aeolian {color:#996209;}
+#modes_table .column #dorian {color:#b37510;}
+#modes_table .column #mixolydian {color:#cc8818;}
+#modes_table .column #ionian {color:#e69b22;}
+#modes_table .column #lydian {color:#ffaf2e;}
+
+#blues_chords {
+  gap:0;
+}
+#blues_chords .column {
+  width: 10%;
+  min-width: 40px;
+  margin: 2px;
+}
+#blues_chords .column div {
+  background: white;
+  color: #555;
+  font-size: 1.6em;
+  text-align: center;
+  width: 100%;
+  line-height: 3em;
+  border-radius: 10px;
+}
 .canvas {
-  width: 60vh;
-  height: 60vh;
+  width: 50vh;
+  height: 50vh;
+  margin: 4 vh 0;
   position: relative;
   max-width: 96vw;
   max-height: 96vw;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
 }
 
 .box {
@@ -66,8 +242,21 @@ h1 {
   left: 48.5%;
   top: 6.5%;
 }
-  .t12 .tick {box-shadow: 0 0 0 3px #fff, 0 0 0 4px #555;}
-.tick.blues {background: blue;}
+
+.t12 .tick, #modes_canvas .t09 .tick, #cheat_canvas .t09 .tick {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #555;
+  background-image: linear-gradient(120deg, rgba(255, 158, 0, 1) 22%, rgba(255, 0, 224, 1) 50%, rgba(255, 0, 104, 1) 76%);
+}
+
+.tick.blues {
+  background: blue;
+}
+
+#base_canvas .tick {
+  box-shadow: none;
+  background-image: none;
+  display: none;
+}
 
 .text {
   vertical-align: sub;
@@ -78,6 +267,7 @@ h1 {
   font-size: 2em;
   line-height: 0.9em;
 }
+
 .exp {
   font-size: 0.6em;
   vertical-align: super;
@@ -85,6 +275,7 @@ h1 {
 
 .text.blues {
   rotate: 180deg;
+  color:blue;
 }
 
 .out .text {
@@ -113,7 +304,7 @@ h1 {
   rotate: 0deg;
   cursor: grab;
   z-index: 100;
-  touch-action:none;
+  touch-action: none;
 }
 
 .in .text {
@@ -167,23 +358,64 @@ h1 {
 .c12, .t12, .i12, .o12 {
   rotate: 0deg;
 }
-#intervals_section .out .text {
+
+#intervals_canvas .out .text {
   font-size: 1.4em;
 }
-#major_section .out .text, #major5_section .out .text, #minor_section .out .text, #minor5_section .out .text, #blues_section .out .text {
+
+#major_canvas .out .text, #major5_canvas .out .text, #minor_canvas .out .text, #minor5_canvas .out .text, #blues_canvas .out .text {
   font-size: 1.8em;
 }
 
-/* #intervals_section .out .o04 .text, #intervals_section .out .o05 .text, #intervals_section .out .o06 .text, #intervals_section .out .o07 .text, #intervals_section .out .o08 .text {rotate:180deg;} */
-  #cheat_section .t01, #cheat_section .t06, #cheat_section .t08, #cheat_section .t10  {display: none;}
-  #cheat_section .t03 .tick {background: #acd;}
-  #cheat_section .t05 .tick, #cheat_section .t11 .tick {background: #bbb;}
-  #cheat_section .t12 .tick, #cheat_section .t09 .tick {box-shadow: 0 0 0 3px #fff, 0 0 0 4px #555;}
-  #major_section .t01, #major_section .t03, #major_section .t06, #major_section .t08, #major_section .t10  {display: none;}
-  #major5_section .t01, #major5_section .t03, #major5_section .t06, #major5_section .t08, #major5_section .t10, #major5_section .t05, #major5_section .t11  {display: none;}
-  #minor_section .t01, #minor_section .t04, #minor_section .t06, #minor_section .t09, #minor_section .t11  {display: none;}
-  #minor5_section .t01, #minor5_section .t02, #minor5_section .t04, #minor5_section .t06, #minor5_section .t08, #minor5_section .t09, #minor5_section .t11  {display: none;}
-  #blues_section .t01, #blues_section .t02, #blues_section .t04, #blues_section .t08, #blues_section .t09, #blues_section .t11  {display: none;}
+/* #intervals_canvas .out .o04 .text, #intervals_canvas .out .o05 .text, #intervals_canvas .out .o06 .text, #intervals_canvas .out .o07 .text, #intervals_canvas .out .o08 .text {rotate:180deg;} */
+#cheat_canvas .t01, #cheat_canvas .t06, #cheat_canvas .t08, #cheat_canvas .t10 {
+  display: none;
+}
+
+#cheat_canvas .t03 .tick {
+  background: #acd;
+}
+
+#cheat_canvas .t05 .tick, #cheat_canvas .t11 .tick {
+  background: #bbb;
+}
+
+#cheat_canvas .t12 .tick, #cheat_canvas .t09 .tick, #modes_canvas .t09 .tick {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #555;
+}
+
+#major_canvas .t01, #major_canvas .t03, #major_canvas .t06, #major_canvas .t08, #major_canvas .t10 {
+  display: none;
+}
+
+#major5_canvas .t01, #major5_canvas .t03, #major5_canvas .t06, #major5_canvas .t08, #major5_canvas .t10, #major5_canvas .t05, #major5_canvas .t11 {
+  display: none;
+}
+
+#minor_canvas .t01, #minor_canvas .t04, #minor_canvas .t06, #minor_canvas .t09, #minor_canvas .t11 {
+  display: none;
+}
+
+#minor5_canvas .t01, #minor5_canvas .t02, #minor5_canvas .t04, #minor5_canvas .t06, #minor5_canvas .t08, #minor5_canvas .t09, #minor5_canvas .t11 {
+  display: none;
+}
+
+#blues_canvas .t01, #blues_canvas .t02, #blues_canvas .t04, #blues_canvas .t08, #blues_canvas .t09, #blues_canvas .t11 {
+  display: none;
+}
+#modes_canvas .t01, #modes_canvas .t03, #modes_canvas .t06, #modes_canvas .t08, #modes_canvas .t10 {
+  display: none;
+}
+#chord_major_canvas .t01, #chord_major_canvas .t02, #chord_major_canvas .t03,#chord_major_canvas .t05,#chord_major_canvas .t06,#chord_major_canvas .t08,#chord_major_canvas .t09,#chord_major_canvas .t10,#chord_major_canvas .t11 {display: none;}
+#chord_minor_canvas .t01, #chord_minor_canvas .t02, #chord_minor_canvas .t04,#chord_minor_canvas .t05,#chord_minor_canvas .t06,#chord_minor_canvas .t08,#chord_minor_canvas .t09,#chord_minor_canvas .t10,#chord_minor_canvas .t11 {display: none;}
+#chord_aug_canvas .t01, #chord_aug_canvas .t02, #chord_aug_canvas .t03,#chord_aug_canvas .t05,#chord_aug_canvas .t06,#chord_aug_canvas .t07,#chord_aug_canvas .t09,#chord_aug_canvas .t10,#chord_aug_canvas .t11 {display: none;}
+#chord_dim_canvas .t01, #chord_dim_canvas .t02, #chord_dim_canvas .t04,#chord_dim_canvas .t05,#chord_dim_canvas .t07,#chord_dim_canvas .t08,#chord_dim_canvas .t09,#chord_dim_canvas .t10,#chord_dim_canvas .t11 {display: none;}
+#major_chords_canvas .t01, #major_chords_canvas .t03, #major_chords_canvas .t06, #major_chords_canvas .t08, #major_chords_canvas .t10 {
+  display: none;
+}
+#minor_chords_canvas .t01, #minor_chords_canvas .t04, #minor_chords_canvas .t06, #minor_chords_canvas .t09, #minor_chords_canvas .t11 {
+  display: none;
+}
 /*
 #infos {
  display:flex;

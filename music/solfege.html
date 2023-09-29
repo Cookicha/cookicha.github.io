@@ -11,13 +11,85 @@
   <link rel="stylesheet" href="css/music.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Modak' rel='stylesheet'>
 </head>
 
 <body>
   <main>
-    <section id="cheat_section">
-      <h1>Cheat Sheet</h1>
-      <div class="canvas">
+    <section>
+      <h1>Concis–précis de théorie musicale</h1>
+    </section>
+    <section>
+      <p>Ceci est un essai de <b>pédagogie musicale interactive</b>. Son but est de permettre aux curieux de comprendre les bases de la musique pour être à l'aise dans leur instrument et amener l'improvisation dans leur zone de confort. J'y explique
+        les <a href="#intervals_section">intervalles</a>, les <a href="#scales_section">gammes</a>, les <a href="#modes_section">modes</a> et les <a href="#chords_section">accords</a>, dans cet ordre, avec à la fin un petit <a
+          href="#bilan_section">bilan</a>. Normalement, c'est hyper simple. Attention je n'aborde pas le <b>rythme</b> qui est également extrêmement important. Sorry.</p>
+      <p>Let's go.</p>
+    </section>
+    <section id="intervals_section">
+      <h2>Intervalles</h2>
+      <p>En musique occidentale, depuis quelques siècles, on utilise <b>12 notes différentes</b>. Ce sont les 12 notes du piano (blanches et noires), les 12 cases de la guitare. Ces douze, on les appelle aussi <b>demi-tons</b> (quand on dit « note »
+        souvent c'est moins clair, alors que « demi-ton », c'est précis).</p>
+      <p>Sept de ces demi-tons ont un nom à eux : Do, Ré, Mi, Fa, Sol, La, et Si. Les cinq autres sont nommés par le nom de leur voisin associé à une altération. On utilise <b>#</b> pour dire « un demi-ton plus aigu » et <b>♭</b> pour dire « un
+        demi-ton plus grave ». Ces cinq demi-tons sont donc : Do#, Ré#, Fa#, Sol#, La# <b>ou bien</b> Ré♭, Mi♭, Sol♭, La♭ et Si♭. C'est pas les mêmes noms, mais c'est les mêmes notes. C'est juste que parfois on parle en ♭, et parfois en #, selon ce
+        qui est le plus pratique, selon la gamme.</p>
+      <p>Voici donc deux fois la même chose, en dièse et en bémol : </p>
+      <div class="table" id="diesebemol">
+        <div class="column">
+          <div class="titre">#</div>
+          <div class="titre">♭</div>
+        </div>
+        <div class="column">
+          <div class="spark">Do</div>
+          <div class="spark">Do</div>
+        </div>
+        <div class="column">
+          <div class="spark">Do#</div>
+          <div class="spark">Ré♭</div>
+        </div>
+        <div class="column">
+          <div class="spark">Ré</div>
+          <div class="spark">Ré</div>
+        </div>
+        <div class="column">
+          <div class="spark">Ré#</div>
+          <div class="spark">Mi♭</div>
+        </div>
+        <div class="column">
+          <div class="spark">Mi</div>
+          <div class="spark">Mi</div>
+        </div>
+        <div class="column">
+          <div class="spark">Fa</div>
+          <div class="spark">Fa</div>
+        </div>
+        <div class="column">
+          <div class="spark">Fa#</div>
+          <div class="spark">Sol♭</div>
+        </div>
+        <div class="column">
+          <div class="spark">Sol</div>
+          <div class="spark">Sol</div>
+        </div>
+        <div class="column">
+          <div class="spark">Sol#</div>
+          <div class="spark">La♭</div>
+        </div>
+        <div class="column">
+          <div class="spark">La</div>
+          <div class="spark">La</div>
+        </div>
+        <div class="column">
+          <div class="spark">La#</div>
+          <div class="spark">Si♭</div>
+        </div>
+        <div class="column">
+          <div class="spark">Si</div>
+          <div class="spark">Si</div>
+        </div>
+      </div>
+      <p>Mais comme ça se répète, la même chose en plus aigu d'un côté et en plus grave de l'autre, je préfère le représenter sur un cercle. Et pour me simplifier la vie, j'ai tout écrit en #. Pas de ♭. Donc voilà ma représentation des douze
+        demi-tons. <b>Le cercle tourne</b> pour représenter que <b>aucun demi-ton n'est spécial</b> dans l'absolu. Ils sont tous à « égale distance » les uns des autres.</p>
+      <div class="canvas" id="base_canvas">
         <div class="box fond">
           <div class="circle"></div>
           <div class="box out">
@@ -48,14 +120,18 @@
           </div>
           <div class="box tickbox">
           </div>
-          <div class="in" id="cheat">
+          <div class="in" id="base">
           </div>
         </div>
-    </section>
-    <section id="intervals_section">
-      <h1>Intervalles</h1>
-      <div style="text-align:center;font-size:1.6em;">À partir la<br /><b>tonique</b><br />&darr;</div>
-      <div class="canvas">
+      </div>
+      <p>Aucun demi-ton n'est spécial dans l'absolu, mais dans le relatif, si : <b>la musicalité naît de la distance qui sépare les notes jouées</b>. On appelle cette distance un <b>intervalle</b>. Deux paires de notes distantes du même intervalle
+        évoqueront la même musicalité, la même émotion. Par exemple, Do-Sol fera le même effet que La-Mi.</p>
+      <p>Ainsi ce sont les <b>intervalles</b> qui sont porteurs de sens en musique, plutôt que les notes absolues. Ils ont donc tous des noms, que l'on peut retrouver sur le cercle, ci-dessous. Tu peux faire tourner le cercle pour voir le nom de tous
+        les intervalles avec toutes les notes. Le plus petit, un intervalle de zéro demi-tons, est appelé un <i>unisson</i>, ensuite un intervalle de un demi-ton est appelé une <i>seconde mineure</i>, etc, jusqu'à un intervalle de 12 demi-tons qui
+        est une <i>octave</i>. Ça continue après (neuvièmes, onzièmes, treizièmes, etc) mais c'est bien moins utilisé.</p>
+      <p>À noter que le <i>triton</i> s'appelle aussi <i>quarte augmentée</i>, <i>quinte diminuée</i> ou même <i>blue note</i> selon le contexte.
+      <p style="text-align:center;">On définit l'intervalle à partir de <br /><b>cette note</b><br />&darr;</p>
+      <div class="canvas" id="intervals_canvas">
         <div class="box fond">
           <div class="circle"></div>
           <div class="box out">
@@ -101,10 +177,38 @@
           <div class="in" id="intervals">
           </div>
         </div>
+      </div>
+      <p>Tu peux les essayer sur ton biniou. Certains intervalles sonnent plus harmonieux, d'autres moins. L'unisson, forcément, sonne parfaitement harmonieux, mais on s'ennuie beaucoup. L'octave, c'est une forme d'harmonie parfaite aussi, un poil
+        plus intéressant. Ensuite, c'est la quinte, tellement harmonieuse que c'est sur elle qu'a été construit tout le système musical dont il est question ici, puis la quarte, la tierce majeure, la tierce mineure, et blablabla peu importe.</p>
+      <p>On peut dire que certains intervalles, les moins harmonieux, vont créer une <b>tension</b>, et que les plus harmonieux vont la <b>résoudre</b>, et c'est avec ça qu'on va jouer en construisant et utilisant des gammes, très bientôt.</p>
+      <p>Derrière tout ça, notre oreille détecte en fait des superpositions d'ondes sonores, des rapports mathématiques entre les fréquences (1/2 pour l'octave, 2/3 pour la quinte, 3/4 pour la quarte etc) mais mieux vaut se focaliser sur ce que nous
+        chante l'oreille, plutôt que d'analyser les vibrations de l'air à l'oscilloscope.</p>
+      <p>&#9755; Pour plus d'infos sur les intervalles et le système à 12 demi-tons, voir <a href="https://www.youtube.com/watch?v=1Hqm0dYKUx4" target="_blank">cette vidéo</a> de 4 minutes. VOSTF available.</p>
     </section>
-    <section id="major_section">
-      <h1>Gamme majeure</h1>
-      <div class="canvas">
+    <section id="scales_section">
+      <h2>Gammes</h2>
+      <p>Les mélodies, ou les impros, n'utilisent en général pas tous les 12 demi-tons disponibles, parce que notre oreille sait comparer les notes qu'elle entend non seulement avec celles qui sont jouées en même temps, mais aussi celles qu'elle a
+        perçues juste avant et un peu avant encore. Si on utilise peu précautionneusement les 12 demi-tons, toute la circonférence de notre cercle, ça part dans tous les sens, et c'est moche.</p>
+      <p>Alors on réduit le nombre de notes qu'on s'autorise, et on constitue une <b>gamme</b>. Les gammes les plus utilisées (gamme majeure, gamme mineure) contiennent 7 notes. On appelle ces gammes les gammes <b>diatoniques</b> mais je ne sais pas
+        pourquoi. Ça s'oppose à la gamme <b>chromatique</b>, qui est constituée des 12 demi-tons qu'on connaît (mais c'est un peu une « non-gamme » puisqu'il y a tout dedans). Il y a aussi des gammes <b>pentatoniques</b>, qui contiennent 5 notes,
+        souvent utilisées dans les impros/solos. On verra la gamme <b>blues</b> aussi.</p>
+      <p>Certaines musiques, dans tous les styles, changent de gamme en cours de route, utilisent des notes hors gamme, ou sont construites sur des gammes inhabituelles. Mais dans le cas général, </p>
+      <p>Les gammes sont construites à partir d'une note de base, qu'on appelle la <b>tonique</b> (ou fondamentale, root in english). En La majeur, c'est un La. En Ré mineur, c'est un Ré. Facile. Ce sera la note qui va sonner le plus harmonieux, qui
+        va résoudre toutes les tensions que vont créer les autres notes. Souvent les morceaux finissent sur cette note, qui donne un fort sentiment de résolution, et de même tu essaieras de finir tes solos sur la tonique pour rendre l'espace musical
+        propre pour la personne suivante.</p>
+      <p>Ensuite on rajoute les autres notes, celles qui sont indiquées sur les cercles plus bas ! C'est bête comme chou. On prend celles de la gamme <b>majeure</b> pour une ambiance plutôt <b>lumineuse</b>, et celles de la gamme <b>mineure</b> pour
+        une ambiance un peu plus <b>obscure</b>. On verra ça plus en détail dans la section sur les <a href="#modes">modes</a>. Mais on utilise quelle gamme, la diatonique ou la pentatonique ? En fait les gammes pentatoniques ne sont pas utilisées
+        pour composer des morceaux, elles sont un peu trop pauvres. Elles servent plutôt à improviser des solos. Quand on dit qu'un morceau est dans « telle gamme », c'est la gamme diatonique, à 7 notes. En revanche, quand tu vas improviser ton solo,
+        tu peur utiliser la gamme pentatonique correspondant à la gamme du morceau, ce sera la même mais en « simplifié », avec moins de notes, mais des notes qui ont moins de chances de sonner mal entre elles. Tu peux un peu plus taper au hasard du
+        coup.</p>
+      <p>En effet, tout comme la tonique a son effet de résolution des tensions, chaque note de la gamme va avoir sa couleur, son émotion, mais qui va ressortir différemment selon l'enchaînement des notes. En simplifiant, on peut dire que l'oreille
+        entend à la fois :<br />- l'intervalle entre la note jouée par le soliste et la fondamentale du morceau, toujours omniprésente,<br />- l'intervalle entre la note jouée par le soliste et la note jouée par la basse (la fondamentale de l'accord
+        de cette mesure, si t'as pas compris c'est pas grave),<br />- et l'intervalle entre la note actuellement jouée par le solite et la note jouée juste avant !</p>
+      <p>Du coup, il faut pratiquer les gammes en écoutant ce que ça donne, comment les intervalles discutent entre eux, comment certains s'appellent les uns les autres et comment ne pas répondre à cet appel crée une tension qui donne ensuite une
+        encore meilleure résolution, ou parfois non. Il faut explorer, sans trop réfléchir, en faisant confiance à son oreille, et puis se planter un paquet de fois, même si on connaît par coeur les doigtés de la gamme, en choisissant un intervalle
+        qui ne donne pas ce qu'on voulait.</p>
+      <h3>Gamme majeure</h3>
+      <div class="canvas" id="major_canvas">
         <div class="box fond">
           <div class="circle"></div>
           <div class="box out">
@@ -149,10 +253,10 @@
           <div class="in" id="major">
           </div>
         </div>
-    </section>
-    <section id="major5_section">
-      <h1>Gamme majeure pentatonique</h1>
-      <div class="canvas">
+      </div>
+      <p>Dans la gamme majeure, on prend les <b>intervalles majeurs</b> à chaque fois (c'est un peu pour ça qu'ils ont ce nom-là), en plus de la tonique, la quarte et la quinte. Y'a pas de piège. </p>
+      <h3>Gamme majeure pentatonique</h3>
+      <div class="canvas" id="major5_canvas">
         <div class="box fond">
           <div class="circle"></div>
           <div class="box out">
@@ -195,58 +299,10 @@
           <div class="in" id="major5">
           </div>
         </div>
-    </section>
-    <section id="major_chords_section">
-      <h1>Accords gamme majeure</h1>
-      <div class="canvas">
-        <div class="box fond">
-          <div class="circle"></div>
-          <div class="box out">
-            <div class="box textbox o12">
-              <div class="text">I</div>
-            </div>
-            <div class="box textbox o01">
-              <div class="text"></div>
-            </div>
-            <div class="box textbox o02">
-              <div class="text">ii</div>
-            </div>
-            <div class="box textbox o03">
-              <div class="text"></div>
-            </div>
-            <div class="box textbox o04">
-              <div class="text">iii</div>
-            </div>
-            <div class="box textbox o05">
-              <div class="text">IV</div>
-            </div>
-            <div class="box textbox o06">
-            </div>
-            <div class="box textbox o07">
-              <div class="text">V</div>
-            </div>
-            <div class="box textbox o08">
-              <div class="text"></div>
-            </div>
-            <div class="box textbox o09">
-              <div class="text">vi</div>
-            </div>
-            <div class="box textbox o10">
-              <div class="text"></div>
-            </div>
-            <div class="box textbox o11">
-              <div class="text">vii°</div>
-            </div>
-          </div>
-          <div class="box tickbox">
-          </div>
-          <div class="in" id="major_chords">
-          </div>
-        </div>
-    </section>
-    <section id="minor_section">
-      <h1>Gamme mineure naturelle</h1>
-      <div class="canvas">
+      </div>
+      <p>Pour la <b>pentatonique</b> majeure, on fait la même sans la <b>quarte</b> et sans la <b>septième</b>.</p>
+      <h3>Gamme mineure naturelle</h3>
+      <div class="canvas" id="minor_canvas">
         <div class="box fond">
           <div class="circle"></div>
           <div class="box out">
@@ -291,10 +347,12 @@
           <div class="in" id="minor">
           </div>
         </div>
-    </section>
-    <section id="minor5_section">
-      <h1>Gamme mineure pentatonique</h1>
-      <div class="canvas">
+      </div>
+      <p>Pour la gamme mineure, on prend tonique, quarte et quinte, et les <b>intervalles mineurs</b>. Sauf la <b>seconde</b>, qui est <b>majeure</b>. Parce que majeur, mineur, c'est pas une dichotomie, faut pas s'y fier. On verra ça dans les <a
+          href="#modes">modes</a>.</p>
+      <p>À noter au cas où, on appelle cette gamme « mineure <i>naturelle</i> » parce qu'il y a d'autres gammes mineures, mais celle-là c'est la « vraie ». Je crois. Non ?</p>
+      <h3>Gamme mineure pentatonique</h3>
+      <div class="canvas" id="minor5_canvas">
         <div class="box fond">
           <div class="circle"></div>
           <div class="box out">
@@ -335,10 +393,10 @@
           <div class="in" id="minor5">
           </div>
         </div>
-    </section>
-    <section id="blues_section">
-      <h1>Gamme blues</h1>
-      <div class="canvas">
+      </div>
+      <p>La gamme mineure pentatonique, c'est la gamme mineure naturelle sans la <b>seconde</b> (ça tombe bien, elle était majeure, allez, zou !) et sans la <b>sixte</b>.</p>
+      <h3>Gamme blues</h3>
+      <div class="canvas" id="blues_canvas">
         <div class="box fond">
           <div class="circle"></div>
           <div class="box out">
@@ -383,10 +441,334 @@
           </div>
         </div>
       </div>
+      <p>La gamme blues, ça sert à se toucher. Essaye. C'est grâce à cette blue note, la note du blues, qui peut être très dissonante avec certaines notes de la gamme mais qui amène une belle tension qui fait plaisir à résoudre. Autrement, la gamme
+        blues c'est juste une <b>pentatonique mineure</b> à laquelle on a rajouté un <b>triton</b> (blue note).</p>
     </section>
-    <section id="major_chords_section">
-      <h1>Accords gamme mineure naturelle</h1>
-      <div class="canvas">
+    <section id="modes_section">
+      <h2>Modes</h2>
+      <p>Bon, tu commences à savoir pas mal de trucs. Je vais pas en faire trop sur les modes, mais il faut que je te dise quand même un truc : les gammes diatonique majeures et mineures, c'est les mêmes en fait, mais en décalé. C'est pour ça que je
+        dois te parler des modes.</p>
+      <p>En fait on parle de gamme majeure et gamme mineure, mais on devrait parler de <b>mode</b> majeur et <b>mode</b> mineur de la même gamme. Si tu regardes les notes de la gamme de Do majeur, tu vas voir que c'est les mêmes que celles de la
+        gamme de La mineur. On dit que La est la <b>relative mineure</b> de Do. Ces deux gammes, ou modes, contiennent les mêmes notes, mais elles ont des rôles différents les unes par rapport aux autres. Ça change tout ! Et ça va donner au morceau
+        une émotion, une luminosité différente.</p>
+      <h3>Gammes majeure et mineure superposées</h3>
+      <div class="canvas" id="modes_canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+              <div class="text">Tonique<br />gamme majeure</div>
+            </div>
+            <div class="box textbox o01">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o02">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o03">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o04">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o05">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o06">
+            </div>
+            <div class="box textbox o07">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o08">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o09">
+              <div class="text">Tonique<br />gamme mineure</div>
+            </div>
+            <div class="box textbox o10">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o11">
+              <div class="text"></div>
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="major_chords">
+          </div>
+        </div>
+      </div>
+      <p>Et on peut faire autant de modes qu'il y a de notes dans la gamme, donc 7, en utilisant chacune des notes comme tonique pour chaque mode différent. Ces modes, il y a différentes façons de les nommer, typiquement ils ont des noms grecs à
+        coucher dehors (genre <i>mixolydien</i>). Mais peu importe, inutile de les apprendre. Ce qui est important, c'est que ces 7 modes se placent sur un spectre du plus sombre au plus lumineux (en terme de ce qu'ils évoquent émotionnellement),
+        avec le mode mineur en 3<sup>e</sup>/7, plutôt côté sombre, et le mode majeur en 6<sup>e</sup>/7, plutôt côté lumineux. Je ne le détaille pas, parce que le camarade David le fait très bien dans <a href="" target="_blank">cette vidéo</a>.</p>
+      <h3>Luminosité des modes</h3>
+      <div class="bandeau">
+        <div class="table" id="modes_table">
+          <div class="column">
+            <div id="locrian">Locrien</div>
+          </div>
+          <div class="column">
+            <div id="phrygian">Phrygien</div>
+          </div>
+          <div class="column">
+            <div id="aeolian">Mineur</div>
+          </div>
+          <div class="column">
+            <div id="dorian">Dorien</div>
+          </div>
+          <div class="column">
+            <div id="mixolydian">Mixolydien</div>
+          </div>
+          <div class="column">
+            <div id="ionian">Majeur</div>
+          </div>
+          <div class="column">
+            <div id="lydian">Lydien</div>
+          </div>
+        </div>
+        <div id="barre_modes"></div>
+      </div>
+      <p>Tout ça pour dire que :<br />&#9755; majeur et mineur, c'est pas des <b>pôles opposés</b> comme le yin et le yang mais plutôt des <b>saveurs sur un continuum</b>,<br />&#9755; comme les modes majeur et mineur utilisent les mêmes notes, on
+        peut jouer la gamme <b>mineure relative sur du majeur</b> et la gamme <b>majeure relative sur du mineur</b>, ça passe, <br />&#9755; les relatives majeure/mineure peuvent vachement nous aider quand on <b>apprend nos gammes</b>.<br />Le reste
+        des modes, on laisse ça aux musiciens.</p>
+    </section>
+    <section id="chords_section">
+      <h2>Accords</h2>
+      <p>Il y a beaucoup à dire sur les accords, mais voyons la base de la base.</p>
+      <p>Quand on ne précise rien d'autre, un <b>accord</b>, c'est <b>trois notes jouées en même temps</b>. Une première (fondamentale, root, tonique, même principe que pour la gamme), une seconde une tierce au-dessus, et une troisième encore une
+        tierce au-dessus, ce qui donne une quinte par rapport à la première. Donc <b>accord = tonique, tierce, quinte</b>. Merci bonsoir.</p>
+      <p>Évidemment, les tierces, il y en a deux : la majeure et la mineure. Il faut choisir. Si on choisit la <b>tierce mineure</b>, ça donne un <b>accord mineur</b>. Si on choisit la <b>tierce majeure</b>, ça donne un <b>accord majeur</b>.</p>
+      <h3>Accord majeur</h3>
+      <div class="canvas" id="chord_major_canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+              <div class="text">T</div>
+            </div>
+            <div class="box textbox o01">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o02">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o03">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o04">
+              <div class="text">3<sup>ce</sup> M</div>
+            </div>
+            <div class="box textbox o05">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o06">
+            </div>
+            <div class="box textbox o07">
+              <div class="text">5<sup>te</sup></div>
+            </div>
+            <div class="box textbox o08">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o09">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o10">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o11">
+              <div class="text"></div>
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="chord_major">
+          </div>
+        </div>
+      </div>
+      <h3>Accord mineur</h3>
+      <div class="canvas" id="chord_minor_canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+              <div class="text">T</div>
+            </div>
+            <div class="box textbox o01">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o02">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o03">
+              <div class="text">3<sup>ce</sup> m</div>
+            </div>
+            <div class="box textbox o04">
+            </div>
+            <div class="box textbox o05">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o06">
+            </div>
+            <div class="box textbox o07">
+              <div class="text">5<sup>te</sup></div>
+            </div>
+            <div class="box textbox o08">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o09">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o10">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o11">
+              <div class="text"></div>
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="chord_minor">
+          </div>
+        </div>
+      </div>
+      <p>Il y a plein de types d'accords, comprenant souvent 3 ou 4 notes. À titre d'exemple, voici les accords <b>augmentés</b> et <b>diminués</b>, l'un construit à partir de deux tierces majeures, et l'autre de deux tierces mineures.</p>
+      <h3>Accord augmenté</h3>
+      <div class="canvas" id="chord_aug_canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+              <div class="text">T</div>
+            </div>
+            <div class="box textbox o01">
+            </div>
+            <div class="box textbox o02">
+            </div>
+            <div class="box textbox o03">
+            </div>
+            <div class="box textbox o04">
+              <div class="text">3<sup>ce</sup> M</div>
+            </div>
+            <div class="box textbox o05">
+            </div>
+            <div class="box textbox o06">
+            </div>
+            <div class="box textbox o07">
+            </div>
+            <div class="box textbox o08">
+              <div class="text">5<sup>te</sup><br />augmentée</div>
+            </div>
+            <div class="box textbox o09">
+            </div>
+            <div class="box textbox o10">
+            </div>
+            <div class="box textbox o11">
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="chord_aug">
+          </div>
+        </div>
+      </div>
+      <h3>Accord diminué</h3>
+      <div class="canvas" id="chord_dim_canvas" style="margin-bottom:10vh;">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+              <div class="text">T</div>
+            </div>
+            <div class="box textbox o01">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o02">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o03">
+              <div class="text">3<sup>ce</sup> m</div>
+            </div>
+            <div class="box textbox o04">
+            </div>
+            <div class="box textbox o05">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o06">
+              <div class="text">5<sup>te</sup><br />diminuée</div>
+            </div>
+            <div class="box textbox o07">
+            </div>
+            <div class="box textbox o08">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o09">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o10">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o11">
+              <div class="text"></div>
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="chord_dim">
+          </div>
+        </div>
+      </div>
+      <p>Mais pourquoi on joue parfois un accord majeur et parfois un accord mineur ? Comment on choisit ? Est-ce qu'on prend des accords majeurs pour les morceaux en gamme majeure et récriproquement pour la gamme mineure ? Non. Dans toutes les
+        gammes on mélange des accords majeurs et des accords mineurs pour composer avec les 7 notes qu'on a dans la gamme. Donc on n'a pas vraiment le choix de prendre mineur ou majeur pour chaque accord, on prend la note disponible dans la gamme. Ça
+        nous donne les accords ci-dessous pour les gammes majeures et mineures, qu'on écrit en chiffres romains avec les accords majeurs en majuscules (I), les accords mineurs en minuscules (i), et les accords diminués avec un petit rond (i°).
+      <h3>Accords gamme majeure</h3>
+      <div class="canvas" id="major_chords_canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+              <div class="text">I</div>
+            </div>
+            <div class="box textbox o01">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o02">
+              <div class="text">ii</div>
+            </div>
+            <div class="box textbox o03">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o04">
+              <div class="text">iii</div>
+            </div>
+            <div class="box textbox o05">
+              <div class="text">IV</div>
+            </div>
+            <div class="box textbox o06">
+            </div>
+            <div class="box textbox o07">
+              <div class="text">V</div>
+            </div>
+            <div class="box textbox o08">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o09">
+              <div class="text">vi</div>
+            </div>
+            <div class="box textbox o10">
+              <div class="text"></div>
+            </div>
+            <div class="box textbox o11">
+              <div class="text">vii°</div>
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="major_chords">
+          </div>
+        </div>
+      </div>
+      <h3>Accords gamme mineure</h3>
+      <div class="canvas" id="minor_chords_canvas">
         <div class="box fond">
           <div class="circle"></div>
           <div class="box out">
@@ -431,14 +813,144 @@
           <div class="in" id="minor_chords">
           </div>
         </div>
+      </div>
+      <p>Si je te montre tout ça, c'est pour une raison précise : on peut se baser sur les accords d'un morceau pour faire des solos. Et souvent, ces accords sont exprimés comme ça, en chiffres romains. Voilà par exemple la grille qui montre la
+        succession des 12 accords de l'ultra-classique <b>blues en 12 mesures</b> (<i>twelve-bar blues</i>), pour lequel on peut trouver les accords grâce à notre cercle des accords de la gamme majeure ci-dessus (le 12 bar blues est en majeur puisque
+        le I est en majuscule).
+      <div class="table" id="blues_chords">
+        <div class="column">
+          <div class="spark">I</div>
+          <div class="spark">IV</div>
+          <div class="spark">V</div>
+        </div>
+        <div class="column">
+          <div class="spark">I</div>
+          <div class="spark">IV</div>
+          <div class="spark">V</div>
+        </div>
+        <div class="column">
+          <div class="spark">I</div>
+          <div class="spark">I</div>
+          <div class="spark">I</div>
+        </div>
+        <div class="column">
+          <div class="spark">I</div>
+          <div class="spark">I</div>
+          <div class="spark">I</div>
+        </div>
+      </div>
+      <p>Par exemple, en Sol (« M » ici pour « Majeur ») :</p>
+      <div class="table" id="blues_chords">
+        <div class="column">
+          <div class="spark">Sol M</div>
+          <div class="spark">Do M</div>
+          <div class="spark">Ré M</div>
+        </div>
+        <div class="column">
+          <div class="spark">Sol M</div>
+          <div class="spark">Do M</div>
+          <div class="spark">Ré M</div>
+        </div>
+        <div class="column">
+          <div class="spark">Sol M</div>
+          <div class="spark">Sol M</div>
+          <div class="spark">Sol M</div>
+        </div>
+        <div class="column">
+          <div class="spark">Sol M</div>
+          <div class="spark">Sol M</div>
+          <div class="spark">Sol M</div>
+        </div>
+      </div>
+      <p>Pour faire une impro là-dessus, <b>on joue sur chaque accord les 3 notes de cet accord</b> un peu comme on veut. Même, <b>on peut jouer les 5 notes de la gamme pentatonique</b> correspondant à cet accord. Et toutes les notes qu'on va jouer
+        vont à la fois être en harmonie avec la gamme du morceau, puisqu'on continue d'utiliser uniquement les 7 notes de notre gamme d'origine, et à la fois en harmonie avec les notes de l'accord et de la basse jouées pendant cette mesure. Donc ça
+        claque ! Sinon, on peut à la place jouer la gamme pentatonique relative mineure au lieu de la penta majeure, et même lui préférer la gamme blues, c'est-à-dire la penta mineure à laquelle on rajoute le triton. Par contre, il faut maîtriser ses
+        gammes et bien connaître son morceau !</p>
+      <p>Si on improvise sur ce morceau en gamme penta mineure pour chaque accord, ça donne (« 5m » ici pour « penta mineure ») :</p>
+      <div class="table" id="blues_chords">
+        <div class="column">
+          <div class="spark">Mi 5m</div>
+          <div class="spark">La 5m</div>
+          <div class="spark">Si 5m</div>
+        </div>
+        <div class="column">
+          <div class="spark">Mi 5m</div>
+          <div class="spark">La 5m</div>
+          <div class="spark">Si 5m</div>
+        </div>
+        <div class="column">
+          <div class="spark">Mi 5m</div>
+          <div class="spark">Mi 5m</div>
+          <div class="spark">Mi 5m</div>
+        </div>
+        <div class="column">
+          <div class="spark">Mi 5m</div>
+          <div class="spark">Mi 5m</div>
+          <div class="spark">Mi 5m</div>
+        </div>
+      </div>
     </section>
-
+    <section id="bilan_section">
+      <h2>Bilan</h2>
+      <p>Bon ça fait pas mal de contenus mine de rien. Je finirai avec un petit <b>bilan</b> sur les options pour faire des solos, et un <b>dernier petit cercle magique</b> qui combine une bonne partie des autres en un seul. Je l'ai en raccourci sur
+        un coin de mon téléphone, c'est hyper pratique pour y voir plus clair dans mes morceaux. Mais d'abord sur les solos.</p>
+      <p>Je retiens <b>quatre options</b> pour jouer les solos :</p>
+      <p>&#9755; Simplement jouer sur la <b>gamme diatonique</b>, et se débrouiller <b>à l'oreille</b>, construire son expérience pour ressentir quelle note suivante on a envie d'envoyer. Ça demande de connaître quelques gammes majeures et quelques
+        gammes mineures.</p>
+      <p>&#9755; Jouer plutôt du <b>pentatonique</b>, qui contient moins de notes. C'est particulièrement efficace à la guitare, parce que les guitaristes apprennent des « formes » sur leur manche, et déplacent la forme sur le manche selon la tonique
+        du morceau. Avec les vents, par contre, on peut pas faire ça. Si on passe de Mi à Fa par exemple, les doigtés changement complètement. Par ailleurs je trouve personnellement les gammes pentatoniques un peu.. plates. Pour moi il manque des
+        notes. Mais c'est une question de goût personnel je suppose. Au final, il faut quand même apprendre les gammes pentatoniques, pas forcément plus faciles que les diatoniques.</p>
+      <p>&#9755; Jouer les accords ou la pentatonique sur la <b>grille d'accords</b> du morceau. Probablement la voie royale, ça nécessite non seulement de connaître ses accords ou ses gammes, en plus de très bien connaître son morceau.
+        Personnellement, je pense que je préférerais réussir mes solos au feeling, sans me focaliser sur la grille.</p>
+      <p>&#9755; Jouer <b>tout en mineur</b>, en utilisant la mineure relative des morceaux en majeur. Ça se fait beaucoup, et ça permet d'apprendre moitié moins de gammes. Il faut juste être capable de retrouver les relatives mineures. Cette option
+        se combine bien sûr avec les trois options précédentes.</p>
+      <p>Voilà enfin l'outil-résumé, la <b><i>cheat sheet</i></b> interactive qui combine un peu tout. Ce cercle est utilisable à la fois en <b>majeur</b> (tonique sur le point coloré d'en haut) et en <b>mineur</b> (tonique sur le point coloré de gauche), permet de
+        trouver les notes des gammes <b>pentatoniques</b> (points noirs et points colorés) et des gammes <b>diatoniques</b> (points noirs, points colorés, et points gris). On a aussi le point bleu pour retrouver la gamme <b>blues</b> en la combinant avec les points noirs
+        (utiliser la tonique mineure). Y'a à peu près tout.</p>
+        <p>Ce cercle est aussi disponible sur sa <a href="https://cookicha.hithub.io/music/cheat.html" target="_blank">page dédiée</a>, c'est plus pratique.</p>
+<h3>Cheat sheet</h3>
+      <div class="canvas" id="cheat_canvas">
+        <div class="box fond">
+          <div class="circle"></div>
+          <div class="box out">
+            <div class="box textbox o12">
+            </div>
+            <div class="box textbox o01">
+            </div>
+            <div class="box textbox o02">
+            </div>
+            <div class="box textbox o03">
+            </div>
+            <div class="box textbox o04">
+            </div>
+            <div class="box textbox o05">
+            </div>
+            <div class="box textbox o06">
+            </div>
+            <div class="box textbox o07">
+            </div>
+            <div class="box textbox o08">
+            </div>
+            <div class="box textbox o09">
+            </div>
+            <div class="box textbox o10">
+            </div>
+            <div class="box textbox o11">
+            </div>
+          </div>
+          <div class="box tickbox">
+          </div>
+          <div class="in" id="cheat">
+          </div>
+        </div>
+      </div>
+      <p>Dans mon prochain cours je parlerai des <b>armures</b> (### / ♭♭♭) et du <b>cycle des quintes</b>.</p>
+      <p style="text-align:right;">- Martin<br />septembre 2023</p>
+    </section>
   </main>
-
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/jquery.ui.touch-punch.min.js"></script>
   <script type="text/javascript" src="js/music.js"></script>
 </body>
-
 </html>
