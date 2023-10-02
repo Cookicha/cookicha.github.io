@@ -61,6 +61,7 @@ p {
   color: #555;
   border-radius: 0;
   margin: 0;
+  z-index: 999;
 }
 
 b {
