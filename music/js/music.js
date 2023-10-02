@@ -15,7 +15,9 @@ var degree_start = {
   'blues': 0,
   'minor_chords': 0,
   'chord_minor': 0,
-  'chord_major': 0
+  'chord_major': 0,
+  'chord_aug':0,
+  'chord_dim':0
 
 }
 var center_x;
