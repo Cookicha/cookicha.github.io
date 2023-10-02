@@ -42,6 +42,12 @@ $(function() {
     $('.in').css("cursor", "grab");
     dragging = false;
     if(target){
+      if (Math.abs(degree) % 30 <= 15) {
+      } else {
+        degree = degree + (degree % 30);
+      }
+      degree = degree - (degree % 30);
+      $(target).animate({rotate:degree+'deg'},200);
       degree_start[target.id] = degree;
       target = "";
     }
@@ -52,19 +58,20 @@ $(function() {
       mouse_y = event.clientY;
       var radians = Math.atan2(mouse_x - center_x, mouse_y - center_y);
       var degree_raw = ((radians * (180 / Math.PI) * -1) + 180) - degree_click + degree_start[target.id];
-      if (Math.abs(degree_raw) % 30 <= 8) {
-        degree = degree_raw - (degree_raw % 30);
-      } else {
-        degree = degree_raw;
-      }
-      $(target).css('-moz-transform', 'rotate(' + degree + 'deg)');
-      $(target).css('-moz-transform-origin', '50% 50%');
-      $(target).css('-webkit-transform', 'rotate(' + degree + 'deg)');
-      $(target).css('-webkit-transform-origin', '50% 50%');
-      $(target).css('-o-transform', 'rotate(' + degree + 'deg)');
-      $(target).css('-o-transform-origin', '50% 50%');
-      $(target).css('-ms-transform', 'rotate(' + degree + 'deg)');
-      $(target).css('-ms-transform-origin', '50% 50%');
+      // if (Math.abs(degree_raw) % 30 <= 8) {
+      //   degree = degree_raw - (degree_raw % 30);
+      // } else {
+         degree = degree_raw;
+      // }
+      $(target).animate({rotate:degree+'deg'},0);
+      // $(target).css('-moz-transform', 'rotate(' + degree + 'deg)');
+      // $(target).css('-moz-transform-origin', '50% 50%');
+      // $(target).css('-webkit-transform', 'rotate(' + degree + 'deg)');
+      // $(target).css('-webkit-transform-origin', '50% 50%');
+      // $(target).css('-o-transform', 'rotate(' + degree + 'deg)');
+      // $(target).css('-o-transform-origin', '50% 50%');
+      // $(target).css('-ms-transform', 'rotate(' + degree + 'deg)');
+      // $(target).css('-ms-transform-origin', '50% 50%');
     }
   });
 })
