@@ -46,7 +46,7 @@ $(function() {
       } else {
         degree = degree + (degree % 30);
       }
-      degree = degree - (degree % 30);
+      degree = degree - (degree % 30);  
       $(target).animate({rotate:degree+'deg'},200);
       degree_start[target.id] = degree;
       target = "";
