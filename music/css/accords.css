@@ -1,0 +1,35 @@
+section#accords {
+  display:flex;
+  flex-flow: row wrap;
+
+}
+
+section#accords .accord {
+  width:300px;
+  max-width: 90vw;
+  position: relative;
+}
+section#accords .accord h3 {
+  color:#555;
+}
+
+section#accords .accord .canvas {
+  width: 300px;
+  height: 300px;
+  max-width: 90vw;
+  max-height: 90vw;
+  margin: 0;
+  position: relative;
+}
+
+section#accords .tick {
+    width: 5%;
+    height: 5%;
+    left: 47.5%;
+    top: 5.5%;
+}
+
+section#accords .in .text {
+  top: 6%;
+  font-size: 0.9em;
+}

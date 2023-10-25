@@ -17,7 +17,14 @@ var degree_start = {
   'chord_minor': 0,
   'chord_major': 0,
   'chord_aug':0,
-  'chord_dim':0
+  'chord_dim':0,
+  'chord_7':0,
+  'chord_maj7':0,
+  'chord_min7':0,
+  'chord_sus2':0,
+  'chord_sus4':0,
+  'chord_7sus2':0,
+  'chord_7sus4':0
 
 }
 var center_x;
@@ -46,9 +53,38 @@ $(function() {
       } else {
         degree = degree + (degree % 30);
       }
-      degree = degree - (degree % 30);  
+      degree = degree - (degree % 30);
       $(target).animate({rotate:degree+'deg'},200);
       degree_start[target.id] = degree;
+      var x = degree % 360;
+      var lettre = "";
+      if (x == 0) {
+        lettre = "C";
+      } else if (x == 330 || x == -30) {
+        lettre = "C#";
+      } else if (x == 300 || x == -60) {
+        lettre = "D";
+      } else if (x == 270 || x == -90) {
+        lettre = "D#";
+      } else if (x == 240 || x == -120) {
+        lettre = "E";
+      } else if (x == 210 || x == -150) {
+        lettre = "F";
+      } else if (x == 180 || x == -180) {
+        lettre = "F#";
+      } else if (x == 150 || x == -210) {
+        lettre = "G";
+      } else if (x == 120 || x == -240) {
+        lettre = "G#";
+      } else if (x == 90 || x == -270) {
+        lettre = "A";
+      } else if (x == 60 || x == -300) {
+        lettre = "A#";
+      } else if (x == 30 || x == -330) {
+        lettre = "B";
+      }
+      var self = this;
+      $(target).parent().parent().siblings().children('.lettre').html(lettre);
       target = "";
     }
   });

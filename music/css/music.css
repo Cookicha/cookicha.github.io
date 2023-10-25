@@ -417,6 +417,13 @@ sup {
 #minor_chords_canvas .t01, #minor_chords_canvas .t04, #minor_chords_canvas .t06, #minor_chords_canvas .t09, #minor_chords_canvas .t11 {
   display: none;
 }
+#chord_7_canvas .t01, #chord_7_canvas .t02, #chord_7_canvas .t03,#chord_7_canvas .t05,#chord_7_canvas .t06,#chord_7_canvas .t08,#chord_7_canvas .t09,#chord_7_canvas .t11 {display: none;}
+#chord_maj7_canvas .t01, #chord_maj7_canvas .t02, #chord_maj7_canvas .t03,#chord_maj7_canvas .t05,#chord_maj7_canvas .t06,#chord_maj7_canvas .t08,#chord_maj7_canvas .t09,#chord_maj7_canvas .t10 {display: none;}
+#chord_min7_canvas .t01, #chord_min7_canvas .t02, #chord_min7_canvas .t04,#chord_min7_canvas .t05,#chord_min7_canvas .t06,#chord_min7_canvas .t08,#chord_min7_canvas .t09,#chord_min7_canvas .t11 {display: none;}
+#chord_sus2_canvas .t01, #chord_sus2_canvas .t04, #chord_sus2_canvas .t03,#chord_sus2_canvas .t05,#chord_sus2_canvas .t06,#chord_sus2_canvas .t08,#chord_sus2_canvas .t09,#chord_sus2_canvas .t10,#chord_sus2_canvas .t11 {display: none;}
+#chord_sus4_canvas .t01, #chord_sus4_canvas .t02, #chord_sus4_canvas .t03,#chord_sus4_canvas .t04,#chord_sus4_canvas .t06,#chord_sus4_canvas .t08,#chord_sus4_canvas .t09,#chord_sus4_canvas .t10,#chord_sus4_canvas .t11 {display: none;}
+#chord_7sus2_canvas .t01, #chord_7sus2_canvas .t04, #chord_7sus2_canvas .t03,#chord_7sus2_canvas .t05,#chord_7sus2_canvas .t06,#chord_7sus2_canvas .t08,#chord_7sus2_canvas .t09,#chord_7sus2_canvas .t11 {display: none;}
+#chord_7sus4_canvas .t01, #chord_7sus4_canvas .t02, #chord_7sus4_canvas .t03,#chord_7sus4_canvas .t04,#chord_7sus4_canvas .t06,#chord_7sus4_canvas .t08,#chord_7sus4_canvas .t09,#chord_7sus4_canvas .t11 {display: none;}
 /*
 #infos {
  display:flex;
