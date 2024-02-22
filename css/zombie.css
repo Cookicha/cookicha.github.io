@@ -1,82 +1,93 @@
 :root {
---teal:#369DAC;
---light-teal:#468DaC;
---grey:#eee;
---dark-grey:#ccc;
---marge:100px;
---dark:black;
+  --teal: #E5C713;
+  --light-teal: #468DaC;
+  --grey: #eee;
+  --dark-grey: #ccc;
+  --marge: 100px;
+  --dark: black;
 }
 
 * {
-margin:0;
-padding:0;
-overflow:hide;
+  margin: 0;
+  padding: 0;
+  overflow: hide;
 }
-html{
-	padding:0;margin:0;
+
+html {
+  padding: 0;
+  margin: 0;
 }
+
 body {
-font-family:'Lato',sans-serif;
-color:white;
-font-size:18px;
-line-height:1.6;
-background:black;
-	padding:0;margin:0;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  background: black;
+  padding: 0;
+  margin: 0;
 }
 
 section {
-position:relative;
+  position: relative;
 }
+
+#body_section {
+  max-width: 800px;
+}
+
 section:last-of-type {
-padding-bottom:var(--marge);
+  padding-bottom: var(--marge);
 }
 
 h2 {
-	font-family:'Creepster';
-	font-variant: small-caps;
-text-align:left;
-margin: 20px 10% 20px 10%;
+  font-family: 'Creepster';
+  font-variant: small-caps;
+  text-align: left;
+  margin: 20px 10% 20px 10%;
 }
 
 p {
-font-family:'Ubuntu';
-margin: 0 10% 6px 10%;
-max-width:600px;
+  font-family: 'Ubuntu';
+  margin: 0 10% 6px 10%;
 }
+
 .bold {
-	font-weight: 700;
-	color:var(--teal);
+  font-weight: 700;
+  color: var(--teal);
 }
+
 a {
-color:var(--teal);
+  color: var(--teal);
 }
 
 #naute {
-bottom:0;
-right:0;
-margin:0;
-padding:0;
-max-height:100vh;
-width:auto;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+  width: auto;
 }
 
 #section1 {
-	text-align: right;
-	padding: 0;
-	margin: 0;
+  text-align: right;
+  padding: 0;
+  margin: 0;
 }
+
 #section1 .titre {
-	text-align: left;
-	position:absolute;
-	bottom: 20vh;
-	left: 10%;
-font-weight:bold;
-font-size: 6em;
-padding:3px 40px 0 10px;
-font-family:'Creepster';
+  text-align: left;
+  position: absolute;
+  bottom: 20vh;
+  left: 10%;
+  font-weight: bold;
+  font-size: 6em;
+  font-family: 'Creepster';
 }
+
 .smallcaps {
-	font-variant: small-caps;
+  font-variant: small-caps;
 }
 
 @media screen and (max-width: 600px) {
@@ -84,16 +95,17 @@ font-family:'Creepster';
     font-size: calc(3em + 14 * ((100vw - 320px) / 680));
   }
 }
+
 @media screen and (min-width: 1000px) {
   #section1 .titre {
     font-size: 6em;
   }
 }
 
-
 footer {
-background:var(--teal);
-margin-top:40px;
-padding:20px 10% 20px 10%;
-font-family: "Creepster";
+  background: var(--teal);
+  margin-top: 40px;
+  padding: 20px 10% 20px 10%;
+  font-family: "Creepster";
+  color: black;
 }
