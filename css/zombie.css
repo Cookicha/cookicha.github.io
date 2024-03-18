@@ -23,7 +23,7 @@ body {
   color: white;
   line-height: 1.6;
   background-image: url("../zombies.jpg");
-  background-size: 100% auto;
+  background-size: contain;
     background-repeat: no-repeat;
       background-position: right top;
     background-color: black;
