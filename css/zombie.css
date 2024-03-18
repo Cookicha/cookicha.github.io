@@ -78,9 +78,7 @@ a {
 
 #section1 .titre {
   text-align: left;
-  position: absolute;
-  bottom: 20vh;
-  left: 10%;
+  margin: 60px 0;
   font-weight: bold;
   font-size: 6em;
   font-family: 'Creepster';
