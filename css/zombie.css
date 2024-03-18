@@ -67,6 +67,7 @@ h3 {
 p {
   max-width: 800px;
   font-family: 'Ubuntu';
+  margin: 0 0 1em 0;
 }
 
 .bold {
