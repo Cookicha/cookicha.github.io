@@ -1,6 +1,6 @@
 :root {
-  --teal: #E5C713;
-  --light-teal: #468DaC;
+  --jaune: #E5C713;
+  --jaune-sombre: #99850d;
   --grey: #eee;
   --dark-grey: #ccc;
   --marge: 100px;
@@ -21,9 +21,12 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   color: white;
-  font-size: 20px;
   line-height: 1.6;
-  background: black;
+  background-image: url("../zombies.jpg");
+  background-size: 100% auto;
+    background-repeat: no-repeat;
+      background-position: right top;
+    background-color: black;
   padding: 0;
   margin: 0;
 }
@@ -33,7 +36,7 @@ section {
 }
 
 #body_section {
-  max-width: 800px;
+  margin: 0 10% 6px 10%;
 }
 
 section:last-of-type {
@@ -43,45 +46,46 @@ section:last-of-type {
 h2 {
   font-family: 'Creepster';
   font-variant: small-caps;
-  text-align: left;
-  margin: 20px 10% 20px 10%;
+  font-size: 1.6em;
+  margin: 40px 0 10px 0;
+  max-width: 800px;
 }
 
+h3 {
+  font-family: 'Creepster';
+  font-variant: small-caps;
+  font-weight: 300;
+  font-size: 1.3em;
+  margin: 40px 0;
+  max-width: 720px;
+  padding: 40px;
+  color:black;
+  background: var(--jaune);
+}
+
+
 p {
+  max-width: 800px;
   font-family: 'Ubuntu';
-  margin: 0 10% 6px 10%;
 }
 
 .bold {
   font-weight: 700;
-  color: var(--teal);
+  color: var(--jaune);
 }
 
 a {
-  color: var(--teal);
+  color: var(--jaune);
 }
 
-#naute {
-  bottom: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  max-height: 100vh;
-  width: auto;
-}
-
-#section1 {
-  text-align: right;
-  padding: 0;
-  margin: 0;
-}
-
-#section1 .titre {
+.titre {
   text-align: left;
   margin: 60px 0;
   font-weight: bold;
-  font-size: 6em;
+  font-size: 4em;
   font-family: 'Creepster';
+  line-height: 1em;
+  text-shadow: 6px 6px 5px var(--jaune);
 }
 
 .smallcaps {
@@ -101,7 +105,7 @@ a {
 }
 
 footer {
-  background: var(--teal);
+  background: var(--jaune);
   margin-top: 40px;
   padding: 20px 10% 20px 10%;
   font-family: "Creepster";
