@@ -20,8 +20,15 @@
 <div id="circle2" class="circle">2</div>
 <div id="circle3" class="circle">3</div>
 <div id="vertiligne"></div>
-
-
+<div id="baratin">
+<h2>Problème</h2>
+<p>Sur une carte de population, les points (disques) se chevauchent et la surface totale colorée n'est plus en correspondance avec la population totale représentée. Les zones à forte densité (ex. métropoles) sont souvent le siège de ces chevauchements, réduisant leur poids visuel et rendant difficile la comparaison de leur population par rapport à la population totale ou la comparaison entre populations de différentes métropoles. Exemple : sur cette carte, quel est vraiment le poids de Bordeaux ? De plus, lorsque les points sont proches et de même taille, la lecture est presque impossible (ex. Périgueux).</p>
+<img src="casExemple.png" style="width=400px;" />
+<h2>Proposition</h2>
+<p>Je propose une métaphore liquide en deux dimensions, comme de l'eau sur une surface hydrophobique. Imaginons qu'à chaque point de données soit déposée de l'eau goutte à goutte. Pour les points isolés (ex. Guéret), la goutte grossit en un cercle parfait. Mais que se passe-t-il pour les chevauchements ?</p>
+<p>Pour le moment ma solution est de répartir équitablement la surface de chevauchement entre les disques des deux points concernés. Ce n'est pas nécessairement très exact dans la métaphore liquide, car le liquide se répartirait d'abord équitablement depuis le centre, avant d'entrer en collision avec le liquide de l'autre point et de se répartir latéralement. Peut-être. Mais c'est assez proche et permet d'avoir une représentation où la surface est correctement proportionnelle à la population.</p>
+<p>Pour renforcer la métaphore liquide et la compréhension intuitive de la représentation, il serait bien aussi de rajouter de la tension de surface.</p> 
+</div>
 <script src="../js/jquery.js"></script>
 <script type="text/javascript" src="liquidPop.js"></script>
 </body>
