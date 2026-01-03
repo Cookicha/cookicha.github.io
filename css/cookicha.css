@@ -248,8 +248,9 @@ font-family:'Ubuntu';
   }
 }
 
-#section1 .gros.titre {
+#section1 h1 .gros.titre {
   font-size: 24px;
+  font-family:'Modak','Ubuntu', sans-serif;
 }
 @media screen and (min-width: 320px) {
   #section1 .gros.titre {
