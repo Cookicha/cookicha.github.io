@@ -1,8 +1,9 @@
 :root {
 	--teal: #367D9C;
 	--light-teal: #468DaC;
-	--grey: #f3f3f3;
-	--dark-grey: #ccc;
+	--light-grey: #f3f3f3;
+	--mid-grey: #ccc;
+	--dark-grey: #888;
 	--marge: 100px;
 	--dark: #333;
 	--gold: rgba(255, 191, 0, 1);
@@ -21,7 +22,7 @@
 }
 
 .gris {
-	background-color: var(--grey);
+	background-color: var(--light-grey);
 }
 
 .blanc {
@@ -176,8 +177,8 @@ section:last-of-type {
 h2 {
 	text-align: center;
 	font-family: 'Lilita One', sans-serif;
-	padding: var(--marge) 0 40px 0;
-	font-size: 2em;
+	font-size: clamp(1.8em, 3.8vw, 3em);
+	margin-bottom: 0.8em;
 }
 
 h3 {
@@ -189,16 +190,16 @@ p {}
 
 a {
 	font-weight: bold;
-	color: var(--dark-grey);
+	color: var(--gold);
 	text-decoration-thickness: 1px;
 }
 
 a:hover {
-	background: #ff0080;
-	background: linear-gradient(90deg, var(--pink) 0%, var(--gold) 70%);
+	background: #FF0080;
+	background: linear-gradient(90deg, var(--gold) 0%, var(--pink) 50%, var(--gold) 100%);
 	/* Set the background size and repeat properties. */
 	background-size: 100%;
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	/* Use the text as a mask for the background. */
 	/* This will show the gradient as a text color rather than element bg. */
 	-webkit-background-clip: text;
@@ -208,7 +209,7 @@ a:hover {
 
 button {
 	font-family: 'Inter', sans-serif;
-	background-color: var(--dark-grey);
+	background-color: var(--gold);
 	color: white;
 	font-weight: 900;
 	font-size: 0.9rem;
@@ -282,6 +283,7 @@ menuitem {}
 
 menu a {
 	background-color: black;
+	color:var(--mid-grey);
 	text-decoration: none;
 }
 
@@ -298,7 +300,9 @@ menu a:hover {
 	text-decoration: none;
 }
 
-
+section {
+	padding: var(--marge) 0;
+}
 
 /* ----------------- */
 /* --- SECTION 1 --- */
@@ -315,6 +319,7 @@ menu a:hover {
 	background-position: center center;
 	background-attachment: fixed;
 	box-shadow: inset 0 -2px 6px 0 rgba(0, 0, 0, 0.5);
+	padding: none;
 }
 
 #blocktitre {
@@ -409,10 +414,12 @@ menu a:hover {
 	list-style: none;
 	padding-left: 0;
 }
+
 .serviceItem ul li {
-	margin-left:1.3em;
+	margin-left: 1.3em;
 	text-indent: -1.3em;
 }
+
 .serviceItem ul li::before {
 	content: "★";
 	margin-right: 0.4em;
@@ -432,47 +439,29 @@ menu a:hover {
 	margin-top: auto;
 }
 
-/* --- PRAISE --- */
-#praise>div {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}
-
-#praise .column {
-	text-align: center;
-	margin: 30px 5%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 220px;
-}
-
-#praise .column div {
-	margin: 10px 0;
-}
-
-#praise .praise {
-	font-weight: bold;
-	color: inherit;
-}
-
-#praise .qui {}
-
+/* --- LOGOS --- */
 #logos {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+	gap: 30px;
+	margin: 20px 5%;
+}
+
+#logos div {
+	text-align: center;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
 }
 
 #logos img {
 	/* display:inline-block; */
+	max-width: 200px;
 	max-height: 120px;
-	max-width: 300px;
-	margin: 0 40px var(--marge) 40px;
 }
 
 #galerie {
@@ -481,13 +470,13 @@ menu a:hover {
 	align-items: flex-start;
 	justify-content: space-evenly;
 	width: 100%;
-	align-items: baseline;
-	overflow: hide;
+	align-items: flex-start;
+	overflow: hidden;
+	gap: 40px;
 }
 
 #galerie>div {
 	flex: 0 1 20%;
-	margin: 40px 20px;
 }
 
 #galerie>div:first-child {
