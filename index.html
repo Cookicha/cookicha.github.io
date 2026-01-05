@@ -27,18 +27,16 @@
 </head>
 
 <body>
-	<menu class="hide-mobile">
+	<menu id="menu" class="hide-mobile">
 		<div class="container">
-		<menuitem id="menu-titre"><a href="#section1">Martin Galilée</a></menuitem>
-		<div id="menuRight">
-			<menuitem><a href="#resume">CV</a></menuitem>
-			<menuitem><a href="#praise">TÉMOIGNAGES</a></menuitem>
-			<menuitem><a href="#portfolio">PORTFOLIO</a></menuitem>
-			<menuitem><a href="#footer">CONTACT</a></menuitem>
+			<menuitem id="menu-titre"><a href="index.html#hero	">Martin Galilée</a></menuitem>
+			<div id="menuRight">
+				<menuitem><a href="index.html#services">SERVICES</a></menuitem>
+				<menuitem><a href="index.html#footer">CONTACT</a></menuitem>
+			</div>
 		</div>
-	</div>
 	</menu>
-	<section id="section1">
+	<section id="hero">
 		<div class="container">
 			<div id="blocktitre">
 				<h1 class="gros titre" id="MartinGalilee">Martin Galilée</h1>
@@ -47,7 +45,8 @@
 			</div>
 		</div>
 	</section>
-	<div id="credit" class="gris">photo <a href="https://unsplash.com/@verstuyftj" target="_blank">Jonas Verstuyft</a>
+	<div id="credit" class="gris">photo <a class="fancy" href="https://unsplash.com/@verstuyftj" target="_blank">Jonas
+			Verstuyft</a>
 	</div>
 	<section id="services" class="gris">
 		<div class="container">
@@ -80,7 +79,7 @@
 						<li>Sur hébergeur commercial ou institutionnel (CNRS, université, &hellip;)</li>
 						<li>Intégration d'applications sur mesure (carte, annuaire, etc), newsletter, actualités</li>
 					</ul>
-					<button>DÉCOUVRIR</button>
+					<a class="bouton" href="web.html">DÉCOUVRIR</a>
 				</div>
 				<div class="serviceItem">
 					<img src="img/icon-graphisme.png" />
@@ -91,9 +90,9 @@
 						<li>Outils de médiation interactifs</li>
 						<li>Logos institutionnels</li>
 					</ul>
-					<button>DÉCOUVRIR</button>
+					<a class="bouton" href="graphisme.html">DÉCOUVRIR</a>
 				</div>
-				<div class="serviceItem">
+				<div class="serviceItem hide">
 					<img src="img/icon-data-viz.png" />
 					<h3>Data visualisation</h3>
 					<ul>
@@ -102,7 +101,7 @@
 						<li>Outils interactifs</li>
 						<li>Déploiement web</li>
 					</ul>
-					<button>DÉCOUVRIR</button>
+					<button>(bientôt)</button>
 				</div>
 				<div class="serviceItem">
 					<img src="img/icon-diaporama.png" />
@@ -114,7 +113,7 @@
 						<li>Bilans de projet aux financeurs</li>
 						<li>Contenus de médiation</li>
 					</ul>
-					<button>DÉCOUVRIR</button>
+					<a class="bouton" href="diapos.html">DÉCOUVRIR</a>
 				</div>
 				<div class="serviceItem">
 					<img src="img/icon-redaction.png" />
@@ -125,9 +124,9 @@
 						<li>Compte-rendu de conférence, white paper, article de médiation, écrit académique, &hellip;
 						</li>
 					</ul>
-					<button>DÉCOUVRIR</button>
+					<a class="bouton" href="redaction.html">DÉCOUVRIR</a>
 				</div>
-				<div class="serviceItem">
+				<div class="serviceItem hide">
 					<img src="img/icon-autres.png" />
 					<h3>Autres</h3>
 					<ul>Selon vos besoins, mise à profit de mon expérience en :
@@ -136,7 +135,7 @@
 						<li>Gestion de projet</li>
 						<li>Médiation et communication des sciences.</li>
 					</ul>
-					<button>DÉCOUVRIR</button>
+					<button>(bientôt)</button>
 				</div>
 			</div>
 		</div>
@@ -181,209 +180,12 @@
 			</div>
 		</div>
 	</section>
-	<section id="portfolio" class="gris hide-mobile">
-		<h2 class="dark">Sélection de mes travaux</h2>
-		<div id="galerie">
-			<div>
-				<div>
-					<a href="pdf/actu-126.pdf" target="_blank"><img src="img/actu-126.png" height=500 /></a>
-				</div>
-				<p>Exemple de mon travail de journaliste&#8239;: article (<a href="pdf/actu-126.pdf"
-						target="_blank">pdf</a>) paru dans <a
-						href="https://actualite.nouvelle-aquitaine.science/author/martin/"
-						target="_blank"><em>L'Actualité Nouvelle-Aquitaine</em></a> en 2019.</p>
-			</div>
-			<div>
-				<div>
-					<a href="pdf/actu-127.pdf" target="_blank"><img src="img/actu-127.png" height=500 /></a>
-				</div>
-				<p>Exemple de mon travail de journaliste&#8239;: article (<a href="pdf/actu-127.pdf"
-						target="_blank">pdf</a>) paru dans <a
-						href="https://actualite.nouvelle-aquitaine.science/author/martin/"
-						target="_blank"><em>L'Actualité Nouvelle-Aquitaine</em></a> en 2020.</p>
-			</div>
-			<div>
-				<div>
-					<a href="pdf/actu-128.pdf" target="_blank"><img src="img/actu-128.png" height=500 /></a>
-				</div>
-				<p>Exemple de mon travail de journaliste&#8239;: article (<a href="pdf/actu-128.pdf"
-						target="_blank">pdf</a>) paru dans <a
-						href="https://actualite.nouvelle-aquitaine.science/author/martin/"
-						target="_blank"><em>L'Actualité Nouvelle-Aquitaine</em></a> en 2020.</p>
-			</div>
-			<div id="nano">
-				<div id="beforeAfter" class="img-comp-container corrected">
-					<div class="img-comp-img">
-						<img src="img/nano2.png" height="500">
-					</div>
-					<div class="img-comp-img img-comp-overlay">
-						<img src="img/nano1.png" height="500">
-					</div>
-				</div>
-				<p>Refonte de schéma scientifique en format vectoriel pour une présentation auprès d'un ministère.
-					Schéma IPREM.</p>
-			</div>
-			<div>
-				<div id="icones">
-					<img src="img/icons/paperPlane.png" height="200" />
-					<img src="img/icons/cubeEau.png" height="200" />
-					<img src="img/icons/burd.png" height="200" />
-					<img src="img/icons/sectoid.png" height="200" />
-					<img src="img/icons/donut.png" height="200" />
-					<img src="img/icons/maps.png" height="200" />
-				</div>
-				<p><em>Parus Polygonae</em> et autres travaux graphiques vectoriels réalisés sous Inkscape.</p>
-			</div>
-			<div id="fillTheBottle">
-				<div id="boxBouteille" class="corrected">
-					<img src="img/bouteille/bouteille.png" id="bouteille" />
-					<img src="img/bouteille/fondBouteille.png" id="fondBouteille" />
-					<div id="resizerBouteille">
-						<div id="testBar"></div>
-						<img src="img/bouteille/dessusBouteille.png" id="dessusBouteille" width="118" />
-						<div id="handleBouteille">
-							<div id="volume">déplacer &udarr;</div>
-						</div>
-					</div>
-				</div>
-				<p>Représentation interactive utilisée dans une expérience de psychologie sur la cognition incarnée.</p>
-			</div>
-			<div>
-				<div id="beerItem" class="corrected">
-					<iframe id="beerFrame" src="beer/beer-thumb.html" scrolling="no"></iframe>
-				</div>
-				<p>Un outil pédagogique à ambiance scientifique&#8239;: le <a href="beer/beer.html"
-						target="_blank">tableau périodique des styles de bière</a>. Tout en technologie web, codé à la main.</p>
-			</div>
-			<div>
-				<div id="siteGdr" class="corrected">
-					<div>
-						<a href="http://cookicha.github.io/gdrPO/membres.html#headerMap" target="_blank"><img
-								src="img/carteGdrPo.png" height=500 /></a>
-					</div>
-					<p><a href="http://cookicha.github.io/gdrPO/membres.html#headerMap" target="_blank">Site web</a>
-						incluant une carte interactive pour le Groupement de Recherche Polymères & Océans. Codé à la
-						main en HTML/CSS/JS en 2020.</p>
-				</div>
-			</div>
-			<div>
-				<div id="ministereScroll" class="scroll">
-					<img src="img/ministere/1.png" id="ref" />
-					<img src="img/ministere/2.png" />
-					<img src="img/ministere/3.png" />
-					<img src="img/ministere/4.png" />
-					<img src="img/ministere/5.png" />
-					<img src="img/ministere/6.png" />
-					<img src="img/ministere/7.png" />
-					<img src="img/ministere/8.png" />
-					<img src="img/ministere/9.png" />
-					<img src="img/ministere/10.png" />
-					<img src="img/ministere/11.png" />
-					<img src="img/ministere/12.png" />
-				</div>
-				<p>Diapositives sur la pollution plastique dans les océans présentées au ministère de la Transition
-					écologique.</p>
-			</div>
-			<div>
-				<div id="theseScroll" class="scroll">
-					<img src="img/these/1.png" />
-					<img src="img/these/2.png" />
-					<img src="img/these/3.png" />
-					<img src="img/these/4.png" />
-					<img src="img/these/5.png" />
-					<img src="img/these/6.png" />
-					<img src="img/these/7.png" />
-					<img src="img/these/8.png" />
-					<img src="img/these/9.png" />
-					<img src="img/these/10.png" />
-					<img src="img/these/11.png" />
-					<img src="img/these/12.png" />
-					<img src="img/these/13.png" />
-					<img src="img/these/14.png" />
-					<img src="img/these/15.png" />
-					<img src="img/these/16.png" />
-					<img src="img/these/17.png" />
-					<img src="img/these/18.png" />
-					<img src="img/these/19.png" />
-					<img src="img/these/20.png" />
-					<img src="img/these/21.png" />
-					<img src="img/these/22.png" />
-					<img src="img/these/23.png" />
-					<img src="img/these/24.png" />
-					<img src="img/these/25.png" />
-					<img src="img/these/26.png" />
-					<img src="img/these/27.png" />
-					<img src="img/these/28.png" />
-					<img src="img/these/29.png" />
-					<img src="img/these/30.png" />
-					<img src="img/these/31.png" />
-					<img src="img/these/32.png" />
-					<img src="img/these/33.png" />
-					<img src="img/these/34.png" />
-					<img src="img/these/35.png" />
-					<img src="img/these/36.png" />
-					<img src="img/these/37.png" />
-					<img src="img/these/38.png" />
-					<img src="img/these/39.png" />
-					<img src="img/these/40.png" />
-					<img src="img/these/41.png" />
-					<img src="img/these/42.png" />
-					<img src="img/these/43.png" />
-					<img src="img/these/44.png" />
-					<img src="img/these/45.png" />
-					<img src="img/these/46.png" />
-					<img src="img/these/47.png" />
-					<img src="img/these/48.png" />
-					<img src="img/these/49.png" />
-					<img src="img/these/50.png" />
-					<img src="img/these/51.png" />
-					<img src="img/these/52.png" />
-					<img src="img/these/53.png" />
-					<img src="img/these/54.png" />
-					<img src="img/these/55.png" />
-					<img src="img/these/56.png" />
-					<img src="img/these/57.png" />
-					<img src="img/these/58.png" />
-					<img src="img/these/59.png" />
-					<img src="img/these/60.png" />
-					<img src="img/these/61.png" />
-					<img src="img/these/62.png" />
-				</div>
-				<p>Diapositives de ma soutenance de thèse en sciences de l'éducation appliquées à la soutenabilité, sur
-					le sujet de la maîtrise de la consommation d'énergie.</p>
-			</div>
-			<div>
-				<div>
-					<a href="pdf/thesis2017synopsis.pdf" target="_blank"><img src="img/thesis2017-syn.png"
-							height=500 /></a>
-				</div>
-				<p><a href="pdf/thesis2017synopsis.pdf" target="_blank">Synopsis</a> de ma thèse de sciences de
-					l'éducation appliquée à la soutenabilité, sur le sujet de la maîtrise de la consommation d'énergie.
-					<a href="pdf/thesis2017.pdf" target="_blank">Document intégral</a>. 2017.
-				</p>
-			</div>
-			<div>
-				<div>
-					<a href="pdf/master2019.pdf" target="_blank"><img src="img/master2019.png" height=500 /></a>
-				</div>
-				<p><a href="pdf/master2019.pdf" target="_blank">Mémoire</a> de master de médiation des sciences sur les
-					philosophies de l'environnement dans la presse magazine. 2019.</p>
-			</div>
-			<div>
-				<div>
-					<a href="pdf/didactique-ergo-cog.pdf" target="_blank"><img src="img/didactique-ergo-cog.png"
-							height=500 /></a>
-				</div>
-				<p><a href="pdf/didactique-ergo-cog.pdf" target="_blank">Notes professionnelles</a> sur la didactique et
-					l'ergonomie cognitive destinée à la médiation des sciences. Commande, 2020.</p>
-			</div>
-		</div>
-	</section>
 	<footer id="footer">
 		<div id="footerGauche">
-			<p class="police-titre">Martin Galilée</p>
-			<p>martin.galilee<wbr>@gmail.com</p>
-			<p>06 25 52 03 03</p>
+			<h3>Martin Galilée</h3>
+			<a class="white fancy" href="https://martingalilee.fr">martingalilee.fr</a>
+			<a class="white fancy" href="mailto:martin.galilee@gmail.com">martin.galilee@gmail.com</a>
+			<p class="">06 25 52 03 03</p>
 		</div>
 		<img src="img/champi.jpg" />
 	</footer>

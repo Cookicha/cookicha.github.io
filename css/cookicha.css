@@ -30,21 +30,35 @@
 .blanc {
 	background-color: white;
 }
+
 .jaune {
 	background-color: var(--light-gold);
-	}
+}
+
 .bleu {
 	background-color: var(--teal);
 	color: white;
-	}
+}
 
 .dark {
 	color: var(--dark);
 }
 
-.police-titre {
-	font-family: 'Lilita One', sans-serif;
-	font-size: 1.2em;
+.bold {
+	font-weight: 700;
+}
+
+.box-shadow {
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+}
+
+.no-box-shadow {
+	box-shadow: none !important;
+}
+
+.hide {
+	display: none !important;
 }
 
 * {
@@ -68,41 +82,53 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
 section {
 	position: relative;
 	padding: var(--marge) 0;
 	width: 100%;
 	box-sizing: border-box;
 }
+
 section.titre {
 	padding-top: var(--margeXL);
+	text-align: left;
+	background: black;
+	color: white;
 }
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 2rem;
 	box-sizing: border-box;
 }
+
 h1 {
 	font-family: 'Lilita One', sans-serif;
 	font-size: clamp(2.2em, 4.5vw, 4em);
 }
+
 h2 {
 	font-family: 'Lilita One', sans-serif;
 	font-size: clamp(1.8em, 3vw, 2.6em);
-	margin-bottom: 0.8em;
+	margin: var(--demi-marge) 0 var(--marge) 0;
 	text-transform: uppercase;
+	text-align: center;
 }
+
 h3 {
 	font-family: 'Lilita One', sans-serif;
 	font-weight: normal;
 	font-size: clamp(1.4em, 2.2vw, 1.8em);
 }
+
 p {
 	max-width: 42rem;
 	margin-bottom: 0.3em;
 
 }
+
 .sous-titre {
 	font-weight: 700;
 }
@@ -138,11 +164,29 @@ a {
 	text-decoration-thickness: 1px;
 }
 
-a:hover {
+a.hover {
 	color: var(--pink);
-	}
+}
 
-button, a.bouton {
+a.white {
+	color: white;
+	text-decoration: none;
+}
+
+a.fancy:hover {
+	background: #ff0080;
+	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 191, 0, 1) 70%);
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+button,
+a.bouton {
 	text-transform: uppercase;
 	display: inline-block;
 	font-family: 'Inter', sans-serif;
@@ -159,17 +203,24 @@ button, a.bouton {
 	box-sizing: border-box;
 }
 
-button:hover, a.bouton:hover {
+button:hover,
+a.bouton:hover {
+	/*	background: #ff0080;
+/*	background: radial-gradient(circle, var(--pink) 0%, var(--gold) 100%);
+*/
 	background: #ff0080;
-	background: radial-gradient(circle, var(--pink) 0%, var(--gold) 100%);
+	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 191, 0, 1) 70%);
+	/*	background: var(--pink);*/
 	color: white;
 }
+
 button {
-	background: var(--dark-grey)!important;
-		cursor: auto!important;
+	background: var(--dark-grey) !important;
+	cursor: auto !important;
 }
+
 button:hover {
-	background: var(--dark-grey)!important;
+	background: var(--dark-grey) !important;
 }
 
 
@@ -184,6 +235,7 @@ menu {
 	font-size: 0.9rem;
 	line-height: 2;
 }
+
 menu .container {
 	display: flex;
 	flex-direction: row;
@@ -217,7 +269,8 @@ menu a {
 	text-decoration: none;
 }
 
-menu a:hover {
+menu a:hover,
+a.menulike:hover {
 	background: #ff0080;
 	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 191, 0, 1) 70%);
 	/* Set the background size and repeat properties. */
@@ -231,10 +284,8 @@ menu a:hover {
 }
 
 
-/* ----------------- */
-/* --- SECTION 1 --- */
-/* ----------------- */
-#section1 {
+/* --- HERO --- */
+#hero {
 	height: 100vh;
 	min-height: 600px;
 	overflow: hidden;
@@ -251,6 +302,7 @@ menu a:hover {
 	color: white;
 	;
 }
+
 #blocktitre .titre {
 	font-size: clamp(1.2rem, 2.6vw, 4rem);
 	font-family: 'Inter', sans-serif;
@@ -258,18 +310,18 @@ menu a:hover {
 	text-shadow: 0.04em 0.03em 0 rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 1);
 }
 
-#section1 h1.gros.titre {
+#hero h1.gros.titre {
 	font-size: clamp(3.4rem, 8vw, 8rem);
 	font-family: 'Lilita One', 'Inter', sans-serif;
 	text-shadow: 0.04em 0.03em 0 rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 1)
 }
 
-/* --- end section1 --- */
+/* --- CREDIT --- */
 #credit {
 	text-align: right;
 	color: #555;
 	font-size: 0.6em;
-	margin: 0 1em;
+	padding: 0 1em;
 }
 
 #credit a {
@@ -315,7 +367,8 @@ menu a:hover {
 	/* Pour les éléments pairs (2ème, 4ème, etc.) */
 }
 
-.serviceItem .bouton, .serviceItem button {
+.serviceItem .bouton,
+.serviceItem button {
 	margin-top: auto;
 }
 
@@ -323,7 +376,7 @@ menu a:hover {
 #logos {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: flex-start;
+	justify-content:center;
 	align-items: center;
 	align-content: center;
 	gap: 30px;
@@ -338,35 +391,11 @@ menu a:hover {
 }
 
 #logos img {
-	/* display:inline-block; */
 	max-width: 200px;
 	max-height: 120px;
 }
 
 /* --- EXEMPLES --- */
-section.titre {
-	text-align: left;
-	background: black;
-	color:white;
-}
-
-section.titre div.titre {
-	display: flex;
-	flex-flow: row wrap;
-	gap: 1em;
-	align-items: center;
-	justify-content: flex-start;
-}
-
-section.titre div.titre * {}
-
-section.titre div.titre img {
-	height: auto;
-	max-width: 200px;
-	aspect-ratio: 3 / 2;
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-}
-
 section.exemples {
 	display: flex;
 	flex-flow: column nowrap;
@@ -375,10 +404,6 @@ section.exemples {
 	gap: 40px;
 	font-size: 1rem;
 }
-section.exemples h2 {
-	text-transform: uppercase;
-	text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-}
 
 section.exemples .exemple {
 	display: flex;
@@ -386,28 +411,38 @@ section.exemples .exemple {
 	justify-content: space-between;
 	align-items: center;
 }
+
 section.exemples .exemple:not(:last-child)::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height:2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--mid-grey),
-    transparent
-  );
-  margin: 2rem 0; /* Espace entre le projet et la ligne */
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to right,
+			transparent,
+			var(--mid-grey),
+			transparent);
+	margin: 2rem 0;
+	/* Espace entre le projet et la ligne */
 }
 
 section.exemples .exemple .column {
-	flex: 0 1 45%;
+	flex: 0 1 43%;
 }
 
-section.exemples .exemple img {
-	max-width: 100%;
-	border-radius: 3px;
+section.exemples .exemple .column:first-child {
+	text-align: center;
 }
+
+section.exemples .exemple .column>img,
+section.exemples .exemple .column>a>img {
+	max-width: 100%;
+	max-height: 400px;
+	object-fit: contain;
+	border-radius: 3px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+}
+
 footer {
 	background: black;
 	color: white;
@@ -418,6 +453,7 @@ footer {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: stretch;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
 
 }
 
@@ -434,12 +470,10 @@ footer #footerGauche {
 footer #footerGauche p {
 	color: white;
 	font-weight: bold;
-	padding: 20px;
 	text-align: center;
 }
 
 footer>img {
-	display: inline-block;
 	width: 50%;
 	float: right;
 	top: 0;

@@ -95,3 +95,9 @@
 		-ms-text-size-adjust: 100%;
 	}
 }
+
+@media (pointer: coarse) {
+  .hide-touch {
+    display: none !important; /* Masque complètement l'élément */
+  }
+}

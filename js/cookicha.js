@@ -2,7 +2,7 @@ $('').css({cursor: 'wait'});
 (function($){
 	$(window).load(function(){
 		var scrollamount = $("#theseScroll")[0].scrollHeight/62;
-		$("#ministereScroll,#theseScroll").mCustomScrollbar({
+		$("#ministereScroll,#theseScroll,#PFScroll").mCustomScrollbar({
 			scrollButtons:{enable:true,scrollType:"stepped"},
 			keyboard:{scrollType:"stepped"},
 			mouseWheel:{scrollAmount:scrollamount,normalizeDelta:true},
