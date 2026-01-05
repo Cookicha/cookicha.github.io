@@ -10,6 +10,8 @@
 	<meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height" />
 	<link rel="stylesheet" href="scrollBar/jquery.mCustomScrollbar.css" />
 	<link rel="stylesheet" href="css/cookicha.css" />
+	<link rel="stylesheet" href="css/cookicha2.css" />
+	<link rel="stylesheet" href="css/cookicha-responsive.css" />
 	<link rel="stylesheet" href="css/jquery-ui.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +24,11 @@
 		href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
 		rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Modak' rel='stylesheet'>
-
 </head>
 
 <body>
 	<menu class="hide-mobile">
+		<div class="container">
 		<menuitem id="menu-titre"><a href="#section1">Martin Galilée</a></menuitem>
 		<div id="menuRight">
 			<menuitem><a href="#resume">CV</a></menuitem>
@@ -34,140 +36,148 @@
 			<menuitem><a href="#portfolio">PORTFOLIO</a></menuitem>
 			<menuitem><a href="#footer">CONTACT</a></menuitem>
 		</div>
+	</div>
 	</menu>
 	<section id="section1">
-		<div id="blocktitre">
-			<h1 class="gros titre" id="MartinGalilee">Martin Galilée</h1>
-			<div class="titre" id="ingenieur">Ingénieur recherche / chef de projet</div>
-			<div class="titre" id="reseaux">Réseaux humains, médiation, pédagogie, communication</div>
+		<div class="container">
+			<div id="blocktitre">
+				<h1 class="gros titre" id="MartinGalilee">Martin Galilée</h1>
+				<div class="titre" id="ingenieur">Ingénieur recherche / chef de projet</div>
+				<div class="titre" id="reseaux">Réseaux humains, médiation, pédagogie, communication</div>
+			</div>
 		</div>
 	</section>
 	<div id="credit" class="gris">photo <a href="https://unsplash.com/@verstuyftj" target="_blank">Jonas Verstuyft</a>
 	</div>
 	<section id="services" class="gris">
-		<h2 class="">Produits et services</h2>
-		<div id="servicesBox">
-			<div class="serviceItem">
-				<img src="img/carteGdrPo-2.png" />
-				<h3 class="">Carto</h3>
-				<ul>
-					<li>Cartes interactives web et outils de visualisation spatiale.</li>
-					<li>Membres, laboratoires, partenaires, chantiers ou autres, avec fiche d'information. </li>
-					<li>Solution sur mesure adaptée à vos besoins, données collectées par mes soins.</li>
-				</ul>
-				<button>DÉCOUVRIR</button>
-			</div>
-			<div class="serviceItem">
-				<img src="img/membresRTM.png" />
-				<h3>Annuaire</h3>
-				<ul>
-					<li>Annuaire web avec filtre par catégorie et recherche par mots-clés</li>
-					<li>Données collectées par mes soins</li>
-				</ul>
-				<button>DÉCOUVRIR</button>
-			</div>
-			<div class="serviceItem">
-				<img src="img/icon-website.png" />
-				<h3>Site web</h3>
-				<ul>
-					<li>Réalisation de site intégral pour projet de recherche, réseau ou autre</li>
-					<li>Sur hébergeur commercial ou institutionnel (CNRS, université, &hellip;)</li>
-					<li>Intégration d'applications sur mesure (carte, annuaire, etc), newsletter, actualités</li>
-				</ul>
-				<button>DÉCOUVRIR</button>
-			</div>
-			<div class="serviceItem">
-				<img src="img/icon-graphisme.png" />
-				<h3>Graphisme</h3>
-				<ul>
-					<li>Illustration scientifique rigoureuse</li>
-					<li>Schémas pédagogiques</li>
-					<li>Outils de médiation interactifs</li>
-					<li>Logos institutionnels</li>
-				</ul>
-				<button>DÉCOUVRIR</button>
-			</div>
-			<div class="serviceItem">
-				<img src="img/icon-data-viz.png" />
-				<h3>Data visualisation</h3>
-				<ul>
-					<li>Visualisation rigoureuse de données scientifiques complexes</li>
-					<li>Programmation sous R</li>
-					<li>Outils interactifs</li>
-					<li>Déploiement web</li>
-				</ul>
-				<button>DÉCOUVRIR</button>
-			</div>
-			<div class="serviceItem">
-				<img src="img/icon-diaporama.png" />
-				<h3>Diapos</h3>
-				<ul>
-					<li>Création et mise en page de diapositives (PowerPoint, &hellip;)</li>
-					<li>Présentations de recherche</li>
-					<li>Plaidoyers aux pouvoirs publics</li>
-					<li>Bilans de projet aux financeurs</li>
-					<li>Contenus de médiation</li>
-				</ul>
-				<button>DÉCOUVRIR</button>
-			</div>
-			<div class="serviceItem">
-				<img src="img/icon-redaction.png" />
-				<h3>Rédaction</h3>
-				<ul>
-					<li>Rédaction, relecture, traduction EN-FR</li>
-					<li>Textes scientifiques, de médiation et de transfert</li>
-					<li>Compte-rendu de conférence, white paper, article de médiation, écrit académique, &hellip;</li>
-				</ul>
-				<button>DÉCOUVRIR</button>
-			</div>
-			<div class="serviceItem">
-				<img src="img/icon-autres.png" />
-				<h3>Autres</h3>
-				<ul>Selon vos besoins, mise à profit de mon expérience en :
-					<li>Recherche interdisciplinaire</li>
-					<li>Tranfert aux acteurs publics, privés et associatifs</li>
-					<li>Gestion de projet</li>
-					<li>Médiation et communication des sciences.</li>
-				</ul>
-				<button>DÉCOUVRIR</button>
+		<div class="container">
+			<h2 class="">Produits et services</h2>
+			<div id="servicesBox">
+				<div class="serviceItem">
+					<img src="img/carteGdrPo-2.png" />
+					<h3 class="">Carto</h3>
+					<ul>
+						<li>Cartes interactives web et outils de visualisation spatiale.</li>
+						<li>Membres, laboratoires, partenaires, chantiers ou autres, avec fiche d'information. </li>
+						<li>Solution sur mesure adaptée à vos besoins, données collectées par mes soins.</li>
+					</ul>
+					<a class="bouton" href="carto.html">DÉCOUVRIR</a>
+				</div>
+				<div class="serviceItem">
+					<img src="img/membresRTM.png" />
+					<h3>Annuaire</h3>
+					<ul>
+						<li>Annuaire web avec filtre par catégorie et recherche par mots-clés</li>
+						<li>Données collectées par mes soins</li>
+					</ul>
+					<a class="bouton" href="annuaire.html">DÉCOUVRIR</a>
+				</div>
+				<div class="serviceItem">
+					<img src="img/icon-website.png" />
+					<h3>Site web</h3>
+					<ul>
+						<li>Réalisation de site intégral pour projet de recherche, réseau ou autre</li>
+						<li>Sur hébergeur commercial ou institutionnel (CNRS, université, &hellip;)</li>
+						<li>Intégration d'applications sur mesure (carte, annuaire, etc), newsletter, actualités</li>
+					</ul>
+					<button>DÉCOUVRIR</button>
+				</div>
+				<div class="serviceItem">
+					<img src="img/icon-graphisme.png" />
+					<h3>Graphisme</h3>
+					<ul>
+						<li>Illustration scientifique rigoureuse</li>
+						<li>Schémas pédagogiques</li>
+						<li>Outils de médiation interactifs</li>
+						<li>Logos institutionnels</li>
+					</ul>
+					<button>DÉCOUVRIR</button>
+				</div>
+				<div class="serviceItem">
+					<img src="img/icon-data-viz.png" />
+					<h3>Data visualisation</h3>
+					<ul>
+						<li>Visualisation rigoureuse de données scientifiques complexes</li>
+						<li>Programmation sous R</li>
+						<li>Outils interactifs</li>
+						<li>Déploiement web</li>
+					</ul>
+					<button>DÉCOUVRIR</button>
+				</div>
+				<div class="serviceItem">
+					<img src="img/icon-diaporama.png" />
+					<h3>Diapos</h3>
+					<ul>
+						<li>Création et mise en page de diapositives (PowerPoint, &hellip;)</li>
+						<li>Présentations de recherche</li>
+						<li>Plaidoyers aux pouvoirs publics</li>
+						<li>Bilans de projet aux financeurs</li>
+						<li>Contenus de médiation</li>
+					</ul>
+					<button>DÉCOUVRIR</button>
+				</div>
+				<div class="serviceItem">
+					<img src="img/icon-redaction.png" />
+					<h3>Rédaction</h3>
+					<ul>
+						<li>Rédaction, relecture, traduction EN-FR</li>
+						<li>Textes scientifiques, de médiation et de transfert</li>
+						<li>Compte-rendu de conférence, white paper, article de médiation, écrit académique, &hellip;
+						</li>
+					</ul>
+					<button>DÉCOUVRIR</button>
+				</div>
+				<div class="serviceItem">
+					<img src="img/icon-autres.png" />
+					<h3>Autres</h3>
+					<ul>Selon vos besoins, mise à profit de mon expérience en :
+						<li>Recherche interdisciplinaire</li>
+						<li>Tranfert aux acteurs publics, privés et associatifs</li>
+						<li>Gestion de projet</li>
+						<li>Médiation et communication des sciences.</li>
+					</ul>
+					<button>DÉCOUVRIR</button>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section id="clients" class="blanc">
-		<h2>Ils m'ont fait confiance</h2>
-		<div id="logos">
-			<div>
-				<img src="img/logo-cnrs.png" />
-			</div>
-			<div>
-				<img src="img/logo-lru.png" />
-			</div>
-			<div>
-				<img src="img/logo-lactu.png" id="lactu" />
-			</div>
-			<div>
-				<img src="img/logo-gdrpo.png" />
-			</div>
-			<div>
-				<img src="img/logo-rt-mangroves.png" />
-			</div>
-			<div>
-				<img src="img/logo-tesna.jpg" />
-			</div>
-			<div>
-				<img src="img/logo-rivages.webp" />
-			</div>
-			<div>
-				<img src="img/logo-futursACT.png" />
-			</div>
-			<div>
-				<img src="img/logo-naiades.png" />
-			</div>
-			<div>
-				<img src="img/logo-uicn.png" />
-			</div>
-			<div>
-				<img src="img/logo-alinsky.png" />
+		<div class="container">
+			<h2>Ils m'ont fait confiance</h2>
+			<div id="logos">
+				<div>
+					<img src="img/logo-cnrs.png" />
+				</div>
+				<div>
+					<img src="img/logo-lru.png" />
+				</div>
+				<div>
+					<img src="img/logo-lactu.png" id="lactu" />
+				</div>
+				<div>
+					<img src="img/logo-gdrpo.png" />
+				</div>
+				<div>
+					<img src="img/logo-rt-mangroves.png" />
+				</div>
+				<div>
+					<img src="img/logo-tesna.jpg" />
+				</div>
+				<div>
+					<img src="img/logo-rivages.webp" />
+				</div>
+				<div>
+					<img src="img/logo-futursACT.png" />
+				</div>
+				<div>
+					<img src="img/logo-naiades.png" />
+				</div>
+				<div>
+					<img src="img/logo-uicn.png" />
+				</div>
+				<div>
+					<img src="img/logo-alinsky.png" />
+				</div>
 			</div>
 		</div>
 	</section>
@@ -238,21 +248,12 @@
 				</div>
 				<p>Représentation interactive utilisée dans une expérience de psychologie sur la cognition incarnée.</p>
 			</div>
-			<div id="film">
-				<div id="filmBox" class="corrected">
-					<iframe src="https://drive.google.com/file/d/1fi48DX6CswK8U--JjdE56mMhnWRhD0Zb/preview" width="496"
-						height="278"></iframe>
-				</div>
-				<p><em>L’imprimerie</em>, 2019, portrait réalisé avec l’association Dealers de Science sur le thème de
-					la culture scientifique et technique.</p>
-			</div>
 			<div>
 				<div id="beerItem" class="corrected">
 					<iframe id="beerFrame" src="beer/beer-thumb.html" scrolling="no"></iframe>
 				</div>
 				<p>Un outil pédagogique à ambiance scientifique&#8239;: le <a href="beer/beer.html"
-						target="_blank">tableau périodique des styles de bière</a>. Tout en technologie web, codé à la
-					main.</p>
+						target="_blank">tableau périodique des styles de bière</a>. Tout en technologie web, codé à la main.</p>
 			</div>
 			<div>
 				<div id="siteGdr" class="corrected">
