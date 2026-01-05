@@ -206,12 +206,8 @@ a.bouton {
 
 button:hover,
 a.bouton:hover {
-	/*	background: #ff0080;
-/*	background: radial-gradient(circle, var(--pink) 0%, var(--gold) 100%);
-*/
-	background: #ff0080;
+	background: var(--pink);
 	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 191, 0, 1) 70%);
-	/*	background: var(--pink);*/
 	color: white;
 }
 
