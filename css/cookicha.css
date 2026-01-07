@@ -4,6 +4,7 @@
 	--light-grey: #f3f3f3;
 	--mid-grey: #ccc;
 	--dark-grey: #888;
+	--gap: 20px;
 	--margeXL: 120px;
 	--marge: 80px;
 	--demi-marge: 40px;
@@ -12,11 +13,13 @@
 	--light-gold: #ffda75;
 	--pink: rgba(255, 0, 128, 1);
 	--green: #99b160;
+	--mauve: #C18AFF;
 
 }
 
 ::selection {
 	background-color: var(--gold);
+	-webkit-text-fill-color: white;
 }
 
 * {
@@ -50,7 +53,6 @@
 
 .box-shadow {
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-	border-radius: 3px;
 }
 
 .no-box-shadow {
@@ -59,6 +61,13 @@
 
 .hide {
 	display: none !important;
+}
+
+.full-vh {
+	min-height: 100vh;
+}
+.margin-top {
+	margin-top: var(--demi-marge);
 }
 
 * {
@@ -81,12 +90,15 @@ body {
 	padding: 0;
 	margin: 0;
 }
-
+main {
+	min-height: 100vh;
+}
 section {
 	position: relative;
 	padding: var(--marge) 0;
 	width: 100%;
 	box-sizing: border-box;
+	z-index: 1;
 }
 
 section.titre {
@@ -94,6 +106,14 @@ section.titre {
 	text-align: left;
 	background: black;
 	color: white;
+	z-index: 3;
+}
+.slope {
+		clip-path: polygon(0 0,
+			100% 0,
+			100% 90%,
+			0 100%);
+
 }
 
 .container {
@@ -102,7 +122,15 @@ section.titre {
 	padding: 0 2rem;
 	box-sizing: border-box;
 }
-
+.container-small {
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 0 2rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
 h1 {
 	font-family: 'Lilita One', sans-serif;
 	font-size: clamp(2.2em, 4.5vw, 4em);
@@ -112,7 +140,7 @@ h1 {
 h2 {
 	font-family: 'Lilita One', sans-serif;
 	font-size: clamp(1.8em, 3vw, 2.6em);
-	margin: var(--demi-marge) 0 var(--marge) 0;
+	margin: var(--marge) 0 var(--demi-marge) 0;
 	text-transform: uppercase;
 	text-align: center;
 	font-weight: 300;
@@ -121,7 +149,7 @@ h2 {
 h3 {
 	font-family: 'Lilita One', sans-serif;
 	font-weight: 300;
-	font-size: 1.8em;
+	font-size: 1.6em;
 }
 
 p {
@@ -130,31 +158,38 @@ p {
 
 }
 
-.sous-titre {
+.tagline {
+	font-size: 1.2em;
 	font-weight: 700;
+	background: var(--pink);
+	background: linear-gradient(90deg, var(--pink) -20%, var(--mauve) 100%);
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 /* Listes personnalisées */
-ul {
+
+main ul {
 	text-align: left;
 	list-style: none;
 	padding-left: 0;
 	max-width: 42rem;
 }
 
-ul li {
+main ul li {
 	margin-left: 1.3em;
 	text-indent: -1.3em;
 }
 
-ul li::before {
+main ul li::before {
 	content: "★";
 	margin-right: 0.4em;
-}
-
-ul li::before {
 	color: var(--gold);
-	/* Pour les éléments impairs (1er, 3ème, etc.) */
 }
 
 
@@ -176,7 +211,7 @@ a.white {
 
 a.fancy:hover {
 	background: #ff0080;
-	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 191, 0, 1) 70%);
+	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 191, 0, 1) 85%);
 	/* Set the background size and repeat properties. */
 	background-size: 100%;
 	background-repeat: repeat;
@@ -202,12 +237,13 @@ a.bouton {
 	box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.6);
 	text-decoration: none;
 	box-sizing: border-box;
+	text-align: center;
 }
 
 button:hover,
 a.bouton:hover {
 	background: var(--pink);
-	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 191, 0, 1) 70%);
+	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 191, 0, 1) 85%);
 	color: white;
 }
 
@@ -220,8 +256,7 @@ button:hover {
 	background: var(--dark-grey) !important;
 }
 
-
-menu {
+.main-nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -231,10 +266,9 @@ menu {
 	z-index: 200;
 	font-size: 0.9rem;
 	line-height: 2;
-	
 }
 
-menu .container {
+.main-nav .container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -244,18 +278,18 @@ menu .container {
 	width: 100%;
 }
 
-#menu-titre {
+.main-nav .nav-title {
 	font-family: 'Lilita One', sans-serif;
 	font-size: 2em;
 	font-weight: normal;
+	position: relative;
 }
-#menu-titre a {
+
+.main-nav .nav-title a {
 	font-weight: normal;
 }
 
-menuitem {}
-
-#menuRight {
+.main-nav .nav-links {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -263,18 +297,25 @@ menuitem {}
 	align-items: center;
 	gap: 30px;
 	font-weight: 700;
+	text-transform: uppercase;
 }
 
-menu a {
+.main-nav .nav-links li {
+	text-align: left;
+	list-style: none;
+	padding: 0;
+}
+
+.main-nav a {
 	background-color: black;
 	color: var(--mid-grey);
 	text-decoration: none;
 }
 
-menu a:hover,
+.main-nav a:hover:not(.active),
 a.menulike:hover {
 	background: #ff0080;
-	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 191, 0, 1) 70%);
+	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 191, 0, 1) 85%);
 	/* Set the background size and repeat properties. */
 	background-size: 100%;
 	background-repeat: repeat;
@@ -283,6 +324,23 @@ a.menulike:hover {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-decoration: none;
+}
+
+.main-nav a.active {
+	cursor: default;
+	color: white;
+	position: relative;
+}
+
+.main-nav a.active:not(.nav-title)::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 4px;
+	background: white;
+	position: absolute;
+	left: 0;
+	top: 33px;
 }
 
 
@@ -304,10 +362,12 @@ a.menulike:hover {
 	color: white;
 	text-shadow: 0.2em 0.2em 0 rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.2);
 }
+
 #blocktitre .gros-titre {
 	font-size: clamp(3.4rem, 8vw, 8rem);
 	font-family: 'Lilita One', 'Inter', sans-serif;
 }
+
 #blocktitre .titre {
 	font-size: clamp(1.2rem, 2.6vw, 4rem);
 	font-family: 'Inter', sans-serif;
@@ -326,47 +386,88 @@ a.menulike:hover {
 	color: inherit;
 }
 
-/* --- SERVICES --- */
-#servicesBox {
+/* --- CARDS --- */
+.cards-container {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	gap: 20px;
+	gap: var(--gap);
+	width: 100%;
 }
 
-.serviceItem {
+.card {
 	flex: 0 1 320px;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: flex-start;
-	gap: 1em;
-	padding: 20px;
-	text-align: center;
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+	padding: var(--gap);
 	border-radius: 3px;
 	background: white;
 	font-size: 0.9rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	gap: var(--gap);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
-.serviceItem>* {
+.small .card {
+	flex: 0 1 240px;
+	box-shadow: none;
+	background: transparent;
+}
+
+.small .card .card-contents h3 {
+	text-align: left;
+	line-height: 1;
+}
+
+.large .card {
+	flex: 0 1 510px;
+}
+
+.card>* {
 	margin: 0;
 }
 
-.serviceItem img {
+.card .card-illustration {
+	text-align: center;
+}
+
+.card .card-illustration img {
 	max-width: 320px;
-	aspect-ratio: 3 / 2;
+	max-height: 228px;
+	object-fit: contain;
+	margin: auto;
+	/* Centre l'image si elle est plus petite */
+	display: block;
+	/* Évite les espaces bizarres */
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 }
 
-.serviceItem h3 {}
-
-.serviceItem:nth-child(even) ul li::before {
-	color: var(--pink);
-	/* Pour les éléments pairs (2ème, 4ème, etc.) */
+.small .card .card-illustration img {
+	max-width: 260px;
+	max-height: 600px;
 }
 
-.serviceItem .bouton,
-.serviceItem button {
+.large .card .card-illustration img {
+	max-width: 510px;
+	max-height: 320px;
+}
+
+.card .card-contents {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1em;
+}
+
+.card .card-contents h3 {
+	text-align: center;
+}
+
+.card:nth-child(even) ul li::before {
+	color: var(--pink);
+}
+
+.card .bouton,
+.card button {
 	margin-top: auto;
 }
 
@@ -374,7 +475,7 @@ a.menulike:hover {
 #logos {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content:center;
+	justify-content: center;
 	align-items: center;
 	align-content: center;
 	gap: 30px;
@@ -394,14 +495,7 @@ a.menulike:hover {
 }
 
 /* --- EXEMPLES --- */
-section.exemples {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-around;
-	align-items: flex-start;
-	gap: 40px;
-	font-size: 1rem;
-}
+section.exemples {}
 
 section.exemples .exemple {
 	display: flex;
@@ -423,6 +517,10 @@ section.exemples .exemple:not(:last-child)::after {
 	/* Espace entre le projet et la ligne */
 }
 
+section.exemples .exemple:last-child {
+	padding-bottom: 100px;
+}
+
 section.exemples .exemple .column {
 	flex: 0 1 43%;
 }
@@ -441,11 +539,15 @@ section.exemples .exemple .column>a>img {
 	margin: 0 auto;
 }
 
-footer {
+.description ul {
+	margin-bottom: 1em;
+}
+
+#footer {
 	background: black;
 	color: white;
 	position: relative;
-	height: 380px;
+	height: 240px;
 	margin: 0;
 	display: flex;
 	flex-flow: row nowrap;
@@ -455,9 +557,9 @@ footer {
 
 }
 
-footer #footerGauche {
+#footer #footerGauche {
 	width: 50%;
-	height: 380px;
+	height: 240px;
 	position: relative;
 	display: flex;
 	flex-flow: column nowrap;
@@ -465,13 +567,13 @@ footer #footerGauche {
 	align-items: center;
 }
 
-footer #footerGauche p {
+#footer #footerGauche p {
 	color: white;
 	font-weight: bold;
 	text-align: center;
 }
 
-footer>img {
+#footer img {
 	width: 50%;
 	float: right;
 	top: 0;
