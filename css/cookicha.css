@@ -435,11 +435,13 @@ a.menulike:hover {
 }
 
 .small .card {
-	flex: 1 1 240px;
+	flex: 0 1 240px;
 	box-shadow: none;
 	background: transparent;
 }
-
+.small .card .card-contents {
+	padding:0 4px;
+}
 .small .card .card-contents h3 {
 	text-align: left;
 	line-height: 1;
