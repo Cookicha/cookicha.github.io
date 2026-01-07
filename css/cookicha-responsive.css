@@ -5,6 +5,14 @@
 		display: none !important;
 	}
 
+	#logos {
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		gap: clamp(10px, 10vw, 30px);
+	}
+
 	#logos img {
 		max-width: 50vw !important;
 		height: auto;
@@ -20,7 +28,8 @@
 }
 
 @media (pointer: coarse) {
-  .hide-touch {
-    display: none !important; /* Masque complètement l'élément */
-  }
+	.hide-touch {
+		display: none !important;
+		/* Masque complètement l'élément */
+	}
 }

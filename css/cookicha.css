@@ -506,14 +506,6 @@ a.menulike:hover {
 	gap: 30px;
 }
 
-#logos div {
-	text-align: center;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
-}
-
 #logos img {
 	max-width: 200px;
 	max-height: 120px;
@@ -580,7 +572,7 @@ section.exemples .exemple .column>a>img {
 	justify-content: space-between;
 	align-items: stretch;
 	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
-	font-size: clamp(0.5em,2vw,1em);
+	font-size: clamp(0.5em,2.6vw,1em);
 
 }
 
