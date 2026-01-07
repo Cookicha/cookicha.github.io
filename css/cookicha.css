@@ -24,6 +24,8 @@
 
 * {
 	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
 }
 
 .gris {
@@ -66,13 +68,30 @@
 .full-vh {
 	min-height: 100vh;
 }
+
 .margin-top {
 	margin-top: var(--demi-marge);
 }
 
-* {
-	margin: 0;
-	padding: 0;
+.slope {
+	clip-path: polygon(0 0,
+			100% 0,
+			100% 90%,
+			0 100%);
+}
+
+.tagline {
+	font-size: 1.2em;
+	font-weight: 700;
+	background: var(--pink);
+	background: linear-gradient(90deg, var(--pink) -20%, var(--mauve) 100%);
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 html {
@@ -90,9 +109,11 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
 main {
 	min-height: 100vh;
 }
+
 section {
 	position: relative;
 	padding: var(--marge) 0;
@@ -108,13 +129,7 @@ section.titre {
 	color: white;
 	z-index: 3;
 }
-.slope {
-		clip-path: polygon(0 0,
-			100% 0,
-			100% 90%,
-			0 100%);
 
-}
 
 .container {
 	max-width: 1200px;
@@ -122,6 +137,7 @@ section.titre {
 	padding: 0 2rem;
 	box-sizing: border-box;
 }
+
 .container-small {
 	max-width: 640px;
 	margin: 0 auto;
@@ -131,6 +147,7 @@ section.titre {
 	flex-flow: column nowrap;
 	align-items: center;
 }
+
 h1 {
 	font-family: 'Lilita One', sans-serif;
 	font-size: clamp(2.2em, 4.5vw, 4em);
@@ -158,19 +175,7 @@ p {
 
 }
 
-.tagline {
-	font-size: 1.2em;
-	font-weight: 700;
-	background: var(--pink);
-	background: linear-gradient(90deg, var(--pink) -20%, var(--mauve) 100%);
-	/* Set the background size and repeat properties. */
-	background-size: 100%;
-	background-repeat: repeat;
-	/* Use the text as a mask for the background. */
-	/* This will show the gradient as a text color rather than element bg. */
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
+
 
 /* Listes personnalisées */
 
@@ -221,7 +226,6 @@ a.fancy:hover {
 	-webkit-text-fill-color: transparent;
 }
 
-button,
 a.bouton {
 	text-transform: uppercase;
 	display: inline-block;
@@ -240,20 +244,10 @@ a.bouton {
 	text-align: center;
 }
 
-button:hover,
 a.bouton:hover {
 	background: var(--pink);
 	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 191, 0, 1) 85%);
 	color: white;
-}
-
-button {
-	background: var(--dark-grey) !important;
-	cursor: auto !important;
-}
-
-button:hover {
-	background: var(--dark-grey) !important;
 }
 
 .main-nav {
@@ -264,7 +258,7 @@ button:hover {
 	/* Empêche le dépassement */
 	background: black;
 	z-index: 200;
-	font-size: 0.9rem;
+	font-size: clamp(0.6rem, 1.6vw, 0.9rem);
 	line-height: 2;
 }
 
@@ -295,7 +289,7 @@ button:hover {
 	flex-wrap: nowrap;
 	justify-content: flex-end;
 	align-items: center;
-	gap: 30px;
+	gap: clamp(0.5rem, 2vw, 2rem);
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -340,9 +334,38 @@ a.menulike:hover {
 	background: white;
 	position: absolute;
 	left: 0;
-	top: 33px;
+	top: 200%;
+}
+/* BURGER MENU */
+.nav-toggle {
+  display: none;
+  background: none;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
 }
 
+@media (max-width: 500px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .main-nav.open .nav-links {
+    display: flex;
+  }
+
+  .main-nav .container {
+    flex-wrap: wrap;
+  }
+}
 
 /* --- HERO --- */
 #hero {
@@ -364,7 +387,7 @@ a.menulike:hover {
 }
 
 #blocktitre .gros-titre {
-	font-size: clamp(3.4rem, 8vw, 8rem);
+	font-size: clamp(2.6rem, 8vw, 8rem);
 	font-family: 'Lilita One', 'Inter', sans-serif;
 }
 
@@ -392,7 +415,7 @@ a.menulike:hover {
 	flex-flow: row wrap;
 	justify-content: center;
 	gap: var(--gap);
-	width: 100%;
+	margin: 0 2rem;
 }
 
 .card {
@@ -466,8 +489,7 @@ a.menulike:hover {
 	color: var(--pink);
 }
 
-.card .bouton,
-.card button {
+.card .bouton {
 	margin-top: auto;
 }
 
@@ -500,8 +522,9 @@ section.exemples {}
 section.exemples .exemple {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	gap: var(--gap);
 }
 
 section.exemples .exemple:not(:last-child)::after {
@@ -522,7 +545,7 @@ section.exemples .exemple:last-child {
 }
 
 section.exemples .exemple .column {
-	flex: 0 1 43%;
+	flex: 1;
 }
 
 section.exemples .exemple .column:first-child {

@@ -16,8 +16,21 @@ function highlightCurrentPage() {
   });
 }
 
+function initMenuToggle() {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+
+  if (!toggle || !nav) return;
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+}
+
+
 loadPartial("#header", "/partials/header.html").then(() => {
   highlightCurrentPage();
+  initMenuToggle();
 });
 loadPartial("#footer", "/partials/footer.html");
 

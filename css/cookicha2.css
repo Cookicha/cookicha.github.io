@@ -1,84 +1,3 @@
-#galerie {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: flex-start;
-	justify-content: flex-start;
-	width: 100%;
-	align-items: flex-start;
-	overflow: hidden;
-	gap: 40px;
-}
-
-#galerie>div {
-	flex: 0 1 20%;
-}
-
-#galerie>div:first-child {
-	height: 500px;
-}
-.corrected {
-	display: inline-block;
-}
-
-#galerie>div>p {
-	padding: 0 4px;
-}
-
-#magazine {
-	flex-basis: 40%;
-}
-
-#magazine img {
-	display: inline-block;
-	margin: 10px;
-}
-
-/*Nanoplastiques*/
-#beforeAfter {
-	width: 500px;
-}
-
-.img-comp-container {
-	position: relative;
-	height: 500px;
-	/*should be the same height as the images*/
-}
-
-.img-comp-img {
-	position: absolute;
-	width: auto;
-	height: auto;
-	overflow: hidden;
-}
-
-.img-comp-img img {
-	display: block;
-	vertical-align: middle;
-}
-
-.img-comp-slider {
-	position: absolute;
-	z-index: 9;
-	cursor: ew-resize;
-	/*set the appearance of the slider:*/
-	width: 80px;
-	height: 80px;
-	background-color: var(--teal);
-	border-radius: 50%;
-	border: 3px solid white;
-	line-height: 76px;
-	vertical-align: center;
-	text-align: center;
-	color: white;
-	font-size: 60px;
-	font-weight: bold;
-
-}
-
-.img-comp-slider:after {
-	content: "\2B04";
-}
-
 /*diapos*/
 .scroll {
 	height: 360px;
@@ -102,26 +21,11 @@
 	margin: 10px 0;
 }
 
-/*Dessins vectoriels*/
-#icones {
-	background: transparent;
-	height: 500px;
-	width: 334px;
-	display: flex;
-	flex-flow: column-reverse wrap;
-	justify-content: center;
-	align-items: center;
-}
-
-#icones img {
-	height: 33.33%;
-	padding: 0;
-	margin: 0;
-}
-
 /*Bouteille bleue*/
-#fillTheBottle {	
-	text-align:center;
+#fillTheBottle {
+	display: flex;
+	flex-flow: row-reverse nowrap;
+	align-items: flex-end;
 }
 
 #boxBouteille {
@@ -129,9 +33,6 @@
 	position: relative;
 	width: 360px;
 	height: 500px;
-	top: 0;
-	left: 0;
-	margin-left: 60px;
 }
 
 #bouteille,
@@ -204,51 +105,23 @@
 	font-size: 20px;
 }
 
-/*Bière*/
-#beerItem, #musicItem {
-	width: 520px;
+/*Bière + music*/
+.iframe-column {
+	flex: 1;
+	min-width: 0;
+}
+
+.iframe-viewport {
+	width: 100%;
 	height: 360px;
-	overflow: hide;
+	overflow: hidden;
 	position: relative;
 }
 
-#beerFrame {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 1080px;
-	height: 720px;
-	overflow: hidden;
+.iframe-viewport iframe {
 	border: none;
-	box-shadow: none;
-	-moz-transform: scale(0.5, 0.5);
-	-webkit-transform: scale(0.5, 0.5);
-	-o-transform: scale(0.5, 0.5);
-	-ms-transform: scale(0.5, 0.5);
-	transform: scale(0.5, 0.5);
-	-moz-transform-origin: top left;
-	-webkit-transform-origin: top left;
-	-o-transform-origin: top left;
-	-ms-transform-origin: top left;
-	transform-origin: top left;
-}
-#musicFrame {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 780px;
-	height: 540px;
-	overflow: hidden;
-	border: none;
-	box-shadow: none;
-	-moz-transform: scale(0.66, 0.66);
-	-webkit-transform: scale(0.66, 0.66);
-	-o-transform: scale(0.66, 0.66);
-	-ms-transform: scale(0.66, 0.66);
-	transform: scale(0.66, 0.66);
-	-moz-transform-origin: top left;
-	-webkit-transform-origin: top left;
-	-o-transform-origin: top left;
-	-ms-transform-origin: top left;
+	width: 200%;
+	height: 200%;
+	transform: scale(0.5);
 	transform-origin: top left;
 }

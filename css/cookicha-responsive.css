@@ -72,16 +72,6 @@
 		display: none !important;
 	}
 
-	/* Un message personnalisé */
-
-	body:before {
-		content: "Version mobile du site";
-		display: block;
-		text-align: center;
-		font-style: italic;
-		color: #777;
-	}
-
 	#logos img {
 		max-width: 50vw !important;
 		height: auto;
