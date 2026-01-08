@@ -47,7 +47,21 @@
 	z-index: 999;
 }
 
+.main-nav .nav-title.MG {
+	display: none;
+}
+
 @media (max-width: 500px) {
+	.main-nav .nav-title.MG {
+		display: block;
+	}
+
+	.main-nav .nav-title.full {
+		display: none;
+	}
+}
+
+@media (max-width: 400px) {
 	.nav-toggle {
 		display: block;
 	}
@@ -69,6 +83,14 @@
 	}
 
 	.main-nav a.active:not(.nav-title)::after {
-		top: -1em!important;
+		top: -1em !important;
+	}
+
+	.main-nav .nav-title.MG {
+		display: none;
+	}
+
+	.main-nav .nav-title.full {
+		display: block;
 	}
 }
