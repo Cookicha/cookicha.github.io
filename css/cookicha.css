@@ -399,7 +399,7 @@ a.menulike:hover {
 }
 
 .card {
-	flex: 0 1 320px;
+	flex: 1 1 320px;
 	padding: var(--gap);
 	border-radius: 3px;
 	background: white;
