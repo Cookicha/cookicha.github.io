@@ -5,7 +5,7 @@
 	overflow: hide;
 	line-height: 1;
 	position: relative;
-	padding: 20px;
+	padding: 10px;
 	background: #eee;
 	margin: 0;
 	-webkit-box-sizing: content-box;
@@ -26,7 +26,7 @@
 	box-sizing: content-box;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1200px) {
 	section.exemples .exemple {
 		flex-flow: column nowrap;
 	}
@@ -58,6 +58,21 @@
 }
 
 @media (max-width: 450px) {
+
+	.scroll,
+	.scroll img {
+		height: 170px;
+	}
+
+	.scroll {
+		width: 302px;
+	}
+
+	section.exemples .exemple p {
+		max-width: 280px;
+	}
+}
+@media (max-width: 400px) {
 
 	.scroll,
 	.scroll img {
