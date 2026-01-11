@@ -95,10 +95,6 @@
 	align-items: flex-end;
 }
 
-.exemples.graphisme * {
-	overflow: hidden;
-}
-
 #boxBouteille {
 	background: white;
 	position: relative;
