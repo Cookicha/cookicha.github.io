@@ -9,9 +9,9 @@
 	--marge: 80px;
 	--demi-marge: 40px;
 	--dark: #333;
-	--gold: rgba(255, 191, 0, 1);
+	--gold: #f9b700;
 	--light-gold: #ffda75;
-	--pink: rgba(255, 0, 128, 1);
+	--pink: #ff0080;
 	--green: #99b160;
 	--mauve: #C18AFF;
 
@@ -218,7 +218,7 @@ a.white {
 
 a.fancy:hover {
 	background: #ff0080;
-	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 191, 0, 1) 85%);
+	background: linear-gradient(90deg, var(--pink) 0%, var(--gold) 85%);
 	/* Set the background size and repeat properties. */
 	background-size: 100%;
 	background-repeat: repeat;
@@ -244,11 +244,12 @@ a.bouton {
 	text-decoration: none;
 	box-sizing: border-box;
 	text-align: center;
+	text-shadow: 0 0 2px rgba(0,0,0,0.4);
 }
 
 a.bouton:hover {
 	background: var(--pink);
-	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 191, 0, 1) 85%);
+	background: linear-gradient(90deg, var(--pink) 0%, var(--gold) 85%);
 	color: white;
 }
 
@@ -316,8 +317,8 @@ a.bouton:hover {
 
 .main-nav a:hover:not(.active),
 a.menulike:hover {
-	background: #ff0080;
-	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 191, 0, 1) 85%);
+	background: var(--pink);
+	background: linear-gradient(90deg, var(--pink) 0%, var(--gold) 85%);
 	/* Set the background size and repeat properties. */
 	background-size: 100%;
 	background-repeat: repeat;
