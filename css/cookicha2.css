@@ -1,7 +1,7 @@
 /*diapos*/
 .scroll {
-	width: 533px;
-	height: 300px;
+	width: 530px;
+	height: 280px;
 	overflow: hide;
 	line-height: 1;
 	position: relative;
@@ -17,7 +17,7 @@
 }
 
 .scroll img {
-	height: 300px;
+	height: 280px;
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -49,7 +49,7 @@
 	}
 
 	.scroll {
-		width: 356px;
+		width: 386px;
 	}
 
 	section.exemples .exemple p {
@@ -65,7 +65,7 @@
 	}
 
 	.scroll {
-		width: 302px;
+		width: 334px;
 	}
 
 	section.exemples .exemple p {
@@ -80,7 +80,7 @@
 	}
 
 	.scroll {
-		width: 249px;
+		width: 280px;
 	}
 
 	section.exemples .exemple p {
