@@ -1,3 +1,6 @@
+$(window).on('load', function () {
+  $('#main').zoomTo();
+});
 $(document).ready(function() {
  $('#li1').hover(function(){
   $('#I').addClass('onfocus');

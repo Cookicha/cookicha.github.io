@@ -11,26 +11,31 @@ section,
 }
 
 body {
-	background: #f3f0f0;
 	font-family: "Times New Roman";
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
 	overflow-x: hidden;
 	overflow-y: auto;
+	background: #222;
 }
-
+.content {
+	margin-top:40px;
+	background: #222;
+}
 #main {
+	background: #f3f0f0;
 	position: relative;
 	width: 980px;
 	height: 740px;
-	margin: -20px auto;
+	margin: 0 auto;
+	padding: 0 80px;
 }
 
 h1 {
 	position: absolute;
 	top: 30px;
-	right: 84px;
+	right: 164px;
 	font-size: 32px;
 	font-weight: 700;
 	background: #222;
@@ -118,19 +123,19 @@ h1 {
 
 #ales {
 	top: 490px;
-	left: 4px;
+	left: 84px;
 	width: 678px;
 }
 
 #lagers {
 	top: 490px;
-	left: 696px;
+	left: 778px;
 	width: 262px;
 }
 
 #mixed {
 	top: 700px;
-	left: 488px;
+	left: 568px;
 	width: 472px;
 }
 
@@ -138,7 +143,7 @@ h1 {
 	cursor: default;
 	position: absolute;
 	top: 516px;
-	left: 6px;
+	left: 86px;
 	width: 454px;
 	height: 170px;
 	background: white;
@@ -318,21 +323,14 @@ h3 {
 }
 
 footer {
-	clear: both;
-	margin: 0;
-	margin-top: 80px;
-	padding: 0.6em 0;
 	background: #222;
 	color: white;
-	display: block;
-	min-height: 3em;
-	box-shadow: 0 6px 6px -3px black inset;
+	line-height: 2;
 	position: relative;
 	width: 100%;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.8em;
-	position: relative;
-	bottom: 0;
+	text-align:center;
 }
 
 footer p {
