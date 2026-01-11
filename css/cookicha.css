@@ -244,7 +244,7 @@ a.bouton {
 	text-decoration: none;
 	box-sizing: border-box;
 	text-align: center;
-	text-shadow: 0 0 2px rgba(0,0,0,0.4);
+	text-shadow: 0 0 6px rgba(132, 97, 0, 0.3);
 }
 
 a.bouton:hover {
