@@ -376,6 +376,11 @@ a.menulike:hover {
 	font-family: 'Inter', sans-serif;
 	font-weight: 800;
 }
+#blocktitre .sous-titre {
+	font-size: clamp(1rem, 2.2vw, 3rem);
+	font-family: 'Inter', sans-serif;
+	font-weight: 800;
+}
 
 /* --- CREDIT --- */
 #credit {
