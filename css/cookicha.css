@@ -469,7 +469,8 @@ a.menulike:hover {
 	text-align: center;
 }
 
-.card:nth-child(even) ul li::before {
+.card:nth-child(even) ul li::before,
+ul.pink li::before {
 	color: var(--pink);
 }
 
