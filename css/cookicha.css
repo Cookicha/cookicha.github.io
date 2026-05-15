@@ -149,6 +149,15 @@ section.titre {
 	flex-flow: column nowrap;
 	align-items: center;
 }
+.container-medium {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 2rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
 
 h1 {
 	font-family: 'Lilita One', sans-serif;
