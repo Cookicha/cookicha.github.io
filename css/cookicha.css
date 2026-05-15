@@ -315,7 +315,7 @@ a.bouton:hover {
 	text-decoration: none;
 }
 
-.main-nav a:hover:not(.active),
+.main-nav a:hover,
 a.menulike:hover {
 	background: var(--pink);
 	background: linear-gradient(90deg, var(--pink) 0%, var(--gold) 85%);
@@ -329,7 +329,7 @@ a.menulike:hover {
 	text-decoration: none;
 }
 
-.main-nav a.active:not(.nav-title) {
+.main-nav a.active {
 	cursor: default;
 	color: white;
 }
