@@ -330,7 +330,6 @@ a.menulike:hover {
 }
 
 .main-nav a.active {
-	cursor: default;
 	color: white;
 }
 
