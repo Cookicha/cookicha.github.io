@@ -329,7 +329,7 @@ a.menulike:hover {
 	text-decoration: none;
 }
 
-.main-nav a.active {
+.main-nav a.active:not(.nav-title) {
 	cursor: default;
 	color: white;
 }
