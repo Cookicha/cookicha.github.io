@@ -2,66 +2,165 @@
   margin: 0;
   color: #555;
   z-index: inherit;
-  color:inherit;
+  color: inherit;
 }
+
+html {
+  font-size: clamp(14px, 2vh, 22px);
+}
+
+
 
 body {
   font-family: Quicksand;
   background: #eee;
 }
 
-section {
-  background: #eee;
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 36px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  overflow: hidden;
-  padding:  40px 0;
+header {
+  text-align: center;
+  padding: 5vh 0;
+  margin: 0 1em;
 }
 
-h1 {
-  font-family: Modak;
-  color: white;
-  text-align: center;
-  margin: 12vh 20vw 0 20vw;
-  font-size: 6em;
-  line-height: 1em;
-  font-weight: 100;
-  text-shadow: 3px 4px 0 #aaa;
-  max-width: 80vw;
-}
-h2 {
+/* =========================
+   BUTTON SYSTEM
+   ========================= */
+
+button {
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+
+  min-height: 2.4em;
+  min-width: 2.4em;
+  padding: 0.35em 1em;
+
+  border: none;
+  border-radius: 1.5em;
+
   background: white;
-  color: #ccc;
-  width: 100%;
-  text-align: center;
-  padding: 1em 0;
-  font-size: 2.4em;
-}
-h3 {
-  max-width: 80vw;
-  font-weight:bold;
-  text-align: center;
-  font-size: 2em;
-  line-height: 1em;
-  border-radius: 0;
-  margin: 0;
-  color:white;
-  margin-top: 6vh;
-}
-p {
-  width: 80%;
-  max-width: 960px;
-  text-align: justify;
-  font-size: 1.3em;
-  line-height: 1.4em;
   color: #555;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.12),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+
+button:hover {
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.2  ),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+button:active {
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.15),
+    inset 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   MAIN MODE BUTTONS
+   ========================= */
+
+#mode-buttons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.1em;
+}
+
+#mode-buttons button {
   border-radius: 0;
-  margin: 0;
-  z-index: 999;
+  min-width: 5em;
+  max-width: 12em;
+}
+
+#mode-buttons #scaleMode {
+  flex: 1;
+  border-radius: 1.5em 0 0 1.5em;
+}
+
+#mode-buttons #chordMode {
+  flex: 1;
+  border-radius: 0 1.5em 1.5em 0;
+}
+
+
+/* =========================
+   SECOND MENU
+   ========================= */
+
+#typeMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4em;
+  margin: 0.6em;
+}
+
+#typeMenu button {
+  font-size: 0.95em;
+}
+
+/* =========================
+   THIRD MENU
+   ========================= */
+#notation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.6em;
+  margin: 0 auto;
+}
+
+#notation-buttons button {
+  font-size: 0.9em;
+  width: 3em;
+  height: 2em;
+  padding: 0;
+  border-radius: 3px;
+}
+
+/* =========================
+   SELECTED STATE
+   ========================= */
+
+button.selected {
+  background: #777;
+  color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+#currentSelection {
+  color: #777;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 900;
+  background-color: white;
+  padding: 1em 0;
+  margin-bottom: 5vh;
+}
+
+/* -------------------------*/
+
+
+footer {
+  text-align: center;
+  padding: 2em 0;
 }
 
 b {
@@ -98,130 +197,29 @@ a {
 a:hover {
   background-image: linear-gradient(90deg, rgba(255, 158, 1, 1) 0%, rgba(255, 115, 0, 1) 100%);
 }
+
 sup {
   line-height: 1em;
 }
-#cycle_quintes {
-  width: 80%;
-  max-width: 720px;
-  border-radius: 5%;
-}
-.table {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 2px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 80%;
-  max-width: 960px;
-  user-select: none;
-  margin: 20px 0;
-}
-.table .column {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 2px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  overflow: hidden;
-}
-#diesebemol {
-  font-size: 0.7em;
-}
-#diesebemol .column {
-  width: 7%;
-}
 
-#diesebemol .column div {
-  background: white;
-  color: #555;
-  text-align: center;
-  width: 100%;
-  line-height: 3em;
-  border-radius: 4px;
-}
-
-#diesebemol .column .titre {
-  font-weight: 900;
-  background-image: linear-gradient(120deg, rgba(255, 158, 0, 1) 10%, rgba(255, 0, 224, 1) 50%, rgba(255, 0, 104, 1) 90%);
-  color: white;
-}
-#modes_box {
-  user-select: none;
-  height:80vh;
-  min-height: 14em;
-  max-height: 28em;
-  width: 80%;
-  max-width: 960px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 4vh;
+#wheel {
+  margin: 0 auto;
+  --wheel-size: min(52vh, 90vw);
+  width: var(--wheel-size);
+  height: var(--wheel-size);
+  font-size: calc(var(--wheel-size) / 25);
   position: relative;
-  gap: 2em;
-}
-#barre_modes {
-  width:4em;
-  height: 100%;
-  background-image: linear-gradient(180deg, #663f00 0%, #ffaf2e 100%);
-}
-#modes_table {
-  display: flex;
-  height: 100%;
-  flex-flow: column wrap;
-  gap: 0;
-  justify-content: space-between;
-  align-items:start;
-  user-select: none;
-}
-#modes_table div {
-  font-size: 1.4em;
-  text-align: left;
-  line-height: 1em;
-  font-weight: 900;
-}
-#modes_table #locrian {color:#663f00;}
-#modes_table #phrygian {color:#805004;}
-#modes_table #aeolian {color:#996209;}
-#modes_table #dorian {color:#b37510;}
-#modes_table #mixolydian {color:#cc8818;}
-#modes_table #ionian {color:#e69b22;}
-#modes_table #lydian {color:#ffaf2e;}
-
-#blues_chords {
-  gap:2px;
-}
-#blues_chords .column {
-  width: 4em;
-  min-width: 20px;
-  max-width: 23%;
-  margin: 0;
-}
-#blues_chords .column div {
-  background: white;
-  color: #555;
-  font-size: 1em;
-  text-align: center;
-  width: 100%;
-  line-height: 3em;
-  border-radius: 10px;
-}
-.canvas {
-  width: 50vh;
-  height: 50vh;
-  margin: 4 vh 0;
-  position: relative;
-  max-width: 76vw;
-  max-height: 76vw;
   -webkit-user-select: none;
   /* Safari */
   -ms-user-select: none;
   /* IE 10 and IE 11 */
   user-select: none;
   /* Standard syntax */
+  overflow: hidden;
+}
+#wheel * {
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .box {
@@ -247,22 +245,13 @@ sup {
   top: 6.5%;
 }
 
-.t12 .tick, #modes_canvas .t09 .tick, #cheat_canvas .t09 .tick {
+.t12 .tick {
   box-shadow: 0 0 0 3px #fff, 0 0 0 4px #555;
   background-image: linear-gradient(120deg, rgba(255, 158, 0, 1) 22%, rgba(255, 0, 224, 1) 50%, rgba(255, 0, 104, 1) 76%);
 }
 
-#blues_canvas .t06 .tick {
-  background: blue;
-}
-
-#base_canvas .tick {
-  box-shadow: none;
-  background-image: none;
-  display: none;
-}
-
-.text {
+.text,
+.textbox>div {
   vertical-align: sub;
   position: absolute;
   width: 100%;
@@ -271,27 +260,21 @@ sup {
   line-height: 0.9em;
 }
 
-.exp {
-  font-size: 0.6em;
-  vertical-align: super;
-}
-
-.text.blues {
-  rotate: 180deg;
-  color:blue;
-}
 .out {
   font-size: 1.2em;
 }
+
 #intervals_canvas .out {
   font-size: 1em;
 }
-.out .text {
+
+.out>div {
   bottom: 96%;
   z-index: 2;
 }
 
-.circle, .in {
+.circle,
+.in {
   position: absolute;
   width: 84%;
   height: 84%;
@@ -316,204 +299,105 @@ sup {
   touch-action: none;
 }
 
-.in .text {
+.in .textbox>div {
   top: 4%;
 }
 
-.c01, .t01, .i01, .o01 {
+.c01,
+.t01,
+.i01,
+.o01 {
   rotate: 30deg;
 }
 
-.c02, .t02, .i02, .o02 {
+.c02,
+.t02,
+.i02,
+.o02 {
   rotate: 60deg;
 }
 
-.c03, .t03, .i03, .o03 {
+.c03,
+.t03,
+.i03,
+.o03 {
   rotate: 90deg;
 }
 
-.c04, .t04, .i04, .o04 {
+.c04,
+.t04,
+.i04,
+.o04 {
   rotate: 120deg;
 }
 
-.c05, .t05, .i05, .o05 {
+.c05,
+.t05,
+.i05,
+.o05 {
   rotate: 150deg;
 }
 
-.c06, .t06, .i06, .o06 {
+.c06,
+.t06,
+.i06,
+.o06 {
   rotate: 180deg;
 }
 
-.c07, .t07, .i07, .o07 {
+.c07,
+.t07,
+.i07,
+.o07 {
   rotate: 210deg;
 }
 
-.c08, .t08, .i08, .o08 {
+.c08,
+.t08,
+.i08,
+.o08 {
   rotate: 240deg;
 }
 
-.c09, .t09, .i09, .o09 {
+.c09,
+.t09,
+.i09,
+.o09 {
   rotate: 270deg;
 }
 
-.c10, .t10, .i10, .o10 {
+.c10,
+.t10,
+.i10,
+.o10 {
   rotate: 300deg;
 }
 
-.c11, .t11, .i11, .o11 {
+.c11,
+.t11,
+.i11,
+.o11 {
   rotate: 330deg;
 }
 
-.c12, .t12, .i12, .o12 {
-  rotate: 0deg;
+
+#labels .o06 .text {
+  rotate: 180deg;
 }
 
-/* #intervals_canvas .out .o04 .text, #intervals_canvas .out .o05 .text, #intervals_canvas .out .o06 .text, #intervals_canvas .out .o07 .text, #intervals_canvas .out .o08 .text {rotate:180deg;} */
-#cheat_canvas .t01, #cheat_canvas .t06, #cheat_canvas .t08, #cheat_canvas .t10 {
-  display: none;
+#center {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(var(--wheel-size) / 12);
+  font-weight: 500;
+  user-select: none;
 }
-
-#cheat_canvas .t03 .tick {
-  background: blue;
-}
-
-#cheat_canvas .t05 .tick, #cheat_canvas .t11 .tick {
-  background: #aaa;
-}
-
-#cheat_canvas .t12 .tick, #cheat_canvas .t09 .tick, #modes_canvas .t09 .tick {
-  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #555;
-}
-
-#major_canvas .t01, #major_canvas .t03, #major_canvas .t06, #major_canvas .t08, #major_canvas .t10 {
-  display: none;
-}
-
-#major5_canvas .t01, #major5_canvas .t03, #major5_canvas .t06, #major5_canvas .t08, #major5_canvas .t10, #major5_canvas .t05, #major5_canvas .t11 {
-  display: none;
-}
-
-#minor_canvas .t01, #minor_canvas .t04, #minor_canvas .t06, #minor_canvas .t09, #minor_canvas .t11 {
-  display: none;
-}
-
-#minor5_canvas .t01, #minor5_canvas .t02, #minor5_canvas .t04, #minor5_canvas .t06, #minor5_canvas .t08, #minor5_canvas .t09, #minor5_canvas .t11 {
-  display: none;
-}
-
-#blues_canvas .t01, #blues_canvas .t02, #blues_canvas .t04, #blues_canvas .t08, #blues_canvas .t09, #blues_canvas .t11 {
-  display: none;
-}
-#modes_canvas .t01, #modes_canvas .t03, #modes_canvas .t06, #modes_canvas .t08, #modes_canvas .t10 {
-  display: none;
-}
-#chord_major_canvas .t01, #chord_major_canvas .t02, #chord_major_canvas .t03,#chord_major_canvas .t05,#chord_major_canvas .t06,#chord_major_canvas .t08,#chord_major_canvas .t09,#chord_major_canvas .t10,#chord_major_canvas .t11 {display: none;}
-#chord_minor_canvas .t01, #chord_minor_canvas .t02, #chord_minor_canvas .t04,#chord_minor_canvas .t05,#chord_minor_canvas .t06,#chord_minor_canvas .t08,#chord_minor_canvas .t09,#chord_minor_canvas .t10,#chord_minor_canvas .t11 {display: none;}
-#chord_aug_canvas .t01, #chord_aug_canvas .t02, #chord_aug_canvas .t03,#chord_aug_canvas .t05,#chord_aug_canvas .t06,#chord_aug_canvas .t07,#chord_aug_canvas .t09,#chord_aug_canvas .t10,#chord_aug_canvas .t11 {display: none;}
-#chord_dim_canvas .t01, #chord_dim_canvas .t02, #chord_dim_canvas .t04,#chord_dim_canvas .t05,#chord_dim_canvas .t07,#chord_dim_canvas .t08,#chord_dim_canvas .t09,#chord_dim_canvas .t10,#chord_dim_canvas .t11 {display: none;}
-#major_chords_canvas .t01, #major_chords_canvas .t03, #major_chords_canvas .t06, #major_chords_canvas .t08, #major_chords_canvas .t10 {
-  display: none;
-}
-#minor_chords_canvas .t01, #minor_chords_canvas .t04, #minor_chords_canvas .t06, #minor_chords_canvas .t09, #minor_chords_canvas .t11 {
-  display: none;
-}
-#chord_7_canvas .t01, #chord_7_canvas .t02, #chord_7_canvas .t03,#chord_7_canvas .t05,#chord_7_canvas .t06,#chord_7_canvas .t08,#chord_7_canvas .t09,#chord_7_canvas .t11 {display: none;}
-#chord_maj7_canvas .t01, #chord_maj7_canvas .t02, #chord_maj7_canvas .t03,#chord_maj7_canvas .t05,#chord_maj7_canvas .t06,#chord_maj7_canvas .t08,#chord_maj7_canvas .t09,#chord_maj7_canvas .t10 {display: none;}
-#chord_min7_canvas .t01, #chord_min7_canvas .t02, #chord_min7_canvas .t04,#chord_min7_canvas .t05,#chord_min7_canvas .t06,#chord_min7_canvas .t08,#chord_min7_canvas .t09,#chord_min7_canvas .t11 {display: none;}
-#chord_sus2_canvas .t01, #chord_sus2_canvas .t04, #chord_sus2_canvas .t03,#chord_sus2_canvas .t05,#chord_sus2_canvas .t06,#chord_sus2_canvas .t08,#chord_sus2_canvas .t09,#chord_sus2_canvas .t10,#chord_sus2_canvas .t11 {display: none;}
-#chord_sus4_canvas .t01, #chord_sus4_canvas .t02, #chord_sus4_canvas .t03,#chord_sus4_canvas .t04,#chord_sus4_canvas .t06,#chord_sus4_canvas .t08,#chord_sus4_canvas .t09,#chord_sus4_canvas .t10,#chord_sus4_canvas .t11 {display: none;}
-#chord_7sus2_canvas .t01, #chord_7sus2_canvas .t04, #chord_7sus2_canvas .t03,#chord_7sus2_canvas .t05,#chord_7sus2_canvas .t06,#chord_7sus2_canvas .t08,#chord_7sus2_canvas .t09,#chord_7sus2_canvas .t11 {display: none;}
-#chord_7sus4_canvas .t01, #chord_7sus4_canvas .t02, #chord_7sus4_canvas .t03,#chord_7sus4_canvas .t04,#chord_7sus4_canvas .t06,#chord_7sus4_canvas .t08,#chord_7sus4_canvas .t09,#chord_7sus4_canvas .t11 {display: none;}
-/*
-#infos {
- display:flex;
- flex-flow: line nowrap;
- justify-content: center;
- align-items: center;
- align-content: center;
- gap:1vw;
- color:white;
-}
-#infos > div {
- width:10vw;
- height:10vh;
-}
-#gamme {
- color: inherit;
- font-size: 4em;
- line-height: 1.6em;
- text-align: center;
- font-weight: bold;
-}
-#alterations{
- display: flex;
- flex-flow: column nowrap;
- justify-content: center;
- align-items: center;
- align-content: center;
- gap: 0.5vh;
-}
-#alterations > div {
- height:2px;
- width:80%;
- color:white;
- font-size:4vh;
- position:relative;
-}
-#alterations > div.line {
- background: white;
- z-index: 1;
-}
-#alterations > div > span {
- position:absolute;
- bottom:-1.8vh;
- z-index:100;
-}
-#alterations #line1 {left:1.5vw;}
-#alterations #line2 {left:2vw;}
-#alterations #line3 {left:4vw;}
-#alterations #line4 {left:2.5vw;}
-#alterations #line5 {left:1vw;}
-#alterations #line6 {left:3vw;}
-#alterations #line7 {left:3.5vw;}
-#alterations #line8 {left:1vw;}
-#alterations #line9 {left:1vw;}
-
-#alterations .smaller {font-size: 0.7em;top:10px;} */
-
-
-section#accords {
-  display:flex;
-  flex-flow: row wrap;
-
-}
-
-section#accords .accord {
-  width:300px;
-  max-width: 90vw;
-  position: relative;
-}
-section#accords .accord h3 {
-  color:#555;
-}
-
-section#accords .accord .canvas {
-  width: 300px;
-  height: 300px;
-  max-width: 90vw;
-  max-height: 90vw;
-  margin: 0;
-  position: relative;
-}
-
-section#accords .tick {
-    width: 5%;
-    height: 5%;
-    left: 47.5%;
-    top: 5.5%;
-}
-
-section#accords .in .text {
-  top: 6%;
-  font-size: 0.9em;
+#center img {
+  width: 3.6em;
 }
