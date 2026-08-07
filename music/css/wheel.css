@@ -278,7 +278,7 @@ sup {
   left: 8%;
   border-radius: 100%;
   border: none;
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 .circle {
@@ -390,7 +390,7 @@ sup {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(var(--wheel-size) / 12);
+  font-size: calc(var(--wheel-size) / 10);
   font-weight: 500;
   user-select: none;
 }
