@@ -1,48 +1,39 @@
 // DATA.JS //
 const NOTES = {
-
   sharp_en: [
     "C", "C#", "D", "D#", "E", "F",
     "F#", "G", "G#", "A", "A#", "B"
   ],
-
   flat_en: [
     "C", "Db", "D", "Eb", "E", "F",
     "Gb", "G", "Ab", "A", "Bb", "B"
   ],
-
   sharp_fr: [
     "Do", "Do♯", "Ré", "Ré♯", "Mi", "Fa",
     "Fa♯", "Sol", "Sol♯", "La", "La♯", "Si"
   ],
-
   flat_fr: [
     "Do", "Ré♭", "Ré", "Mi♭", "Mi", "Fa",
     "Sol♭", "Sol", "La♭", "La", "Si♭", "Si"
   ]
-
 };
 
 const TEXT = {
-
   en: {
     scales: "Scales",
     chords: "Chords",
     notation: "Notation",
     language: "Language"
   },
-
   fr: {
     scales: "Gammes",
     chords: "Accords",
     notation: "Notation",
     language: "Langue"
   }
-
 };
 
 const THEORY = {
-
   majorScale: {
     category: "scales",
     name_en: "Major",
@@ -52,7 +43,6 @@ const THEORY = {
       "I", "", "ii", "", "iii", "IV", "", "V", "", "vi", "", "vii°"
     ]
   },
-
   minorScale: {
     category: "scales",
     name_en: "Minor",
@@ -62,7 +52,6 @@ const THEORY = {
       "i", "", "ii°", "III", "", "iv", "", "v", "VI", "", "VII", ""
     ]
   },
-
   pentaMajor: {
     category: "scales",
     name_en: "Pentatonic Major",
@@ -72,7 +61,6 @@ const THEORY = {
       "Tonique", "", "2<sup>de</sup> Maj", "", "3<sup>ce</sup> Maj", "", "", "5<sup>te</sup>", "", "6<sup>te</sup> Maj", "", ""
     ]
   },
-
   pentaMinor: {
     category: "scales",
     name_en: "Pentatonic Minor",
@@ -82,7 +70,27 @@ const THEORY = {
       "Tonique", "", "", "3<sup>ce</sup> min", "", "4<sup>te</sup>", "", "5<sup>te</sup>", "", "", "7<sup>e</sup> min", ""
     ]
   },
-
+  intervals: {
+    category: "tools",
+    name_en: "Intervals",
+    name_fr: "Noms des intervalles",
+    highlights: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    labels: [
+      "Tonique", "<span class='two-liner'>Seconde<br>mineure</span>", "<span class='two-liner'>Seconde<br>majeure</span>", "<span class='two-liner'>Tierce<br>mineure</span>", "<span class='two-liner'>Tierce<br>majeure</span>", "Quarte", "Triton", "Quinte", "<span class='two-liner'>Sixte<br>mineure</span>", "<span class='two-liner'>Sixte<br>majeure</span>", "<span class='two-liner'>Septième<br>mineure</span>", "<span class='two-liner'>Septième<br>majeure</span>"
+    ]
+  },
+transposition: {
+  category: "tools",
+  name_en: "Transposition",
+  name_fr: "Outil de transposition",
+  highlights: [0, 2, 7, 9],
+  labels_en: [
+    "C", "", "Bb", "", "", "", "", "F", "", "Eb", "", ""
+  ],
+  labels_fr: [
+    "Ut", "", "Si♭", "", "", "", "", "Fa", "", "Mi♭", "", ""
+  ]
+},
   majorChord: {
     category: "chords",
     name_en: "Major",
@@ -92,7 +100,6 @@ const THEORY = {
       "Tonique", "", "", "", "3<sup>ce</sup> Maj", "", "", "5<sup>te</sup>", "", "", "", ""
     ]
   },
-
   minorChord: {
     category: "chords",
     name_en: "Minor",
@@ -102,7 +109,6 @@ const THEORY = {
       "Tonique", "", "", "3<sup>ce</sup> min", "", "", "", "5<sup>te</sup>", "", "", "", ""
     ]
   },
-
   dim: {
     category: "chords",
     name_en: "Diminished",
@@ -112,7 +118,6 @@ const THEORY = {
       "Tonique", "", "", "3<sup>ce</sup> min", "", "", "5<sup>te</sup> dim", "", "", "", "", ""
     ]
   },
-
   aug: {
     category: "chords",
     name_en: "Augmented",
@@ -122,7 +127,6 @@ const THEORY = {
       "Tonique", "", "", "", "3<sup>ce</sup> Maj", "", "", "", "5<sup>te</sup> aug", "", "", ""
     ]
   },
-
   seven: {
     category: "chords",
     name_en: "Dominant 7",
@@ -132,7 +136,6 @@ const THEORY = {
       "Tonique", "", "", "", "3<sup>ce</sup> Maj", "", "", "5<sup>te</sup>", "", "", "7<sup>e</sup> min", ""
     ]
   },
-
   maj7: {
     category: "chords",
     name_en: "Major 7",
@@ -142,7 +145,6 @@ const THEORY = {
       "Tonique", "", "", "", "3<sup>ce</sup> Maj", "", "", "5<sup>te</sup>", "", "", "", "7<sup>e</sup> Maj"
     ]
   },
-
   min7: {
     category: "chords",
     name_en: "Minor 7",
@@ -152,7 +154,6 @@ const THEORY = {
       "Tonique", "", "", "3<sup>ce</sup> min", "", "", "", "5<sup>te</sup>", "", "", "7<sup>e</sup> min", ""
     ]
   },
-
   sus2: {
     category: "chords",
     name_en: "Suspended Second",
@@ -162,7 +163,6 @@ const THEORY = {
       "Tonique", "", "2<sup>de</sup> Maj", "", "", "", "", "5<sup>te</sup>", "", "", "", ""
     ]
   },
-
   sus4: {
     category: "chords",
     name_en: "Suspended Fourth",

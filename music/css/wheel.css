@@ -6,161 +6,16 @@
 }
 
 html {
-  font-size: clamp(14px, 2vh, 22px);
+  font-size: clamp(8px, min(4vw, 1.7vh), 22px);
+
+  overflow-x: clip;
 }
-
-
 
 body {
   font-family: Quicksand;
   background: #eee;
-}
+  overflow-x: clip;
 
-header {
-  text-align: center;
-  padding: 5vh 0;
-  margin: 0 1em;
-}
-
-/* =========================
-   BUTTON SYSTEM
-   ========================= */
-
-button {
-  font-family: Quicksand, sans-serif;
-  font-weight: 600;
-  font-size: 1.1em;
-
-  min-height: 2.4em;
-  min-width: 2.4em;
-  padding: 0.35em 1em;
-
-  border: none;
-  border-radius: 1.5em;
-
-  background: white;
-  color: #555;
-
-  cursor: pointer;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  box-shadow:
-    0 2px 5px rgba(0, 0, 0, 0.12),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.08);
-
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease,
-    background 0.15s ease,
-    color 0.15s ease;
-}
-
-
-button:hover {
-  box-shadow:
-    0 4px 10px rgba(0, 0, 0, 0.2  ),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
-}
-
-
-button:active {
-  box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.15),
-    inset 0 2px 4px rgba(0, 0, 0, 0.12);
-}
-
-
-/* =========================
-   MAIN MODE BUTTONS
-   ========================= */
-
-#mode-buttons {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  gap: 0.1em;
-}
-
-#mode-buttons button {
-  border-radius: 0;
-  min-width: 5em;
-  max-width: 12em;
-}
-
-#mode-buttons #scaleMode {
-  flex: 1;
-  border-radius: 1.5em 0 0 1.5em;
-}
-
-#mode-buttons #chordMode {
-  flex: 1;
-  border-radius: 0 1.5em 1.5em 0;
-}
-
-
-/* =========================
-   SECOND MENU
-   ========================= */
-
-#typeMenu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.4em;
-  margin: 0.6em;
-}
-
-#typeMenu button {
-  font-size: 0.95em;
-}
-
-/* =========================
-   THIRD MENU
-   ========================= */
-#notation-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 0.6em;
-  margin: 0 auto;
-}
-
-#notation-buttons button {
-  font-size: 0.9em;
-  width: 3em;
-  height: 2em;
-  padding: 0;
-  border-radius: 3px;
-}
-
-/* =========================
-   SELECTED STATE
-   ========================= */
-
-button.selected {
-  background: #777;
-  color: white;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
-}
-
-#currentSelection {
-  color: #777;
-  text-align: center;
-  font-size: 1.4em;
-  font-weight: 900;
-  background-color: white;
-  padding: 1em 0;
-  margin-bottom: 5vh;
-}
-
-/* -------------------------*/
-
-
-footer {
-  text-align: center;
-  padding: 2em 0;
 }
 
 b {
@@ -202,21 +57,196 @@ sup {
   line-height: 1em;
 }
 
-#wheel {
-  margin: 0 auto;
-  --wheel-size: min(52vh, 90vw);
-  width: var(--wheel-size);
-  height: var(--wheel-size);
-  font-size: calc(var(--wheel-size) / 25);
-  position: relative;
-  -webkit-user-select: none;
-  /* Safari */
-  -ms-user-select: none;
-  /* IE 10 and IE 11 */
-  user-select: none;
-  /* Standard syntax */
-  overflow: hidden;
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: clip;
 }
+
+header {
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#currentSelection {
+  margin: 0 auto;
+  padding: 1em 0;
+  width: 100%;
+  color: #777;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 900;
+  background-color: white;
+}
+
+main {
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6vh;
+}
+
+footer {
+  font-size: 1.1em;
+  width: 100%;
+  padding:0.6em 0;
+  margin-top: auto;
+  text-align: center;
+  z-index:100;
+}
+
+/* =========================
+BUTTON SYSTEM
+========================= */
+
+button {
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+
+  min-height: 2.4em;
+  min-width: 2.4em;
+  padding: 0.35em 1em;
+
+  border: none;
+  border-radius: 1.5em;
+
+  background: white;
+  color: #555;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.12),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+button:hover {
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.2),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.15),
+    inset 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+/* MAIN MODE BUTTONS */
+
+#mode-buttons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  width: 36em;
+  max-width: 90vw;
+}
+
+#mode-buttons button {
+  flex: 0.7;
+  border-radius: 0;
+}
+
+#mode-buttons button:first-child {
+  flex: 1;
+  border-radius: 1.5em 0 0 1.5em;
+}
+
+#mode-buttons button:last-child {
+  flex: 1;
+  border-radius: 0 1.5em 1.5em 0;
+}
+
+/* SECOND MENU */
+
+#typeMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4em;
+  margin: 0.6em;
+}
+
+#typeMenu button {
+  font-size: 0.95em;
+}
+
+/* THIRD MENU */
+#notation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.6em;
+  margin-top: auto;
+}
+
+#notation-buttons button {
+  font-size: 0.9em;
+  width: 3em;
+  height: 2em;
+  padding: 0;
+  border-radius: 3px;
+}
+
+/* SELECTED STATE */
+
+button.selected {
+  background: #777;
+  color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+WHEEL
+========================= */
+
+#wheel {
+  --wheel-size: min(52vh, 84vw);
+  width: var(--wheel-size);
+  aspect-ratio: 1;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  font-size: calc(var(--wheel-size) / 25);
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.wheel-clip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#labels {
+  pointer-events: none;
+}
+
+#notes {}
 
 .box {
   width: 100%;
@@ -267,6 +297,12 @@ sup {
 .out>div {
   bottom: 96%;
   z-index: 2;
+}
+
+.out .two-liner {
+  line-height: 0.6em;
+  position: relative;
+  top: -0.6em;
 }
 
 .circle,
@@ -394,6 +430,7 @@ sup {
   font-weight: 500;
   user-select: none;
 }
+
 #center img {
   width: 3.6em;
 }

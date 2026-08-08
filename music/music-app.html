@@ -14,27 +14,39 @@
 </head>
 
 <body>
-  <header>
-    <div id="mode-buttons">
-      <button id="scaleMode">Gammes</button>
-      <button id="chordMode">Accords</button>
-    </div>
-    <div id="typeMenu"></div>
-     <div id="notation-buttons">
-       <button id="notation">♯</button>
-       <button id="language">FR</button>
-     </div>
+  <div id="app">
+
+    <header>
+      <div id="mode-buttons">
+        <button id="scaleMode">Gammes</button>
+        <button id="toolMode">Outils</button>
+        <button id="chordMode">Accords</button>
+      </div>
+      <div id="typeMenu"></div>
+      <div id="notation-buttons">
+        <button id="notation">♯</button>
+        <button id="language">FR</button>
+      </div>
     </header>
+
     <div id="currentSelection"></div>
 
-  <div id="wheel" class="canvas">
-    <div class="box fond">
-      <div class="circle"></div>
-      <div id="labels" class="box out"></div>
-      <div id="ticks" class="box tickbox"></div>
-      <div id="notes" class="in"></div>
-      <div id="center"></div>
-    </div>
+    <main>
+      <div id="wheel" class="canvas">
+        <div class="wheel-clip">
+          <div class="circle"></div>
+          <div id="notes" class="in"></div>
+        </div>
+        <div id="center"></div>
+        <div id="ticks" class="box tickbox"></div>
+        <div id="labels" class="box out"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div>Fait par <a href="https://www.martingalilee.fr" target="_blank">Martin</a> &ndash; 2026 &ndash; ☕ <a href="https://share.weropay.eu/p/1/c/5jbpk6rxmo" target="_blank">Soutenir</a></div>
+    </footer>
+
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
