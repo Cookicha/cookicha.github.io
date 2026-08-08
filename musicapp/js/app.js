@@ -258,7 +258,7 @@ function updateCenter() {
         : "6s.svg";
     }
     $("#center").html(
-      `<img src="/music/img/keys/${file}" alt="">`
+      `<img src="img/keys/${file}" alt="">`
     );
   }
   else {
@@ -312,7 +312,7 @@ function preloadKeySignatures() {
 
   files.forEach(file => {
     const img = new Image();
-    img.src = `/music/img/keys/${file}`;
+    img.src = `img/keys/${file}`;
   });
 }
 
